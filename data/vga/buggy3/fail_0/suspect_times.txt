@@ -1,0 +1,28 @@
+solution 2 chk_top_i1:check_vga_top/assert_assertion_a_initial@15300-15600 chk_top_i1:check_vga_top/assert_assertion_a_initial@15900-16200 
+solution 2 check_vga_top/assert_assertion_a_initial@15300-15600 check_vga_top/assert_assertion_a_initial@15900-16200 
+solution 2 chk_top_i1:check_vga_top/input_ctrl_ven@15000-15300 chk_top_i1:check_vga_top/input_ctrl_ven@15600-15900 
+solution 2 check_vga_top/input_ctrl_ven@15000-15300 check_vga_top/input_ctrl_ven@15600-15900 
+solution 2 chk_top_i1:check_vga_top/input_sluint@15600-15900 chk_top_i1:check_vga_top/input_sluint@16200-16500 
+solution 2 check_vga_top/input_sluint@15600-15900 check_vga_top/input_sluint@16200-16500 
+solution 2 :vga/always_2/if_1/block_1/stmt_1@15000-15300 :vga/always_2/if_1/block_1/stmt_1@15600-15900 
+solution 2 vga/always_2/if_1/block_1/stmt_1@15000-15300 vga/always_2/if_1/block_1/stmt_1@15600-15900 
+solution 2 :vga/reg_sluint@15300-15600 :vga/reg_sluint@15900-16200 
+solution 2 vga/reg_sluint@15300-15600 vga/reg_sluint@15900-16200 
+solution 2 :vga/wire_ctrl_ven@15000-15300 :vga/wire_ctrl_ven@15600-15900 
+solution 2 vga/wire_ctrl_ven@15000-15300 vga/wire_ctrl_ven@15600-15900 
+solution 1 wbs:vga_wb_slave/always_6/if_1/stmt_1@11400-11700 
+solution 1 vga_wb_slave/always_6/if_1/stmt_1@11400-11700 
+solution 1 wbs:vga_wb_slave/reg_ctrl@11700-12000 
+solution 1 vga_wb_slave/reg_ctrl@11700-12000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@12300-12600 
+solution 1 vga_wb_slave/reg_ctrl@12300-12600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@12900-13200 
+solution 1 vga_wb_slave/reg_ctrl@12900-13200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@13500-13800 
+solution 1 vga_wb_slave/reg_ctrl@13500-13800 
+solution 1 wbs:vga_wb_slave/reg_ctrl@14100-14400 
+solution 1 vga_wb_slave/reg_ctrl@14100-14400 
+solution 1 wbs:vga_wb_slave/reg_ctrl@14700-15000 
+solution 1 vga_wb_slave/reg_ctrl@14700-15000 
+solution 2 wbs:vga_wb_slave/wire_ven@15000-15300 wbs:vga_wb_slave/wire_ven@15600-15900 
+solution 2 vga_wb_slave/wire_ven@15000-15300 vga_wb_slave/wire_ven@15600-15900 

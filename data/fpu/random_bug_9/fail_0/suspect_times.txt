@@ -1,0 +1,6 @@
+solution 1 :fpu/always_14/stmt_1@1000-1500 
+solution 1 fpu/always_14/stmt_1@1000-1500 
+solution 1 :fpu/constraint_fract_out_q@1500-2000 
+solution 1 fpu/constraint_fract_out_q@1500-2000 
+solution 1 :fpu/reg_fract_out_q@1500-2000 
+solution 1 fpu/reg_fract_out_q@1500-2000 

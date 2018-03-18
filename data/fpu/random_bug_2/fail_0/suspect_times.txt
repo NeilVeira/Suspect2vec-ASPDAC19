@@ -1,0 +1,14 @@
+solution 1 u6:div_r2/always_3/stmt_1@1000-1500 
+solution 1 div_r2/always_3/stmt_1@1000-1500 
+solution 1 u6:div_r2/always_4/stmt_1@2000-2500 
+solution 1 div_r2/always_4/stmt_1@2000-2500 
+solution 1 u6:div_r2/reg_rem@2500-3000 
+solution 1 div_r2/reg_rem@2500-3000 
+solution 1 u6:div_r2/reg_remainder@1500-2000 
+solution 1 div_r2/reg_remainder@1500-2000 
+solution 1 :fpu/constraint_remainder@1510-3510 
+solution 1 fpu/constraint_remainder@1510-3510 
+solution 1 :fpu/constraint_remainder@2500-3000 
+solution 1 fpu/constraint_remainder@2500-3000 
+solution 1 :fpu/wire_remainder@2500-3000 
+solution 1 fpu/wire_remainder@2500-3000 

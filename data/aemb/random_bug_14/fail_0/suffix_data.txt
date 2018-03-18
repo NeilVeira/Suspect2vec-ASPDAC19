@@ -1,0 +1,3 @@
+Number of suffix suspects: 9
+Debug runtime: 2.57
+Suffix debug runtime: 1.19

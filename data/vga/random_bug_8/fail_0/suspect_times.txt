@@ -1,0 +1,1369 @@
+solution 1 :vga/constraint_wbm_adr_o@121600-122200 
+solution 1 vga/constraint_wbm_adr_o@121600-122200 
+solution 1 :vga/constraint_wbm_adr_o@122100-122400 
+solution 1 vga/constraint_wbm_adr_o@122100-122400 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@114600-114900 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@115200-115500 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@115200-115500 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@115800-116100 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@115800-116100 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@116400-116700 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@116400-116700 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@121200-121500 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@121200-121500 
+solution 2 :vga/input_wbm_ack_i@108000-108300 :vga/input_wbm_ack_i@121800-122100 
+solution 2 vga/input_wbm_ack_i@108000-108300 vga/input_wbm_ack_i@121800-122100 
+solution 2 :vga/input_wbm_ack_i@108600-108900 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@108600-108900 vga/input_wbm_ack_i@114600-114900 
+solution 2 :vga/input_wbm_ack_i@109200-109500 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@109200-109500 vga/input_wbm_ack_i@114600-114900 
+solution 2 :vga/input_wbm_ack_i@110400-110700 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@110400-110700 vga/input_wbm_ack_i@114600-114900 
+solution 2 :vga/input_wbm_ack_i@111000-111300 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@111000-111300 vga/input_wbm_ack_i@114600-114900 
+solution 2 :vga/input_wbm_ack_i@111600-111900 :vga/input_wbm_ack_i@113400-113700 
+solution 2 vga/input_wbm_ack_i@111600-111900 vga/input_wbm_ack_i@113400-113700 
+solution 2 :vga/input_wbm_ack_i@111600-111900 :vga/input_wbm_ack_i@114600-114900 
+solution 2 vga/input_wbm_ack_i@111600-111900 vga/input_wbm_ack_i@114600-114900 
+solution 1 :vga/input_wbs_dat_i@99000-99300 
+solution 1 vga/input_wbs_dat_i@99000-99300 
+solution 1 :vga/input_wbs_dat_i@106200-106500 
+solution 1 vga/input_wbs_dat_i@106200-106500 
+solution 1 :vga/input_wbs_we_i@100200-100500 
+solution 1 vga/input_wbs_we_i@100200-100500 
+solution 1 :vga/input_wbs_we_i@100800-101100 
+solution 1 vga/input_wbs_we_i@100800-101100 
+solution 1 :vga/input_wbs_we_i@117600-117900 
+solution 1 vga/input_wbs_we_i@117600-117900 
+solution 1 :vga/wire_VBARa@106200-106500 
+solution 1 vga/wire_VBARa@106200-106500 
+solution 2 :vga/wire_cp_clut_ack@111000-111300 :vga/wire_cp_clut_ack@114000-114300 
+solution 2 vga/wire_cp_clut_ack@111000-111300 vga/wire_cp_clut_ack@114000-114300 
+solution 2 :vga/wire_cp_clut_ack@112200-112500 :vga/wire_cp_clut_ack@114000-114300 
+solution 2 vga/wire_cp_clut_ack@112200-112500 vga/wire_cp_clut_ack@114000-114300 
+solution 2 :vga/wire_cp_clut_ack@112200-112500 :vga/wire_cp_clut_ack@115200-115500 
+solution 2 vga/wire_cp_clut_ack@112200-112500 vga/wire_cp_clut_ack@115200-115500 
+solution 2 :vga/wire_cp_clut_ack@113400-113700 :vga/wire_cp_clut_ack@116400-116700 
+solution 2 vga/wire_cp_clut_ack@113400-113700 vga/wire_cp_clut_ack@116400-116700 
+solution 2 :vga/wire_cp_clut_ack@113400-113700 :vga/wire_cp_clut_ack@117600-117900 
+solution 2 vga/wire_cp_clut_ack@113400-113700 vga/wire_cp_clut_ack@117600-117900 
+solution 2 :vga/wire_cp_clut_ack@114600-114900 :vga/wire_cp_clut_ack@117600-117900 
+solution 2 vga/wire_cp_clut_ack@114600-114900 vga/wire_cp_clut_ack@117600-117900 
+solution 1 :vga/wire_ctrl_cd@111000-111300 
+solution 1 vga/wire_ctrl_cd@111000-111300 
+solution 1 :vga/wire_ctrl_cd@112200-112500 
+solution 1 vga/wire_ctrl_cd@112200-112500 
+solution 1 :vga/wire_ctrl_cd@113400-113700 
+solution 1 vga/wire_ctrl_cd@113400-113700 
+solution 1 :vga/wire_ctrl_cd@114600-114900 
+solution 1 vga/wire_ctrl_cd@114600-114900 
+solution 1 :vga/wire_ctrl_cd@115800-116100 
+solution 1 vga/wire_ctrl_cd@115800-116100 
+solution 1 :vga/wire_ctrl_cd@117000-117300 
+solution 1 vga/wire_ctrl_cd@117000-117300 
+solution 1 :vga/wire_ctrl_cd@118200-118500 
+solution 1 vga/wire_ctrl_cd@118200-118500 
+solution 1 :vga/wire_ctrl_vbl@106800-107100 
+solution 1 vga/wire_ctrl_vbl@106800-107100 
+solution 1 :vga/wire_ctrl_vbl@109800-110100 
+solution 1 vga/wire_ctrl_vbl@109800-110100 
+solution 1 :vga/wire_ctrl_vbl@112200-112500 
+solution 1 vga/wire_ctrl_vbl@112200-112500 
+solution 1 :vga/wire_ctrl_vbl@114600-114900 
+solution 1 vga/wire_ctrl_vbl@114600-114900 
+solution 1 :vga/wire_ctrl_ven@106800-107100 
+solution 1 vga/wire_ctrl_ven@106800-107100 
+solution 1 :vga/wire_fb_data_fifo_empty@111600-111900 
+solution 1 vga/wire_fb_data_fifo_empty@111600-111900 
+solution 1 :vga/wire_fb_data_fifo_empty@112800-113100 
+solution 1 vga/wire_fb_data_fifo_empty@112800-113100 
+solution 1 :vga/wire_fb_data_fifo_empty@114000-114300 
+solution 1 vga/wire_fb_data_fifo_empty@114000-114300 
+solution 1 :vga/wire_fb_data_fifo_empty@115200-115500 
+solution 1 vga/wire_fb_data_fifo_empty@115200-115500 
+solution 1 :vga/wire_fb_data_fifo_empty@116400-116700 
+solution 1 vga/wire_fb_data_fifo_empty@116400-116700 
+solution 1 :vga/wire_fb_data_fifo_empty@117600-117900 
+solution 1 vga/wire_fb_data_fifo_empty@117600-117900 
+solution 1 :vga/wire_fb_data_fifo_rreq@114600-114900 
+solution 1 vga/wire_fb_data_fifo_rreq@114600-114900 
+solution 1 :vga/wire_fb_data_fifo_rreq@115800-116100 
+solution 1 vga/wire_fb_data_fifo_rreq@115800-116100 
+solution 1 :vga/wire_fb_data_fifo_rreq@117000-117300 
+solution 1 vga/wire_fb_data_fifo_rreq@117000-117300 
+solution 1 :vga/wire_fb_data_fifo_rreq@118200-118500 
+solution 1 vga/wire_fb_data_fifo_rreq@118200-118500 
+solution 1 :vga/wire_fb_data_fifo_rreq@119400-119700 
+solution 1 vga/wire_fb_data_fifo_rreq@119400-119700 
+solution 1 :vga/wire_wbm_adr_o@122100-122400 
+solution 1 vga/wire_wbm_adr_o@122100-122400 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@111000-111300 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@111000-111300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@112200-112500 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@112200-112500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@113400-113700 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@113400-113700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@114600-114900 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@114600-114900 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@115800-116100 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@115800-116100 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@117000-117300 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@117000-117300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@118200-118500 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/case_1/stmt_2@118200-118500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@112800-113100 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@112800-113100 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@114000-114300 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@115200-115500 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@116400-116700 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@117600-117900 
+solution 1 vga_colproc/always_2/block_1_nxt_state_decoder/case_1/if_6/if_1/if_1/stmt_1@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@111000-111300 
+solution 1 vga_colproc/always_3/if_1/stmt_2@111000-111300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@112200-112500 
+solution 1 vga_colproc/always_3/if_1/stmt_2@112200-112500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@113400-113700 
+solution 1 vga_colproc/always_3/if_1/stmt_2@113400-113700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@115200-115500 
+solution 1 vga_colproc/always_3/if_1/stmt_2@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@115800-116100 
+solution 1 vga_colproc/always_3/if_1/stmt_2@115800-116100 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@116400-116700 
+solution 1 vga_colproc/always_3/if_1/stmt_2@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@117000-117300 
+solution 1 vga_colproc/always_3/if_1/stmt_2@117000-117300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@117600-117900 
+solution 1 vga_colproc/always_3/if_1/stmt_2@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/always_3/if_1/stmt_2@118200-118500 
+solution 1 vga_colproc/always_3/if_1/stmt_2@118200-118500 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@114000-114300 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@115200-115500 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@117600-117900 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@111000-111300 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@117600-117900 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@112200-112500 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@113400-113700 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@113400-113700 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@114600-114900 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@114600-114900 vga_colproc/always_4/block_1_output_decoder/case_1/block_2/stmt_1@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@114000-114300 
+solution 1 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@115200-115500 
+solution 1 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@116400-116700 
+solution 1 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@117600-117900 
+solution 1 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@118800-119100 
+solution 1 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/if_1/stmt_1@118800-119100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@113400-113700 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@109800-110100 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@113400-113700 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@114600-114900 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@109800-110100 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@114600-114900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@113400-113700 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@113400-113700 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115800-116100 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117000-117300 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@110400-110700 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117000-117300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@111600-111900 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115800-116100 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@111600-111900 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@112800-113100 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@112800-113100 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@114000-114300 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@114000-114300 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117600-117900 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@115200-115500 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@116400-116700 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117600-117900 
+solution 2 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@116400-116700 vga_colproc/always_4/block_1_output_decoder/case_1/block_7/if_1/block_1/stmt_1@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/stmt_1@106200-106500 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/stmt_1@106800-107100 
+solution 2 vga_colproc/always_4/block_1_output_decoder/stmt_1@106200-106500 vga_colproc/always_4/block_1_output_decoder/stmt_1@106800-107100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/stmt_1@106200-106500 pixel_generator/color_proc:vga_colproc/always_4/block_1_output_decoder/stmt_1@108000-108300 
+solution 2 vga_colproc/always_4/block_1_output_decoder/stmt_1@106200-106500 vga_colproc/always_4/block_1_output_decoder/stmt_1@108000-108300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_5/block_1/if_2/block_2/stmt_1@114000-114300 
+solution 1 vga_colproc/always_5/block_1/if_2/block_2/stmt_1@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/always_5/block_1/if_2/block_2/stmt_1@115200-115500 
+solution 1 vga_colproc/always_5/block_1/if_2/block_2/stmt_1@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/always_5/block_1/if_2/block_2/stmt_1@116400-116700 
+solution 1 vga_colproc/always_5/block_1/if_2/block_2/stmt_1@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/always_5/block_1/if_2/block_2/stmt_1@117600-117900 
+solution 1 vga_colproc/always_5/block_1/if_2/block_2/stmt_1@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/always_5/block_1/if_2/block_2/stmt_1@118800-119100 
+solution 1 vga_colproc/always_5/block_1/if_2/block_2/stmt_1@118800-119100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112800-113100 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 vga_colproc/always_7/if_1/if_1/stmt_1@112800-113100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@114600-114900 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 vga_colproc/always_7/if_1/if_1/stmt_1@114600-114900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@118800-119100 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@109800-110100 vga_colproc/always_7/if_1/if_1/stmt_1@118800-119100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@110400-110700 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@110400-110700 vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@111000-111300 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@111000-111300 vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 vga_colproc/always_7/if_1/if_1/stmt_1@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@115800-116100 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 vga_colproc/always_7/if_1/if_1/stmt_1@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@116400-116700 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 vga_colproc/always_7/if_1/if_1/stmt_1@116400-116700 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@117000-117300 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 vga_colproc/always_7/if_1/if_1/stmt_1@117000-117300 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@117600-117900 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@112200-112500 vga_colproc/always_7/if_1/if_1/stmt_1@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@113400-113700 pixel_generator/color_proc:vga_colproc/always_7/if_1/if_1/stmt_1@118800-119100 
+solution 2 vga_colproc/always_7/if_1/if_1/stmt_1@113400-113700 vga_colproc/always_7/if_1/if_1/stmt_1@118800-119100 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@111000-111300 
+solution 1 vga_colproc/input_ColorDepth@111000-111300 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@112200-112500 
+solution 1 vga_colproc/input_ColorDepth@112200-112500 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@113400-113700 
+solution 1 vga_colproc/input_ColorDepth@113400-113700 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@114600-114900 
+solution 1 vga_colproc/input_ColorDepth@114600-114900 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@115800-116100 
+solution 1 vga_colproc/input_ColorDepth@115800-116100 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@117000-117300 
+solution 1 vga_colproc/input_ColorDepth@117000-117300 
+solution 1 pixel_generator/color_proc:vga_colproc/input_ColorDepth@118200-118500 
+solution 1 vga_colproc/input_ColorDepth@118200-118500 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@111000-111300 pixel_generator/color_proc:vga_colproc/input_clut_ack@115200-115500 
+solution 2 vga_colproc/input_clut_ack@111000-111300 vga_colproc/input_clut_ack@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@112200-112500 pixel_generator/color_proc:vga_colproc/input_clut_ack@114000-114300 
+solution 2 vga_colproc/input_clut_ack@112200-112500 vga_colproc/input_clut_ack@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@112200-112500 pixel_generator/color_proc:vga_colproc/input_clut_ack@115200-115500 
+solution 2 vga_colproc/input_clut_ack@112200-112500 vga_colproc/input_clut_ack@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@113400-113700 pixel_generator/color_proc:vga_colproc/input_clut_ack@117600-117900 
+solution 2 vga_colproc/input_clut_ack@113400-113700 vga_colproc/input_clut_ack@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@114600-114900 pixel_generator/color_proc:vga_colproc/input_clut_ack@116400-116700 
+solution 2 vga_colproc/input_clut_ack@114600-114900 vga_colproc/input_clut_ack@116400-116700 
+solution 2 pixel_generator/color_proc:vga_colproc/input_clut_ack@114600-114900 pixel_generator/color_proc:vga_colproc/input_clut_ack@117600-117900 
+solution 2 vga_colproc/input_clut_ack@114600-114900 vga_colproc/input_clut_ack@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@109800-110100 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 vga_colproc/input_rgb_fifo_full@109800-110100 vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@110400-110700 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 2 vga_colproc/input_rgb_fifo_full@110400-110700 vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@111600-111900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@114600-114900 
+solution 2 vga_colproc/input_rgb_fifo_full@111600-111900 vga_colproc/input_rgb_fifo_full@114600-114900 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@111600-111900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@115800-116100 
+solution 2 vga_colproc/input_rgb_fifo_full@111600-111900 vga_colproc/input_rgb_fifo_full@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@111600-111900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@117000-117300 
+solution 2 vga_colproc/input_rgb_fifo_full@111600-111900 vga_colproc/input_rgb_fifo_full@117000-117300 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@111600-111900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 2 vga_colproc/input_rgb_fifo_full@111600-111900 vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@111600-111900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 vga_colproc/input_rgb_fifo_full@111600-111900 vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@112800-113100 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@117000-117300 
+solution 2 vga_colproc/input_rgb_fifo_full@112800-113100 vga_colproc/input_rgb_fifo_full@117000-117300 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@114000-114300 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@114600-114900 
+solution 2 vga_colproc/input_rgb_fifo_full@114000-114300 vga_colproc/input_rgb_fifo_full@114600-114900 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@115200-115500 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 vga_colproc/input_rgb_fifo_full@115200-115500 vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@116400-116700 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 vga_colproc/input_rgb_fifo_full@116400-116700 vga_colproc/input_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@117600-117900 pixel_generator/color_proc:vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 2 vga_colproc/input_rgb_fifo_full@117600-117900 vga_colproc/input_rgb_fifo_full@118200-118500 
+solution 1 pixel_generator/color_proc:vga_colproc/input_srst@112800-113100 
+solution 1 vga_colproc/input_srst@112800-113100 
+solution 1 pixel_generator/color_proc:vga_colproc/input_srst@114000-114300 
+solution 1 vga_colproc/input_srst@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/input_srst@115200-115500 
+solution 1 vga_colproc/input_srst@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/input_srst@116400-116700 
+solution 1 vga_colproc/input_srst@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/input_srst@117600-117900 
+solution 1 vga_colproc/input_srst@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@111600-111900 
+solution 1 vga_colproc/input_vdat_buffer_empty@111600-111900 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@112800-113100 
+solution 1 vga_colproc/input_vdat_buffer_empty@112800-113100 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@114000-114300 
+solution 1 vga_colproc/input_vdat_buffer_empty@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@115200-115500 
+solution 1 vga_colproc/input_vdat_buffer_empty@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@116400-116700 
+solution 1 vga_colproc/input_vdat_buffer_empty@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/input_vdat_buffer_empty@117600-117900 
+solution 1 vga_colproc/input_vdat_buffer_empty@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@113400-113700 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@113400-113700 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@114000-114300 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@114000-114300 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@114600-114900 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@114600-114900 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@116400-116700 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@116400-116700 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@117000-117300 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@117000-117300 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@110400-110700 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@117600-117900 
+solution 2 vga_colproc/reg_RGBbuf_wreq@110400-110700 vga_colproc/reg_RGBbuf_wreq@117600-117900 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@111000-111300 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 2 vga_colproc/reg_RGBbuf_wreq@111000-111300 vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@111600-111900 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 vga_colproc/reg_RGBbuf_wreq@111600-111900 vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@112200-112500 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 vga_colproc/reg_RGBbuf_wreq@112200-112500 vga_colproc/reg_RGBbuf_wreq@115800-116100 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@112800-113100 pixel_generator/color_proc:vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 2 vga_colproc/reg_RGBbuf_wreq@112800-113100 vga_colproc/reg_RGBbuf_wreq@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@111300-111600 
+solution 1 vga_colproc/reg_c_state@111300-111600 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@113700-114000 
+solution 1 vga_colproc/reg_c_state@113700-114000 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@114300-114600 
+solution 1 vga_colproc/reg_c_state@114300-114600 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@114900-115200 
+solution 1 vga_colproc/reg_c_state@114900-115200 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@115500-115800 
+solution 1 vga_colproc/reg_c_state@115500-115800 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@116100-116400 
+solution 1 vga_colproc/reg_c_state@116100-116400 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@116700-117000 
+solution 1 vga_colproc/reg_c_state@116700-117000 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@117300-117600 
+solution 1 vga_colproc/reg_c_state@117300-117600 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@117900-118200 
+solution 1 vga_colproc/reg_c_state@117900-118200 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_c_state@118500-118800 
+solution 1 vga_colproc/reg_c_state@118500-118800 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@112500-112800 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@112500-112800 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@113100-113400 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@113100-113400 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@113700-114000 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@113700-114000 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@114300-114600 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@114300-114600 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@114900-115200 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@114900-115200 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@115500-115800 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@115500-115800 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@116100-116400 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@116100-116400 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@116700-117000 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@116700-117000 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@117300-117600 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@117300-117600 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110100-110400 pixel_generator/color_proc:vga_colproc/reg_colcnt@119100-119400 
+solution 2 vga_colproc/reg_colcnt@110100-110400 vga_colproc/reg_colcnt@119100-119400 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@110700-111000 pixel_generator/color_proc:vga_colproc/reg_colcnt@112500-112800 
+solution 2 vga_colproc/reg_colcnt@110700-111000 vga_colproc/reg_colcnt@112500-112800 
+solution 2 pixel_generator/color_proc:vga_colproc/reg_colcnt@111300-111600 pixel_generator/color_proc:vga_colproc/reg_colcnt@112500-112800 
+solution 2 vga_colproc/reg_colcnt@111300-111600 vga_colproc/reg_colcnt@112500-112800 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_ivdat_buf_rreq@114000-114300 
+solution 1 vga_colproc/reg_ivdat_buf_rreq@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_ivdat_buf_rreq@115200-115500 
+solution 1 vga_colproc/reg_ivdat_buf_rreq@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_ivdat_buf_rreq@116400-116700 
+solution 1 vga_colproc/reg_ivdat_buf_rreq@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_ivdat_buf_rreq@117600-117900 
+solution 1 vga_colproc/reg_ivdat_buf_rreq@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_ivdat_buf_rreq@118800-119100 
+solution 1 vga_colproc/reg_ivdat_buf_rreq@118800-119100 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@111000-111300 
+solution 1 vga_colproc/reg_nxt_state@111000-111300 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@113400-113700 
+solution 1 vga_colproc/reg_nxt_state@113400-113700 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@114000-114300 
+solution 1 vga_colproc/reg_nxt_state@114000-114300 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@114600-114900 
+solution 1 vga_colproc/reg_nxt_state@114600-114900 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@115200-115500 
+solution 1 vga_colproc/reg_nxt_state@115200-115500 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@115800-116100 
+solution 1 vga_colproc/reg_nxt_state@115800-116100 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@116400-116700 
+solution 1 vga_colproc/reg_nxt_state@116400-116700 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@117000-117300 
+solution 1 vga_colproc/reg_nxt_state@117000-117300 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@117600-117900 
+solution 1 vga_colproc/reg_nxt_state@117600-117900 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_nxt_state@118200-118500 
+solution 1 vga_colproc/reg_nxt_state@118200-118500 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_vdat_buffer_rreq@114300-114600 
+solution 1 vga_colproc/reg_vdat_buffer_rreq@114300-114600 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_vdat_buffer_rreq@115500-115800 
+solution 1 vga_colproc/reg_vdat_buffer_rreq@115500-115800 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_vdat_buffer_rreq@116700-117000 
+solution 1 vga_colproc/reg_vdat_buffer_rreq@116700-117000 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_vdat_buffer_rreq@117900-118200 
+solution 1 vga_colproc/reg_vdat_buffer_rreq@117900-118200 
+solution 1 pixel_generator/color_proc:vga_colproc/reg_vdat_buffer_rreq@119100-119400 
+solution 1 vga_colproc/reg_vdat_buffer_rreq@119100-119400 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@111000-111300 clut_mem:vga_csm_pb/wire_ack0_o@114000-114300 
+solution 2 vga_csm_pb/wire_ack0_o@111000-111300 vga_csm_pb/wire_ack0_o@114000-114300 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@111000-111300 clut_mem:vga_csm_pb/wire_ack0_o@117600-117900 
+solution 2 vga_csm_pb/wire_ack0_o@111000-111300 vga_csm_pb/wire_ack0_o@117600-117900 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@112200-112500 clut_mem:vga_csm_pb/wire_ack0_o@114000-114300 
+solution 2 vga_csm_pb/wire_ack0_o@112200-112500 vga_csm_pb/wire_ack0_o@114000-114300 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@112200-112500 clut_mem:vga_csm_pb/wire_ack0_o@115200-115500 
+solution 2 vga_csm_pb/wire_ack0_o@112200-112500 vga_csm_pb/wire_ack0_o@115200-115500 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@113400-113700 clut_mem:vga_csm_pb/wire_ack0_o@117600-117900 
+solution 2 vga_csm_pb/wire_ack0_o@113400-113700 vga_csm_pb/wire_ack0_o@117600-117900 
+solution 2 clut_mem:vga_csm_pb/wire_ack0_o@114600-114900 clut_mem:vga_csm_pb/wire_ack0_o@116400-116700 
+solution 2 vga_csm_pb/wire_ack0_o@114600-114900 vga_csm_pb/wire_ack0_o@116400-116700 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@109200-109500 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@109200-109500 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@111000-111300 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@111000-111300 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@112200-112500 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@112200-112500 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@113400-113700 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@113400-113700 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@114600-114900 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@114600-114900 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@115800-116100 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@115800-116100 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/if_1/stmt_1@117000-117300 
+solution 1 vga_fifo/always_1/if_1/if_1/if_1/stmt_1@117000-117300 
+solution 1 wbm/data_fifo:vga_fifo/always_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 vga_fifo/always_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@108000-108300 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@108000-108300 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@108600-108900 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@108600-108900 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@109200-109500 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@109200-109500 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@109800-110100 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@109800-110100 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@110400-110700 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@110400-110700 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@111000-111300 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@111000-111300 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@111600-111900 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@111600-111900 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@112200-112500 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@112200-112500 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@112800-113100 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@112800-113100 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@113400-113700 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@113400-113700 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@114600-114900 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@114600-114900 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/if_1/stmt_1@115200-115500 
+solution 1 vga_fifo/always_2/if_1/if_1/if_1/stmt_1@115200-115500 
+solution 1 wbm/data_fifo:vga_fifo/always_2/if_1/if_1/stmt_1@106200-106500 
+solution 1 vga_fifo/always_2/if_1/if_1/stmt_1@106200-106500 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@110400-110700 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@110400-110700 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@111000-111300 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@111000-111300 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@111600-111900 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@111600-111900 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@112200-112500 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@112200-112500 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@112800-113100 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@112800-113100 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@113400-113700 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@113400-113700 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@114000-114300 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@114000-114300 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@114600-114900 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@114600-114900 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@115200-115500 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@115200-115500 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@115800-116100 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@115800-116100 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@116400-116700 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@116400-116700 
+solution 1 wbm/data_fifo:vga_fifo/always_4/if_1/if_1/stmt_2@117000-117300 
+solution 1 vga_fifo/always_4/if_1/if_1/stmt_2@117000-117300 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/if_1/stmt_1@118200-118500 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/if_1/stmt_1@118200-118500 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/if_1/stmt_1@119400-119700 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/if_1/stmt_1@119400-119700 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@108000-108300 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@108000-108300 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@108600-108900 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@108600-108900 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@115200-115500 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@115200-115500 
+solution 1 wbm/data_fifo:vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@116400-116700 
+solution 1 vga_fifo/always_6/if_1/if_1/block_1/if_1/stmt_1@116400-116700 
+solution 1 wbm/data_fifo:vga_fifo/func_1/case_1/stmt_3@111000-111300 
+solution 1 vga_fifo/func_1/case_1/stmt_3@111000-111300 
+solution 1 wbm/data_fifo:vga_fifo/func_1/case_1/stmt_3@113400-113700 
+solution 1 vga_fifo/func_1/case_1/stmt_3@113400-113700 
+solution 1 wbm/data_fifo:vga_fifo/input_rreq@114600-114900 
+solution 1 vga_fifo/input_rreq@114600-114900 
+solution 1 wbm/data_fifo:vga_fifo/input_rreq@115800-116100 
+solution 1 vga_fifo/input_rreq@115800-116100 
+solution 1 wbm/data_fifo:vga_fifo/input_rreq@117000-117300 
+solution 1 vga_fifo/input_rreq@117000-117300 
+solution 1 wbm/data_fifo:vga_fifo/input_rreq@118200-118500 
+solution 1 vga_fifo/input_rreq@118200-118500 
+solution 1 wbm/data_fifo:vga_fifo/input_rreq@119400-119700 
+solution 1 vga_fifo/input_rreq@119400-119700 
+solution 1 wbm/data_fifo:vga_fifo/input_wreq@117600-117900 
+solution 1 vga_fifo/input_wreq@117600-117900 
+solution 1 wbm/data_fifo:vga_fifo/input_wreq@118200-118500 
+solution 1 vga_fifo/input_wreq@118200-118500 
+solution 1 wbm/data_fifo:vga_fifo/input_wreq@118800-119100 
+solution 1 vga_fifo/input_wreq@118800-119100 
+solution 1 wbm/data_fifo:vga_fifo/input_wreq@119400-119700 
+solution 1 vga_fifo/input_wreq@119400-119700 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@110700-111000 
+solution 1 vga_fifo/reg_empty@110700-111000 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@111900-112200 
+solution 1 vga_fifo/reg_empty@111900-112200 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@112500-112800 
+solution 1 vga_fifo/reg_empty@112500-112800 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@113100-113400 
+solution 1 vga_fifo/reg_empty@113100-113400 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@113700-114000 
+solution 1 vga_fifo/reg_empty@113700-114000 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@114300-114600 
+solution 1 vga_fifo/reg_empty@114300-114600 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@114900-115200 
+solution 1 vga_fifo/reg_empty@114900-115200 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@115500-115800 
+solution 1 vga_fifo/reg_empty@115500-115800 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@116100-116400 
+solution 1 vga_fifo/reg_empty@116100-116400 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@116700-117000 
+solution 1 vga_fifo/reg_empty@116700-117000 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@117300-117600 
+solution 1 vga_fifo/reg_empty@117300-117600 
+solution 1 wbm/data_fifo:vga_fifo/reg_empty@118500-118800 
+solution 1 vga_fifo/reg_empty@118500-118800 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@107100-107400 
+solution 1 vga_fifo/reg_nword@107100-107400 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@107700-108000 
+solution 1 vga_fifo/reg_nword@107700-108000 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@108300-108600 
+solution 1 vga_fifo/reg_nword@108300-108600 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@108900-109200 
+solution 1 vga_fifo/reg_nword@108900-109200 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@109500-109800 
+solution 1 vga_fifo/reg_nword@109500-109800 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@113100-113400 
+solution 1 vga_fifo/reg_nword@113100-113400 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@113700-114000 
+solution 1 vga_fifo/reg_nword@113700-114000 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@114300-114600 
+solution 1 vga_fifo/reg_nword@114300-114600 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@114900-115200 
+solution 1 vga_fifo/reg_nword@114900-115200 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@114900-115200 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@115500-115800 
+solution 1 vga_fifo/reg_nword@115500-115800 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@115500-115800 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@116100-116400 
+solution 1 vga_fifo/reg_nword@116100-116400 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@116700-117000 
+solution 1 vga_fifo/reg_nword@116700-117000 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@116700-117000 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@117300-117600 
+solution 1 vga_fifo/reg_nword@117300-117600 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@117300-117600 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@117900-118200 
+solution 1 vga_fifo/reg_nword@117900-118200 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@117900-118200 
+solution 1 pixel_generator/rgb_fifo:vga_fifo/reg_nword@118500-118800 
+solution 1 vga_fifo/reg_nword@118500-118800 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@119100-119400 
+solution 1 vga_fifo/reg_nword@119100-119400 
+solution 1 wbm/data_fifo:vga_fifo/reg_nword@119700-120000 
+solution 1 vga_fifo/reg_nword@119700-120000 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@106500-106800 
+solution 1 vga_fifo/reg_rp@106500-106800 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@107100-107400 
+solution 1 vga_fifo/reg_rp@107100-107400 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@107700-108000 
+solution 1 vga_fifo/reg_rp@107700-108000 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@108300-108600 
+solution 1 vga_fifo/reg_rp@108300-108600 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@108900-109200 
+solution 1 vga_fifo/reg_rp@108900-109200 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@109500-109800 
+solution 1 vga_fifo/reg_rp@109500-109800 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@110100-110400 
+solution 1 vga_fifo/reg_rp@110100-110400 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@110700-111000 
+solution 1 vga_fifo/reg_rp@110700-111000 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@111300-111600 
+solution 1 vga_fifo/reg_rp@111300-111600 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@111900-112200 
+solution 1 vga_fifo/reg_rp@111900-112200 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@112500-112800 
+solution 1 vga_fifo/reg_rp@112500-112800 
+solution 1 wbm/data_fifo:vga_fifo/reg_rp@113100-113400 
+solution 1 vga_fifo/reg_rp@113100-113400 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@106500-106800 
+solution 1 vga_fifo/reg_wp@106500-106800 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@107100-107400 
+solution 1 vga_fifo/reg_wp@107100-107400 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@107700-108000 
+solution 1 vga_fifo/reg_wp@107700-108000 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@108300-108600 
+solution 1 vga_fifo/reg_wp@108300-108600 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@108900-109200 
+solution 1 vga_fifo/reg_wp@108900-109200 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@111300-111600 
+solution 1 vga_fifo/reg_wp@111300-111600 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@111900-112200 
+solution 1 vga_fifo/reg_wp@111900-112200 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@112500-112800 
+solution 1 vga_fifo/reg_wp@112500-112800 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@113700-114000 
+solution 1 vga_fifo/reg_wp@113700-114000 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@114300-114600 
+solution 1 vga_fifo/reg_wp@114300-114600 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@114900-115200 
+solution 1 vga_fifo/reg_wp@114900-115200 
+solution 1 wbm/data_fifo:vga_fifo/reg_wp@117900-118200 
+solution 1 vga_fifo/reg_wp@117900-118200 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@110400-110700 
+solution 1 vga_fifo/wire_aempty@110400-110700 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@111000-111300 
+solution 1 vga_fifo/wire_aempty@111000-111300 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@111600-111900 
+solution 1 vga_fifo/wire_aempty@111600-111900 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@112200-112500 
+solution 1 vga_fifo/wire_aempty@112200-112500 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@112800-113100 
+solution 1 vga_fifo/wire_aempty@112800-113100 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@113400-113700 
+solution 1 vga_fifo/wire_aempty@113400-113700 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@114000-114300 
+solution 1 vga_fifo/wire_aempty@114000-114300 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@114600-114900 
+solution 1 vga_fifo/wire_aempty@114600-114900 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@115200-115500 
+solution 1 vga_fifo/wire_aempty@115200-115500 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@115800-116100 
+solution 1 vga_fifo/wire_aempty@115800-116100 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@116400-116700 
+solution 1 vga_fifo/wire_aempty@116400-116700 
+solution 1 wbm/data_fifo:vga_fifo/wire_aempty@117000-117300 
+solution 1 vga_fifo/wire_aempty@117000-117300 
+solution 1 line_fifo:vga_fifo_dc/always_3/if_1/block_1/stmt_2@112200-112500 
+solution 1 vga_fifo_dc/always_3/if_1/block_1/stmt_2@112200-112500 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/block_1/stmt_1@106200-106500 
+solution 1 vga_fifo_dc/always_4/if_1/block_1/stmt_1@106200-106500 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@107400-107700 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@107400-107700 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@108000-108300 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@108000-108300 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@108600-108900 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@108600-108900 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@109200-109500 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@109200-109500 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@109800-110100 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@109800-110100 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@110400-110700 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@110400-110700 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@111000-111300 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@111000-111300 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@111600-111900 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@111600-111900 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@112200-112500 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@112200-112500 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@112800-113100 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@112800-113100 
+solution 1 line_fifo:vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@113400-113700 
+solution 1 vga_fifo_dc/always_4/if_1/if_1/block_1/stmt_1@113400-113700 
+solution 1 line_fifo:vga_fifo_dc/reg_rptr_gray@112500-112800 
+solution 1 vga_fifo_dc/reg_rptr_gray@112500-112800 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@106500-106800 
+solution 1 vga_fifo_dc/reg_wptr@106500-106800 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@107100-107400 
+solution 1 vga_fifo_dc/reg_wptr@107100-107400 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@107700-108000 
+solution 1 vga_fifo_dc/reg_wptr@107700-108000 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@108300-108600 
+solution 1 vga_fifo_dc/reg_wptr@108300-108600 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@108900-109200 
+solution 1 vga_fifo_dc/reg_wptr@108900-109200 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@109500-109800 
+solution 1 vga_fifo_dc/reg_wptr@109500-109800 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@110700-111000 
+solution 1 vga_fifo_dc/reg_wptr@110700-111000 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@111900-112200 
+solution 1 vga_fifo_dc/reg_wptr@111900-112200 
+solution 1 line_fifo:vga_fifo_dc/reg_wptr@113700-114000 
+solution 1 vga_fifo_dc/reg_wptr@113700-114000 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@111000-111300 pixel_generator:vga_pgen/input_clut_ack@114000-114300 
+solution 2 vga_pgen/input_clut_ack@111000-111300 vga_pgen/input_clut_ack@114000-114300 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@111000-111300 pixel_generator:vga_pgen/input_clut_ack@115200-115500 
+solution 2 vga_pgen/input_clut_ack@111000-111300 vga_pgen/input_clut_ack@115200-115500 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@111000-111300 pixel_generator:vga_pgen/input_clut_ack@117600-117900 
+solution 2 vga_pgen/input_clut_ack@111000-111300 vga_pgen/input_clut_ack@117600-117900 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@112200-112500 pixel_generator:vga_pgen/input_clut_ack@114000-114300 
+solution 2 vga_pgen/input_clut_ack@112200-112500 vga_pgen/input_clut_ack@114000-114300 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@113400-113700 pixel_generator:vga_pgen/input_clut_ack@116400-116700 
+solution 2 vga_pgen/input_clut_ack@113400-113700 vga_pgen/input_clut_ack@116400-116700 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@114600-114900 pixel_generator:vga_pgen/input_clut_ack@116400-116700 
+solution 2 vga_pgen/input_clut_ack@114600-114900 vga_pgen/input_clut_ack@116400-116700 
+solution 2 pixel_generator:vga_pgen/input_clut_ack@114600-114900 pixel_generator:vga_pgen/input_clut_ack@117600-117900 
+solution 2 vga_pgen/input_clut_ack@114600-114900 vga_pgen/input_clut_ack@117600-117900 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@111000-111300 
+solution 1 vga_pgen/input_ctrl_cd@111000-111300 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@112200-112500 
+solution 1 vga_pgen/input_ctrl_cd@112200-112500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@113400-113700 
+solution 1 vga_pgen/input_ctrl_cd@113400-113700 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@114600-114900 
+solution 1 vga_pgen/input_ctrl_cd@114600-114900 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@115800-116100 
+solution 1 vga_pgen/input_ctrl_cd@115800-116100 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@117000-117300 
+solution 1 vga_pgen/input_ctrl_cd@117000-117300 
+solution 1 pixel_generator:vga_pgen/input_ctrl_cd@118200-118500 
+solution 1 vga_pgen/input_ctrl_cd@118200-118500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@112800-113100 
+solution 1 vga_pgen/input_ctrl_ven@112800-113100 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@114000-114300 
+solution 1 vga_pgen/input_ctrl_ven@114000-114300 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@115200-115500 
+solution 1 vga_pgen/input_ctrl_ven@115200-115500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@116400-116700 
+solution 1 vga_pgen/input_ctrl_ven@116400-116700 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@117600-117900 
+solution 1 vga_pgen/input_ctrl_ven@117600-117900 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@111600-111900 
+solution 1 vga_pgen/input_fb_data_fifo_empty@111600-111900 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@112800-113100 
+solution 1 vga_pgen/input_fb_data_fifo_empty@112800-113100 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@114000-114300 
+solution 1 vga_pgen/input_fb_data_fifo_empty@114000-114300 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@115200-115500 
+solution 1 vga_pgen/input_fb_data_fifo_empty@115200-115500 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@116400-116700 
+solution 1 vga_pgen/input_fb_data_fifo_empty@116400-116700 
+solution 1 pixel_generator:vga_pgen/input_fb_data_fifo_empty@117600-117900 
+solution 1 vga_pgen/input_fb_data_fifo_empty@117600-117900 
+solution 1 pixel_generator:vga_pgen/wire_fb_data_fifo_rreq@114600-114900 
+solution 1 vga_pgen/wire_fb_data_fifo_rreq@114600-114900 
+solution 1 pixel_generator:vga_pgen/wire_fb_data_fifo_rreq@115800-116100 
+solution 1 vga_pgen/wire_fb_data_fifo_rreq@115800-116100 
+solution 1 pixel_generator:vga_pgen/wire_fb_data_fifo_rreq@117000-117300 
+solution 1 vga_pgen/wire_fb_data_fifo_rreq@117000-117300 
+solution 1 pixel_generator:vga_pgen/wire_fb_data_fifo_rreq@118200-118500 
+solution 1 vga_pgen/wire_fb_data_fifo_rreq@118200-118500 
+solution 1 pixel_generator:vga_pgen/wire_fb_data_fifo_rreq@119400-119700 
+solution 1 vga_pgen/wire_fb_data_fifo_rreq@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_full@115800-116100 
+solution 2 vga_pgen/wire_rgb_fifo_full@109800-110100 vga_pgen/wire_rgb_fifo_full@115800-116100 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_full@114600-114900 
+solution 2 vga_pgen/wire_rgb_fifo_full@110400-110700 vga_pgen/wire_rgb_fifo_full@114600-114900 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_full@115800-116100 
+solution 2 vga_pgen/wire_rgb_fifo_full@110400-110700 vga_pgen/wire_rgb_fifo_full@115800-116100 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_full@117000-117300 
+solution 2 vga_pgen/wire_rgb_fifo_full@110400-110700 vga_pgen/wire_rgb_fifo_full@117000-117300 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_full@118200-118500 
+solution 2 vga_pgen/wire_rgb_fifo_full@110400-110700 vga_pgen/wire_rgb_fifo_full@118200-118500 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_full@110400-110700 vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@111600-111900 pixel_generator:vga_pgen/wire_rgb_fifo_full@117000-117300 
+solution 2 vga_pgen/wire_rgb_fifo_full@111600-111900 vga_pgen/wire_rgb_fifo_full@117000-117300 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@112800-113100 pixel_generator:vga_pgen/wire_rgb_fifo_full@118200-118500 
+solution 2 vga_pgen/wire_rgb_fifo_full@112800-113100 vga_pgen/wire_rgb_fifo_full@118200-118500 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@114000-114300 pixel_generator:vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_full@114000-114300 vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@115200-115500 pixel_generator:vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_full@115200-115500 vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@116400-116700 pixel_generator:vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_full@116400-116700 vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_full@118800-119100 pixel_generator:vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_full@118800-119100 vga_pgen/wire_rgb_fifo_full@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@114600-114900 
+solution 2 vga_pgen/wire_rgb_fifo_nword@109800-110100 vga_pgen/wire_rgb_fifo_nword@114600-114900 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@115800-116100 
+solution 2 vga_pgen/wire_rgb_fifo_nword@109800-110100 vga_pgen/wire_rgb_fifo_nword@115800-116100 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 vga_pgen/wire_rgb_fifo_nword@109800-110100 vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 vga_pgen/wire_rgb_fifo_nword@109800-110100 vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@109800-110100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_nword@109800-110100 vga_pgen/wire_rgb_fifo_nword@119400-119700 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@110400-110700 pixel_generator:vga_pgen/wire_rgb_fifo_nword@114600-114900 
+solution 2 vga_pgen/wire_rgb_fifo_nword@110400-110700 vga_pgen/wire_rgb_fifo_nword@114600-114900 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@111600-111900 pixel_generator:vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 vga_pgen/wire_rgb_fifo_nword@111600-111900 vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@112800-113100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 vga_pgen/wire_rgb_fifo_nword@112800-113100 vga_pgen/wire_rgb_fifo_nword@117000-117300 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@115200-115500 pixel_generator:vga_pgen/wire_rgb_fifo_nword@115800-116100 
+solution 2 vga_pgen/wire_rgb_fifo_nword@115200-115500 vga_pgen/wire_rgb_fifo_nword@115800-116100 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@116400-116700 pixel_generator:vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 vga_pgen/wire_rgb_fifo_nword@116400-116700 vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@117600-117900 pixel_generator:vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 vga_pgen/wire_rgb_fifo_nword@117600-117900 vga_pgen/wire_rgb_fifo_nword@118200-118500 
+solution 2 pixel_generator:vga_pgen/wire_rgb_fifo_nword@118800-119100 pixel_generator:vga_pgen/wire_rgb_fifo_nword@119400-119700 
+solution 2 vga_pgen/wire_rgb_fifo_nword@118800-119100 vga_pgen/wire_rgb_fifo_nword@119400-119700 
+solution 1 pixel_generator:vga_pgen/wire_sclr@112800-113100 
+solution 1 vga_pgen/wire_sclr@112800-113100 
+solution 1 pixel_generator:vga_pgen/wire_sclr@114000-114300 
+solution 1 vga_pgen/wire_sclr@114000-114300 
+solution 1 pixel_generator:vga_pgen/wire_sclr@115200-115500 
+solution 1 vga_pgen/wire_sclr@115200-115500 
+solution 1 pixel_generator:vga_pgen/wire_sclr@116400-116700 
+solution 1 vga_pgen/wire_sclr@116400-116700 
+solution 1 pixel_generator:vga_pgen/wire_sclr@117600-117900 
+solution 1 vga_pgen/wire_sclr@117600-117900 
+solution 1 wbm:vga_wb_master/always_1/stmt_1@106800-107100 
+solution 1 vga_wb_master/always_1/stmt_1@106800-107100 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_1/stmt_1@106200-106500 
+solution 1 vga_wb_master/always_10/if_1/if_1/stmt_1@106200-106500 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@108000-108300 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@108000-108300 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@108600-108900 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@108600-108900 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@109200-109500 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@109200-109500 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@109800-110100 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@109800-110100 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@110400-110700 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@110400-110700 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@111000-111300 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@111000-111300 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@112200-112500 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@112200-112500 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@112800-113100 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@112800-113100 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@113400-113700 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@113400-113700 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@114600-114900 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@114600-114900 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@115200-115500 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@115200-115500 
+solution 1 wbm:vga_wb_master/always_10/if_1/if_2/stmt_1@115800-116100 
+solution 1 vga_wb_master/always_10/if_1/if_2/stmt_1@115800-116100 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108600-108900 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108600-108900 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@109800-110100 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@109800-110100 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@110400-110700 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@110400-110700 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@111000-111300 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@111000-111300 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@111600-111900 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@111600-111900 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@112200-112500 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@112200-112500 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@112800-113100 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@112800-113100 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@113400-113700 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@113400-113700 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@114000-114300 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@107400-107700 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@114000-114300 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@120600-120900 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@120600-120900 
+solution 2 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 wbm:vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@121200-121500 
+solution 2 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@108000-108300 vga_wb_master/always_15/if_1/if_1/block_2/stmt_2@121200-121500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_1@105600-105900 wbm:vga_wb_master/always_2/if_1/stmt_1@106200-106500 
+solution 2 vga_wb_master/always_2/if_1/stmt_1@105600-105900 vga_wb_master/always_2/if_1/stmt_1@106200-106500 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@107400-107700 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@107400-107700 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@108000-108300 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@108000-108300 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@108600-108900 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@108600-108900 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@109200-109500 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@109200-109500 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@109800-110100 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@109800-110100 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@111000-111300 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@111000-111300 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@111600-111900 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@111600-111900 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@112200-112500 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@112200-112500 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@112800-113100 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@112800-113100 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@113400-113700 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@113400-113700 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@114000-114300 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@114000-114300 
+solution 1 wbm:vga_wb_master/always_2/if_1/stmt_2@114600-114900 
+solution 1 vga_wb_master/always_2/if_1/stmt_2@114600-114900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@106800-107100 wbm:vga_wb_master/always_3/if_1/stmt_2@107400-107700 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@106800-107100 vga_wb_master/always_3/if_1/stmt_2@107400-107700 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@107400-107700 wbm:vga_wb_master/always_3/if_1/stmt_2@108000-108300 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@107400-107700 vga_wb_master/always_3/if_1/stmt_2@108000-108300 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@109200-109500 wbm:vga_wb_master/always_3/if_1/stmt_2@109800-110100 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@109200-109500 vga_wb_master/always_3/if_1/stmt_2@109800-110100 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@110400-110700 wbm:vga_wb_master/always_3/if_1/stmt_2@111000-111300 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@110400-110700 vga_wb_master/always_3/if_1/stmt_2@111000-111300 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@116400-116700 wbm:vga_wb_master/always_3/if_1/stmt_2@121800-122100 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@116400-116700 vga_wb_master/always_3/if_1/stmt_2@121800-122100 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@117000-117300 wbm:vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@117000-117300 vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@117600-117900 wbm:vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@117600-117900 vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@118200-118500 wbm:vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@118200-118500 vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@118800-119100 wbm:vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@118800-119100 vga_wb_master/always_3/if_1/stmt_2@120600-120900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@118800-119100 wbm:vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@118800-119100 vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@118800-119100 wbm:vga_wb_master/always_3/if_1/stmt_2@121800-122100 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@118800-119100 vga_wb_master/always_3/if_1/stmt_2@121800-122100 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@120000-120300 wbm:vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@120000-120300 vga_wb_master/always_3/if_1/stmt_2@121200-121500 
+solution 1 wbm:vga_wb_master/always_5/if_1/case_1/stmt_3@106800-107100 
+solution 1 vga_wb_master/always_5/if_1/case_1/stmt_3@106800-107100 
+solution 1 wbm:vga_wb_master/always_5/if_1/case_1/stmt_3@109800-110100 
+solution 1 vga_wb_master/always_5/if_1/case_1/stmt_3@109800-110100 
+solution 1 wbm:vga_wb_master/always_5/if_1/case_1/stmt_3@112200-112500 
+solution 1 vga_wb_master/always_5/if_1/case_1/stmt_3@112200-112500 
+solution 1 wbm:vga_wb_master/always_5/if_1/case_1/stmt_3@114600-114900 
+solution 1 vga_wb_master/always_5/if_1/case_1/stmt_3@114600-114900 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@108000-108300 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@108000-108300 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@108600-108900 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@108600-108900 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@109200-109500 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@109200-109500 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@110400-110700 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@110400-110700 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@111000-111300 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@111000-111300 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@111600-111900 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@111600-111900 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@112800-113100 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@112800-113100 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@113400-113700 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@113400-113700 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@114000-114300 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@114000-114300 
+solution 1 wbm:vga_wb_master/always_5/if_1/if_1/stmt_1@115200-115500 
+solution 1 vga_wb_master/always_5/if_1/if_1/stmt_1@115200-115500 
+solution 1 wbm:vga_wb_master/always_9/block_1/stmt_2@108000-108300 
+solution 1 vga_wb_master/always_9/block_1/stmt_2@108000-108300 
+solution 1 wbm:vga_wb_master/input_VBAa@106200-106500 
+solution 1 vga_wb_master/input_VBAa@106200-106500 
+solution 2 wbm:vga_wb_master/input_ack_i@108000-108300 wbm:vga_wb_master/input_ack_i@108600-108900 
+solution 2 vga_wb_master/input_ack_i@108000-108300 vga_wb_master/input_ack_i@108600-108900 
+solution 2 wbm:vga_wb_master/input_ack_i@108000-108300 wbm:vga_wb_master/input_ack_i@109800-110100 
+solution 2 vga_wb_master/input_ack_i@108000-108300 vga_wb_master/input_ack_i@109800-110100 
+solution 2 wbm:vga_wb_master/input_ack_i@108000-108300 wbm:vga_wb_master/input_ack_i@121800-122100 
+solution 2 vga_wb_master/input_ack_i@108000-108300 vga_wb_master/input_ack_i@121800-122100 
+solution 2 wbm:vga_wb_master/input_ack_i@108600-108900 wbm:vga_wb_master/input_ack_i@111600-111900 
+solution 2 vga_wb_master/input_ack_i@108600-108900 vga_wb_master/input_ack_i@111600-111900 
+solution 2 wbm:vga_wb_master/input_ack_i@109200-109500 wbm:vga_wb_master/input_ack_i@109800-110100 
+solution 2 vga_wb_master/input_ack_i@109200-109500 vga_wb_master/input_ack_i@109800-110100 
+solution 2 wbm:vga_wb_master/input_ack_i@111600-111900 wbm:vga_wb_master/input_ack_i@115800-116100 
+solution 2 vga_wb_master/input_ack_i@111600-111900 vga_wb_master/input_ack_i@115800-116100 
+solution 2 wbm:vga_wb_master/input_ack_i@112200-112500 wbm:vga_wb_master/input_ack_i@114000-114300 
+solution 2 vga_wb_master/input_ack_i@112200-112500 vga_wb_master/input_ack_i@114000-114300 
+solution 2 wbm:vga_wb_master/input_ack_i@112800-113100 wbm:vga_wb_master/input_ack_i@114000-114300 
+solution 2 vga_wb_master/input_ack_i@112800-113100 vga_wb_master/input_ack_i@114000-114300 
+solution 2 wbm:vga_wb_master/input_ack_i@113400-113700 wbm:vga_wb_master/input_ack_i@114000-114300 
+solution 2 vga_wb_master/input_ack_i@113400-113700 vga_wb_master/input_ack_i@114000-114300 
+solution 2 wbm:vga_wb_master/input_ack_i@114000-114300 wbm:vga_wb_master/input_ack_i@114600-114900 
+solution 2 vga_wb_master/input_ack_i@114000-114300 vga_wb_master/input_ack_i@114600-114900 
+solution 2 wbm:vga_wb_master/input_ack_i@114000-114300 wbm:vga_wb_master/input_ack_i@121800-122100 
+solution 2 vga_wb_master/input_ack_i@114000-114300 vga_wb_master/input_ack_i@121800-122100 
+solution 2 wbm:vga_wb_master/input_ack_i@114600-114900 wbm:vga_wb_master/input_ack_i@121200-121500 
+solution 2 vga_wb_master/input_ack_i@114600-114900 vga_wb_master/input_ack_i@121200-121500 
+solution 1 wbm:vga_wb_master/input_ctrl_vbl@106800-107100 
+solution 1 vga_wb_master/input_ctrl_vbl@106800-107100 
+solution 1 wbm:vga_wb_master/input_ctrl_vbl@109800-110100 
+solution 1 vga_wb_master/input_ctrl_vbl@109800-110100 
+solution 1 wbm:vga_wb_master/input_ctrl_vbl@112200-112500 
+solution 1 vga_wb_master/input_ctrl_vbl@112200-112500 
+solution 1 wbm:vga_wb_master/input_ctrl_vbl@114600-114900 
+solution 1 vga_wb_master/input_ctrl_vbl@114600-114900 
+solution 1 wbm:vga_wb_master/input_ctrl_ven@106800-107100 
+solution 1 vga_wb_master/input_ctrl_ven@106800-107100 
+solution 1 wbm:vga_wb_master/input_fb_data_fifo_rreq@114600-114900 
+solution 1 vga_wb_master/input_fb_data_fifo_rreq@114600-114900 
+solution 1 wbm:vga_wb_master/input_fb_data_fifo_rreq@115800-116100 
+solution 1 vga_wb_master/input_fb_data_fifo_rreq@115800-116100 
+solution 1 wbm:vga_wb_master/input_fb_data_fifo_rreq@117000-117300 
+solution 1 vga_wb_master/input_fb_data_fifo_rreq@117000-117300 
+solution 1 wbm:vga_wb_master/input_fb_data_fifo_rreq@118200-118500 
+solution 1 vga_wb_master/input_fb_data_fifo_rreq@118200-118500 
+solution 1 wbm:vga_wb_master/input_fb_data_fifo_rreq@119400-119700 
+solution 1 vga_wb_master/input_fb_data_fifo_rreq@119400-119700 
+solution 2 wbm:vga_wb_master/input_rst_i@107400-107700 wbm:vga_wb_master/input_rst_i@108000-108300 
+solution 2 vga_wb_master/input_rst_i@107400-107700 vga_wb_master/input_rst_i@108000-108300 
+solution 2 wbm:vga_wb_master/input_rst_i@107400-107700 wbm:vga_wb_master/input_rst_i@111000-111300 
+solution 2 vga_wb_master/input_rst_i@107400-107700 vga_wb_master/input_rst_i@111000-111300 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@112800-113100 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@112800-113100 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@113400-113700 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@113400-113700 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@114000-114300 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@114000-114300 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@115200-115500 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@115200-115500 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@115800-116100 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@115800-116100 
+solution 2 wbm:vga_wb_master/input_rst_i@108000-108300 wbm:vga_wb_master/input_rst_i@116400-116700 
+solution 2 vga_wb_master/input_rst_i@108000-108300 vga_wb_master/input_rst_i@116400-116700 
+solution 2 wbm:vga_wb_master/input_rst_i@108600-108900 wbm:vga_wb_master/input_rst_i@115200-115500 
+solution 2 vga_wb_master/input_rst_i@108600-108900 vga_wb_master/input_rst_i@115200-115500 
+solution 2 wbm:vga_wb_master/input_rst_i@109200-109500 wbm:vga_wb_master/input_rst_i@121200-121500 
+solution 2 vga_wb_master/input_rst_i@109200-109500 vga_wb_master/input_rst_i@121200-121500 
+solution 2 wbm:vga_wb_master/input_rst_i@114600-114900 wbm:vga_wb_master/input_rst_i@120600-120900 
+solution 2 vga_wb_master/input_rst_i@114600-114900 vga_wb_master/input_rst_i@120600-120900 
+solution 2 wbm:vga_wb_master/input_rst_i@114600-114900 wbm:vga_wb_master/input_rst_i@121200-121500 
+solution 2 vga_wb_master/input_rst_i@114600-114900 vga_wb_master/input_rst_i@121200-121500 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@107100-107400 
+solution 1 vga_wb_master/reg_burst_cnt@107100-107400 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@107700-108000 
+solution 1 vga_wb_master/reg_burst_cnt@107700-108000 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@108300-108600 
+solution 1 vga_wb_master/reg_burst_cnt@108300-108600 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@108900-109200 
+solution 1 vga_wb_master/reg_burst_cnt@108900-109200 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@109500-109800 
+solution 1 vga_wb_master/reg_burst_cnt@109500-109800 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@110100-110400 
+solution 1 vga_wb_master/reg_burst_cnt@110100-110400 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@110700-111000 
+solution 1 vga_wb_master/reg_burst_cnt@110700-111000 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@111300-111600 
+solution 1 vga_wb_master/reg_burst_cnt@111300-111600 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@111900-112200 
+solution 1 vga_wb_master/reg_burst_cnt@111900-112200 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@112500-112800 
+solution 1 vga_wb_master/reg_burst_cnt@112500-112800 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@114900-115200 
+solution 1 vga_wb_master/reg_burst_cnt@114900-115200 
+solution 1 wbm:vga_wb_master/reg_burst_cnt@115500-115800 
+solution 1 vga_wb_master/reg_burst_cnt@115500-115800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@106500-106800 wbm:vga_wb_master/reg_cur_acc@107700-108000 
+solution 2 vga_wb_master/reg_cur_acc@106500-106800 vga_wb_master/reg_cur_acc@107700-108000 
+solution 2 wbm:vga_wb_master/reg_cur_acc@107100-107400 wbm:vga_wb_master/reg_cur_acc@107700-108000 
+solution 2 vga_wb_master/reg_cur_acc@107100-107400 vga_wb_master/reg_cur_acc@107700-108000 
+solution 2 wbm:vga_wb_master/reg_cur_acc@107700-108000 wbm:vga_wb_master/reg_cur_acc@108300-108600 
+solution 2 vga_wb_master/reg_cur_acc@107700-108000 vga_wb_master/reg_cur_acc@108300-108600 
+solution 2 wbm:vga_wb_master/reg_cur_acc@108300-108600 wbm:vga_wb_master/reg_cur_acc@108900-109200 
+solution 2 vga_wb_master/reg_cur_acc@108300-108600 vga_wb_master/reg_cur_acc@108900-109200 
+solution 2 wbm:vga_wb_master/reg_cur_acc@110100-110400 wbm:vga_wb_master/reg_cur_acc@110700-111000 
+solution 2 vga_wb_master/reg_cur_acc@110100-110400 vga_wb_master/reg_cur_acc@110700-111000 
+solution 2 wbm:vga_wb_master/reg_cur_acc@110700-111000 wbm:vga_wb_master/reg_cur_acc@111300-111600 
+solution 2 vga_wb_master/reg_cur_acc@110700-111000 vga_wb_master/reg_cur_acc@111300-111600 
+solution 2 wbm:vga_wb_master/reg_cur_acc@115500-115800 wbm:vga_wb_master/reg_cur_acc@116100-116400 
+solution 2 vga_wb_master/reg_cur_acc@115500-115800 vga_wb_master/reg_cur_acc@116100-116400 
+solution 2 wbm:vga_wb_master/reg_cur_acc@115500-115800 wbm:vga_wb_master/reg_cur_acc@116700-117000 
+solution 2 vga_wb_master/reg_cur_acc@115500-115800 vga_wb_master/reg_cur_acc@116700-117000 
+solution 2 wbm:vga_wb_master/reg_cur_acc@115500-115800 wbm:vga_wb_master/reg_cur_acc@117300-117600 
+solution 2 vga_wb_master/reg_cur_acc@115500-115800 vga_wb_master/reg_cur_acc@117300-117600 
+solution 2 wbm:vga_wb_master/reg_cur_acc@115500-115800 wbm:vga_wb_master/reg_cur_acc@117900-118200 
+solution 2 vga_wb_master/reg_cur_acc@115500-115800 vga_wb_master/reg_cur_acc@117900-118200 
+solution 2 wbm:vga_wb_master/reg_cur_acc@115500-115800 wbm:vga_wb_master/reg_cur_acc@118500-118800 
+solution 2 vga_wb_master/reg_cur_acc@115500-115800 vga_wb_master/reg_cur_acc@118500-118800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@116700-117000 wbm:vga_wb_master/reg_cur_acc@122100-122400 
+solution 2 vga_wb_master/reg_cur_acc@116700-117000 vga_wb_master/reg_cur_acc@122100-122400 
+solution 1 wbm:vga_wb_master/reg_dImDoneStrb@108300-108600 
+solution 1 vga_wb_master/reg_dImDoneStrb@108300-108600 
+solution 1 wbm:vga_wb_master/reg_sclr@107100-107400 
+solution 1 vga_wb_master/reg_sclr@107100-107400 
+solution 2 wbm:vga_wb_master/reg_stb_o@107700-108000 wbm:vga_wb_master/reg_stb_o@113700-114000 
+solution 2 vga_wb_master/reg_stb_o@107700-108000 vga_wb_master/reg_stb_o@113700-114000 
+solution 2 wbm:vga_wb_master/reg_stb_o@107700-108000 wbm:vga_wb_master/reg_stb_o@114300-114600 
+solution 2 vga_wb_master/reg_stb_o@107700-108000 vga_wb_master/reg_stb_o@114300-114600 
+solution 2 wbm:vga_wb_master/reg_stb_o@108300-108600 wbm:vga_wb_master/reg_stb_o@113100-113400 
+solution 2 vga_wb_master/reg_stb_o@108300-108600 vga_wb_master/reg_stb_o@113100-113400 
+solution 2 wbm:vga_wb_master/reg_stb_o@108300-108600 wbm:vga_wb_master/reg_stb_o@113700-114000 
+solution 2 vga_wb_master/reg_stb_o@108300-108600 vga_wb_master/reg_stb_o@113700-114000 
+solution 2 wbm:vga_wb_master/reg_stb_o@108900-109200 wbm:vga_wb_master/reg_stb_o@113100-113400 
+solution 2 vga_wb_master/reg_stb_o@108900-109200 vga_wb_master/reg_stb_o@113100-113400 
+solution 2 wbm:vga_wb_master/reg_stb_o@109500-109800 wbm:vga_wb_master/reg_stb_o@111900-112200 
+solution 2 vga_wb_master/reg_stb_o@109500-109800 vga_wb_master/reg_stb_o@111900-112200 
+solution 2 wbm:vga_wb_master/reg_stb_o@109500-109800 wbm:vga_wb_master/reg_stb_o@112500-112800 
+solution 2 vga_wb_master/reg_stb_o@109500-109800 vga_wb_master/reg_stb_o@112500-112800 
+solution 2 wbm:vga_wb_master/reg_stb_o@109500-109800 wbm:vga_wb_master/reg_stb_o@113700-114000 
+solution 2 vga_wb_master/reg_stb_o@109500-109800 vga_wb_master/reg_stb_o@113700-114000 
+solution 2 wbm:vga_wb_master/reg_stb_o@109500-109800 wbm:vga_wb_master/reg_stb_o@121500-121800 
+solution 2 vga_wb_master/reg_stb_o@109500-109800 vga_wb_master/reg_stb_o@121500-121800 
+solution 2 wbm:vga_wb_master/reg_stb_o@110100-110400 wbm:vga_wb_master/reg_stb_o@116700-117000 
+solution 2 vga_wb_master/reg_stb_o@110100-110400 vga_wb_master/reg_stb_o@116700-117000 
+solution 2 wbm:vga_wb_master/reg_stb_o@110700-111000 wbm:vga_wb_master/reg_stb_o@116700-117000 
+solution 2 vga_wb_master/reg_stb_o@110700-111000 vga_wb_master/reg_stb_o@116700-117000 
+solution 2 wbm:vga_wb_master/reg_stb_o@111300-111600 wbm:vga_wb_master/reg_stb_o@116700-117000 
+solution 2 vga_wb_master/reg_stb_o@111300-111600 vga_wb_master/reg_stb_o@116700-117000 
+solution 1 wbm:vga_wb_master/reg_vmemA@106500-106800 
+solution 1 vga_wb_master/reg_vmemA@106500-106800 
+solution 1 wbm:vga_wb_master/reg_vmemA@107100-107400 
+solution 1 vga_wb_master/reg_vmemA@107100-107400 
+solution 1 wbm:vga_wb_master/reg_vmemA@107700-108000 
+solution 1 vga_wb_master/reg_vmemA@107700-108000 
+solution 1 wbm:vga_wb_master/reg_vmemA@108300-108600 
+solution 1 vga_wb_master/reg_vmemA@108300-108600 
+solution 1 wbm:vga_wb_master/reg_vmemA@108900-109200 
+solution 1 vga_wb_master/reg_vmemA@108900-109200 
+solution 1 wbm:vga_wb_master/reg_vmemA@109500-109800 
+solution 1 vga_wb_master/reg_vmemA@109500-109800 
+solution 1 wbm:vga_wb_master/reg_vmemA@110100-110400 
+solution 1 vga_wb_master/reg_vmemA@110100-110400 
+solution 1 wbm:vga_wb_master/reg_vmemA@112500-112800 
+solution 1 vga_wb_master/reg_vmemA@112500-112800 
+solution 1 wbm:vga_wb_master/reg_vmemA@113100-113400 
+solution 1 vga_wb_master/reg_vmemA@113100-113400 
+solution 1 wbm:vga_wb_master/reg_vmemA@114300-114600 
+solution 1 vga_wb_master/reg_vmemA@114300-114600 
+solution 1 wbm:vga_wb_master/reg_vmemA@114900-115200 
+solution 1 vga_wb_master/reg_vmemA@114900-115200 
+solution 1 wbm:vga_wb_master/reg_vmemA@122100-122400 
+solution 1 vga_wb_master/reg_vmemA@122100-122400 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@107700-108000 
+solution 1 vga_wb_master/reg_vmem_acc@107700-108000 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@108300-108600 
+solution 1 vga_wb_master/reg_vmem_acc@108300-108600 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@108900-109200 
+solution 1 vga_wb_master/reg_vmem_acc@108900-109200 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@109500-109800 
+solution 1 vga_wb_master/reg_vmem_acc@109500-109800 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@110100-110400 
+solution 1 vga_wb_master/reg_vmem_acc@110100-110400 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@111900-112200 
+solution 1 vga_wb_master/reg_vmem_acc@111900-112200 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@112500-112800 
+solution 1 vga_wb_master/reg_vmem_acc@112500-112800 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@113100-113400 
+solution 1 vga_wb_master/reg_vmem_acc@113100-113400 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@113700-114000 
+solution 1 vga_wb_master/reg_vmem_acc@113700-114000 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@114900-115200 
+solution 1 vga_wb_master/reg_vmem_acc@114900-115200 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@116100-116400 
+solution 1 vga_wb_master/reg_vmem_acc@116100-116400 
+solution 1 wbm:vga_wb_master/reg_vmem_acc@120900-121200 
+solution 1 vga_wb_master/reg_vmem_acc@120900-121200 
+solution 1 wbm:vga_wb_master/wire_ImDone@107400-107700 
+solution 1 vga_wb_master/wire_ImDone@107400-107700 
+solution 1 wbm:vga_wb_master/wire_ImDoneStrb@108000-108300 
+solution 1 vga_wb_master/wire_ImDoneStrb@108000-108300 
+solution 1 wbm:vga_wb_master/wire_adr_o@122100-122400 
+solution 1 vga_wb_master/wire_adr_o@122100-122400 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@108000-108300 
+solution 1 vga_wb_master/wire_burst_cnt_val@108000-108300 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@108600-108900 
+solution 1 vga_wb_master/wire_burst_cnt_val@108600-108900 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@109200-109500 
+solution 1 vga_wb_master/wire_burst_cnt_val@109200-109500 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@109800-110100 
+solution 1 vga_wb_master/wire_burst_cnt_val@109800-110100 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@110400-110700 
+solution 1 vga_wb_master/wire_burst_cnt_val@110400-110700 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@112200-112500 
+solution 1 vga_wb_master/wire_burst_cnt_val@112200-112500 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@112800-113100 
+solution 1 vga_wb_master/wire_burst_cnt_val@112800-113100 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@113400-113700 
+solution 1 vga_wb_master/wire_burst_cnt_val@113400-113700 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@114000-114300 
+solution 1 vga_wb_master/wire_burst_cnt_val@114000-114300 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@114600-114900 
+solution 1 vga_wb_master/wire_burst_cnt_val@114600-114900 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@115200-115500 
+solution 1 vga_wb_master/wire_burst_cnt_val@115200-115500 
+solution 1 wbm:vga_wb_master/wire_burst_cnt_val@115800-116100 
+solution 1 vga_wb_master/wire_burst_cnt_val@115800-116100 
+solution 1 wbm:vga_wb_master/wire_burst_done@108600-108900 
+solution 1 vga_wb_master/wire_burst_done@108600-108900 
+solution 1 wbm:vga_wb_master/wire_burst_done@111000-111300 
+solution 1 vga_wb_master/wire_burst_done@111000-111300 
+solution 1 wbm:vga_wb_master/wire_burst_done@113400-113700 
+solution 1 vga_wb_master/wire_burst_done@113400-113700 
+solution 1 wbm:vga_wb_master/wire_burst_done@115800-116100 
+solution 1 vga_wb_master/wire_burst_done@115800-116100 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@111600-111900 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@111600-111900 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@112800-113100 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@112800-113100 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@114000-114300 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@114000-114300 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@115200-115500 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@115200-115500 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@116400-116700 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@116400-116700 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_empty@117600-117900 
+solution 1 vga_wb_master/wire_fb_data_fifo_empty@117600-117900 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_nword@109800-110100 
+solution 1 vga_wb_master/wire_fb_data_fifo_nword@109800-110100 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_nword@112200-112500 
+solution 1 vga_wb_master/wire_fb_data_fifo_nword@112200-112500 
+solution 1 wbm:vga_wb_master/wire_fb_data_fifo_nword@114600-114900 
+solution 1 vga_wb_master/wire_fb_data_fifo_nword@114600-114900 
+solution 2 wbm:vga_wb_master/wire_hdone@64200-64500 wbm:vga_wb_master/wire_hdone@107400-107700 
+solution 2 vga_wb_master/wire_hdone@64200-64500 vga_wb_master/wire_hdone@107400-107700 
+solution 2 wbm:vga_wb_master/wire_hdone@66000-66300 wbm:vga_wb_master/wire_hdone@107400-107700 
+solution 2 vga_wb_master/wire_hdone@66000-66300 vga_wb_master/wire_hdone@107400-107700 
+solution 2 wbm:vga_wb_master/wire_hdone@66600-66900 wbm:vga_wb_master/wire_hdone@107400-107700 
+solution 2 vga_wb_master/wire_hdone@66600-66900 vga_wb_master/wire_hdone@107400-107700 
+solution 2 wbm:vga_wb_master/wire_hdone@67200-67500 wbm:vga_wb_master/wire_hdone@107400-107700 
+solution 2 vga_wb_master/wire_hdone@67200-67500 vga_wb_master/wire_hdone@107400-107700 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@108000-108300 wbm:vga_wb_master/wire_vmem_ack@115200-115500 
+solution 2 vga_wb_master/wire_vmem_ack@108000-108300 vga_wb_master/wire_vmem_ack@115200-115500 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@108600-108900 wbm:vga_wb_master/wire_vmem_ack@115200-115500 
+solution 2 vga_wb_master/wire_vmem_ack@108600-108900 vga_wb_master/wire_vmem_ack@115200-115500 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@109200-109500 wbm:vga_wb_master/wire_vmem_ack@110400-110700 
+solution 2 vga_wb_master/wire_vmem_ack@109200-109500 vga_wb_master/wire_vmem_ack@110400-110700 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@109800-110100 wbm:vga_wb_master/wire_vmem_ack@110400-110700 
+solution 2 vga_wb_master/wire_vmem_ack@109800-110100 vga_wb_master/wire_vmem_ack@110400-110700 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@109800-110100 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@109800-110100 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@111000-111300 wbm:vga_wb_master/wire_vmem_ack@111600-111900 
+solution 2 vga_wb_master/wire_vmem_ack@111000-111300 vga_wb_master/wire_vmem_ack@111600-111900 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@111600-111900 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@111600-111900 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@112200-112500 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@112200-112500 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@112800-113100 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@112800-113100 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@113400-113700 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@113400-113700 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@116400-116700 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@116400-116700 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 wbm:vga_wb_master/wire_vmem_ack@117000-117300 wbm:vga_wb_master/wire_vmem_ack@121800-122100 
+solution 2 vga_wb_master/wire_vmem_ack@117000-117300 vga_wb_master/wire_vmem_ack@121800-122100 
+solution 1 wbm:vga_wb_master/wire_vmem_req@109800-110100 
+solution 1 vga_wb_master/wire_vmem_req@109800-110100 
+solution 1 wbm:vga_wb_master/wire_vmem_req@112200-112500 
+solution 1 vga_wb_master/wire_vmem_req@112200-112500 
+solution 1 wbm:vga_wb_master/wire_vmem_req@114600-114900 
+solution 1 vga_wb_master/wire_vmem_req@114600-114900 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@107400-107700 wbm:vga_wb_master/wire_wb_cycle@113400-113700 
+solution 2 vga_wb_master/wire_wb_cycle@107400-107700 vga_wb_master/wire_wb_cycle@113400-113700 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@107400-107700 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@107400-107700 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@108000-108300 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@108000-108300 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@108600-108900 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@108600-108900 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@109200-109500 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@109200-109500 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@109800-110100 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@109800-110100 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@110400-110700 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@110400-110700 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@111000-111300 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@111000-111300 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@111600-111900 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@111600-111900 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@111600-111900 wbm:vga_wb_master/wire_wb_cycle@116400-116700 
+solution 2 vga_wb_master/wire_wb_cycle@111600-111900 vga_wb_master/wire_wb_cycle@116400-116700 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@112200-112500 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@112200-112500 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 wbm:vga_wb_master/wire_wb_cycle@112800-113100 wbm:vga_wb_master/wire_wb_cycle@115800-116100 
+solution 2 vga_wb_master/wire_wb_cycle@112800-113100 vga_wb_master/wire_wb_cycle@115800-116100 
+solution 1 wbs:vga_wb_slave/always_4/block_1_gen_regs/if_1/if_1/if_1/case_1/stmt_4@99000-99300 
+solution 1 vga_wb_slave/always_4/block_1_gen_regs/if_1/if_1/if_1/case_1/stmt_4@99000-99300 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 wbs:vga_wb_slave/input_dat_i@99000-99300 
+solution 1 vga_wb_slave/input_dat_i@99000-99300 
+solution 1 wbs:vga_wb_slave/input_dat_i@106200-106500 
+solution 1 vga_wb_slave/input_dat_i@106200-106500 
+solution 1 wbs:vga_wb_slave/input_we_i@100200-100500 
+solution 1 vga_wb_slave/input_we_i@100200-100500 
+solution 1 wbs:vga_wb_slave/input_we_i@100800-101100 
+solution 1 vga_wb_slave/input_we_i@100800-101100 
+solution 1 wbs:vga_wb_slave/input_we_i@117600-117900 
+solution 1 vga_wb_slave/input_we_i@117600-117900 
+solution 1 wbs:vga_wb_slave/reg_VBARa@99300-99600 
+solution 1 vga_wb_slave/reg_VBARa@99300-99600 
+solution 1 wbs:vga_wb_slave/reg_VBARa@99900-100200 
+solution 1 vga_wb_slave/reg_VBARa@99900-100200 
+solution 1 wbs:vga_wb_slave/reg_VBARa@100500-100800 
+solution 1 vga_wb_slave/reg_VBARa@100500-100800 
+solution 1 wbs:vga_wb_slave/reg_VBARa@101100-101400 
+solution 1 vga_wb_slave/reg_VBARa@101100-101400 
+solution 1 wbs:vga_wb_slave/reg_VBARa@101700-102000 
+solution 1 vga_wb_slave/reg_VBARa@101700-102000 
+solution 1 wbs:vga_wb_slave/reg_VBARa@102300-102600 
+solution 1 vga_wb_slave/reg_VBARa@102300-102600 
+solution 1 wbs:vga_wb_slave/reg_VBARa@102900-103200 
+solution 1 vga_wb_slave/reg_VBARa@102900-103200 
+solution 1 wbs:vga_wb_slave/reg_VBARa@103500-103800 
+solution 1 vga_wb_slave/reg_VBARa@103500-103800 
+solution 1 wbs:vga_wb_slave/reg_VBARa@104100-104400 
+solution 1 vga_wb_slave/reg_VBARa@104100-104400 
+solution 1 wbs:vga_wb_slave/reg_VBARa@104700-105000 
+solution 1 vga_wb_slave/reg_VBARa@104700-105000 
+solution 1 wbs:vga_wb_slave/reg_VBARa@105300-105600 
+solution 1 vga_wb_slave/reg_VBARa@105300-105600 
+solution 1 wbs:vga_wb_slave/reg_VBARa@105900-106200 
+solution 1 vga_wb_slave/reg_VBARa@105900-106200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@98700-99000 
+solution 1 vga_wb_slave/reg_ctrl@98700-99000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@99300-99600 
+solution 1 vga_wb_slave/reg_ctrl@99300-99600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@99900-100200 
+solution 1 vga_wb_slave/reg_ctrl@99900-100200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@110700-111000 
+solution 1 vga_wb_slave/reg_ctrl@110700-111000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@111300-111600 
+solution 1 vga_wb_slave/reg_ctrl@111300-111600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@111900-112200 
+solution 1 vga_wb_slave/reg_ctrl@111900-112200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@114900-115200 
+solution 1 vga_wb_slave/reg_ctrl@114900-115200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@115500-115800 
+solution 1 vga_wb_slave/reg_ctrl@115500-115800 
+solution 1 wbs:vga_wb_slave/reg_ctrl@116100-116400 
+solution 1 vga_wb_slave/reg_ctrl@116100-116400 
+solution 1 wbs:vga_wb_slave/reg_ctrl@116700-117000 
+solution 1 vga_wb_slave/reg_ctrl@116700-117000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@117300-117600 
+solution 1 vga_wb_slave/reg_ctrl@117300-117600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@117900-118200 
+solution 1 vga_wb_slave/reg_ctrl@117900-118200 
+solution 1 wbs:vga_wb_slave/wire_acc@99600-99900 
+solution 1 vga_wb_slave/wire_acc@99600-99900 
+solution 1 wbs:vga_wb_slave/wire_acc@103200-103500 
+solution 1 vga_wb_slave/wire_acc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_acc@106800-107100 
+solution 1 vga_wb_slave/wire_acc@106800-107100 
+solution 1 wbs:vga_wb_slave/wire_cd@111000-111300 
+solution 1 vga_wb_slave/wire_cd@111000-111300 
+solution 1 wbs:vga_wb_slave/wire_cd@112200-112500 
+solution 1 vga_wb_slave/wire_cd@112200-112500 
+solution 1 wbs:vga_wb_slave/wire_cd@113400-113700 
+solution 1 vga_wb_slave/wire_cd@113400-113700 
+solution 1 wbs:vga_wb_slave/wire_cd@114600-114900 
+solution 1 vga_wb_slave/wire_cd@114600-114900 
+solution 1 wbs:vga_wb_slave/wire_cd@115800-116100 
+solution 1 vga_wb_slave/wire_cd@115800-116100 
+solution 1 wbs:vga_wb_slave/wire_cd@117000-117300 
+solution 1 vga_wb_slave/wire_cd@117000-117300 
+solution 1 wbs:vga_wb_slave/wire_cd@118200-118500 
+solution 1 vga_wb_slave/wire_cd@118200-118500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@99600-99900 
+solution 1 vga_wb_slave/wire_reg_acc@99600-99900 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@103200-103500 
+solution 1 vga_wb_slave/wire_reg_acc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@106800-107100 
+solution 1 vga_wb_slave/wire_reg_acc@106800-107100 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@99600-99900 
+solution 1 vga_wb_slave/wire_reg_wacc@99600-99900 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@100200-100500 
+solution 1 vga_wb_slave/wire_reg_wacc@100200-100500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@100800-101100 
+solution 1 vga_wb_slave/wire_reg_wacc@100800-101100 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@103200-103500 
+solution 1 vga_wb_slave/wire_reg_wacc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@106800-107100 
+solution 1 vga_wb_slave/wire_reg_wacc@106800-107100 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@117600-117900 
+solution 1 vga_wb_slave/wire_reg_wacc@117600-117900 
+solution 1 wbs:vga_wb_slave/wire_vbl@106800-107100 
+solution 1 vga_wb_slave/wire_vbl@106800-107100 
+solution 1 wbs:vga_wb_slave/wire_vbl@109800-110100 
+solution 1 vga_wb_slave/wire_vbl@109800-110100 
+solution 1 wbs:vga_wb_slave/wire_vbl@112200-112500 
+solution 1 vga_wb_slave/wire_vbl@112200-112500 
+solution 1 wbs:vga_wb_slave/wire_vbl@114600-114900 
+solution 1 vga_wb_slave/wire_vbl@114600-114900 
+solution 1 wbs:vga_wb_slave/wire_ven@106800-107100 
+solution 1 vga_wb_slave/wire_ven@106800-107100 

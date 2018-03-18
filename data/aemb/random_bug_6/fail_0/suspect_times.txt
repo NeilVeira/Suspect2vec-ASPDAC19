@@ -1,0 +1,172 @@
+solution 1 aslu:aeMB_aslu/always_7/block_1/stmt_1@1070-1075 
+solution 1 aeMB_aslu/always_7/block_1/stmt_1@1070-1075 
+solution 1 aslu:aeMB_aslu/always_7/block_1/stmt_1@1080-1085 
+solution 1 aeMB_aslu/always_7/block_1/stmt_1@1080-1085 
+solution 1 aslu:aeMB_aslu/always_9/if_1/if_1/block_1/stmt_3@1070-1075 
+solution 1 aeMB_aslu/always_9/if_1/if_1/block_1/stmt_3@1070-1075 
+solution 1 aslu:aeMB_aslu/always_9/if_1/if_1/block_1/stmt_3@1080-1085 
+solution 1 aeMB_aslu/always_9/if_1/if_1/block_1/stmt_3@1080-1085 
+solution 1 aslu:aeMB_aslu/input_rFSM@1070-1075 
+solution 1 aeMB_aslu/input_rFSM@1070-1075 
+solution 1 aslu:aeMB_aslu/input_rFSM@1080-1085 
+solution 1 aeMB_aslu/input_rFSM@1080-1085 
+solution 1 aslu:aeMB_aslu/reg_rMSR_IE@1075-1080 
+solution 1 aeMB_aslu/reg_rMSR_IE@1075-1080 
+solution 1 aslu:aeMB_aslu/reg_rMSR_IE@1085-1090 
+solution 1 aeMB_aslu/reg_rMSR_IE@1085-1090 
+solution 1 aslu:aeMB_aslu/reg_xMSR_IE@1070-1075 
+solution 1 aeMB_aslu/reg_xMSR_IE@1070-1075 
+solution 1 aslu:aeMB_aslu/reg_xMSR_IE@1080-1085 
+solution 1 aeMB_aslu/reg_xMSR_IE@1080-1085 
+solution 1 control:aeMB_control/always_2/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 aeMB_control/always_2/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 control:aeMB_control/always_2/if_1/if_1/block_1/stmt_1@1100-1105 
+solution 1 aeMB_control/always_2/if_1/if_1/block_1/stmt_1@1100-1105 
+solution 1 control:aeMB_control/always_3/case_1/block_1/stmt_1@1090-1095 
+solution 1 aeMB_control/always_3/case_1/block_1/stmt_1@1090-1095 
+solution 1 control:aeMB_control/always_3/case_1/block_1/stmt_1@1100-1105 
+solution 1 aeMB_control/always_3/case_1/block_1/stmt_1@1100-1105 
+solution 1 control:aeMB_control/always_4/if_1/if_1/block_1/stmt_1@1030-1035 
+solution 1 aeMB_control/always_4/if_1/if_1/block_1/stmt_1@1030-1035 
+solution 1 control:aeMB_control/always_4/if_1/if_1/if_1/block_1/stmt_1@1080-1085 
+solution 1 aeMB_control/always_4/if_1/if_1/if_1/block_1/stmt_1@1080-1085 
+solution 1 control:aeMB_control/always_4/if_1/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 aeMB_control/always_4/if_1/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 control:aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1060-1065 
+solution 1 aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1060-1065 
+solution 1 control:aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1070-1075 
+solution 1 aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1070-1075 
+solution 1 control:aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1080-1085 
+solution 1 aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1080-1085 
+solution 1 control:aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 aeMB_control/always_5/if_1/if_1/block_1/stmt_1@1090-1095 
+solution 1 control:aeMB_control/input_iwb_dat_i@1060-1065 
+solution 1 aeMB_control/input_iwb_dat_i@1060-1065 
+solution 1 control:aeMB_control/input_iwb_dat_i@1070-1075 
+solution 1 aeMB_control/input_iwb_dat_i@1070-1075 
+solution 1 control:aeMB_control/input_iwb_dat_i@1080-1085 
+solution 1 aeMB_control/input_iwb_dat_i@1080-1085 
+solution 1 control:aeMB_control/input_iwb_dat_i@1090-1095 
+solution 1 aeMB_control/input_iwb_dat_i@1090-1095 
+solution 1 control:aeMB_control/input_rMSR_IE@1080-1085 
+solution 1 aeMB_control/input_rMSR_IE@1080-1085 
+solution 1 control:aeMB_control/input_rMSR_IE@1090-1095 
+solution 1 aeMB_control/input_rMSR_IE@1090-1095 
+solution 1 control:aeMB_control/input_sys_int_i@1080-1085 
+solution 1 aeMB_control/input_sys_int_i@1080-1085 
+solution 1 control:aeMB_control/input_sys_int_i@1090-1095 
+solution 1 aeMB_control/input_sys_int_i@1090-1095 
+solution 1 control:aeMB_control/reg_rFSM@1095-1100 
+solution 1 aeMB_control/reg_rFSM@1095-1100 
+solution 1 control:aeMB_control/reg_rFSM@1105-1110 
+solution 1 aeMB_control/reg_rFSM@1105-1110 
+solution 1 control:aeMB_control/reg_rHWINT@1035-1040 
+solution 1 aeMB_control/reg_rHWINT@1035-1040 
+solution 1 control:aeMB_control/reg_rHWINT@1045-1050 
+solution 1 aeMB_control/reg_rHWINT@1045-1050 
+solution 1 control:aeMB_control/reg_rHWINT@1055-1060 
+solution 1 aeMB_control/reg_rHWINT@1055-1060 
+solution 1 control:aeMB_control/reg_rHWINT@1065-1070 
+solution 1 aeMB_control/reg_rHWINT@1065-1070 
+solution 1 control:aeMB_control/reg_rHWINT@1075-1080 
+solution 1 aeMB_control/reg_rHWINT@1075-1080 
+solution 1 control:aeMB_control/reg_rHWINT@1085-1090 
+solution 1 aeMB_control/reg_rHWINT@1085-1090 
+solution 1 control:aeMB_control/reg_rHWINT@1095-1100 
+solution 1 aeMB_control/reg_rHWINT@1095-1100 
+solution 1 control:aeMB_control/reg_rNCLR@1065-1070 
+solution 1 aeMB_control/reg_rNCLR@1065-1070 
+solution 1 control:aeMB_control/reg_rNCLR@1075-1080 
+solution 1 aeMB_control/reg_rNCLR@1075-1080 
+solution 1 control:aeMB_control/reg_rNCLR@1085-1090 
+solution 1 aeMB_control/reg_rNCLR@1085-1090 
+solution 1 control:aeMB_control/reg_rNCLR@1095-1100 
+solution 1 aeMB_control/reg_rNCLR@1095-1100 
+solution 1 control:aeMB_control/reg_rNXT@1090-1095 
+solution 1 aeMB_control/reg_rNXT@1090-1095 
+solution 1 control:aeMB_control/reg_rNXT@1100-1105 
+solution 1 aeMB_control/reg_rNXT@1100-1105 
+solution 1 control:aeMB_control/wire_fCLR@1080-1085 
+solution 1 aeMB_control/wire_fCLR@1080-1085 
+solution 1 control:aeMB_control/wire_fCLR@1090-1095 
+solution 1 aeMB_control/wire_fCLR@1090-1095 
+solution 1 control:aeMB_control/wire_fCLR@1100-1105 
+solution 1 aeMB_control/wire_fCLR@1100-1105 
+solution 1 control:aeMB_control/wire_fINT@1100-1105 
+solution 1 aeMB_control/wire_fINT@1100-1105 
+solution 1 control:aeMB_control/wire_fNCLR@1060-1065 
+solution 1 aeMB_control/wire_fNCLR@1060-1065 
+solution 1 control:aeMB_control/wire_fNCLR@1070-1075 
+solution 1 aeMB_control/wire_fNCLR@1070-1075 
+solution 1 control:aeMB_control/wire_fNCLR@1080-1085 
+solution 1 aeMB_control/wire_fNCLR@1080-1085 
+solution 1 control:aeMB_control/wire_fNCLR@1090-1095 
+solution 1 aeMB_control/wire_fNCLR@1090-1095 
+solution 1 control:aeMB_control/wire_rOPC@1060-1065 
+solution 1 aeMB_control/wire_rOPC@1060-1065 
+solution 1 control:aeMB_control/wire_rOPC@1070-1075 
+solution 1 aeMB_control/wire_rOPC@1070-1075 
+solution 1 control:aeMB_control/wire_rOPC@1080-1085 
+solution 1 aeMB_control/wire_rOPC@1080-1085 
+solution 1 control:aeMB_control/wire_rOPC@1090-1095 
+solution 1 aeMB_control/wire_rOPC@1090-1095 
+solution 1 :aeMB_core/constraint_iwb_adr_o@1125-1126 
+solution 1 aeMB_core/constraint_iwb_adr_o@1125-1126 
+solution 1 :aeMB_core/input_sys_int_i@1080-1085 
+solution 1 aeMB_core/input_sys_int_i@1080-1085 
+solution 1 :aeMB_core/input_sys_int_i@1090-1095 
+solution 1 aeMB_core/input_sys_int_i@1090-1095 
+solution 1 :aeMB_core/wire_iwb_adr_o@1125-1126 
+solution 1 aeMB_core/wire_iwb_adr_o@1125-1126 
+solution 2 :aeMB_core/wire_prun@1110-1115 :aeMB_core/wire_prun@1120-1125 
+solution 2 aeMB_core/wire_prun@1110-1115 aeMB_core/wire_prun@1120-1125 
+solution 2 :aeMB_core/wire_rFSM@1100-1105 :aeMB_core/wire_rFSM@1120-1125 
+solution 2 aeMB_core/wire_rFSM@1100-1105 aeMB_core/wire_rFSM@1120-1125 
+solution 1 :aeMB_core/wire_rMSR_IE@1080-1085 
+solution 1 aeMB_core/wire_rMSR_IE@1080-1085 
+solution 1 :aeMB_core/wire_rMSR_IE@1090-1095 
+solution 1 aeMB_core/wire_rMSR_IE@1090-1095 
+solution 2 decode:aeMB_decode/always_11/if_1/block_1/stmt_1@1090-1095 decode:aeMB_decode/always_11/if_1/block_1/stmt_1@1110-1115 
+solution 2 aeMB_decode/always_11/if_1/block_1/stmt_1@1090-1095 aeMB_decode/always_11/if_1/block_1/stmt_1@1110-1115 
+solution 2 decode:aeMB_decode/always_12/if_1/if_1/block_1/stmt_10@1080-1085 decode:aeMB_decode/always_12/if_1/if_1/block_1/stmt_10@1090-1095 
+solution 2 aeMB_decode/always_12/if_1/if_1/block_1/stmt_10@1080-1085 aeMB_decode/always_12/if_1/if_1/block_1/stmt_10@1090-1095 
+solution 2 decode:aeMB_decode/always_12/if_1/if_1/block_1/stmt_21@1090-1095 decode:aeMB_decode/always_12/if_1/if_1/block_1/stmt_21@1110-1115 
+solution 2 aeMB_decode/always_12/if_1/if_1/block_1/stmt_21@1090-1095 aeMB_decode/always_12/if_1/if_1/block_1/stmt_21@1110-1115 
+solution 2 decode:aeMB_decode/always_5/if_1/block_1/stmt_1@1080-1085 decode:aeMB_decode/always_5/if_1/block_1/stmt_1@1090-1095 
+solution 2 aeMB_decode/always_5/if_1/block_1/stmt_1@1080-1085 aeMB_decode/always_5/if_1/block_1/stmt_1@1090-1095 
+solution 2 decode:aeMB_decode/reg_rDWBSTB@1095-1100 decode:aeMB_decode/reg_rDWBSTB@1115-1120 
+solution 2 aeMB_decode/reg_rDWBSTB@1095-1100 aeMB_decode/reg_rDWBSTB@1115-1120 
+solution 2 decode:aeMB_decode/reg_rMXLDST@1085-1090 decode:aeMB_decode/reg_rMXLDST@1095-1100 
+solution 2 aeMB_decode/reg_rMXLDST@1085-1090 aeMB_decode/reg_rMXLDST@1095-1100 
+solution 2 decode:aeMB_decode/reg_rMXLDST@1085-1090 decode:aeMB_decode/reg_rMXLDST@1105-1110 
+solution 2 aeMB_decode/reg_rMXLDST@1085-1090 aeMB_decode/reg_rMXLDST@1105-1110 
+solution 2 decode:aeMB_decode/reg_xDWBSTB@1090-1095 decode:aeMB_decode/reg_xDWBSTB@1110-1115 
+solution 2 aeMB_decode/reg_xDWBSTB@1090-1095 aeMB_decode/reg_xDWBSTB@1110-1115 
+solution 2 decode:aeMB_decode/reg_xMXLDST@1080-1085 decode:aeMB_decode/reg_xMXLDST@1090-1095 
+solution 2 aeMB_decode/reg_xMXLDST@1080-1085 aeMB_decode/reg_xMXLDST@1090-1095 
+solution 2 decode:aeMB_decode/wire_fST@1080-1085 decode:aeMB_decode/wire_fST@1090-1095 
+solution 2 aeMB_decode/wire_fST@1080-1085 aeMB_decode/wire_fST@1090-1095 
+solution 2 decode:aeMB_decode/wire_wOPC@1080-1085 decode:aeMB_decode/wire_wOPC@1090-1095 
+solution 2 aeMB_decode/wire_wOPC@1080-1085 aeMB_decode/wire_wOPC@1090-1095 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_1@1110-1115 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_1@1110-1115 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_2@1120-1125 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_2@1120-1125 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@1110-1115 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@1110-1115 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@1120-1125 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@1120-1125 
+solution 1 fetch:aeMB_fetch/input_prun@1110-1115 
+solution 1 aeMB_fetch/input_prun@1110-1115 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@1115-1120 
+solution 1 aeMB_fetch/reg_rIWBADR@1115-1120 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@1125-1126 
+solution 1 aeMB_fetch/reg_rIWBADR@1125-1126 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@1110-1115 
+solution 1 aeMB_fetch/reg_xIWBADR@1110-1115 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@1120-1125 
+solution 1 aeMB_fetch/reg_xIWBADR@1120-1125 
+solution 1 fetch:aeMB_fetch/wire_iwb_adr_o@1125-1126 
+solution 1 aeMB_fetch/wire_iwb_adr_o@1125-1126 
+solution 1 fetch:aeMB_fetch/wire_wPCNXT@1120-1125 
+solution 1 aeMB_fetch/wire_wPCNXT@1120-1125 

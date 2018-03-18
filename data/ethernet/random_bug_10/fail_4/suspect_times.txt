@@ -1,0 +1,520 @@
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@450-465 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@450-465 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@1950-1965 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@1950-1965 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@3450-3465 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/block_1/stmt_1@3450-3465 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@423-435 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@423-435 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1800-1815 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1800-1815 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1830-1845 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1830-1845 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1860-1875 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1860-1875 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1890-1905 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1890-1905 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1920-1935 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1920-1935 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1980-1995 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@1980-1995 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@2040-2055 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@2040-2055 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3390-3405 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3390-3405 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3420-3435 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3420-3435 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3630-3645 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@3630-3645 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@4920-4935 
+solution 1 eth_clockgen/always_1/block_1/if_1/block_1/if_1/stmt_1@4920-4935 
+solution 1 miim1/clkgen:eth_clockgen/always_1/block_1/if_1/stmt_1@420-423 
+solution 1 eth_clockgen/always_1/block_1/if_1/stmt_1@420-423 
+solution 2 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@1950-1965 
+solution 2 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@1950-1965 
+solution 2 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@3450-3465 
+solution 2 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@3450-3465 
+solution 2 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@4950-4965 
+solution 2 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@450-465 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@4950-4965 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@2850-2865 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@2850-2865 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@3150-3165 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@3150-3165 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@3450-3465 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@3450-3465 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@3480-3495 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@3480-3495 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@4140-4155 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@4140-4155 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@450-465 miim1/clkgen:eth_clockgen/input_Divider@4980-4995 
+solution 2 eth_clockgen/input_Divider@450-465 eth_clockgen/input_Divider@4980-4995 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@4260-4275 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@4260-4275 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@4530-4545 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@4530-4545 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@4590-4605 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@4590-4605 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@4950-4965 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@4950-4965 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@5730-5745 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@5730-5745 
+solution 2 miim1/clkgen:eth_clockgen/input_Divider@1950-1965 miim1/clkgen:eth_clockgen/input_Divider@5760-5775 
+solution 2 eth_clockgen/input_Divider@1950-1965 eth_clockgen/input_Divider@5760-5775 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@420-423 
+solution 1 eth_clockgen/reg_Counter@420-423 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@435-450 
+solution 1 eth_clockgen/reg_Counter@435-450 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@3495-3510 
+solution 1 eth_clockgen/reg_Counter@3495-3510 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@3525-3540 
+solution 1 eth_clockgen/reg_Counter@3525-3540 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@3555-3570 
+solution 1 eth_clockgen/reg_Counter@3555-3570 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@3585-3600 
+solution 1 eth_clockgen/reg_Counter@3585-3600 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@3615-3630 
+solution 1 eth_clockgen/reg_Counter@3615-3630 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@4815-4830 
+solution 1 eth_clockgen/reg_Counter@4815-4830 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@4845-4860 
+solution 1 eth_clockgen/reg_Counter@4845-4860 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@4875-4890 
+solution 1 eth_clockgen/reg_Counter@4875-4890 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@4905-4920 
+solution 1 eth_clockgen/reg_Counter@4905-4920 
+solution 1 miim1/clkgen:eth_clockgen/reg_Counter@4935-4950 
+solution 1 eth_clockgen/reg_Counter@4935-4950 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5205-5220 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5205-5220 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5265-5280 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5265-5280 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5295-5310 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5295-5310 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5325-5340 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5325-5340 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5355-5370 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5355-5370 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5385-5400 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5385-5400 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5415-5430 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5415-5430 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5445-5460 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5445-5460 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5475-5490 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5475-5490 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5595-5610 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5595-5610 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5625-5640 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5625-5640 
+solution 2 miim1/clkgen:eth_clockgen/reg_Mdc@4935-4950 miim1/clkgen:eth_clockgen/reg_Mdc@5655-5670 
+solution 2 eth_clockgen/reg_Mdc@4935-4950 eth_clockgen/reg_Mdc@5655-5670 
+solution 1 miim1/clkgen:eth_clockgen/wire_CountEq0@450-465 
+solution 1 eth_clockgen/wire_CountEq0@450-465 
+solution 1 miim1/clkgen:eth_clockgen/wire_CountEq0@1950-1965 
+solution 1 eth_clockgen/wire_CountEq0@1950-1965 
+solution 1 miim1/clkgen:eth_clockgen/wire_CountEq0@3450-3465 
+solution 1 eth_clockgen/wire_CountEq0@3450-3465 
+solution 1 miim1/clkgen:eth_clockgen/wire_CountEq0@4950-4965 
+solution 1 eth_clockgen/wire_CountEq0@4950-4965 
+solution 1 miim1/clkgen:eth_clockgen/wire_CounterPreset@450-465 
+solution 1 eth_clockgen/wire_CounterPreset@450-465 
+solution 1 miim1/clkgen:eth_clockgen/wire_CounterPreset@1950-1965 
+solution 1 eth_clockgen/wire_CounterPreset@1950-1965 
+solution 1 miim1/clkgen:eth_clockgen/wire_CounterPreset@3450-3465 
+solution 1 eth_clockgen/wire_CounterPreset@3450-3465 
+solution 2 miim1/clkgen:eth_clockgen/wire_MdcEn_n@1950-1965 miim1/clkgen:eth_clockgen/wire_MdcEn_n@4950-4965 
+solution 2 eth_clockgen/wire_MdcEn_n@1950-1965 eth_clockgen/wire_MdcEn_n@4950-4965 
+solution 2 miim1/clkgen:eth_clockgen/wire_MdcEn_n@3450-3465 miim1/clkgen:eth_clockgen/wire_MdcEn_n@4950-4965 
+solution 2 eth_clockgen/wire_MdcEn_n@3450-3465 eth_clockgen/wire_MdcEn_n@4950-4965 
+solution 2 miim1/clkgen:eth_clockgen/wire_MdcEn_n@4950-4965 miim1/clkgen:eth_clockgen/wire_MdcEn_n@6450-6465 
+solution 2 eth_clockgen/wire_MdcEn_n@4950-4965 eth_clockgen/wire_MdcEn_n@6450-6465 
+solution 1 miim1/clkgen:eth_clockgen/wire_TempDivider@450-465 
+solution 1 eth_clockgen/wire_TempDivider@450-465 
+solution 1 miim1/clkgen:eth_clockgen/wire_TempDivider@1950-1965 
+solution 1 eth_clockgen/wire_TempDivider@1950-1965 
+solution 1 miim1/clkgen:eth_clockgen/wire_TempDivider@3450-3465 
+solution 1 eth_clockgen/wire_TempDivider@3450-3465 
+solution 1 miim1:eth_miim/always_8/block_1/if_1/block_1/if_1/block_1/if_1/stmt_1@450-465 
+solution 1 eth_miim/always_8/block_1/if_1/block_1/if_1/block_1/if_1/stmt_1@450-465 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@2490-2505 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@2490-2505 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@2520-2535 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@2520-2535 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@2760-2775 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@2760-2775 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@3450-3465 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@3450-3465 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@4110-4125 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@4110-4125 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@4140-4155 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@4140-4155 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@4260-4275 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@4260-4275 
+solution 2 miim1:eth_miim/input_Divider@450-465 miim1:eth_miim/input_Divider@5430-5445 
+solution 2 eth_miim/input_Divider@450-465 eth_miim/input_Divider@5430-5445 
+solution 2 miim1:eth_miim/input_Divider@1950-1965 miim1:eth_miim/input_Divider@4230-4245 
+solution 2 eth_miim/input_Divider@1950-1965 eth_miim/input_Divider@4230-4245 
+solution 2 miim1:eth_miim/input_Divider@1950-1965 miim1:eth_miim/input_Divider@4620-4635 
+solution 2 eth_miim/input_Divider@1950-1965 eth_miim/input_Divider@4620-4635 
+solution 2 miim1:eth_miim/input_Divider@1950-1965 miim1:eth_miim/input_Divider@4980-4995 
+solution 2 eth_miim/input_Divider@1950-1965 eth_miim/input_Divider@4980-4995 
+solution 2 miim1:eth_miim/input_Divider@1950-1965 miim1:eth_miim/input_Divider@5730-5745 
+solution 2 eth_miim/input_Divider@1950-1965 eth_miim/input_Divider@5730-5745 
+solution 1 miim1:eth_miim/reg_BitCounter@1965-1980 
+solution 1 eth_miim/reg_BitCounter@1965-1980 
+solution 1 miim1:eth_miim/reg_BitCounter@1995-2010 
+solution 1 eth_miim/reg_BitCounter@1995-2010 
+solution 1 miim1:eth_miim/reg_BitCounter@2025-2040 
+solution 1 eth_miim/reg_BitCounter@2025-2040 
+solution 1 miim1:eth_miim/reg_BitCounter@2055-2070 
+solution 1 eth_miim/reg_BitCounter@2055-2070 
+solution 1 miim1:eth_miim/reg_BitCounter@2085-2100 
+solution 1 eth_miim/reg_BitCounter@2085-2100 
+solution 1 miim1:eth_miim/reg_BitCounter@2115-2130 
+solution 1 eth_miim/reg_BitCounter@2115-2130 
+solution 1 miim1:eth_miim/reg_BitCounter@2145-2160 
+solution 1 eth_miim/reg_BitCounter@2145-2160 
+solution 1 miim1:eth_miim/reg_BitCounter@2205-2220 
+solution 1 eth_miim/reg_BitCounter@2205-2220 
+solution 1 miim1:eth_miim/reg_BitCounter@2235-2250 
+solution 1 eth_miim/reg_BitCounter@2235-2250 
+solution 1 miim1:eth_miim/reg_BitCounter@2325-2340 
+solution 1 eth_miim/reg_BitCounter@2325-2340 
+solution 1 miim1:eth_miim/reg_BitCounter@2355-2370 
+solution 1 eth_miim/reg_BitCounter@2355-2370 
+solution 1 miim1:eth_miim/reg_BitCounter@2385-2400 
+solution 1 eth_miim/reg_BitCounter@2385-2400 
+solution 2 miim1:eth_miim/wire_MdcEn_n@1950-1965 miim1:eth_miim/wire_MdcEn_n@4950-4965 
+solution 2 eth_miim/wire_MdcEn_n@1950-1965 eth_miim/wire_MdcEn_n@4950-4965 
+solution 2 miim1:eth_miim/wire_MdcEn_n@3450-3465 miim1:eth_miim/wire_MdcEn_n@4950-4965 
+solution 2 eth_miim/wire_MdcEn_n@3450-3465 eth_miim/wire_MdcEn_n@4950-4965 
+solution 2 miim1:eth_miim/wire_MdcEn_n@3450-3465 miim1:eth_miim/wire_MdcEn_n@6450-6465 
+solution 2 eth_miim/wire_MdcEn_n@3450-3465 eth_miim/wire_MdcEn_n@6450-6465 
+solution 1 miim1:eth_miim/wire_Mdo@7800-7815 
+solution 1 eth_miim/wire_Mdo@7800-7815 
+solution 1 miim1/outctrl:eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_1@3450-3465 
+solution 1 eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_1@3450-3465 
+solution 1 miim1/outctrl:eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_2@4950-4965 
+solution 1 eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_2@4950-4965 
+solution 1 miim1/outctrl:eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_3@6450-6465 
+solution 1 eth_outputcontrol/always_2/block_1/if_1/block_2/if_1/block_1/stmt_3@6450-6465 
+solution 1 miim1/outctrl:eth_outputcontrol/input_BitCounter@3450-3465 
+solution 1 eth_outputcontrol/input_BitCounter@3450-3465 
+solution 2 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@1950-1965 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@4950-4965 
+solution 2 eth_outputcontrol/input_MdcEn_n@1950-1965 eth_outputcontrol/input_MdcEn_n@4950-4965 
+solution 2 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@3450-3465 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@6450-6465 
+solution 2 eth_outputcontrol/input_MdcEn_n@3450-3465 eth_outputcontrol/input_MdcEn_n@6450-6465 
+solution 2 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@4950-4965 miim1/outctrl:eth_outputcontrol/input_MdcEn_n@6450-6465 
+solution 2 eth_outputcontrol/input_MdcEn_n@4950-4965 eth_outputcontrol/input_MdcEn_n@6450-6465 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6615-6630 
+solution 1 eth_outputcontrol/reg_Mdo@6615-6630 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6645-6660 
+solution 1 eth_outputcontrol/reg_Mdo@6645-6660 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6675-6690 
+solution 1 eth_outputcontrol/reg_Mdo@6675-6690 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6705-6720 
+solution 1 eth_outputcontrol/reg_Mdo@6705-6720 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6735-6750 
+solution 1 eth_outputcontrol/reg_Mdo@6735-6750 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6765-6780 
+solution 1 eth_outputcontrol/reg_Mdo@6765-6780 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6795-6810 
+solution 1 eth_outputcontrol/reg_Mdo@6795-6810 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6825-6840 
+solution 1 eth_outputcontrol/reg_Mdo@6825-6840 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6885-6900 
+solution 1 eth_outputcontrol/reg_Mdo@6885-6900 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6915-6930 
+solution 1 eth_outputcontrol/reg_Mdo@6915-6930 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@6975-6990 
+solution 1 eth_outputcontrol/reg_Mdo@6975-6990 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@7785-7800 
+solution 1 eth_outputcontrol/reg_Mdo@7785-7800 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3465-3480 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3465-3480 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3495-3510 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3495-3510 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3525-3540 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3525-3540 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3555-3570 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3555-3570 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3585-3600 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3585-3600 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3615-3630 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3615-3630 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@3645-3660 
+solution 1 eth_outputcontrol/reg_Mdo_2d@3645-3660 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@4815-4830 
+solution 1 eth_outputcontrol/reg_Mdo_2d@4815-4830 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@4845-4860 
+solution 1 eth_outputcontrol/reg_Mdo_2d@4845-4860 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@4875-4890 
+solution 1 eth_outputcontrol/reg_Mdo_2d@4875-4890 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@4905-4920 
+solution 1 eth_outputcontrol/reg_Mdo_2d@4905-4920 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_2d@4935-4950 
+solution 1 eth_outputcontrol/reg_Mdo_2d@4935-4950 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@4965-4980 
+solution 1 eth_outputcontrol/reg_Mdo_d@4965-4980 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@4995-5010 
+solution 1 eth_outputcontrol/reg_Mdo_d@4995-5010 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5025-5040 
+solution 1 eth_outputcontrol/reg_Mdo_d@5025-5040 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5055-5070 
+solution 1 eth_outputcontrol/reg_Mdo_d@5055-5070 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5085-5100 
+solution 1 eth_outputcontrol/reg_Mdo_d@5085-5100 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5115-5130 
+solution 1 eth_outputcontrol/reg_Mdo_d@5115-5130 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5145-5160 
+solution 1 eth_outputcontrol/reg_Mdo_d@5145-5160 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5175-5190 
+solution 1 eth_outputcontrol/reg_Mdo_d@5175-5190 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5205-5220 
+solution 1 eth_outputcontrol/reg_Mdo_d@5205-5220 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5295-5310 
+solution 1 eth_outputcontrol/reg_Mdo_d@5295-5310 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5325-5340 
+solution 1 eth_outputcontrol/reg_Mdo_d@5325-5340 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo_d@5355-5370 
+solution 1 eth_outputcontrol/reg_Mdo_d@5355-5370 
+solution 1 miim1/outctrl:eth_outputcontrol/wire_SerialEn@3450-3465 
+solution 1 eth_outputcontrol/wire_SerialEn@3450-3465 
+solution 1 ethreg1/MIIMODER_0:eth_register/always_1/block_1/if_1/stmt_1@420-423 
+solution 1 eth_register/always_1/block_1/if_1/stmt_1@420-423 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@423-435 
+solution 1 eth_register/input_Write@423-435 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@450-465 
+solution 1 eth_register/input_Write@450-465 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@660-675 
+solution 1 eth_register/input_Write@660-675 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@690-705 
+solution 1 eth_register/input_Write@690-705 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@720-735 
+solution 1 eth_register/input_Write@720-735 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@900-915 
+solution 1 eth_register/input_Write@900-915 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@930-945 
+solution 1 eth_register/input_Write@930-945 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@960-975 
+solution 1 eth_register/input_Write@960-975 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@1140-1155 
+solution 1 eth_register/input_Write@1140-1155 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@1170-1185 
+solution 1 eth_register/input_Write@1170-1185 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@1200-1215 
+solution 1 eth_register/input_Write@1200-1215 
+solution 1 ethreg1/MIIMODER_0:eth_register/input_Write@1620-1635 
+solution 1 eth_register/input_Write@1620-1635 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@420-423 
+solution 1 eth_register/reg_DataOut@420-423 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@435-450 
+solution 1 eth_register/reg_DataOut@435-450 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1005-1020 
+solution 1 eth_register/reg_DataOut@1005-1020 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1035-1050 
+solution 1 eth_register/reg_DataOut@1035-1050 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1065-1080 
+solution 1 eth_register/reg_DataOut@1065-1080 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1095-1110 
+solution 1 eth_register/reg_DataOut@1095-1110 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1215-1230 
+solution 1 eth_register/reg_DataOut@1215-1230 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1245-1260 
+solution 1 eth_register/reg_DataOut@1245-1260 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1275-1290 
+solution 1 eth_register/reg_DataOut@1275-1290 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1305-1320 
+solution 1 eth_register/reg_DataOut@1305-1320 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1335-1350 
+solution 1 eth_register/reg_DataOut@1335-1350 
+solution 1 ethreg1/MIIMODER_0:eth_register/reg_DataOut@1365-1380 
+solution 1 eth_register/reg_DataOut@1365-1380 
+solution 1 ethreg1:eth_registers/input_Cs@450-465 
+solution 1 eth_registers/input_Cs@450-465 
+solution 1 ethreg1:eth_registers/input_Cs@660-675 
+solution 1 eth_registers/input_Cs@660-675 
+solution 1 ethreg1:eth_registers/input_Cs@690-705 
+solution 1 eth_registers/input_Cs@690-705 
+solution 1 ethreg1:eth_registers/input_Cs@720-735 
+solution 1 eth_registers/input_Cs@720-735 
+solution 1 ethreg1:eth_registers/input_Cs@900-915 
+solution 1 eth_registers/input_Cs@900-915 
+solution 1 ethreg1:eth_registers/input_Cs@930-945 
+solution 1 eth_registers/input_Cs@930-945 
+solution 1 ethreg1:eth_registers/input_Cs@960-975 
+solution 1 eth_registers/input_Cs@960-975 
+solution 1 ethreg1:eth_registers/input_Cs@1140-1155 
+solution 1 eth_registers/input_Cs@1140-1155 
+solution 1 ethreg1:eth_registers/input_Cs@1170-1185 
+solution 1 eth_registers/input_Cs@1170-1185 
+solution 1 ethreg1:eth_registers/input_Cs@1200-1215 
+solution 1 eth_registers/input_Cs@1200-1215 
+solution 1 ethreg1:eth_registers/input_Cs@1380-1395 
+solution 1 eth_registers/input_Cs@1380-1395 
+solution 1 ethreg1:eth_registers/input_Cs@1410-1425 
+solution 1 eth_registers/input_Cs@1410-1425 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@2490-2505 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@2490-2505 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@2520-2535 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@2520-2535 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@3450-3465 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@3450-3465 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@3480-3495 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@3480-3495 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@4140-4155 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@4140-4155 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@4260-4275 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@4260-4275 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@4980-4995 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@4980-4995 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@450-465 ethreg1:eth_registers/wire_MIIMODEROut@5430-5445 
+solution 2 eth_registers/wire_MIIMODEROut@450-465 eth_registers/wire_MIIMODEROut@5430-5445 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@1950-1965 ethreg1:eth_registers/wire_MIIMODEROut@4230-4245 
+solution 2 eth_registers/wire_MIIMODEROut@1950-1965 eth_registers/wire_MIIMODEROut@4230-4245 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@1950-1965 ethreg1:eth_registers/wire_MIIMODEROut@4620-4635 
+solution 2 eth_registers/wire_MIIMODEROut@1950-1965 eth_registers/wire_MIIMODEROut@4620-4635 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@1950-1965 ethreg1:eth_registers/wire_MIIMODEROut@4950-4965 
+solution 2 eth_registers/wire_MIIMODEROut@1950-1965 eth_registers/wire_MIIMODEROut@4950-4965 
+solution 2 ethreg1:eth_registers/wire_MIIMODEROut@1950-1965 ethreg1:eth_registers/wire_MIIMODEROut@5730-5745 
+solution 2 eth_registers/wire_MIIMODEROut@1950-1965 eth_registers/wire_MIIMODEROut@5730-5745 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@423-435 
+solution 1 eth_registers/wire_MIIMODER_Wr@423-435 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@450-465 
+solution 1 eth_registers/wire_MIIMODER_Wr@450-465 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@660-675 
+solution 1 eth_registers/wire_MIIMODER_Wr@660-675 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@690-705 
+solution 1 eth_registers/wire_MIIMODER_Wr@690-705 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@720-735 
+solution 1 eth_registers/wire_MIIMODER_Wr@720-735 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@900-915 
+solution 1 eth_registers/wire_MIIMODER_Wr@900-915 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@930-945 
+solution 1 eth_registers/wire_MIIMODER_Wr@930-945 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@960-975 
+solution 1 eth_registers/wire_MIIMODER_Wr@960-975 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@1140-1155 
+solution 1 eth_registers/wire_MIIMODER_Wr@1140-1155 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@1170-1185 
+solution 1 eth_registers/wire_MIIMODER_Wr@1170-1185 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@1200-1215 
+solution 1 eth_registers/wire_MIIMODER_Wr@1200-1215 
+solution 1 ethreg1:eth_registers/wire_MIIMODER_Wr@1380-1395 
+solution 1 eth_registers/wire_MIIMODER_Wr@1380-1395 
+solution 1 ethreg1:eth_registers/wire_Write@423-435 
+solution 1 eth_registers/wire_Write@423-435 
+solution 1 ethreg1:eth_registers/wire_Write@450-465 
+solution 1 eth_registers/wire_Write@450-465 
+solution 1 ethreg1:eth_registers/wire_Write@660-675 
+solution 1 eth_registers/wire_Write@660-675 
+solution 1 ethreg1:eth_registers/wire_Write@690-705 
+solution 1 eth_registers/wire_Write@690-705 
+solution 1 ethreg1:eth_registers/wire_Write@720-735 
+solution 1 eth_registers/wire_Write@720-735 
+solution 1 ethreg1:eth_registers/wire_Write@900-915 
+solution 1 eth_registers/wire_Write@900-915 
+solution 1 ethreg1:eth_registers/wire_Write@930-945 
+solution 1 eth_registers/wire_Write@930-945 
+solution 1 ethreg1:eth_registers/wire_Write@960-975 
+solution 1 eth_registers/wire_Write@960-975 
+solution 1 ethreg1:eth_registers/wire_Write@1140-1155 
+solution 1 eth_registers/wire_Write@1140-1155 
+solution 1 ethreg1:eth_registers/wire_Write@1170-1185 
+solution 1 eth_registers/wire_Write@1170-1185 
+solution 1 ethreg1:eth_registers/wire_Write@1200-1215 
+solution 1 eth_registers/wire_Write@1200-1215 
+solution 1 ethreg1:eth_registers/wire_Write@1410-1425 
+solution 1 eth_registers/wire_Write@1410-1425 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@2490-2505 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@2490-2505 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@2520-2535 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@2520-2535 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@2760-2775 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@2760-2775 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@2910-2925 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@2910-2925 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@2940-2955 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@2940-2955 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@4260-4275 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@4260-4275 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@4950-4965 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@4950-4965 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@450-465 ethreg1:eth_registers/wire_r_ClkDiv@4980-4995 
+solution 2 eth_registers/wire_r_ClkDiv@450-465 eth_registers/wire_r_ClkDiv@4980-4995 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@1950-1965 ethreg1:eth_registers/wire_r_ClkDiv@4530-4545 
+solution 2 eth_registers/wire_r_ClkDiv@1950-1965 eth_registers/wire_r_ClkDiv@4530-4545 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@1950-1965 ethreg1:eth_registers/wire_r_ClkDiv@4620-4635 
+solution 2 eth_registers/wire_r_ClkDiv@1950-1965 eth_registers/wire_r_ClkDiv@4620-4635 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@1950-1965 ethreg1:eth_registers/wire_r_ClkDiv@4980-4995 
+solution 2 eth_registers/wire_r_ClkDiv@1950-1965 eth_registers/wire_r_ClkDiv@4980-4995 
+solution 2 ethreg1:eth_registers/wire_r_ClkDiv@1950-1965 ethreg1:eth_registers/wire_r_ClkDiv@5430-5445 
+solution 2 eth_registers/wire_r_ClkDiv@1950-1965 eth_registers/wire_r_ClkDiv@5430-5445 
+solution 1 :eth_top/constraint_md_pad_o@4966-7851 
+solution 1 eth_top/constraint_md_pad_o@4966-7851 
+solution 1 :eth_top/constraint_md_pad_o@7800-7815 
+solution 1 eth_top/constraint_md_pad_o@7800-7815 
+solution 1 :eth_top/input_wb_stb_i@450-465 
+solution 1 eth_top/input_wb_stb_i@450-465 
+solution 1 :eth_top/input_wb_stb_i@720-735 
+solution 1 eth_top/input_wb_stb_i@720-735 
+solution 1 :eth_top/input_wb_stb_i@960-975 
+solution 1 eth_top/input_wb_stb_i@960-975 
+solution 1 :eth_top/input_wb_stb_i@1200-1215 
+solution 1 eth_top/input_wb_stb_i@1200-1215 
+solution 1 :eth_top/input_wb_stb_i@1440-1455 
+solution 1 eth_top/input_wb_stb_i@1440-1455 
+solution 1 :eth_top/input_wb_stb_i@1680-1695 
+solution 1 eth_top/input_wb_stb_i@1680-1695 
+solution 1 :eth_top/input_wb_stb_i@1920-1935 
+solution 1 eth_top/input_wb_stb_i@1920-1935 
+solution 1 :eth_top/wire_RegCs@450-465 
+solution 1 eth_top/wire_RegCs@450-465 
+solution 1 :eth_top/wire_RegCs@660-675 
+solution 1 eth_top/wire_RegCs@660-675 
+solution 1 :eth_top/wire_RegCs@690-705 
+solution 1 eth_top/wire_RegCs@690-705 
+solution 1 :eth_top/wire_RegCs@720-735 
+solution 1 eth_top/wire_RegCs@720-735 
+solution 1 :eth_top/wire_RegCs@900-915 
+solution 1 eth_top/wire_RegCs@900-915 
+solution 1 :eth_top/wire_RegCs@930-945 
+solution 1 eth_top/wire_RegCs@930-945 
+solution 1 :eth_top/wire_RegCs@960-975 
+solution 1 eth_top/wire_RegCs@960-975 
+solution 1 :eth_top/wire_RegCs@1140-1155 
+solution 1 eth_top/wire_RegCs@1140-1155 
+solution 1 :eth_top/wire_RegCs@1170-1185 
+solution 1 eth_top/wire_RegCs@1170-1185 
+solution 1 :eth_top/wire_RegCs@1200-1215 
+solution 1 eth_top/wire_RegCs@1200-1215 
+solution 1 :eth_top/wire_RegCs@1380-1395 
+solution 1 eth_top/wire_RegCs@1380-1395 
+solution 1 :eth_top/wire_RegCs@1440-1455 
+solution 1 eth_top/wire_RegCs@1440-1455 
+solution 1 :eth_top/wire_md_pad_o@7800-7815 
+solution 1 eth_top/wire_md_pad_o@7800-7815 
+solution 2 :eth_top/wire_r_ClkDiv@450-465 :eth_top/wire_r_ClkDiv@2490-2505 
+solution 2 eth_top/wire_r_ClkDiv@450-465 eth_top/wire_r_ClkDiv@2490-2505 
+solution 2 :eth_top/wire_r_ClkDiv@450-465 :eth_top/wire_r_ClkDiv@2520-2535 
+solution 2 eth_top/wire_r_ClkDiv@450-465 eth_top/wire_r_ClkDiv@2520-2535 
+solution 2 :eth_top/wire_r_ClkDiv@450-465 :eth_top/wire_r_ClkDiv@4320-4335 
+solution 2 eth_top/wire_r_ClkDiv@450-465 eth_top/wire_r_ClkDiv@4320-4335 
+solution 2 :eth_top/wire_r_ClkDiv@450-465 :eth_top/wire_r_ClkDiv@5430-5445 
+solution 2 eth_top/wire_r_ClkDiv@450-465 eth_top/wire_r_ClkDiv@5430-5445 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4230-4245 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4230-4245 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4260-4275 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4260-4275 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4320-4335 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4320-4335 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4350-4365 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4350-4365 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4530-4545 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4530-4545 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4590-4605 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4590-4605 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4620-4635 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4620-4635 
+solution 2 :eth_top/wire_r_ClkDiv@1950-1965 :eth_top/wire_r_ClkDiv@4950-4965 
+solution 2 eth_top/wire_r_ClkDiv@1950-1965 eth_top/wire_r_ClkDiv@4950-4965 

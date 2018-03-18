@@ -1,0 +1,512 @@
+solution 1 :vga/constraint_hsync_pad_o@229600-233701 
+solution 1 vga/constraint_hsync_pad_o@229600-233701 
+solution 1 :vga/constraint_hsync_pad_o@232500-233701 
+solution 1 vga/constraint_hsync_pad_o@232500-233701 
+solution 1 :vga/constraint_hsync_pad_o@233100-233400 
+solution 1 vga/constraint_hsync_pad_o@233100-233400 
+solution 1 :vga/input_wb_rst_i@217800-218100 
+solution 1 vga/input_wb_rst_i@217800-218100 
+solution 1 :vga/input_wb_rst_i@218400-218700 
+solution 1 vga/input_wb_rst_i@218400-218700 
+solution 1 :vga/input_wb_rst_i@219000-219300 
+solution 1 vga/input_wb_rst_i@219000-219300 
+solution 1 :vga/input_wb_rst_i@219600-219900 
+solution 1 vga/input_wb_rst_i@219600-219900 
+solution 1 :vga/input_wb_rst_i@220200-220500 
+solution 1 vga/input_wb_rst_i@220200-220500 
+solution 1 :vga/input_wb_rst_i@220800-221100 
+solution 1 vga/input_wb_rst_i@220800-221100 
+solution 1 :vga/input_wb_rst_i@221400-221700 
+solution 1 vga/input_wb_rst_i@221400-221700 
+solution 1 :vga/input_wb_rst_i@222000-222300 
+solution 1 vga/input_wb_rst_i@222000-222300 
+solution 1 :vga/input_wb_rst_i@222600-222900 
+solution 1 vga/input_wb_rst_i@222600-222900 
+solution 1 :vga/input_wbs_adr_i@211800-212100 
+solution 1 vga/input_wbs_adr_i@211800-212100 
+solution 1 :vga/input_wbs_adr_i@212400-212700 
+solution 1 vga/input_wbs_adr_i@212400-212700 
+solution 1 :vga/input_wbs_adr_i@213600-213900 
+solution 1 vga/input_wbs_adr_i@213600-213900 
+solution 1 :vga/input_wbs_adr_i@214200-214500 
+solution 1 vga/input_wbs_adr_i@214200-214500 
+solution 1 :vga/input_wbs_adr_i@215400-215700 
+solution 1 vga/input_wbs_adr_i@215400-215700 
+solution 1 :vga/input_wbs_adr_i@216000-216300 
+solution 1 vga/input_wbs_adr_i@216000-216300 
+solution 2 :vga/input_wbs_cyc_i@217200-217500 :vga/input_wbs_cyc_i@217800-218100 
+solution 2 vga/input_wbs_cyc_i@217200-217500 vga/input_wbs_cyc_i@217800-218100 
+solution 1 :vga/input_wbs_dat_i@106200-106500 
+solution 1 vga/input_wbs_dat_i@106200-106500 
+solution 1 :vga/input_wbs_dat_i@137400-137700 
+solution 1 vga/input_wbs_dat_i@137400-137700 
+solution 1 :vga/input_wbs_dat_i@204600-204900 
+solution 1 vga/input_wbs_dat_i@204600-204900 
+solution 1 :vga/input_wbs_dat_i@217800-218100 
+solution 1 vga/input_wbs_dat_i@217800-218100 
+solution 2 :vga/input_wbs_sel_i@217200-217500 :vga/input_wbs_sel_i@217800-218100 
+solution 2 vga/input_wbs_sel_i@217200-217500 vga/input_wbs_sel_i@217800-218100 
+solution 2 :vga/input_wbs_stb_i@217200-217500 :vga/input_wbs_stb_i@217800-218100 
+solution 2 vga/input_wbs_stb_i@217200-217500 vga/input_wbs_stb_i@217800-218100 
+solution 1 :vga/input_wbs_we_i@117600-117900 
+solution 1 vga/input_wbs_we_i@117600-117900 
+solution 1 :vga/input_wbs_we_i@118200-118500 
+solution 1 vga/input_wbs_we_i@118200-118500 
+solution 1 :vga/input_wbs_we_i@168600-168900 
+solution 1 vga/input_wbs_we_i@168600-168900 
+solution 1 :vga/input_wbs_we_i@169200-169500 
+solution 1 vga/input_wbs_we_i@169200-169500 
+solution 1 :vga/wire_ctrl_hsl@229200-229500 
+solution 1 vga/wire_ctrl_hsl@229200-229500 
+solution 1 :vga/wire_ctrl_ven@217200-217500 
+solution 1 vga/wire_ctrl_ven@217200-217500 
+solution 1 :vga/wire_ctrl_ven@223200-223500 
+solution 1 vga/wire_ctrl_ven@223200-223500 
+solution 1 :vga/wire_hsync_pad_o@233100-233400 
+solution 1 vga/wire_hsync_pad_o@233100-233400 
+solution 2 pixel_generator/clk_gen:vga_clkgen/wire_pclk_ena_o@223200-223500 pixel_generator/clk_gen:vga_clkgen/wire_pclk_ena_o@226200-226500 
+solution 2 vga_clkgen/wire_pclk_ena_o@223200-223500 vga_clkgen/wire_pclk_ena_o@226200-226500 
+solution 1 pixel_generator:vga_pgen/always_1/stmt_1@217200-217500 
+solution 1 vga_pgen/always_1/stmt_1@217200-217500 
+solution 1 pixel_generator:vga_pgen/always_1/stmt_1@223200-223500 
+solution 1 vga_pgen/always_1/stmt_1@223200-223500 
+solution 1 pixel_generator:vga_pgen/always_3/block_1/stmt_1@229200-229500 
+solution 1 vga_pgen/always_3/block_1/stmt_1@229200-229500 
+solution 1 pixel_generator:vga_pgen/always_3/block_1/stmt_5@232200-232500 
+solution 1 vga_pgen/always_3/block_1/stmt_5@232200-232500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_HSyncL@229200-229500 
+solution 1 vga_pgen/input_ctrl_HSyncL@229200-229500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@217200-217500 
+solution 1 vga_pgen/input_ctrl_ven@217200-217500 
+solution 1 pixel_generator:vga_pgen/input_ctrl_ven@223200-223500 
+solution 1 vga_pgen/input_ctrl_ven@223200-223500 
+solution 1 pixel_generator:vga_pgen/reg_hsync@229500-229800 
+solution 1 vga_pgen/reg_hsync@229500-229800 
+solution 1 pixel_generator:vga_pgen/reg_hsync_o@232500-232800 
+solution 1 vga_pgen/reg_hsync_o@232500-232800 
+solution 1 pixel_generator:vga_pgen/reg_nVen@217500-217800 
+solution 1 vga_pgen/reg_nVen@217500-217800 
+solution 1 pixel_generator:vga_pgen/reg_nVen@223500-223800 
+solution 1 vga_pgen/reg_nVen@223500-223800 
+solution 1 pixel_generator:vga_pgen/wire_ihsync@229200-229500 
+solution 1 vga_pgen/wire_ihsync@229200-229500 
+solution 2 pixel_generator:vga_pgen/wire_pclk_ena@223200-223500 pixel_generator:vga_pgen/wire_pclk_ena@226200-226500 
+solution 2 vga_pgen/wire_pclk_ena@223200-223500 vga_pgen/wire_pclk_ena@226200-226500 
+solution 2 pixel_generator/vtgen:vga_tgen/input_clk_ena@223200-223500 pixel_generator/vtgen:vga_tgen/input_clk_ena@226200-226500 
+solution 2 vga_tgen/input_clk_ena@223200-223500 vga_tgen/input_clk_ena@226200-226500 
+solution 1 pixel_generator/vtgen:vga_tgen/input_rst@220200-220500 
+solution 1 vga_tgen/input_rst@220200-220500 
+solution 1 pixel_generator/vtgen:vga_tgen/input_rst@226200-226500 
+solution 1 vga_tgen/input_rst@226200-226500 
+solution 1 pixel_generator/vtgen:vga_tgen/wire_hsync@229200-229500 
+solution 1 vga_tgen/wire_hsync@229200-229500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/always_1/if_1/block_1/stmt_1@220200-220500 
+solution 1 vga_vtim/always_1/if_1/block_1/stmt_1@220200-220500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/always_1/if_1/if_1/block_1/case_1/block_1/stmt_2@223200-223500 
+solution 1 vga_vtim/always_1/if_1/if_1/block_1/case_1/block_1/stmt_2@223200-223500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/always_1/if_1/if_1/block_1/case_1/block_1/stmt_4@223200-223500 
+solution 1 vga_vtim/always_1/if_1/if_1/block_1/case_1/block_1/stmt_4@223200-223500 
+solution 2 pixel_generator/vtgen/hor_gen:vga_vtim/input_ena@223200-223500 pixel_generator/vtgen/hor_gen:vga_vtim/input_ena@226200-226500 
+solution 2 vga_vtim/input_ena@223200-223500 vga_vtim/input_ena@226200-226500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/input_rst@220200-220500 
+solution 1 vga_vtim/input_rst@220200-220500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/input_rst@226200-226500 
+solution 1 vga_vtim/input_rst@226200-226500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/reg_Sync@223500-223800 
+solution 1 vga_vtim/reg_Sync@223500-223800 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/reg_Sync@226500-226800 
+solution 1 vga_vtim/reg_Sync@226500-226800 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/reg_cnt@223500-223800 
+solution 1 vga_vtim/reg_cnt@223500-223800 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/reg_state@220500-220800 
+solution 1 vga_vtim/reg_state@220500-220800 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/wire_cnt_done@226200-226500 
+solution 1 vga_vtim/wire_cnt_done@226200-226500 
+solution 1 pixel_generator/vtgen/hor_gen:vga_vtim/wire_cnt_nxt@226200-226500 
+solution 1 vga_vtim/wire_cnt_nxt@226200-226500 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@132600-132900 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@132600-132900 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@157800-158100 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@157800-158100 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@159600-159900 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@159600-159900 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@160200-160500 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@160200-160500 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@164400-164700 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@164400-164700 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@165000-165300 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@165000-165300 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@169800-170100 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@169800-170100 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@170400-170700 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@170400-170700 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@191400-191700 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@191400-191700 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@198600-198900 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@198600-198900 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@199200-199500 wbm:vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 vga_wb_master/always_1/stmt_1@199200-199500 vga_wb_master/always_1/stmt_1@216000-216300 
+solution 2 wbm:vga_wb_master/always_1/stmt_1@216000-216300 wbm:vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 vga_wb_master/always_1/stmt_1@216000-216300 vga_wb_master/always_1/stmt_1@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_1@216600-216900 wbm:vga_wb_master/always_2/if_1/stmt_1@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_1@216600-216900 vga_wb_master/always_2/if_1/stmt_1@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@133200-133500 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@133200-133500 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@135000-135300 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@135000-135300 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@135600-135900 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@135600-135900 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@136200-136500 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@136200-136500 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@136800-137100 wbm:vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@136800-137100 vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@160200-160500 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@160200-160500 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@160800-161100 wbm:vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@160800-161100 vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@162600-162900 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@162600-162900 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@162600-162900 wbm:vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@162600-162900 vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@171000-171300 wbm:vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@171000-171300 vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@202800-203100 wbm:vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@202800-203100 vga_wb_master/always_2/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_2/if_1/stmt_2@203400-203700 wbm:vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_2/if_1/stmt_2@203400-203700 vga_wb_master/always_2/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_1@216600-216900 wbm:vga_wb_master/always_3/if_1/stmt_1@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_1@216600-216900 vga_wb_master/always_3/if_1/stmt_1@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@111600-111900 wbm:vga_wb_master/always_3/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@111600-111900 vga_wb_master/always_3/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@111600-111900 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@111600-111900 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@112200-112500 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@112200-112500 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@112800-113100 wbm:vga_wb_master/always_3/if_1/stmt_2@216600-216900 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@112800-113100 vga_wb_master/always_3/if_1/stmt_2@216600-216900 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@113400-113700 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@113400-113700 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@114000-114300 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@114000-114300 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@114600-114900 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@114600-114900 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@115200-115500 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@115200-115500 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@115800-116100 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@115800-116100 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@116400-116700 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@116400-116700 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@117000-117300 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@117000-117300 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/always_3/if_1/stmt_2@120000-120300 wbm:vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 vga_wb_master/always_3/if_1/stmt_2@120000-120300 vga_wb_master/always_3/if_1/stmt_2@217200-217500 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@132600-132900 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@132600-132900 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@157800-158100 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@157800-158100 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@159600-159900 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@159600-159900 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@160200-160500 wbm:vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 vga_wb_master/input_ctrl_ven@160200-160500 vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@162000-162300 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@162000-162300 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@162600-162900 wbm:vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 vga_wb_master/input_ctrl_ven@162600-162900 vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@165000-165300 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@165000-165300 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@169800-170100 wbm:vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 vga_wb_master/input_ctrl_ven@169800-170100 vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@170400-170700 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@170400-170700 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@198600-198900 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@198600-198900 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@199200-199500 wbm:vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 vga_wb_master/input_ctrl_ven@199200-199500 vga_wb_master/input_ctrl_ven@216000-216300 
+solution 2 wbm:vga_wb_master/input_ctrl_ven@216000-216300 wbm:vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 vga_wb_master/input_ctrl_ven@216000-216300 vga_wb_master/input_ctrl_ven@216600-216900 
+solution 2 wbm:vga_wb_master/reg_cur_acc@160500-160800 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@160500-160800 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@161100-161400 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@161100-161400 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@161700-162000 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@161700-162000 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@162300-162600 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@162300-162600 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@162900-163200 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@162900-163200 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@163500-163800 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@163500-163800 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@164100-164400 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@164100-164400 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@165300-165600 wbm:vga_wb_master/reg_cur_acc@216900-217200 
+solution 2 vga_wb_master/reg_cur_acc@165300-165600 vga_wb_master/reg_cur_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_cur_acc@165900-166200 wbm:vga_wb_master/reg_cur_acc@216900-217200 
+solution 2 vga_wb_master/reg_cur_acc@165900-166200 vga_wb_master/reg_cur_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_cur_acc@167100-167400 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@167100-167400 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@167700-168000 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@167700-168000 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_cur_acc@216900-217200 wbm:vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 vga_wb_master/reg_cur_acc@216900-217200 vga_wb_master/reg_cur_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_sclr@132900-133200 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@132900-133200 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@158100-158400 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@158100-158400 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@159900-160200 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@159900-160200 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@160500-160800 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@160500-160800 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@164700-165000 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@164700-165000 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@165300-165600 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@165300-165600 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@170100-170400 wbm:vga_wb_master/reg_sclr@216900-217200 
+solution 2 vga_wb_master/reg_sclr@170100-170400 vga_wb_master/reg_sclr@216900-217200 
+solution 2 wbm:vga_wb_master/reg_sclr@170700-171000 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@170700-171000 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@191700-192000 wbm:vga_wb_master/reg_sclr@216900-217200 
+solution 2 vga_wb_master/reg_sclr@191700-192000 vga_wb_master/reg_sclr@216900-217200 
+solution 2 wbm:vga_wb_master/reg_sclr@198900-199200 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@198900-199200 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@199500-199800 wbm:vga_wb_master/reg_sclr@216300-216600 
+solution 2 vga_wb_master/reg_sclr@199500-199800 vga_wb_master/reg_sclr@216300-216600 
+solution 2 wbm:vga_wb_master/reg_sclr@216300-216600 wbm:vga_wb_master/reg_sclr@216900-217200 
+solution 2 vga_wb_master/reg_sclr@216300-216600 vga_wb_master/reg_sclr@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@133500-133800 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@133500-133800 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@135300-135600 wbm:vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 vga_wb_master/reg_vmem_acc@135300-135600 vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@137100-137400 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@137100-137400 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@158700-159000 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@158700-159000 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@171300-171600 wbm:vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 vga_wb_master/reg_vmem_acc@171300-171600 vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@192300-192600 wbm:vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 vga_wb_master/reg_vmem_acc@192300-192600 vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@199500-199800 wbm:vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 vga_wb_master/reg_vmem_acc@199500-199800 vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@200100-200400 wbm:vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 vga_wb_master/reg_vmem_acc@200100-200400 vga_wb_master/reg_vmem_acc@216900-217200 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@202500-202800 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@202500-202800 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@203100-203400 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@203100-203400 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@203700-204000 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@203700-204000 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/reg_vmem_acc@216900-217200 wbm:vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 vga_wb_master/reg_vmem_acc@216900-217200 vga_wb_master/reg_vmem_acc@217500-217800 
+solution 2 wbm:vga_wb_master/wire_ImDone@133200-133500 wbm:vga_wb_master/wire_ImDone@216600-216900 
+solution 2 vga_wb_master/wire_ImDone@133200-133500 vga_wb_master/wire_ImDone@216600-216900 
+solution 2 wbm:vga_wb_master/wire_ImDone@133200-133500 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@133200-133500 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@160200-160500 wbm:vga_wb_master/wire_ImDone@216600-216900 
+solution 2 vga_wb_master/wire_ImDone@160200-160500 vga_wb_master/wire_ImDone@216600-216900 
+solution 2 wbm:vga_wb_master/wire_ImDone@160800-161100 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@160800-161100 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@170400-170700 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@170400-170700 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@171000-171300 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@171000-171300 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@178200-178500 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@178200-178500 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@184800-185100 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@184800-185100 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@192000-192300 wbm:vga_wb_master/wire_ImDone@216600-216900 
+solution 2 vga_wb_master/wire_ImDone@192000-192300 vga_wb_master/wire_ImDone@216600-216900 
+solution 2 wbm:vga_wb_master/wire_ImDone@192600-192900 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@192600-192900 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@199200-199500 wbm:vga_wb_master/wire_ImDone@217200-217500 
+solution 2 vga_wb_master/wire_ImDone@199200-199500 vga_wb_master/wire_ImDone@217200-217500 
+solution 2 wbm:vga_wb_master/wire_ImDone@199800-200100 wbm:vga_wb_master/wire_ImDone@216600-216900 
+solution 2 vga_wb_master/wire_ImDone@199800-200100 vga_wb_master/wire_ImDone@216600-216900 
+solution 2 wbm:vga_wb_master/wire_busy@137400-137700 wbm:vga_wb_master/wire_busy@217800-218100 
+solution 2 vga_wb_master/wire_busy@137400-137700 vga_wb_master/wire_busy@217800-218100 
+solution 2 wbm:vga_wb_master/wire_busy@159000-159300 wbm:vga_wb_master/wire_busy@217800-218100 
+solution 2 vga_wb_master/wire_busy@159000-159300 vga_wb_master/wire_busy@217800-218100 
+solution 2 wbm:vga_wb_master/wire_busy@217200-217500 wbm:vga_wb_master/wire_busy@217800-218100 
+solution 2 vga_wb_master/wire_busy@217200-217500 vga_wb_master/wire_busy@217800-218100 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@106200-106500 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@137400-137700 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@137400-137700 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@204600-204900 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@204600-204900 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@217800-218100 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@217800-218100 
+solution 1 wbs:vga_wb_slave/input_adr_i@211800-212100 
+solution 1 vga_wb_slave/input_adr_i@211800-212100 
+solution 1 wbs:vga_wb_slave/input_adr_i@212400-212700 
+solution 1 vga_wb_slave/input_adr_i@212400-212700 
+solution 1 wbs:vga_wb_slave/input_adr_i@213600-213900 
+solution 1 vga_wb_slave/input_adr_i@213600-213900 
+solution 1 wbs:vga_wb_slave/input_adr_i@214200-214500 
+solution 1 vga_wb_slave/input_adr_i@214200-214500 
+solution 1 wbs:vga_wb_slave/input_adr_i@215400-215700 
+solution 1 vga_wb_slave/input_adr_i@215400-215700 
+solution 1 wbs:vga_wb_slave/input_adr_i@216000-216300 
+solution 1 vga_wb_slave/input_adr_i@216000-216300 
+solution 2 wbs:vga_wb_slave/input_cyc_i@217200-217500 wbs:vga_wb_slave/input_cyc_i@217800-218100 
+solution 2 vga_wb_slave/input_cyc_i@217200-217500 vga_wb_slave/input_cyc_i@217800-218100 
+solution 1 wbs:vga_wb_slave/input_dat_i@106200-106500 
+solution 1 vga_wb_slave/input_dat_i@106200-106500 
+solution 1 wbs:vga_wb_slave/input_dat_i@137400-137700 
+solution 1 vga_wb_slave/input_dat_i@137400-137700 
+solution 1 wbs:vga_wb_slave/input_dat_i@204600-204900 
+solution 1 vga_wb_slave/input_dat_i@204600-204900 
+solution 1 wbs:vga_wb_slave/input_dat_i@217800-218100 
+solution 1 vga_wb_slave/input_dat_i@217800-218100 
+solution 1 wbs:vga_wb_slave/input_rst_i@217800-218100 
+solution 1 vga_wb_slave/input_rst_i@217800-218100 
+solution 1 wbs:vga_wb_slave/input_rst_i@218400-218700 
+solution 1 vga_wb_slave/input_rst_i@218400-218700 
+solution 1 wbs:vga_wb_slave/input_rst_i@219000-219300 
+solution 1 vga_wb_slave/input_rst_i@219000-219300 
+solution 1 wbs:vga_wb_slave/input_rst_i@219600-219900 
+solution 1 vga_wb_slave/input_rst_i@219600-219900 
+solution 1 wbs:vga_wb_slave/input_rst_i@220200-220500 
+solution 1 vga_wb_slave/input_rst_i@220200-220500 
+solution 1 wbs:vga_wb_slave/input_rst_i@220800-221100 
+solution 1 vga_wb_slave/input_rst_i@220800-221100 
+solution 1 wbs:vga_wb_slave/input_rst_i@221400-221700 
+solution 1 vga_wb_slave/input_rst_i@221400-221700 
+solution 1 wbs:vga_wb_slave/input_rst_i@222000-222300 
+solution 1 vga_wb_slave/input_rst_i@222000-222300 
+solution 1 wbs:vga_wb_slave/input_rst_i@222600-222900 
+solution 1 vga_wb_slave/input_rst_i@222600-222900 
+solution 2 wbs:vga_wb_slave/input_sel_i@217200-217500 wbs:vga_wb_slave/input_sel_i@217800-218100 
+solution 2 vga_wb_slave/input_sel_i@217200-217500 vga_wb_slave/input_sel_i@217800-218100 
+solution 2 wbs:vga_wb_slave/input_stb_i@217200-217500 wbs:vga_wb_slave/input_stb_i@217800-218100 
+solution 2 vga_wb_slave/input_stb_i@217200-217500 vga_wb_slave/input_stb_i@217800-218100 
+solution 2 wbs:vga_wb_slave/input_wbm_busy@137400-137700 wbs:vga_wb_slave/input_wbm_busy@217800-218100 
+solution 2 vga_wb_slave/input_wbm_busy@137400-137700 vga_wb_slave/input_wbm_busy@217800-218100 
+solution 2 wbs:vga_wb_slave/input_wbm_busy@159000-159300 wbs:vga_wb_slave/input_wbm_busy@217800-218100 
+solution 2 vga_wb_slave/input_wbm_busy@159000-159300 vga_wb_slave/input_wbm_busy@217800-218100 
+solution 2 wbs:vga_wb_slave/input_wbm_busy@217200-217500 wbs:vga_wb_slave/input_wbm_busy@217800-218100 
+solution 2 vga_wb_slave/input_wbm_busy@217200-217500 vga_wb_slave/input_wbm_busy@217800-218100 
+solution 1 wbs:vga_wb_slave/input_we_i@117600-117900 
+solution 1 vga_wb_slave/input_we_i@117600-117900 
+solution 1 wbs:vga_wb_slave/input_we_i@118200-118500 
+solution 1 vga_wb_slave/input_we_i@118200-118500 
+solution 1 wbs:vga_wb_slave/input_we_i@168600-168900 
+solution 1 vga_wb_slave/input_we_i@168600-168900 
+solution 1 wbs:vga_wb_slave/input_we_i@169200-169500 
+solution 1 vga_wb_slave/input_we_i@169200-169500 
+solution 1 wbs:vga_wb_slave/reg_ctrl@100000-100200 
+solution 1 vga_wb_slave/reg_ctrl@100000-100200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@100500-100800 
+solution 1 vga_wb_slave/reg_ctrl@100500-100800 
+solution 1 wbs:vga_wb_slave/reg_ctrl@101100-101400 
+solution 1 vga_wb_slave/reg_ctrl@101100-101400 
+solution 1 wbs:vga_wb_slave/reg_ctrl@101700-102000 
+solution 1 vga_wb_slave/reg_ctrl@101700-102000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@102300-102600 
+solution 1 vga_wb_slave/reg_ctrl@102300-102600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@102900-103200 
+solution 1 vga_wb_slave/reg_ctrl@102900-103200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@137700-138000 
+solution 1 vga_wb_slave/reg_ctrl@137700-138000 
+solution 1 wbs:vga_wb_slave/reg_ctrl@161100-161400 
+solution 1 vga_wb_slave/reg_ctrl@161100-161400 
+solution 1 wbs:vga_wb_slave/reg_ctrl@168300-168600 
+solution 1 vga_wb_slave/reg_ctrl@168300-168600 
+solution 1 wbs:vga_wb_slave/reg_ctrl@168900-169200 
+solution 1 vga_wb_slave/reg_ctrl@168900-169200 
+solution 1 wbs:vga_wb_slave/reg_ctrl@169500-169800 
+solution 1 vga_wb_slave/reg_ctrl@169500-169800 
+solution 1 wbs:vga_wb_slave/reg_ctrl@170100-170400 
+solution 1 vga_wb_slave/reg_ctrl@170100-170400 
+solution 2 wbs:vga_wb_slave/wire_CLUT_ADR@217200-217500 wbs:vga_wb_slave/wire_CLUT_ADR@217800-218100 
+solution 2 vga_wb_slave/wire_CLUT_ADR@217200-217500 vga_wb_slave/wire_CLUT_ADR@217800-218100 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@211800-212100 
+solution 1 vga_wb_slave/wire_REG_ADR@211800-212100 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@212400-212700 
+solution 1 vga_wb_slave/wire_REG_ADR@212400-212700 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@213600-213900 
+solution 1 vga_wb_slave/wire_REG_ADR@213600-213900 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@214200-214500 
+solution 1 vga_wb_slave/wire_REG_ADR@214200-214500 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@215400-215700 
+solution 1 vga_wb_slave/wire_REG_ADR@215400-215700 
+solution 1 wbs:vga_wb_slave/wire_REG_ADR@216000-216300 
+solution 1 vga_wb_slave/wire_REG_ADR@216000-216300 
+solution 1 wbs:vga_wb_slave/wire_acc@103200-103500 
+solution 1 vga_wb_slave/wire_acc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_acc@131400-131700 
+solution 1 vga_wb_slave/wire_acc@131400-131700 
+solution 1 wbs:vga_wb_slave/wire_acc@160200-160500 
+solution 1 vga_wb_slave/wire_acc@160200-160500 
+solution 1 wbs:vga_wb_slave/wire_acc@182400-182700 
+solution 1 vga_wb_slave/wire_acc@182400-182700 
+solution 1 wbs:vga_wb_slave/wire_acc@205200-205500 
+solution 1 vga_wb_slave/wire_acc@205200-205500 
+solution 1 wbs:vga_wb_slave/wire_acc@210600-210900 
+solution 1 vga_wb_slave/wire_acc@210600-210900 
+solution 1 wbs:vga_wb_slave/wire_acc@218400-218700 
+solution 1 vga_wb_slave/wire_acc@218400-218700 
+solution 1 wbs:vga_wb_slave/wire_acc@226200-226500 
+solution 1 vga_wb_slave/wire_acc@226200-226500 
+solution 1 wbs:vga_wb_slave/wire_acc@226800-227100 
+solution 1 vga_wb_slave/wire_acc@226800-227100 
+solution 1 wbs:vga_wb_slave/wire_acc@227400-227700 
+solution 1 vga_wb_slave/wire_acc@227400-227700 
+solution 1 wbs:vga_wb_slave/wire_acc@228000-228300 
+solution 1 vga_wb_slave/wire_acc@228000-228300 
+solution 1 wbs:vga_wb_slave/wire_acc@228600-228900 
+solution 1 vga_wb_slave/wire_acc@228600-228900 
+solution 2 wbs:vga_wb_slave/wire_acc32@217200-217500 wbs:vga_wb_slave/wire_acc32@217800-218100 
+solution 2 vga_wb_slave/wire_acc32@217200-217500 vga_wb_slave/wire_acc32@217800-218100 
+solution 1 wbs:vga_wb_slave/wire_hsl@229200-229500 
+solution 1 vga_wb_slave/wire_hsl@229200-229500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@103200-103500 
+solution 1 vga_wb_slave/wire_reg_acc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@131400-131700 
+solution 1 vga_wb_slave/wire_reg_acc@131400-131700 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@160200-160500 
+solution 1 vga_wb_slave/wire_reg_acc@160200-160500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@182400-182700 
+solution 1 vga_wb_slave/wire_reg_acc@182400-182700 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@205200-205500 
+solution 1 vga_wb_slave/wire_reg_acc@205200-205500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@205800-206100 
+solution 1 vga_wb_slave/wire_reg_acc@205800-206100 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@208200-208500 
+solution 1 vga_wb_slave/wire_reg_acc@208200-208500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@226200-226500 
+solution 1 vga_wb_slave/wire_reg_acc@226200-226500 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@226800-227100 
+solution 1 vga_wb_slave/wire_reg_acc@226800-227100 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@227400-227700 
+solution 1 vga_wb_slave/wire_reg_acc@227400-227700 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@228000-228300 
+solution 1 vga_wb_slave/wire_reg_acc@228000-228300 
+solution 1 wbs:vga_wb_slave/wire_reg_acc@228600-228900 
+solution 1 vga_wb_slave/wire_reg_acc@228600-228900 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@103200-103500 
+solution 1 vga_wb_slave/wire_reg_wacc@103200-103500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@117600-117900 
+solution 1 vga_wb_slave/wire_reg_wacc@117600-117900 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@118200-118500 
+solution 1 vga_wb_slave/wire_reg_wacc@118200-118500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@131400-131700 
+solution 1 vga_wb_slave/wire_reg_wacc@131400-131700 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@160200-160500 
+solution 1 vga_wb_slave/wire_reg_wacc@160200-160500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@168600-168900 
+solution 1 vga_wb_slave/wire_reg_wacc@168600-168900 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@182400-182700 
+solution 1 vga_wb_slave/wire_reg_wacc@182400-182700 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@207000-207300 
+solution 1 vga_wb_slave/wire_reg_wacc@207000-207300 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@207600-207900 
+solution 1 vga_wb_slave/wire_reg_wacc@207600-207900 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@208200-208500 
+solution 1 vga_wb_slave/wire_reg_wacc@208200-208500 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@208800-209100 
+solution 1 vga_wb_slave/wire_reg_wacc@208800-209100 
+solution 1 wbs:vga_wb_slave/wire_reg_wacc@228000-228300 
+solution 1 vga_wb_slave/wire_reg_wacc@228000-228300 
+solution 1 wbs:vga_wb_slave/wire_ven@217200-217500 
+solution 1 vga_wb_slave/wire_ven@217200-217500 
+solution 1 wbs:vga_wb_slave/wire_ven@223200-223500 
+solution 1 vga_wb_slave/wire_ven@223200-223500 

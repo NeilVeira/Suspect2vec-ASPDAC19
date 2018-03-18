@@ -1,0 +1,64 @@
+solution 1 control:aeMB_control/always_7/if_1/block_1/stmt_1@0-5 
+solution 1 aeMB_control/always_7/if_1/block_1/stmt_1@0-5 
+solution 1 control:aeMB_control/input_sys_rst_i@0-5 
+solution 1 aeMB_control/input_sys_rst_i@0-5 
+solution 1 control:aeMB_control/reg_rRST@5-10 
+solution 1 aeMB_control/reg_rRST@5-10 
+solution 2 control:aeMB_control/wire_prst@10-15 control:aeMB_control/wire_prst@20-25 
+solution 2 aeMB_control/wire_prst@10-15 aeMB_control/wire_prst@20-25 
+solution 1 :aeMB_core/constraint_iwb_adr_o@65-66 
+solution 1 aeMB_core/constraint_iwb_adr_o@65-66 
+solution 1 :aeMB_core/input_sys_rst_i@0-5 
+solution 1 aeMB_core/input_sys_rst_i@0-5 
+solution 1 :aeMB_core/wire_iwb_adr_o@65-66 
+solution 1 aeMB_core/wire_iwb_adr_o@65-66 
+solution 2 :aeMB_core/wire_prst@10-15 :aeMB_core/wire_prst@20-25 
+solution 2 aeMB_core/wire_prst@10-15 aeMB_core/wire_prst@20-25 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_2@30-35 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_2@30-35 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_2@40-45 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_2@40-45 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_2@50-55 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_2@50-55 
+solution 1 fetch:aeMB_fetch/always_1/block_1/case_1/stmt_2@60-65 
+solution 1 aeMB_fetch/always_1/block_1/case_1/stmt_2@60-65 
+solution 1 fetch:aeMB_fetch/always_2/if_1/block_1/stmt_1@20-25 
+solution 1 aeMB_fetch/always_2/if_1/block_1/stmt_1@20-25 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@30-35 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@30-35 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@40-45 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@40-45 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@50-55 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@50-55 
+solution 1 fetch:aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@60-65 
+solution 1 aeMB_fetch/always_2/if_1/if_1/block_1/stmt_2@60-65 
+solution 2 fetch:aeMB_fetch/input_prst@10-15 fetch:aeMB_fetch/input_prst@20-25 
+solution 2 aeMB_fetch/input_prst@10-15 aeMB_fetch/input_prst@20-25 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@25-30 
+solution 1 aeMB_fetch/reg_rIWBADR@25-30 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@35-40 
+solution 1 aeMB_fetch/reg_rIWBADR@35-40 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@45-50 
+solution 1 aeMB_fetch/reg_rIWBADR@45-50 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@55-60 
+solution 1 aeMB_fetch/reg_rIWBADR@55-60 
+solution 1 fetch:aeMB_fetch/reg_rIWBADR@65-66 
+solution 1 aeMB_fetch/reg_rIWBADR@65-66 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@30-35 
+solution 1 aeMB_fetch/reg_xIWBADR@30-35 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@40-45 
+solution 1 aeMB_fetch/reg_xIWBADR@40-45 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@50-55 
+solution 1 aeMB_fetch/reg_xIWBADR@50-55 
+solution 1 fetch:aeMB_fetch/reg_xIWBADR@60-65 
+solution 1 aeMB_fetch/reg_xIWBADR@60-65 
+solution 1 fetch:aeMB_fetch/wire_iwb_adr_o@65-66 
+solution 1 aeMB_fetch/wire_iwb_adr_o@65-66 
+solution 1 fetch:aeMB_fetch/wire_wPCNXT@30-35 
+solution 1 aeMB_fetch/wire_wPCNXT@30-35 
+solution 1 fetch:aeMB_fetch/wire_wPCNXT@40-45 
+solution 1 aeMB_fetch/wire_wPCNXT@40-45 
+solution 1 fetch:aeMB_fetch/wire_wPCNXT@50-55 
+solution 1 aeMB_fetch/wire_wPCNXT@50-55 
+solution 1 fetch:aeMB_fetch/wire_wPCNXT@60-65 
+solution 1 aeMB_fetch/wire_wPCNXT@60-65 

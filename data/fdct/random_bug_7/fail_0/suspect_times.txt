@@ -1,0 +1,112 @@
+solution 1 dct_mod:dct/always_2/if_1/if_1/block_1/stmt_1@120000-122500 
+solution 1 dct/always_2/if_1/if_1/block_1/stmt_1@120000-122500 
+solution 1 dct_mod:dct/always_2/if_1/if_1/block_1/stmt_2@125000-127500 
+solution 1 dct/always_2/if_1/if_1/block_1/stmt_2@125000-127500 
+solution 1 dct_mod:dct/always_2/if_1/if_1/block_1/stmt_3@130000-132500 
+solution 1 dct/always_2/if_1/if_1/block_1/stmt_3@130000-132500 
+solution 1 dct_mod:dct/reg_ddgo@132500-135000 
+solution 1 dct/reg_ddgo@132500-135000 
+solution 1 dct_mod:dct/reg_dgo@127500-130000 
+solution 1 dct/reg_dgo@127500-130000 
+solution 1 dct_mod:dct/reg_go@122500-125000 
+solution 1 dct/reg_go@122500-125000 
+solution 1 dct_mac/always_2/if_1/if_1/stmt_1@135000-137500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_1@135000-137500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_1@135000-137500 
+solution 1 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@150000-152500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@150000-152500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@155000-157500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@155000-157500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@170000-172500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@170000-172500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@175000-177500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@175000-177500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@255000-257500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@255000-257500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@300000-302500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@300000-302500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@305000-307500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@305000-307500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@310000-312500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@310000-312500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@330000-332500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@330000-332500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@445000-447500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@445000-447500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_2@450000-452500 
+solution 2 dct_mac/always_2/if_1/if_1/stmt_2@140000-142500 dct_mac/always_2/if_1/if_1/stmt_2@450000-452500 
+solution 1 dct_mac/input_dclr@135000-137500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/input_dclr@135000-137500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/input_dclr@135000-137500 
+solution 1 dct_mac/input_ena@135000-137500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/input_ena@135000-137500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/input_ena@135000-137500 
+solution 1 dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@137500-140000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@137500-140000 dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@142500-145000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@142500-145000 dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@147500-150000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@147500-150000 dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@152500-155000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@152500-155000 dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@157500-160000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@162500-165000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@162500-165000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@167500-170000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@167500-170000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@172500-175000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@172500-175000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@177500-180000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@177500-180000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@262500-265000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@262500-265000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@272500-275000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@272500-275000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@282500-285000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@157500-160000 
+solution 2 dct_mac/reg_result@157500-160000 dct_mac/reg_result@282500-285000 
+solution 1 dct_mac/wire_ext_mult_res@140000-142500 
+solution 1 dct_mac/wire_ext_mult_res@180000-182500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@180000-182500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@135000-137500 
+solution 2 dct_mac/wire_ext_mult_res@135000-137500 dct_mac/wire_ext_mult_res@180000-182500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@140000-142500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@140000-142500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@220000-222500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@140000-142500 
+solution 2 dct_mac/wire_ext_mult_res@140000-142500 dct_mac/wire_ext_mult_res@220000-222500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@425000-427500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@140000-142500 
+solution 2 dct_mac/wire_ext_mult_res@140000-142500 dct_mac/wire_ext_mult_res@425000-427500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@425000-427500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@145000-147500 
+solution 2 dct_mac/wire_ext_mult_res@145000-147500 dct_mac/wire_ext_mult_res@425000-427500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@425000-427500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@150000-152500 
+solution 2 dct_mac/wire_ext_mult_res@150000-152500 dct_mac/wire_ext_mult_res@425000-427500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@425000-427500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@155000-157500 
+solution 2 dct_mac/wire_ext_mult_res@155000-157500 dct_mac/wire_ext_mult_res@425000-427500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@180000-182500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@170000-172500 
+solution 2 dct_mac/wire_ext_mult_res@170000-172500 dct_mac/wire_ext_mult_res@180000-182500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@220000-222500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@170000-172500 
+solution 2 dct_mac/wire_ext_mult_res@170000-172500 dct_mac/wire_ext_mult_res@220000-222500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@180000-182500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@180000-182500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@405000-407500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@180000-182500 
+solution 2 dct_mac/wire_ext_mult_res@180000-182500 dct_mac/wire_ext_mult_res@405000-407500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@425000-427500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@450000-452500 
+solution 2 dct_mac/wire_ext_mult_res@425000-427500 dct_mac/wire_ext_mult_res@450000-452500 
+solution 1 dctu/input_ddgo@135000-137500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/input_ddgo@135000-137500 dct_mod/dct_block_0/dct_unit_1:dctu/input_ddgo@135000-137500 
+solution 1 dctu/input_ena@135000-137500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/input_ena@135000-137500 dct_mod/dct_block_0/dct_unit_1:dctu/input_ena@135000-137500 
+solution 1 dctu/wire_dout@455000-457500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/wire_dout@455000-457500 dct_mod/dct_block_0/dct_unit_1:dctu/wire_dout@455000-457500 
+solution 1 dctu/wire_result@455000-457500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/wire_result@455000-457500 dct_mod/dct_block_0/dct_unit_1:dctu/wire_result@455000-457500 
+solution 1 dct_mod/dct_block_0:dctub/input_ddgo@135000-137500 
+solution 1 dctub/input_ddgo@135000-137500 
+solution 1 dct_mod/dct_block_0:dctub/input_ena@135000-137500 
+solution 1 dctub/input_ena@135000-137500 
+solution 2 :fdct/wire_dout@460000-462500 :fdct/wire_dout@465000-467500 
+solution 2 fdct/wire_dout@460000-462500 fdct/wire_dout@465000-467500 
+solution 2 sigMap_i1:sigMap/assert_assertion_dout@462500-465000 sigMap_i1:sigMap/assert_assertion_dout@467500-468501 
+solution 2 sigMap/assert_assertion_dout@462500-465000 sigMap/assert_assertion_dout@467500-468501 
+solution 2 sigMap_i1:sigMap/input_dout@460000-462500 sigMap_i1:sigMap/input_dout@465000-467500 
+solution 2 sigMap/input_dout@460000-462500 sigMap/input_dout@465000-467500 
+solution 1 zigzag_mod:zigzag/reg_sresult@457500-460000 
+solution 1 zigzag/reg_sresult@457500-460000 
+solution 2 zigzag_mod:zigzag/wire_dout@460000-462500 zigzag_mod:zigzag/wire_dout@465000-467500 
+solution 2 zigzag/wire_dout@460000-462500 zigzag/wire_dout@465000-467500 

@@ -1,0 +1,9 @@
+#   RTL                        TYPE       FILENAME                BEGIN  END    
+rtl spi                        module     ../rtl/simple_spi_top.v  86.1  371.10 
+rtl spi/input_adr_i            input      ../rtl/simple_spi_top.v 108.16 108.21 
+rtl spi/constraint_dat_o       constraint ../rtl/simple_spi_top.v 111.16 111.21 
+rtl spi/reg_dat_o              reg        ../rtl/simple_spi_top.v 111.16 111.21 
+rtl spi/always_2               always     ../rtl/simple_spi_top.v 181.3  189.12 
+rtl spi/always_2/case_1        case       ../rtl/simple_spi_top.v 182.5  189.12 
+rtl spi/always_2/case_1/cond   cond       ../rtl/simple_spi_top.v 182.10 182.15 
+rtl spi/always_2/case_1/stmt_1 stmt       ../rtl/simple_spi_top.v 185.14 185.25 

@@ -1,0 +1,6 @@
+solution 1 adder:gfadder/wire_out@1360-1380 
+solution 1 gfadder/wire_out@1360-1380 
+solution 1 :rsdecoder/constraint_corr_recword@1360-1380 
+solution 1 rsdecoder/constraint_corr_recword@1360-1380 
+solution 1 :rsdecoder/wire_corr_recword@1360-1380 
+solution 1 rsdecoder/wire_corr_recword@1360-1380 

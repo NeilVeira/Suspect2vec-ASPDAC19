@@ -1,0 +1,18 @@
+solution 2 rfifo/assert_fifo4_i1:check_fifo4/assert_a_fifo_clr@1500-2000 rfifo/assert_fifo4_i1:check_fifo4/assert_a_fifo_clr@2500-3000 
+solution 2 check_fifo4/assert_a_fifo_clr@1500-2000 check_fifo4/assert_a_fifo_clr@2500-3000 
+solution 2 rfifo/assert_fifo4_i1:check_fifo4/input_clr@1000-1500 rfifo/assert_fifo4_i1:check_fifo4/input_clr@2000-2500 
+solution 2 check_fifo4/input_clr@1000-1500 check_fifo4/input_clr@2000-2500 
+solution 2 rfifo/assert_fifo4_i1:check_fifo4/input_wp@2000-2500 rfifo/assert_fifo4_i1:check_fifo4/input_wp@3000-3500 
+solution 2 check_fifo4/input_wp@2000-2500 check_fifo4/input_wp@3000-3500 
+solution 2 rfifo:fifo4/always_1/if_1/if_1/stmt_1@1000-1500 rfifo:fifo4/always_1/if_1/if_1/stmt_1@2000-2500 
+solution 2 fifo4/always_1/if_1/if_1/stmt_1@1000-1500 fifo4/always_1/if_1/if_1/stmt_1@2000-2500 
+solution 2 rfifo:fifo4/input_clr@1000-1500 rfifo:fifo4/input_clr@2000-2500 
+solution 2 fifo4/input_clr@1000-1500 fifo4/input_clr@2000-2500 
+solution 2 rfifo:fifo4/reg_wp@1500-2000 rfifo:fifo4/reg_wp@2500-3000 
+solution 2 fifo4/reg_wp@1500-2000 fifo4/reg_wp@2500-3000 
+solution 1 :spi/always_1/if_1/block_1/stmt_1@200-500 
+solution 1 spi/always_1/if_1/block_1/stmt_1@200-500 
+solution 1 :spi/reg_spcr@500-1000 
+solution 1 spi/reg_spcr@500-1000 
+solution 2 :spi/wire_spe@1000-1500 :spi/wire_spe@2000-2500 
+solution 2 spi/wire_spe@1000-1500 spi/wire_spe@2000-2500 

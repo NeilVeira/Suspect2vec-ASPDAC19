@@ -1,0 +1,9 @@
+#   RTL                    TYPE       FILENAME            BEGIN  END    
+rtl fpu                    module     ../rtl/fpu.v         62.1  561.10 
+rtl fpu/constraint_quo     constraint ../rtl/fpu.v        251.13 251.16 
+rtl fpu/wire_quo           wire       ../rtl/fpu.v        251.13 251.16 
+rtl fpu/inst_u6            inst       ../rtl/fpu.v        287.8  287.83 
+rtl div_r2                 module     ../rtl/primitives.v  81.1  103.10 
+rtl div_r2/reg_quo         reg        ../rtl/primitives.v  85.15  85.18 
+rtl div_r2/always_2        always     ../rtl/primitives.v  92.1   95.10 
+rtl div_r2/always_2/stmt_1 stmt       ../rtl/primitives.v  95.1   95.10 

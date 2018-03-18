@@ -1,0 +1,8 @@
+#   RTL                            TYPE       FILENAME            BEGIN  END    
+rtl aeMB_core                      module     ../rtl/aeMB_core.v   54.1  253.10 
+rtl aeMB_core/constraint_iwb_adr_o constraint ../rtl/aeMB_core.v   74.22  74.31 
+rtl aeMB_core/wire_iwb_adr_o       wire       ../rtl/aeMB_core.v   74.22  74.31 
+rtl aeMB_core/inst_fetch           inst       ../rtl/aeMB_core.v  151.6  164.33 
+rtl aeMB_fetch                     module     ../rtl/aeMB_fetch.v  50.1  114.10 
+rtl aeMB_fetch/wire_iwb_adr_o      wire       ../rtl/aeMB_fetch.v  59.22  59.31 
+rtl aeMB_fetch/assign_2_iwb_adr_o  assign     ../rtl/aeMB_fetch.v  83.17  83.30 

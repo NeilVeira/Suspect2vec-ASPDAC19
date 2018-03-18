@@ -1,0 +1,218 @@
+solution 2 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/assert__a_state_MUL@5050-5100 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/assert__a_state_MUL@5150-5151 
+solution 2 assert_ctl_fsm/assert__a_state_MUL@5050-5100 assert_ctl_fsm/assert__a_state_MUL@5150-5151 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/input_CurrState@5000-5050 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/input_CurrState@5100-5150 
+solution 2 assert_ctl_fsm/input_CurrState@5000-5050 assert_ctl_fsm/input_CurrState@5100-5150 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/input_ra2exec_ctl_clr@5000-5050 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/input_ra2exec_ctl_clr@5100-5150 
+solution 2 assert_ctl_fsm/input_ra2exec_ctl_clr@5000-5050 assert_ctl_fsm/input_ra2exec_ctl_clr@5100-5150 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/wire_ra_out@5000-5050 i_mips_core/iRF_stage/MAIN_FSM/chk_ctl_fsm:assert_ctl_fsm/wire_ra_out@5100-5150 
+solution 2 assert_ctl_fsm/wire_ra_out@5000-5050 assert_ctl_fsm/wire_ra_out@5100-5150 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1600-1650 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@1600-1650 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@4800-4850 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@4900-4950 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/if_1/if_1/stmt_2@4800-4850 
+solution 1 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/if_1/if_1/stmt_2@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/stmt_1@4900-4950 
+solution 1 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/stmt_1@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1600-1650 
+solution 1 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1600-1650 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_6/block_1/case_1/block_2/stmt_5@5000-5050 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_6/block_1/case_1/block_2/stmt_5@5100-5150 
+solution 2 ctl_FSM/always_6/block_1/case_1/block_2/stmt_5@5000-5050 ctl_FSM/always_6/block_1/case_1/block_2/stmt_5@5100-5150 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@1600-1650 
+solution 1 ctl_FSM/input_id_cmd@1600-1650 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@4800-4850 
+solution 1 ctl_FSM/input_id_cmd@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@4900-4950 
+solution 1 ctl_FSM/input_id_cmd@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_irq@4800-4850 
+solution 1 ctl_FSM/input_irq@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_irq@4900-4950 
+solution 1 ctl_FSM/input_irq@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_pause@4900-4950 
+solution 1 ctl_FSM/input_pause@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_rst@4800-4850 
+solution 1 ctl_FSM/input_rst@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_rst@4900-4950 
+solution 1 ctl_FSM/input_rst@4900-4950 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1650-1700 
+solution 1 ctl_FSM/reg_CurrState@1650-1700 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@4850-4900 
+solution 1 ctl_FSM/reg_CurrState@4850-4900 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@4950-5000 
+solution 1 ctl_FSM/reg_CurrState@4950-5000 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1600-1650 
+solution 1 ctl_FSM/reg_NextState@1600-1650 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@4800-4850 
+solution 1 ctl_FSM/reg_NextState@4800-4850 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@4900-4950 
+solution 1 ctl_FSM/reg_NextState@4900-4950 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_ra2exec_ctl_clr@5000-5050 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_ra2exec_ctl_clr@5100-5150 
+solution 2 ctl_FSM/reg_ra2exec_ctl_clr@5000-5050 ctl_FSM/reg_ra2exec_ctl_clr@5100-5150 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1600-1650 
+solution 1 decode_pipe/input_ins_i@1600-1650 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@4800-4850 
+solution 1 decode_pipe/input_ins_i@4800-4850 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@4900-4950 
+solution 1 decode_pipe/input_ins_i@4900-4950 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@1600-1650 
+solution 1 decode_pipe/wire_fsm_dly@1600-1650 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@4800-4850 
+solution 1 decode_pipe/wire_fsm_dly@4800-4850 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@4900-4950 
+solution 1 decode_pipe/wire_fsm_dly@4900-4950 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/always_1/block_1/case_1/block_1/case_1/block_16/stmt_5@4900-4950 
+solution 1 decoder/always_1/block_1/case_1/block_1/case_1/block_16/stmt_5@4900-4950 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/always_1/block_1/case_1/block_1/case_1/block_20/stmt_5@4800-4850 
+solution 1 decoder/always_1/block_1/case_1/block_1/case_1/block_20/stmt_5@4800-4850 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/always_1/block_1/case_1/block_6/stmt_5@1600-1650 
+solution 1 decoder/always_1/block_1/case_1/block_6/stmt_5@1600-1650 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1600-1650 
+solution 1 decoder/input_ins_i@1600-1650 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@4800-4850 
+solution 1 decoder/input_ins_i@4800-4850 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@4900-4950 
+solution 1 decoder/input_ins_i@4900-4950 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@1600-1650 
+solution 1 decoder/reg_fsm_dly@1600-1650 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@4800-4850 
+solution 1 decoder/reg_fsm_dly@4800-4850 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@4900-4950 
+solution 1 decoder/reg_fsm_dly@4900-4950 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/wire_inst_func@4800-4850 
+solution 1 decoder/wire_inst_func@4800-4850 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/wire_inst_func@4900-4950 
+solution 1 decoder/wire_inst_func@4900-4950 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/wire_inst_op@4800-4850 
+solution 1 decoder/wire_inst_op@4800-4850 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/wire_inst_op@4900-4950 
+solution 1 decoder/wire_inst_op@4900-4950 
+solution 1 i_mips_core:mips_core/input_irq_i@4800-4850 
+solution 1 mips_core/input_irq_i@4800-4850 
+solution 1 i_mips_core:mips_core/input_irq_i@4900-4950 
+solution 1 mips_core/input_irq_i@4900-4950 
+solution 1 i_mips_core:mips_core/input_pause@4900-4950 
+solution 1 mips_core/input_pause@4900-4950 
+solution 1 i_mips_core:mips_core/input_rst@4800-4850 
+solution 1 mips_core/input_rst@4800-4850 
+solution 1 i_mips_core:mips_core/input_rst@4900-4950 
+solution 1 mips_core/input_rst@4900-4950 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1600-1650 
+solution 1 mips_core/input_zz_ins_i@1600-1650 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@4800-4850 
+solution 1 mips_core/input_zz_ins_i@4800-4850 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@4900-4950 
+solution 1 mips_core/input_zz_ins_i@4900-4950 
+solution 1 i_mips_core:mips_core/wire_BUS197@1600-1650 
+solution 1 mips_core/wire_BUS197@1600-1650 
+solution 1 i_mips_core:mips_core/wire_BUS197@4800-4850 
+solution 1 mips_core/wire_BUS197@4800-4850 
+solution 1 i_mips_core:mips_core/wire_BUS197@4900-4950 
+solution 1 mips_core/wire_BUS197@4900-4950 
+solution 1 imips_dvc:mips_dvc/always_6/stmt_1@4700-4750 
+solution 1 mips_dvc/always_6/stmt_1@4700-4750 
+solution 1 imips_dvc:mips_dvc/always_6/stmt_1@4800-4850 
+solution 1 mips_dvc/always_6/stmt_1@4800-4850 
+solution 1 imips_dvc:mips_dvc/reg_cmd@1650-1700 
+solution 1 mips_dvc/reg_cmd@1650-1700 
+solution 1 imips_dvc:mips_dvc/reg_cmd@1750-1800 
+solution 1 mips_dvc/reg_cmd@1750-1800 
+solution 1 imips_dvc:mips_dvc/reg_cmd@1850-1900 
+solution 1 mips_dvc/reg_cmd@1850-1900 
+solution 1 imips_dvc:mips_dvc/reg_cmd@1950-2000 
+solution 1 mips_dvc/reg_cmd@1950-2000 
+solution 1 imips_dvc:mips_dvc/reg_cmd@2050-2100 
+solution 1 mips_dvc/reg_cmd@2050-2100 
+solution 1 imips_dvc:mips_dvc/reg_cmd@2150-2200 
+solution 1 mips_dvc/reg_cmd@2150-2200 
+solution 1 imips_dvc:mips_dvc/reg_cmd@2450-2500 
+solution 1 mips_dvc/reg_cmd@2450-2500 
+solution 1 imips_dvc:mips_dvc/reg_cmd@2550-2600 
+solution 1 mips_dvc/reg_cmd@2550-2600 
+solution 1 imips_dvc:mips_dvc/reg_cmd@2650-2700 
+solution 1 mips_dvc/reg_cmd@2650-2700 
+solution 1 imips_dvc:mips_dvc/reg_cmd@3350-3400 
+solution 1 mips_dvc/reg_cmd@3350-3400 
+solution 1 imips_dvc:mips_dvc/reg_cmd@4550-4600 
+solution 1 mips_dvc/reg_cmd@4550-4600 
+solution 1 imips_dvc:mips_dvc/reg_cmd@4650-4700 
+solution 1 mips_dvc/reg_cmd@4650-4700 
+solution 1 imips_dvc:mips_dvc/reg_irq_req_o@4750-4800 
+solution 1 mips_dvc/reg_irq_req_o@4750-4800 
+solution 1 imips_dvc:mips_dvc/reg_irq_req_o@4850-4900 
+solution 1 mips_dvc/reg_irq_req_o@4850-4900 
+solution 1 :mips_sys/input_pause@4900-4950 
+solution 1 mips_sys/input_pause@4900-4950 
+solution 1 :mips_sys/input_rst@4800-4850 
+solution 1 mips_sys/input_rst@4800-4850 
+solution 1 :mips_sys/input_rst@4900-4950 
+solution 1 mips_sys/input_rst@4900-4950 
+solution 1 :mips_sys/input_zz_ins_i@1600-1650 
+solution 1 mips_sys/input_zz_ins_i@1600-1650 
+solution 1 :mips_sys/input_zz_ins_i@4800-4850 
+solution 1 mips_sys/input_zz_ins_i@4800-4850 
+solution 1 :mips_sys/input_zz_ins_i@4900-4950 
+solution 1 mips_sys/input_zz_ins_i@4900-4950 
+solution 1 :mips_sys/wire_w_irq@4800-4850 
+solution 1 mips_sys/wire_w_irq@4800-4850 
+solution 1 :mips_sys/wire_w_irq@4900-4950 
+solution 1 mips_sys/wire_w_irq@4900-4950 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1600-1650 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@2100-2150 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3100-3150 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3200-3250 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3700-3750 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3800-3850 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3900-3950 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1600-1650 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1600-1650 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@2100-2150 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@2100-2150 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3100-3150 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3100-3150 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3200-3250 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3200-3250 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3700-3750 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3700-3750 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3800-3850 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3800-3850 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3900-3950 i_mips_core/cop_data_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@3900-3950 
+solution 1 r32_reg_clr_cls/input_r32_i@1600-1650 
+solution 1 r32_reg_clr_cls/input_r32_i@2100-2150 
+solution 1 r32_reg_clr_cls/input_r32_i@3100-3150 
+solution 1 r32_reg_clr_cls/input_r32_i@3200-3250 
+solution 1 r32_reg_clr_cls/input_r32_i@3700-3750 
+solution 1 r32_reg_clr_cls/input_r32_i@3800-3850 
+solution 1 r32_reg_clr_cls/input_r32_i@3900-3950 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@1600-1650 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@1600-1650 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@2100-2150 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@2100-2150 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@3100-3150 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@3100-3150 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@3200-3250 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@3200-3250 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@3700-3750 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@3700-3750 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@3800-3850 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@3800-3850 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@3900-3950 i_mips_core/cop_data_reg:r32_reg_clr_cls/input_r32_i@3900-3950 
+solution 1 r32_reg_clr_cls/reg_r32_o@1650-1700 
+solution 1 r32_reg_clr_cls/reg_r32_o@2150-2200 
+solution 1 r32_reg_clr_cls/reg_r32_o@3150-3200 
+solution 1 r32_reg_clr_cls/reg_r32_o@3250-3300 
+solution 1 r32_reg_clr_cls/reg_r32_o@3750-3800 
+solution 1 r32_reg_clr_cls/reg_r32_o@3850-3900 
+solution 1 r32_reg_clr_cls/reg_r32_o@3950-4000 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@1650-1700 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@1650-1700 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@2150-2200 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@2150-2200 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@3150-3200 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@3150-3200 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@3250-3300 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@3250-3300 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@3750-3800 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@3750-3800 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@3850-3900 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@3850-3900 
+solution 2 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@3950-4000 i_mips_core/cop_data_reg:r32_reg_clr_cls/reg_r32_o@3950-4000 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_id_cmd@1600-1650 
+solution 1 rf_stage/input_id_cmd@1600-1650 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_id_cmd@4800-4850 
+solution 1 rf_stage/input_id_cmd@4800-4850 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_id_cmd@4900-4950 
+solution 1 rf_stage/input_id_cmd@4900-4950 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_irq_i@4800-4850 
+solution 1 rf_stage/input_irq_i@4800-4850 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_irq_i@4900-4950 
+solution 1 rf_stage/input_irq_i@4900-4950 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pause@4900-4950 
+solution 1 rf_stage/input_pause@4900-4950 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_rst_i@4800-4850 
+solution 1 rf_stage/input_rst_i@4800-4850 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_rst_i@4900-4950 
+solution 1 rf_stage/input_rst_i@4900-4950 

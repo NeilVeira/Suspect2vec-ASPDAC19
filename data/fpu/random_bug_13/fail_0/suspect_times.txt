@@ -1,0 +1,10 @@
+solution 1 u6:div_r2/always_2/stmt_1@0-500 
+solution 1 div_r2/always_2/stmt_1@0-500 
+solution 1 u6:div_r2/reg_quo@500-1000 
+solution 1 div_r2/reg_quo@500-1000 
+solution 1 :fpu/constraint_quo@500-1000 
+solution 1 fpu/constraint_quo@500-1000 
+solution 1 :fpu/constraint_quo@500-1510 
+solution 1 fpu/constraint_quo@500-1510 
+solution 1 :fpu/wire_quo@500-1000 
+solution 1 fpu/wire_quo@500-1000 

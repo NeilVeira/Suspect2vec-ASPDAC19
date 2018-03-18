@@ -1,0 +1,92 @@
+solution 2 check1:check_divider/assert_check_zero@900-1200 check1:check_divider/assert_check_zero@1500-1800 
+solution 2 check_divider/assert_check_zero@900-1200 check_divider/assert_check_zero@1500-1800 
+solution 2 check1:check_divider/input_d@600-900 check1:check_divider/input_d@1200-1500 
+solution 2 check_divider/input_d@600-900 check_divider/input_d@1200-1500 
+solution 2 check1:check_divider/input_div0@7200-7500 check1:check_divider/input_div0@7800-8100 
+solution 2 check_divider/input_div0@7200-7500 check_divider/input_div0@7800-8100 
+solution 2 div_uu:div_uu/always_10/if_1/stmt_1@6000-6300 div_uu:div_uu/always_10/if_1/stmt_1@6600-6900 
+solution 2 div_uu/always_10/if_1/stmt_1@6000-6300 div_uu/always_10/if_1/stmt_1@6600-6900 
+solution 2 div_uu:div_uu/always_7/block_1/stmt_2@1200-1500 div_uu:div_uu/always_7/block_1/stmt_2@1800-2100 
+solution 2 div_uu/always_7/block_1/stmt_2@1200-1500 div_uu/always_7/block_1/stmt_2@1800-2100 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@1800-2100 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@1800-2100 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@2400-2700 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@2400-2700 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@3000-3300 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@3000-3300 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@3600-3900 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@3600-3900 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@4200-4500 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@4200-4500 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@4800-5100 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@4800-5100 
+solution 1 div_uu:div_uu/always_8/if_1/for_1/block_1/stmt_2@5400-5700 
+solution 1 div_uu/always_8/if_1/for_1/block_1/stmt_2@5400-5700 
+solution 2 div_uu:div_uu/input_d@1200-1500 div_uu:div_uu/input_d@1800-2100 
+solution 2 div_uu/input_d@1200-1500 div_uu/input_d@1800-2100 
+solution 2 div_uu:div_uu/input_ena@1200-1500 div_uu:div_uu/input_ena@1800-2100 
+solution 2 div_uu/input_ena@1200-1500 div_uu/input_ena@1800-2100 
+solution 2 div_uu:div_uu/input_ena@1200-1500 div_uu:div_uu/input_ena@2400-2700 
+solution 2 div_uu/input_ena@1200-1500 div_uu/input_ena@2400-2700 
+solution 2 div_uu:div_uu/input_ena@1200-1500 div_uu:div_uu/input_ena@3000-3300 
+solution 2 div_uu/input_ena@1200-1500 div_uu/input_ena@3000-3300 
+solution 2 div_uu:div_uu/input_ena@3000-3300 div_uu:div_uu/input_ena@4800-5100 
+solution 2 div_uu/input_ena@3000-3300 div_uu/input_ena@4800-5100 
+solution 2 div_uu:div_uu/input_ena@3600-3900 div_uu:div_uu/input_ena@5400-5700 
+solution 2 div_uu/input_ena@3600-3900 div_uu/input_ena@5400-5700 
+solution 2 div_uu:div_uu/input_ena@3600-3900 div_uu:div_uu/input_ena@6000-6300 
+solution 2 div_uu/input_ena@3600-3900 div_uu/input_ena@6000-6300 
+solution 2 div_uu:div_uu/input_ena@4200-4500 div_uu:div_uu/input_ena@4800-5100 
+solution 2 div_uu/input_ena@4200-4500 div_uu/input_ena@4800-5100 
+solution 2 div_uu:div_uu/input_ena@4200-4500 div_uu:div_uu/input_ena@5400-5700 
+solution 2 div_uu/input_ena@4200-4500 div_uu/input_ena@5400-5700 
+solution 2 div_uu:div_uu/input_ena@6000-6300 div_uu:div_uu/input_ena@6600-6900 
+solution 2 div_uu/input_ena@6000-6300 div_uu/input_ena@6600-6900 
+solution 2 div_uu:div_uu/reg_div0@6300-6600 div_uu:div_uu/reg_div0@6900-7200 
+solution 2 div_uu/reg_div0@6300-6600 div_uu/reg_div0@6900-7200 
+solution 1 div_uu:div_uu/reg_div0_pipe@2100-2400 
+solution 1 div_uu/reg_div0_pipe@2100-2400 
+solution 1 div_uu:div_uu/reg_div0_pipe@2700-3000 
+solution 1 div_uu/reg_div0_pipe@2700-3000 
+solution 1 div_uu:div_uu/reg_div0_pipe@3300-3600 
+solution 1 div_uu/reg_div0_pipe@3300-3600 
+solution 1 div_uu:div_uu/reg_div0_pipe@3900-4200 
+solution 1 div_uu/reg_div0_pipe@3900-4200 
+solution 1 div_uu:div_uu/reg_div0_pipe@4500-4800 
+solution 1 div_uu/reg_div0_pipe@4500-4800 
+solution 1 div_uu:div_uu/reg_div0_pipe@5100-5400 
+solution 1 div_uu/reg_div0_pipe@5100-5400 
+solution 1 div_uu:div_uu/reg_div0_pipe@5700-6000 
+solution 1 div_uu/reg_div0_pipe@5700-6000 
+solution 2 :divider/always_1/if_1/stmt_1@600-900 :divider/always_1/if_1/stmt_1@1200-1500 
+solution 2 divider/always_1/if_1/stmt_1@600-900 divider/always_1/if_1/stmt_1@1200-1500 
+solution 2 :divider/always_5/if_1/block_1/stmt_1@6600-6900 :divider/always_5/if_1/block_1/stmt_1@7200-7500 
+solution 2 divider/always_5/if_1/block_1/stmt_1@6600-6900 divider/always_5/if_1/block_1/stmt_1@7200-7500 
+solution 2 :divider/input_ena@600-900 :divider/input_ena@4800-5100 
+solution 2 divider/input_ena@600-900 divider/input_ena@4800-5100 
+solution 2 :divider/input_ena@600-900 :divider/input_ena@5400-5700 
+solution 2 divider/input_ena@600-900 divider/input_ena@5400-5700 
+solution 2 :divider/input_ena@600-900 :divider/input_ena@6000-6300 
+solution 2 divider/input_ena@600-900 divider/input_ena@6000-6300 
+solution 2 :divider/input_ena@600-900 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@600-900 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@1200-1500 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@1200-1500 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@1800-2100 :divider/input_ena@4800-5100 
+solution 2 divider/input_ena@1800-2100 divider/input_ena@4800-5100 
+solution 2 :divider/input_ena@2400-2700 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@2400-2700 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@3000-3300 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@3000-3300 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@3600-3900 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@3600-3900 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@4200-4500 :divider/input_ena@6600-6900 
+solution 2 divider/input_ena@4200-4500 divider/input_ena@6600-6900 
+solution 2 :divider/input_ena@6000-6300 :divider/input_ena@7200-7500 
+solution 2 divider/input_ena@6000-6300 divider/input_ena@7200-7500 
+solution 2 :divider/reg_div0@6900-7200 :divider/reg_div0@7500-7800 
+solution 2 divider/reg_div0@6900-7200 divider/reg_div0@7500-7800 
+solution 2 :divider/reg_id@900-1200 :divider/reg_id@1500-1800 
+solution 2 divider/reg_id@900-1200 divider/reg_id@1500-1800 
+solution 2 :divider/wire_idiv0@6600-6900 :divider/wire_idiv0@7200-7500 
+solution 2 divider/wire_idiv0@6600-6900 divider/wire_idiv0@7200-7500 

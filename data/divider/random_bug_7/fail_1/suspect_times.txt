@@ -1,0 +1,12 @@
+solution 1 div_uu:div_uu/always_12/if_1/stmt_1@6600-6900 
+solution 1 div_uu/always_12/if_1/stmt_1@6600-6900 
+solution 1 div_uu:div_uu/reg_s@6900-7200 
+solution 1 div_uu/reg_s@6900-7200 
+solution 1 :divider/always_4/if_1/if_1/block_2/stmt_2@7200-7500 
+solution 1 divider/always_4/if_1/if_1/block_2/stmt_2@7200-7500 
+solution 1 :divider/constraint_s@7800-8100 
+solution 1 divider/constraint_s@7800-8100 
+solution 1 :divider/reg_s@7500-7800 
+solution 1 divider/reg_s@7500-7800 
+solution 1 :divider/wire_is@7200-7500 
+solution 1 divider/wire_is@7200-7500 

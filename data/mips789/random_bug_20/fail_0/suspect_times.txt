@@ -1,0 +1,92 @@
+solution 1 i_mips_core/iRF_stage/chk_rf_stage:assert_rf_stage/assert_pc_kep@450-500 
+solution 1 assert_rf_stage/assert_pc_kep@450-500 
+solution 1 i_mips_core/iRF_stage/chk_rf_stage:assert_rf_stage/input_BUS1013@400-450 
+solution 1 assert_rf_stage/input_BUS1013@400-450 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_3/if_1/case_1/stmt_2@200-250 
+solution 1 ctl_FSM/always_3/if_1/case_1/stmt_2@200-250 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@100-150 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@100-150 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@200-250 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@200-250 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@300-350 
+solution 1 ctl_FSM/always_4/if_1/if_1/stmt_1@300-350 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/stmt_1@200-250 
+solution 1 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/if_1/stmt_1@200-250 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_3/if_1/stmt_2@300-350 
+solution 1 ctl_FSM/always_5/block_1/case_1/block_3/if_1/stmt_2@300-350 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/stmt_6@100-150 
+solution 1 ctl_FSM/always_5/block_1/case_1/stmt_6@100-150 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_6/block_1/case_1/block_2/stmt_6@400-450 
+solution 1 ctl_FSM/always_6/block_1/case_1/block_2/stmt_6@400-450 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@200-250 
+solution 1 ctl_FSM/input_id_cmd@200-250 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_pause@100-150 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_pause@200-250 
+solution 2 ctl_FSM/input_pause@100-150 ctl_FSM/input_pause@200-250 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_pause@200-250 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_pause@300-350 
+solution 2 ctl_FSM/input_pause@200-250 ctl_FSM/input_pause@300-350 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_rst@200-250 
+solution 1 ctl_FSM/input_rst@200-250 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_rst@300-350 
+solution 1 ctl_FSM/input_rst@300-350 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@150-200 
+solution 1 ctl_FSM/reg_CurrState@150-200 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@250-300 
+solution 1 ctl_FSM/reg_CurrState@250-300 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@350-400 
+solution 1 ctl_FSM/reg_CurrState@350-400 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@100-150 
+solution 1 ctl_FSM/reg_NextState@100-150 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@200-250 
+solution 1 ctl_FSM/reg_NextState@200-250 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@300-350 
+solution 1 ctl_FSM/reg_NextState@300-350 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_delay_counter@250-300 
+solution 1 ctl_FSM/reg_delay_counter@250-300 
+solution 1 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_pc_prectl@400-450 
+solution 1 ctl_FSM/reg_pc_prectl@400-450 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@200-250 
+solution 1 decode_pipe/input_ins_i@200-250 
+solution 1 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@200-250 
+solution 1 decode_pipe/wire_fsm_dly@200-250 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/always_1/block_1/case_1/block_16/stmt_5@200-250 
+solution 1 decoder/always_1/block_1/case_1/block_16/stmt_5@200-250 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@200-250 
+solution 1 decoder/input_ins_i@200-250 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@200-250 
+solution 1 decoder/reg_fsm_dly@200-250 
+solution 1 i_mips_core/decoder_pipe/idecoder:decoder/wire_inst_op@200-250 
+solution 1 decoder/wire_inst_op@200-250 
+solution 2 i_mips_core:mips_core/input_pause@100-150 i_mips_core:mips_core/input_pause@300-350 
+solution 2 mips_core/input_pause@100-150 mips_core/input_pause@300-350 
+solution 2 i_mips_core:mips_core/input_pause@200-250 i_mips_core:mips_core/input_pause@300-350 
+solution 2 mips_core/input_pause@200-250 mips_core/input_pause@300-350 
+solution 1 i_mips_core:mips_core/input_rst@200-250 
+solution 1 mips_core/input_rst@200-250 
+solution 1 i_mips_core:mips_core/input_rst@300-350 
+solution 1 mips_core/input_rst@300-350 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@200-250 
+solution 1 mips_core/input_zz_ins_i@200-250 
+solution 1 i_mips_core:mips_core/wire_BUS197@200-250 
+solution 1 mips_core/wire_BUS197@200-250 
+solution 2 :mips_sys/input_pause@100-150 :mips_sys/input_pause@200-250 
+solution 2 mips_sys/input_pause@100-150 mips_sys/input_pause@200-250 
+solution 2 :mips_sys/input_pause@200-250 :mips_sys/input_pause@300-350 
+solution 2 mips_sys/input_pause@200-250 mips_sys/input_pause@300-350 
+solution 1 :mips_sys/input_rst@200-250 
+solution 1 mips_sys/input_rst@200-250 
+solution 1 :mips_sys/input_rst@300-350 
+solution 1 mips_sys/input_rst@300-350 
+solution 1 :mips_sys/input_zz_ins_i@200-250 
+solution 1 mips_sys/input_zz_ins_i@200-250 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_id_cmd@200-250 
+solution 1 rf_stage/input_id_cmd@200-250 
+solution 2 i_mips_core/iRF_stage:rf_stage/input_pause@100-150 i_mips_core/iRF_stage:rf_stage/input_pause@200-250 
+solution 2 rf_stage/input_pause@100-150 rf_stage/input_pause@200-250 
+solution 2 i_mips_core/iRF_stage:rf_stage/input_pause@200-250 i_mips_core/iRF_stage:rf_stage/input_pause@300-350 
+solution 2 rf_stage/input_pause@200-250 rf_stage/input_pause@300-350 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_rst_i@200-250 
+solution 1 rf_stage/input_rst_i@200-250 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_rst_i@300-350 
+solution 1 rf_stage/input_rst_i@300-350 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_BUS1013@400-450 
+solution 1 rf_stage/wire_BUS1013@400-450 

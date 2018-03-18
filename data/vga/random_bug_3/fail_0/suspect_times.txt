@@ -1,0 +1,134 @@
+solution 1 :vga/constraint_wbs_dat_o@82500-82800 
+solution 1 vga/constraint_wbs_dat_o@82500-82800 
+solution 1 :vga/input_wbs_dat_i@81600-81900 
+solution 1 vga/input_wbs_dat_i@81600-81900 
+solution 2 :vga/input_wbs_we_i@24600-24900 :vga/input_wbs_we_i@43200-43500 
+solution 2 vga/input_wbs_we_i@24600-24900 vga/input_wbs_we_i@43200-43500 
+solution 2 :vga/input_wbs_we_i@25200-25500 :vga/input_wbs_we_i@43200-43500 
+solution 2 vga/input_wbs_we_i@25200-25500 vga/input_wbs_we_i@43200-43500 
+solution 2 :vga/input_wbs_we_i@28200-28500 :vga/input_wbs_we_i@39000-39300 
+solution 2 vga/input_wbs_we_i@28200-28500 vga/input_wbs_we_i@39000-39300 
+solution 2 :vga/input_wbs_we_i@28800-29100 :vga/input_wbs_we_i@39000-39300 
+solution 2 vga/input_wbs_we_i@28800-29100 vga/input_wbs_we_i@39000-39300 
+solution 2 :vga/input_wbs_we_i@28800-29100 :vga/input_wbs_we_i@39600-39900 
+solution 2 vga/input_wbs_we_i@28800-29100 vga/input_wbs_we_i@39600-39900 
+solution 2 :vga/input_wbs_we_i@30000-30300 :vga/input_wbs_we_i@39000-39300 
+solution 2 vga/input_wbs_we_i@30000-30300 vga/input_wbs_we_i@39000-39300 
+solution 2 :vga/input_wbs_we_i@30600-30900 :vga/input_wbs_we_i@39000-39300 
+solution 2 vga/input_wbs_we_i@30600-30900 vga/input_wbs_we_i@39000-39300 
+solution 2 :vga/input_wbs_we_i@39000-39300 :vga/input_wbs_we_i@42600-42900 
+solution 2 vga/input_wbs_we_i@39000-39300 vga/input_wbs_we_i@42600-42900 
+solution 2 :vga/input_wbs_we_i@39000-39300 :vga/input_wbs_we_i@43200-43500 
+solution 2 vga/input_wbs_we_i@39000-39300 vga/input_wbs_we_i@43200-43500 
+solution 2 :vga/input_wbs_we_i@39600-39900 :vga/input_wbs_we_i@81600-81900 
+solution 2 vga/input_wbs_we_i@39600-39900 vga/input_wbs_we_i@81600-81900 
+solution 2 :vga/input_wbs_we_i@61800-62100 :vga/input_wbs_we_i@81600-81900 
+solution 2 vga/input_wbs_we_i@61800-62100 vga/input_wbs_we_i@81600-81900 
+solution 1 :vga/wire_wbs_dat_o@82500-82800 
+solution 1 vga/wire_wbs_dat_o@82500-82800 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@81600-81900 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/stmt_1@81600-81900 
+solution 1 wbs:vga_wb_slave/always_8/case_1/stmt_1@82200-82500 
+solution 1 vga_wb_slave/always_8/case_1/stmt_1@82200-82500 
+solution 1 wbs:vga_wb_slave/always_9/stmt_1@82200-82500 
+solution 1 vga_wb_slave/always_9/stmt_1@82200-82500 
+solution 1 wbs:vga_wb_slave/input_dat_i@81600-81900 
+solution 1 vga_wb_slave/input_dat_i@81600-81900 
+solution 2 wbs:vga_wb_slave/input_we_i@24600-24900 wbs:vga_wb_slave/input_we_i@43200-43500 
+solution 2 vga_wb_slave/input_we_i@24600-24900 vga_wb_slave/input_we_i@43200-43500 
+solution 2 wbs:vga_wb_slave/input_we_i@25200-25500 wbs:vga_wb_slave/input_we_i@42600-42900 
+solution 2 vga_wb_slave/input_we_i@25200-25500 vga_wb_slave/input_we_i@42600-42900 
+solution 2 wbs:vga_wb_slave/input_we_i@28200-28500 wbs:vga_wb_slave/input_we_i@39000-39300 
+solution 2 vga_wb_slave/input_we_i@28200-28500 vga_wb_slave/input_we_i@39000-39300 
+solution 2 wbs:vga_wb_slave/input_we_i@28800-29100 wbs:vga_wb_slave/input_we_i@39000-39300 
+solution 2 vga_wb_slave/input_we_i@28800-29100 vga_wb_slave/input_we_i@39000-39300 
+solution 2 wbs:vga_wb_slave/input_we_i@28800-29100 wbs:vga_wb_slave/input_we_i@39600-39900 
+solution 2 vga_wb_slave/input_we_i@28800-29100 vga_wb_slave/input_we_i@39600-39900 
+solution 2 wbs:vga_wb_slave/input_we_i@30000-30300 wbs:vga_wb_slave/input_we_i@39600-39900 
+solution 2 vga_wb_slave/input_we_i@30000-30300 vga_wb_slave/input_we_i@39600-39900 
+solution 2 wbs:vga_wb_slave/input_we_i@30600-30900 wbs:vga_wb_slave/input_we_i@39600-39900 
+solution 2 vga_wb_slave/input_we_i@30600-30900 vga_wb_slave/input_we_i@39600-39900 
+solution 2 wbs:vga_wb_slave/input_we_i@39000-39300 wbs:vga_wb_slave/input_we_i@42600-42900 
+solution 2 vga_wb_slave/input_we_i@39000-39300 vga_wb_slave/input_we_i@42600-42900 
+solution 2 wbs:vga_wb_slave/input_we_i@39000-39300 wbs:vga_wb_slave/input_we_i@43200-43500 
+solution 2 vga_wb_slave/input_we_i@39000-39300 vga_wb_slave/input_we_i@43200-43500 
+solution 2 wbs:vga_wb_slave/input_we_i@39600-39900 wbs:vga_wb_slave/input_we_i@81600-81900 
+solution 2 vga_wb_slave/input_we_i@39600-39900 vga_wb_slave/input_we_i@81600-81900 
+solution 2 wbs:vga_wb_slave/input_we_i@61800-62100 wbs:vga_wb_slave/input_we_i@81600-81900 
+solution 2 vga_wb_slave/input_we_i@61800-62100 vga_wb_slave/input_we_i@81600-81900 
+solution 1 wbs:vga_wb_slave/reg_ctrl@81900-82200 
+solution 1 vga_wb_slave/reg_ctrl@81900-82200 
+solution 1 wbs:vga_wb_slave/reg_dat_o@82500-82800 
+solution 1 vga_wb_slave/reg_dat_o@82500-82800 
+solution 1 wbs:vga_wb_slave/reg_reg_dato@82200-82500 
+solution 1 vga_wb_slave/reg_reg_dato@82200-82500 
+solution 2 wbs:vga_wb_slave/wire_acc@38400-38700 wbs:vga_wb_slave/wire_acc@81600-81900 
+solution 2 vga_wb_slave/wire_acc@38400-38700 vga_wb_slave/wire_acc@81600-81900 
+solution 2 wbs:vga_wb_slave/wire_acc@42000-42300 wbs:vga_wb_slave/wire_acc@60000-60300 
+solution 2 vga_wb_slave/wire_acc@42000-42300 vga_wb_slave/wire_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_acc@45600-45900 wbs:vga_wb_slave/wire_acc@60000-60300 
+solution 2 vga_wb_slave/wire_acc@45600-45900 vga_wb_slave/wire_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_acc@49200-49500 wbs:vga_wb_slave/wire_acc@60000-60300 
+solution 2 vga_wb_slave/wire_acc@49200-49500 vga_wb_slave/wire_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_acc@52800-53100 wbs:vga_wb_slave/wire_acc@60000-60300 
+solution 2 vga_wb_slave/wire_acc@52800-53100 vga_wb_slave/wire_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_acc@56400-56700 wbs:vga_wb_slave/wire_acc@60000-60300 
+solution 2 vga_wb_slave/wire_acc@56400-56700 vga_wb_slave/wire_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_acc@60000-60300 wbs:vga_wb_slave/wire_acc@64800-65100 
+solution 2 vga_wb_slave/wire_acc@60000-60300 vga_wb_slave/wire_acc@64800-65100 
+solution 2 wbs:vga_wb_slave/wire_acc@60000-60300 wbs:vga_wb_slave/wire_acc@68400-68700 
+solution 2 vga_wb_slave/wire_acc@60000-60300 vga_wb_slave/wire_acc@68400-68700 
+solution 2 wbs:vga_wb_slave/wire_acc@60000-60300 wbs:vga_wb_slave/wire_acc@75600-75900 
+solution 2 vga_wb_slave/wire_acc@60000-60300 vga_wb_slave/wire_acc@75600-75900 
+solution 2 wbs:vga_wb_slave/wire_acc@72000-72300 wbs:vga_wb_slave/wire_acc@75600-75900 
+solution 2 vga_wb_slave/wire_acc@72000-72300 vga_wb_slave/wire_acc@75600-75900 
+solution 2 wbs:vga_wb_slave/wire_acc@72000-72300 wbs:vga_wb_slave/wire_acc@79200-79500 
+solution 2 vga_wb_slave/wire_acc@72000-72300 vga_wb_slave/wire_acc@79200-79500 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@38400-38700 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@38400-38700 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@42000-42300 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@42000-42300 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@45600-45900 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@45600-45900 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@49200-49500 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@49200-49500 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@52800-53100 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@52800-53100 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@56400-56700 wbs:vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_acc@56400-56700 vga_wb_slave/wire_reg_acc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@60000-60300 wbs:vga_wb_slave/wire_reg_acc@64800-65100 
+solution 2 vga_wb_slave/wire_reg_acc@60000-60300 vga_wb_slave/wire_reg_acc@64800-65100 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@60000-60300 wbs:vga_wb_slave/wire_reg_acc@68400-68700 
+solution 2 vga_wb_slave/wire_reg_acc@60000-60300 vga_wb_slave/wire_reg_acc@68400-68700 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@60000-60300 wbs:vga_wb_slave/wire_reg_acc@79200-79500 
+solution 2 vga_wb_slave/wire_reg_acc@60000-60300 vga_wb_slave/wire_reg_acc@79200-79500 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@60000-60300 wbs:vga_wb_slave/wire_reg_acc@81600-81900 
+solution 2 vga_wb_slave/wire_reg_acc@60000-60300 vga_wb_slave/wire_reg_acc@81600-81900 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@72000-72300 wbs:vga_wb_slave/wire_reg_acc@75600-75900 
+solution 2 vga_wb_slave/wire_reg_acc@72000-72300 vga_wb_slave/wire_reg_acc@75600-75900 
+solution 2 wbs:vga_wb_slave/wire_reg_acc@72000-72300 wbs:vga_wb_slave/wire_reg_acc@79200-79500 
+solution 2 vga_wb_slave/wire_reg_acc@72000-72300 vga_wb_slave/wire_reg_acc@79200-79500 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@38400-38700 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@38400-38700 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@42000-42300 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@42000-42300 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@45600-45900 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@45600-45900 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@49200-49500 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@49200-49500 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@56400-56700 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@56400-56700 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@24600-24900 wbs:vga_wb_slave/wire_reg_wacc@60000-60300 
+solution 2 vga_wb_slave/wire_reg_wacc@24600-24900 vga_wb_slave/wire_reg_wacc@60000-60300 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@25200-25500 wbs:vga_wb_slave/wire_reg_wacc@38400-38700 
+solution 2 vga_wb_slave/wire_reg_wacc@25200-25500 vga_wb_slave/wire_reg_wacc@38400-38700 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@28800-29100 wbs:vga_wb_slave/wire_reg_wacc@39600-39900 
+solution 2 vga_wb_slave/wire_reg_wacc@28800-29100 vga_wb_slave/wire_reg_wacc@39600-39900 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@39000-39300 wbs:vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 vga_wb_slave/wire_reg_wacc@39000-39300 vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@39600-39900 wbs:vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 vga_wb_slave/wire_reg_wacc@39600-39900 vga_wb_slave/wire_reg_wacc@52800-53100 
+solution 2 wbs:vga_wb_slave/wire_reg_wacc@39600-39900 wbs:vga_wb_slave/wire_reg_wacc@81600-81900 
+solution 2 vga_wb_slave/wire_reg_wacc@39600-39900 vga_wb_slave/wire_reg_wacc@81600-81900 

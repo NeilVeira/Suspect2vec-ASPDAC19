@@ -1,0 +1,16 @@
+solution 1 miim1:eth_miim/wire_Mdo@39390-39405 
+solution 1 eth_miim/wire_Mdo@39390-39405 
+solution 1 miim1/outctrl:eth_outputcontrol/always_2/block_1/if_1/block_1/stmt_3@39315-39317 
+solution 1 eth_outputcontrol/always_2/block_1/if_1/block_1/stmt_3@39315-39317 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@39315-39317 
+solution 1 eth_outputcontrol/reg_Mdo@39315-39317 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@39345-39360 
+solution 1 eth_outputcontrol/reg_Mdo@39345-39360 
+solution 1 miim1/outctrl:eth_outputcontrol/reg_Mdo@39375-39390 
+solution 1 eth_outputcontrol/reg_Mdo@39375-39390 
+solution 1 :eth_top/constraint_md_pad_o@39258-39451 
+solution 1 eth_top/constraint_md_pad_o@39258-39451 
+solution 1 :eth_top/constraint_md_pad_o@39390-39405 
+solution 1 eth_top/constraint_md_pad_o@39390-39405 
+solution 1 :eth_top/wire_md_pad_o@39390-39405 
+solution 1 eth_top/wire_md_pad_o@39390-39405 

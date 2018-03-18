@@ -1,0 +1,8 @@
+#   RTL                             TYPE       FILENAME              BEGIN  END    
+rtl aeMB_core                       module     ../rtl/aeMB_core.v     54.1  253.10 
+rtl aeMB_core/constraint_dwb_dat_o  constraint ../rtl/aeMB_core.v     70.18  70.27 
+rtl aeMB_core/wire_dwb_dat_o        wire       ../rtl/aeMB_core.v     70.18  70.27 
+rtl aeMB_core/inst_regfile          inst       ../rtl/aeMB_core.v    125.6  148.23 
+rtl aeMB_regfile                    module     ../rtl/aeMB_regfile.v  89.1  270.10 
+rtl aeMB_regfile/wire_dwb_dat_o     wire       ../rtl/aeMB_regfile.v 100.18 100.27 
+rtl aeMB_regfile/assign_6_dwb_dat_o assign     ../rtl/aeMB_regfile.v 167.13 167.26 

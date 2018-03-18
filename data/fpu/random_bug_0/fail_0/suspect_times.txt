@@ -1,0 +1,24 @@
+solution 1 :fpu/always_24/stmt_1@8000-8500 
+solution 1 fpu/always_24/stmt_1@8000-8500 
+solution 1 :fpu/always_3/stmt_1@6000-6500 
+solution 1 fpu/always_3/stmt_1@6000-6500 
+solution 1 :fpu/always_4/stmt_1@7000-7500 
+solution 1 fpu/always_4/stmt_1@7000-7500 
+solution 2 :fpu/constraint_sign@8500-9000 :fpu/constraint_sign@9000-9500 
+solution 2 fpu/constraint_sign@8500-9000 fpu/constraint_sign@9000-9500 
+solution 1 :fpu/input_rmode@6000-6500 
+solution 1 fpu/input_rmode@6000-6500 
+solution 1 :fpu/reg_rmode_r1@6500-7000 
+solution 1 fpu/reg_rmode_r1@6500-7000 
+solution 1 :fpu/reg_rmode_r2@7500-8000 
+solution 1 fpu/reg_rmode_r2@7500-8000 
+solution 1 :fpu/reg_sign@8500-9000 
+solution 1 fpu/reg_sign@8500-9000 
+solution 1 :fpu/wire_sign_d@8000-8500 
+solution 1 fpu/wire_sign_d@8000-8500 
+solution 1 :fpu/wire_sign_fasu@8000-8500 
+solution 1 fpu/wire_sign_fasu@8000-8500 
+solution 1 u1:pre_norm/always_6/stmt_1@7000-7500 
+solution 1 pre_norm/always_6/stmt_1@7000-7500 
+solution 1 u1:pre_norm/reg_sign@7500-8000 
+solution 1 pre_norm/reg_sign@7500-8000 

@@ -1,0 +1,26 @@
+solution 1 :vga/constraint_wbs_dat_o@61000-62101 
+solution 1 vga/constraint_wbs_dat_o@61000-62101 
+solution 1 :vga/constraint_wbs_dat_o@61500-61800 
+solution 1 vga/constraint_wbs_dat_o@61500-61800 
+solution 2 :vga/input_wbs_adr_i@58800-59100 :vga/input_wbs_adr_i@61200-61500 
+solution 2 vga/input_wbs_adr_i@58800-59100 vga/input_wbs_adr_i@61200-61500 
+solution 2 :vga/input_wbs_adr_i@59400-59700 :vga/input_wbs_adr_i@61200-61500 
+solution 2 vga/input_wbs_adr_i@59400-59700 vga/input_wbs_adr_i@61200-61500 
+solution 1 :vga/wire_wbs_dat_o@61500-61800 
+solution 1 vga/wire_wbs_dat_o@61500-61800 
+solution 1 wbs:vga_wb_slave/always_6/if_1/if_1/if_1/block_1/stmt_1@60600-60900 
+solution 1 vga_wb_slave/always_6/if_1/if_1/if_1/block_1/stmt_1@60600-60900 
+solution 1 wbs:vga_wb_slave/always_8/case_1/stmt_1@61200-61500 
+solution 1 vga_wb_slave/always_8/case_1/stmt_1@61200-61500 
+solution 1 wbs:vga_wb_slave/always_9/stmt_1@61200-61500 
+solution 1 vga_wb_slave/always_9/stmt_1@61200-61500 
+solution 2 wbs:vga_wb_slave/input_adr_i@58800-59100 wbs:vga_wb_slave/input_adr_i@61200-61500 
+solution 2 vga_wb_slave/input_adr_i@58800-59100 vga_wb_slave/input_adr_i@61200-61500 
+solution 2 wbs:vga_wb_slave/input_adr_i@59400-59700 wbs:vga_wb_slave/input_adr_i@61200-61500 
+solution 2 vga_wb_slave/input_adr_i@59400-59700 vga_wb_slave/input_adr_i@61200-61500 
+solution 1 wbs:vga_wb_slave/reg_ctrl@60900-61200 
+solution 1 vga_wb_slave/reg_ctrl@60900-61200 
+solution 1 wbs:vga_wb_slave/reg_dat_o@61500-61800 
+solution 1 vga_wb_slave/reg_dat_o@61500-61800 
+solution 1 wbs:vga_wb_slave/reg_reg_dato@61200-61500 
+solution 1 vga_wb_slave/reg_reg_dato@61200-61500 

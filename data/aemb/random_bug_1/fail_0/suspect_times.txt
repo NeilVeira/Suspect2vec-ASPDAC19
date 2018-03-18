@@ -1,0 +1,54 @@
+solution 1 control:aeMB_control/always_7/if_1/block_1/stmt_1@0-5 
+solution 1 aeMB_control/always_7/if_1/block_1/stmt_1@0-5 
+solution 1 control:aeMB_control/input_sys_rst_i@0-5 
+solution 1 aeMB_control/input_sys_rst_i@0-5 
+solution 1 control:aeMB_control/reg_rRST@5-10 
+solution 1 aeMB_control/reg_rRST@5-10 
+solution 2 control:aeMB_control/wire_prst@10-15 control:aeMB_control/wire_prst@20-25 
+solution 2 aeMB_control/wire_prst@10-15 aeMB_control/wire_prst@20-25 
+solution 1 :aeMB_core/constraint_dwb_dat_o@115-116 
+solution 1 aeMB_core/constraint_dwb_dat_o@115-116 
+solution 2 :aeMB_core/input_iwb_dat_i@30-35 :aeMB_core/input_iwb_dat_i@40-45 
+solution 2 aeMB_core/input_iwb_dat_i@30-35 aeMB_core/input_iwb_dat_i@40-45 
+solution 2 :aeMB_core/input_iwb_dat_i@60-65 :aeMB_core/input_iwb_dat_i@70-75 
+solution 2 aeMB_core/input_iwb_dat_i@60-65 aeMB_core/input_iwb_dat_i@70-75 
+solution 2 :aeMB_core/input_iwb_dat_i@70-75 :aeMB_core/input_iwb_dat_i@80-85 
+solution 2 aeMB_core/input_iwb_dat_i@70-75 aeMB_core/input_iwb_dat_i@80-85 
+solution 2 :aeMB_core/input_iwb_dat_i@80-85 :aeMB_core/input_iwb_dat_i@90-95 
+solution 2 aeMB_core/input_iwb_dat_i@80-85 aeMB_core/input_iwb_dat_i@90-95 
+solution 2 :aeMB_core/input_iwb_dat_i@90-95 :aeMB_core/input_iwb_dat_i@100-105 
+solution 2 aeMB_core/input_iwb_dat_i@90-95 aeMB_core/input_iwb_dat_i@100-105 
+solution 1 :aeMB_core/input_sys_rst_i@0-5 
+solution 1 aeMB_core/input_sys_rst_i@0-5 
+solution 1 :aeMB_core/wire_dwb_dat_o@115-116 
+solution 1 aeMB_core/wire_dwb_dat_o@115-116 
+solution 2 :aeMB_core/wire_prst@10-15 :aeMB_core/wire_prst@20-25 
+solution 2 aeMB_core/wire_prst@10-15 aeMB_core/wire_prst@20-25 
+solution 2 decode:aeMB_decode/input_iwb_dat_i@30-35 decode:aeMB_decode/input_iwb_dat_i@40-45 
+solution 2 aeMB_decode/input_iwb_dat_i@30-35 aeMB_decode/input_iwb_dat_i@40-45 
+solution 2 decode:aeMB_decode/input_iwb_dat_i@60-65 decode:aeMB_decode/input_iwb_dat_i@70-75 
+solution 2 aeMB_decode/input_iwb_dat_i@60-65 aeMB_decode/input_iwb_dat_i@70-75 
+solution 2 decode:aeMB_decode/input_iwb_dat_i@70-75 decode:aeMB_decode/input_iwb_dat_i@80-85 
+solution 2 aeMB_decode/input_iwb_dat_i@70-75 aeMB_decode/input_iwb_dat_i@80-85 
+solution 2 decode:aeMB_decode/input_iwb_dat_i@90-95 decode:aeMB_decode/input_iwb_dat_i@100-105 
+solution 2 aeMB_decode/input_iwb_dat_i@90-95 aeMB_decode/input_iwb_dat_i@100-105 
+solution 2 decode:aeMB_decode/wire_wIREG@30-35 decode:aeMB_decode/wire_wIREG@40-45 
+solution 2 aeMB_decode/wire_wIREG@30-35 aeMB_decode/wire_wIREG@40-45 
+solution 2 decode:aeMB_decode/wire_wIREG@60-65 decode:aeMB_decode/wire_wIREG@70-75 
+solution 2 aeMB_decode/wire_wIREG@60-65 aeMB_decode/wire_wIREG@70-75 
+solution 2 decode:aeMB_decode/wire_wIREG@70-75 decode:aeMB_decode/wire_wIREG@80-85 
+solution 2 aeMB_decode/wire_wIREG@70-75 aeMB_decode/wire_wIREG@80-85 
+solution 2 decode:aeMB_decode/wire_wIREG@80-85 decode:aeMB_decode/wire_wIREG@90-95 
+solution 2 aeMB_decode/wire_wIREG@80-85 aeMB_decode/wire_wIREG@90-95 
+solution 2 decode:aeMB_decode/wire_wIREG@90-95 decode:aeMB_decode/wire_wIREG@100-105 
+solution 2 aeMB_decode/wire_wIREG@90-95 aeMB_decode/wire_wIREG@100-105 
+solution 1 regfile:aeMB_regfile/always_3/case_1/stmt_1@110-115 
+solution 1 aeMB_regfile/always_3/case_1/stmt_1@110-115 
+solution 1 regfile:aeMB_regfile/always_5/if_1/if_1/block_1/stmt_1@110-115 
+solution 1 aeMB_regfile/always_5/if_1/if_1/block_1/stmt_1@110-115 
+solution 1 regfile:aeMB_regfile/reg_rDWBDAT@115-116 
+solution 1 aeMB_regfile/reg_rDWBDAT@115-116 
+solution 1 regfile:aeMB_regfile/reg_xDWBDAT@110-115 
+solution 1 aeMB_regfile/reg_xDWBDAT@110-115 
+solution 1 regfile:aeMB_regfile/wire_dwb_dat_o@115-116 
+solution 1 aeMB_regfile/wire_dwb_dat_o@115-116 

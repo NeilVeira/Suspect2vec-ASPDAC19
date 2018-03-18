@@ -1,0 +1,8 @@
+solution 1 adder:gfadder/wire_out@2100-2120 
+solution 1 gfadder/wire_out@2100-2120 
+solution 1 :rsdecoder/wire_corr_recword@2100-2120 
+solution 1 rsdecoder/wire_corr_recword@2100-2120 
+solution 1 sigMap_i1:sigMap/assert_assertion_corr_recword@2120-2140 
+solution 1 sigMap/assert_assertion_corr_recword@2120-2140 
+solution 1 sigMap_i1:sigMap/input_corr_recword@2100-2120 
+solution 1 sigMap/input_corr_recword@2100-2120 

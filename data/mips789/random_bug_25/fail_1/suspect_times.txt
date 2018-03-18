@@ -1,0 +1,525 @@
+solution 1 i_mips_core/iexec_stage/add4:add32/always_1/stmt_1@1012700-1012750 
+solution 1 add32/always_1/stmt_1@1012700-1012750 
+solution 1 i_mips_core/iexec_stage/add4:add32/input_d_i@1012700-1012750 
+solution 1 add32/input_d_i@1012700-1012750 
+solution 1 i_mips_core/iexec_stage/add4:add32/reg_d_o@1012700-1012750 
+solution 1 add32/reg_d_o@1012700-1012750 
+solution 1 i_mips_core/iexec_stage/MIPS_alu/mips_alu:alu/always_1/block_1/case_1/stmt_1@1012800-1012850 
+solution 1 alu/always_1/block_1/case_1/stmt_1@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/MIPS_alu/mips_alu:alu/input_a@1012800-1012850 
+solution 1 alu/input_a@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/MIPS_alu/mips_alu:alu/reg_alu_out@1012800-1012850 
+solution 1 alu/reg_alu_out@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/i_alu_muxa:alu_muxa/always_1/block_1/case_1/stmt_2@1012800-1012850 
+solution 1 alu_muxa/always_1/block_1/case_1/stmt_2@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/i_alu_muxa:alu_muxa/input_pc@1012800-1012850 
+solution 1 alu_muxa/input_pc@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/i_alu_muxa:alu_muxa/reg_a_o@1012800-1012850 
+solution 1 alu_muxa/reg_a_o@1012800-1012850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013300-1013350 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013800-1013850 
+solution 2 ctl_FSM/always_4/if_1/if_1/stmt_1@1013300-1013350 ctl_FSM/always_4/if_1/if_1/stmt_1@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013400-1013450 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013900-1013950 
+solution 2 ctl_FSM/always_4/if_1/if_1/stmt_1@1013400-1013450 ctl_FSM/always_4/if_1/if_1/stmt_1@1013900-1013950 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013500-1013550 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_4/if_1/if_1/stmt_1@1013700-1013750 
+solution 2 ctl_FSM/always_4/if_1/if_1/stmt_1@1013500-1013550 ctl_FSM/always_4/if_1/if_1/stmt_1@1013700-1013750 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1013400-1013450 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1013800-1013850 
+solution 2 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1013400-1013450 ctl_FSM/always_5/block_1/case_1/block_1/if_1/if_1/if_1/if_1/stmt_1@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@1013300-1013350 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@1013800-1013850 
+solution 2 ctl_FSM/input_id_cmd@1013300-1013350 ctl_FSM/input_id_cmd@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@1013400-1013450 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/input_id_cmd@1013800-1013850 
+solution 2 ctl_FSM/input_id_cmd@1013400-1013450 ctl_FSM/input_id_cmd@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013350-1013400 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013850-1013900 
+solution 2 ctl_FSM/reg_CurrState@1013350-1013400 ctl_FSM/reg_CurrState@1013850-1013900 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013350-1013400 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013950-1014000 
+solution 2 ctl_FSM/reg_CurrState@1013350-1013400 ctl_FSM/reg_CurrState@1013950-1014000 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013450-1013500 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013850-1013900 
+solution 2 ctl_FSM/reg_CurrState@1013450-1013500 ctl_FSM/reg_CurrState@1013850-1013900 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013550-1013600 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_CurrState@1013750-1013800 
+solution 2 ctl_FSM/reg_CurrState@1013550-1013600 ctl_FSM/reg_CurrState@1013750-1013800 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013300-1013350 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 ctl_FSM/reg_NextState@1013300-1013350 ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013300-1013350 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013900-1013950 
+solution 2 ctl_FSM/reg_NextState@1013300-1013350 ctl_FSM/reg_NextState@1013900-1013950 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013400-1013450 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 ctl_FSM/reg_NextState@1013400-1013450 ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013500-1013550 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013700-1013750 
+solution 2 ctl_FSM/reg_NextState@1013500-1013550 ctl_FSM/reg_NextState@1013700-1013750 
+solution 2 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013500-1013550 i_mips_core/iRF_stage/MAIN_FSM:ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 ctl_FSM/reg_NextState@1013500-1013550 ctl_FSM/reg_NextState@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013300-1013350 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013500-1013550 
+solution 2 decode_pipe/input_ins_i@1013300-1013350 decode_pipe/input_ins_i@1013500-1013550 
+solution 2 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013400-1013450 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013700-1013750 
+solution 2 decode_pipe/input_ins_i@1013400-1013450 decode_pipe/input_ins_i@1013700-1013750 
+solution 2 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013600-1013650 i_mips_core/decoder_pipe:decode_pipe/input_ins_i@1013800-1013850 
+solution 2 decode_pipe/input_ins_i@1013600-1013650 decode_pipe/input_ins_i@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@1013300-1013350 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@1013800-1013850 
+solution 2 decode_pipe/wire_fsm_dly@1013300-1013350 decode_pipe/wire_fsm_dly@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@1013400-1013450 i_mips_core/decoder_pipe:decode_pipe/wire_fsm_dly@1013800-1013850 
+solution 2 decode_pipe/wire_fsm_dly@1013400-1013450 decode_pipe/wire_fsm_dly@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013300-1013350 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013500-1013550 
+solution 2 decoder/input_ins_i@1013300-1013350 decoder/input_ins_i@1013500-1013550 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013400-1013450 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013700-1013750 
+solution 2 decoder/input_ins_i@1013400-1013450 decoder/input_ins_i@1013700-1013750 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013400-1013450 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013800-1013850 
+solution 2 decoder/input_ins_i@1013400-1013450 decoder/input_ins_i@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013600-1013650 i_mips_core/decoder_pipe/idecoder:decoder/input_ins_i@1013800-1013850 
+solution 2 decoder/input_ins_i@1013600-1013650 decoder/input_ins_i@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@1013300-1013350 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@1013800-1013850 
+solution 2 decoder/reg_fsm_dly@1013300-1013350 decoder/reg_fsm_dly@1013800-1013850 
+solution 2 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@1013400-1013450 i_mips_core/decoder_pipe/idecoder:decoder/reg_fsm_dly@1013800-1013850 
+solution 2 decoder/reg_fsm_dly@1013400-1013450 decoder/reg_fsm_dly@1013800-1013850 
+solution 1 i_mips_core/iexec_stage:exec_stage/input_pc_i@1012700-1012750 
+solution 1 exec_stage/input_pc_i@1012700-1012750 
+solution 1 i_mips_core/iexec_stage:exec_stage/wire_BUS2332@1012800-1012850 
+solution 1 exec_stage/wire_BUS2332@1012800-1012850 
+solution 1 i_mips_core/iexec_stage:exec_stage/wire_BUS2446@1012700-1012750 
+solution 1 exec_stage/wire_BUS2446@1012700-1012750 
+solution 1 i_mips_core/iexec_stage:exec_stage/wire_BUS476@1012800-1012850 
+solution 1 exec_stage/wire_BUS476@1012800-1012850 
+solution 1 i_mips_core/iexec_stage:exec_stage/wire_alu_ur_o@1012800-1012850 
+solution 1 exec_stage/wire_alu_ur_o@1012800-1012850 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/always_1/case_1/stmt_3@1011000-1011050 
+solution 1 ext/always_1/case_1/stmt_3@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/always_1/case_1/stmt_4@1012400-1012450 
+solution 1 ext/always_1/case_1/stmt_4@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/input_ins_i@1011000-1011050 
+solution 1 ext/input_ins_i@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/input_ins_i@1012400-1012450 
+solution 1 ext/input_ins_i@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/reg_res@1011000-1011050 
+solution 1 ext/reg_res@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/reg_res@1012400-1012450 
+solution 1 ext/reg_res@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/wire_instr25_0@1011000-1011050 
+solution 1 ext/wire_instr25_0@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_ext:ext/wire_instr25_0@1012400-1012450 
+solution 1 ext/wire_instr25_0@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/rs_fwd_rs:fwd_mux/always_1/case_1/stmt_3@1014000-1014050 
+solution 1 fwd_mux/always_1/case_1/stmt_3@1014000-1014050 
+solution 1 i_mips_core/iRF_stage/rs_fwd_rs:fwd_mux/input_din@1014000-1014050 
+solution 1 fwd_mux/input_din@1014000-1014050 
+solution 1 i_mips_core/iRF_stage/rs_fwd_rs:fwd_mux/reg_dout@1014000-1014050 
+solution 1 fwd_mux/reg_dout@1014000-1014050 
+solution 1 i_mips_core/iexec_stage/MIPS_alu:mips_alu/input_a@1012800-1012850 
+solution 1 mips_alu/input_a@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/MIPS_alu:mips_alu/wire_alu_c@1012800-1012850 
+solution 1 mips_alu/wire_alu_c@1012800-1012850 
+solution 1 i_mips_core/iexec_stage/MIPS_alu:mips_alu/wire_c@1012800-1012850 
+solution 1 mips_alu/wire_c@1012800-1012850 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1010900-1010950 
+solution 1 mips_core/input_zz_ins_i@1010900-1010950 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1011100-1011150 
+solution 1 mips_core/input_zz_ins_i@1011100-1011150 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1011200-1011250 
+solution 1 mips_core/input_zz_ins_i@1011200-1011250 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1011300-1011350 
+solution 1 mips_core/input_zz_ins_i@1011300-1011350 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1011700-1011750 
+solution 1 mips_core/input_zz_ins_i@1011700-1011750 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1011900-1011950 
+solution 1 mips_core/input_zz_ins_i@1011900-1011950 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1012100-1012150 
+solution 1 mips_core/input_zz_ins_i@1012100-1012150 
+solution 1 i_mips_core:mips_core/input_zz_ins_i@1012200-1012250 
+solution 1 mips_core/input_zz_ins_i@1012200-1012250 
+solution 1 i_mips_core:mips_core/wire_BUS15471@1013000-1013050 
+solution 1 mips_core/wire_BUS15471@1013000-1013050 
+solution 2 i_mips_core:mips_core/wire_BUS197@1013300-1013350 i_mips_core:mips_core/wire_BUS197@1013800-1013850 
+solution 2 mips_core/wire_BUS197@1013300-1013350 mips_core/wire_BUS197@1013800-1013850 
+solution 2 i_mips_core:mips_core/wire_BUS197@1013400-1013450 i_mips_core:mips_core/wire_BUS197@1013800-1013850 
+solution 2 mips_core/wire_BUS197@1013400-1013450 mips_core/wire_BUS197@1013800-1013850 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011100-1011150 
+solution 1 mips_core/wire_BUS27031@1011100-1011150 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011200-1011250 
+solution 1 mips_core/wire_BUS27031@1011200-1011250 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011300-1011350 
+solution 1 mips_core/wire_BUS27031@1011300-1011350 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011400-1011450 
+solution 1 mips_core/wire_BUS27031@1011400-1011450 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011500-1011550 
+solution 1 mips_core/wire_BUS27031@1011500-1011550 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011600-1011650 
+solution 1 mips_core/wire_BUS27031@1011600-1011650 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011700-1011750 
+solution 1 mips_core/wire_BUS27031@1011700-1011750 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011800-1011850 
+solution 1 mips_core/wire_BUS27031@1011800-1011850 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1011900-1011950 
+solution 1 mips_core/wire_BUS27031@1011900-1011950 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1012000-1012050 
+solution 1 mips_core/wire_BUS27031@1012000-1012050 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1012100-1012150 
+solution 1 mips_core/wire_BUS27031@1012100-1012150 
+solution 1 i_mips_core:mips_core/wire_BUS27031@1012200-1012250 
+solution 1 mips_core/wire_BUS27031@1012200-1012250 
+solution 1 i_mips_core:mips_core/wire_BUS422@1013000-1013050 
+solution 1 mips_core/wire_BUS422@1013000-1013050 
+solution 1 i_mips_core:mips_core/wire_BUS9589@1012800-1012850 
+solution 1 mips_core/wire_BUS9589@1012800-1012850 
+solution 1 i_mips_core:mips_core/wire_cop_addr_o@1012900-1012950 
+solution 1 mips_core/wire_cop_addr_o@1012900-1012950 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011000-1011050 
+solution 1 mips_core/wire_zz_pc_o@1011000-1011050 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011100-1011150 
+solution 1 mips_core/wire_zz_pc_o@1011100-1011150 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011200-1011250 
+solution 1 mips_core/wire_zz_pc_o@1011200-1011250 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011300-1011350 
+solution 1 mips_core/wire_zz_pc_o@1011300-1011350 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011400-1011450 
+solution 1 mips_core/wire_zz_pc_o@1011400-1011450 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011500-1011550 
+solution 1 mips_core/wire_zz_pc_o@1011500-1011550 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011600-1011650 
+solution 1 mips_core/wire_zz_pc_o@1011600-1011650 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011700-1011750 
+solution 1 mips_core/wire_zz_pc_o@1011700-1011750 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1011800-1011850 
+solution 1 mips_core/wire_zz_pc_o@1011800-1011850 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1012400-1012450 
+solution 1 mips_core/wire_zz_pc_o@1012400-1012450 
+solution 1 i_mips_core:mips_core/wire_zz_pc_o@1014000-1014050 
+solution 1 mips_core/wire_zz_pc_o@1014000-1014050 
+solution 1 :mips_sys/constraint_zz_pc_o@1013950-1014050 
+solution 1 mips_sys/constraint_zz_pc_o@1013950-1014050 
+solution 1 :mips_sys/constraint_zz_pc_o@1014000-1014050 
+solution 1 mips_sys/constraint_zz_pc_o@1014000-1014050 
+solution 1 :mips_sys/input_zz_ins_i@1010900-1010950 
+solution 1 mips_sys/input_zz_ins_i@1010900-1010950 
+solution 1 :mips_sys/input_zz_ins_i@1011100-1011150 
+solution 1 mips_sys/input_zz_ins_i@1011100-1011150 
+solution 1 :mips_sys/input_zz_ins_i@1011300-1011350 
+solution 1 mips_sys/input_zz_ins_i@1011300-1011350 
+solution 1 :mips_sys/input_zz_ins_i@1011600-1011650 
+solution 1 mips_sys/input_zz_ins_i@1011600-1011650 
+solution 1 :mips_sys/input_zz_ins_i@1011700-1011750 
+solution 1 mips_sys/input_zz_ins_i@1011700-1011750 
+solution 1 :mips_sys/input_zz_ins_i@1011900-1011950 
+solution 1 mips_sys/input_zz_ins_i@1011900-1011950 
+solution 1 :mips_sys/input_zz_ins_i@1012100-1012150 
+solution 1 mips_sys/input_zz_ins_i@1012100-1012150 
+solution 1 :mips_sys/input_zz_ins_i@1012200-1012250 
+solution 1 mips_sys/input_zz_ins_i@1012200-1012250 
+solution 1 :mips_sys/wire_zz_pc_o@1014000-1014050 
+solution 1 mips_sys/wire_zz_pc_o@1014000-1014050 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011000-1011050 
+solution 1 pc/input_pc_i@1011000-1011050 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011300-1011350 
+solution 1 pc/input_pc_i@1011300-1011350 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011400-1011450 
+solution 1 pc/input_pc_i@1011400-1011450 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011500-1011550 
+solution 1 pc/input_pc_i@1011500-1011550 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011600-1011650 
+solution 1 pc/input_pc_i@1011600-1011650 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011800-1011850 
+solution 1 pc/input_pc_i@1011800-1011850 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1011900-1011950 
+solution 1 pc/input_pc_i@1011900-1011950 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1012000-1012050 
+solution 1 pc/input_pc_i@1012000-1012050 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1012100-1012150 
+solution 1 pc/input_pc_i@1012100-1012150 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1012200-1012250 
+solution 1 pc/input_pc_i@1012200-1012250 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1012300-1012350 
+solution 1 pc/input_pc_i@1012300-1012350 
+solution 1 i_mips_core/new_pc:pc/input_pc_i@1012600-1012650 
+solution 1 pc/input_pc_i@1012600-1012650 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011100-1011150 
+solution 1 pc/wire_pc_o@1011100-1011150 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011200-1011250 
+solution 1 pc/wire_pc_o@1011200-1011250 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011300-1011350 
+solution 1 pc/wire_pc_o@1011300-1011350 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011400-1011450 
+solution 1 pc/wire_pc_o@1011400-1011450 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011500-1011550 
+solution 1 pc/wire_pc_o@1011500-1011550 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011600-1011650 
+solution 1 pc/wire_pc_o@1011600-1011650 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011700-1011750 
+solution 1 pc/wire_pc_o@1011700-1011750 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011800-1011850 
+solution 1 pc/wire_pc_o@1011800-1011850 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1011900-1011950 
+solution 1 pc/wire_pc_o@1011900-1011950 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1012000-1012050 
+solution 1 pc/wire_pc_o@1012000-1012050 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1012100-1012150 
+solution 1 pc/wire_pc_o@1012100-1012150 
+solution 1 i_mips_core/new_pc:pc/wire_pc_o@1012700-1012750 
+solution 1 pc/wire_pc_o@1012700-1012750 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/block_1/if_1/stmt_1@1012400-1012450 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/block_1/if_1/stmt_1@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/block_1/if_1/stmt_2@1012100-1012150 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/block_1/if_1/stmt_2@1012100-1012150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_2@1011000-1011050 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_2@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_3@1014000-1014050 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_3@1014000-1014050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011100-1011150 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011100-1011150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011200-1011250 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011200-1011250 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011300-1011350 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011300-1011350 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011400-1011450 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011400-1011450 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011500-1011550 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011500-1011550 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011600-1011650 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011600-1011650 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011700-1011750 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011700-1011750 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011800-1011850 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011800-1011850 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011900-1011950 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1011900-1011950 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012200-1012250 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012200-1012250 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012500-1012550 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012500-1012550 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012600-1012650 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_1/case_1/stmt_4@1012600-1012650 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_2/case_1/stmt_1@1012000-1012050 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_2/case_1/stmt_1@1012000-1012050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/always_1/if_1/block_1/if_1/block_2/case_1/stmt_1@1012300-1012350 
+solution 1 pc_gen/always_1/if_1/block_1/if_1/block_2/case_1/stmt_1@1012300-1012350 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_imm@1011000-1011050 
+solution 1 pc_gen/input_imm@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_imm@1012400-1012450 
+solution 1 pc_gen/input_imm@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011100-1011150 
+solution 1 pc_gen/input_pc@1011100-1011150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011200-1011250 
+solution 1 pc_gen/input_pc@1011200-1011250 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011300-1011350 
+solution 1 pc_gen/input_pc@1011300-1011350 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011400-1011450 
+solution 1 pc_gen/input_pc@1011400-1011450 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011500-1011550 
+solution 1 pc_gen/input_pc@1011500-1011550 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011600-1011650 
+solution 1 pc_gen/input_pc@1011600-1011650 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011700-1011750 
+solution 1 pc_gen/input_pc@1011700-1011750 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011800-1011850 
+solution 1 pc_gen/input_pc@1011800-1011850 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1011900-1011950 
+solution 1 pc_gen/input_pc@1011900-1011950 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1012000-1012050 
+solution 1 pc_gen/input_pc@1012000-1012050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1012100-1012150 
+solution 1 pc_gen/input_pc@1012100-1012150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_pc@1012600-1012650 
+solution 1 pc_gen/input_pc@1012600-1012650 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/input_s@1014000-1014050 
+solution 1 pc_gen/input_s@1014000-1014050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011000-1011050 
+solution 1 pc_gen/reg_pc_next@1011000-1011050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011100-1011150 
+solution 1 pc_gen/reg_pc_next@1011100-1011150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011200-1011250 
+solution 1 pc_gen/reg_pc_next@1011200-1011250 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011300-1011350 
+solution 1 pc_gen/reg_pc_next@1011300-1011350 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011400-1011450 
+solution 1 pc_gen/reg_pc_next@1011400-1011450 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011500-1011550 
+solution 1 pc_gen/reg_pc_next@1011500-1011550 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011600-1011650 
+solution 1 pc_gen/reg_pc_next@1011600-1011650 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011700-1011750 
+solution 1 pc_gen/reg_pc_next@1011700-1011750 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011800-1011850 
+solution 1 pc_gen/reg_pc_next@1011800-1011850 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1011900-1011950 
+solution 1 pc_gen/reg_pc_next@1011900-1011950 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1012000-1012050 
+solution 1 pc_gen/reg_pc_next@1012000-1012050 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/reg_pc_next@1012100-1012150 
+solution 1 pc_gen/reg_pc_next@1012100-1012150 
+solution 1 i_mips_core/iRF_stage/i_pc_gen:pc_gen/wire_br_addr@1012400-1012450 
+solution 1 pc_gen/wire_br_addr@1012400-1012450 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_1@1012300-1012350 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_1@1012300-1012350 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1010900-1010950 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1010900-1010950 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011000-1011050 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011000-1011050 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011100-1011150 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011100-1011150 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011200-1011250 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011200-1011250 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011800-1011850 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011800-1011850 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011900-1011950 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1011900-1011950 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012000-1012050 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012000-1012050 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012100-1012150 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012100-1012150 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012200-1012250 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012200-1012250 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012200-1012250 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012300-1012350 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012300-1012350 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012400-1012450 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012400-1012450 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012500-1012550 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012500-1012550 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012600-1012650 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012600-1012650 
+solution 1 i_mips_core/iexec_stage/pc_nxt:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012700-1012750 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012700-1012750 
+solution 1 i_mips_core/alu_pass0:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012800-1012850 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012800-1012850 
+solution 1 i_mips_core/alu_pass1:r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012900-1012950 
+solution 1 r32_reg_clr_cls/always_1/if_1/if_1/stmt_2@1012900-1012950 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/input_r32_i@1010900-1010950 
+solution 1 r32_reg_clr_cls/input_r32_i@1010900-1010950 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011000-1011050 
+solution 1 r32_reg_clr_cls/input_r32_i@1011000-1011050 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011100-1011150 
+solution 1 r32_reg_clr_cls/input_r32_i@1011100-1011150 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011200-1011250 
+solution 1 r32_reg_clr_cls/input_r32_i@1011200-1011250 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011300-1011350 
+solution 1 r32_reg_clr_cls/input_r32_i@1011300-1011350 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011400-1011450 
+solution 1 r32_reg_clr_cls/input_r32_i@1011400-1011450 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011500-1011550 
+solution 1 r32_reg_clr_cls/input_r32_i@1011500-1011550 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011600-1011650 
+solution 1 r32_reg_clr_cls/input_r32_i@1011600-1011650 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011700-1011750 
+solution 1 r32_reg_clr_cls/input_r32_i@1011700-1011750 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011800-1011850 
+solution 1 r32_reg_clr_cls/input_r32_i@1011800-1011850 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1011900-1011950 
+solution 1 r32_reg_clr_cls/input_r32_i@1011900-1011950 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/input_r32_i@1012100-1012150 
+solution 1 r32_reg_clr_cls/input_r32_i@1012100-1012150 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/input_r32_i@1012200-1012250 
+solution 1 r32_reg_clr_cls/input_r32_i@1012200-1012250 
+solution 1 i_mips_core/iexec_stage/pc_nxt:r32_reg_clr_cls/input_r32_i@1012700-1012750 
+solution 1 r32_reg_clr_cls/input_r32_i@1012700-1012750 
+solution 1 i_mips_core/alu_pass0:r32_reg_clr_cls/input_r32_i@1012800-1012850 
+solution 1 r32_reg_clr_cls/input_r32_i@1012800-1012850 
+solution 1 i_mips_core/alu_pass1:r32_reg_clr_cls/input_r32_i@1012900-1012950 
+solution 1 r32_reg_clr_cls/input_r32_i@1012900-1012950 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/reg_r32_o@1010950-1011000 
+solution 1 r32_reg_clr_cls/reg_r32_o@1010950-1011000 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011050-1011100 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011050-1011100 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011150-1011200 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011150-1011200 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011350-1011400 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011350-1011400 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011450-1011500 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011450-1011500 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011550-1011600 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011550-1011600 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011650-1011700 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011650-1011700 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011750-1011800 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011750-1011800 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1011950-1012000 
+solution 1 r32_reg_clr_cls/reg_r32_o@1011950-1012000 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1012150-1012200 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012150-1012200 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/reg_r32_o@1012250-1012300 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012250-1012300 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1012250-1012300 
+solution 1 i_mips_core/iRF_stage/ins_reg:r32_reg_clr_cls/reg_r32_o@1012350-1012400 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012350-1012400 
+solution 1 i_mips_core/new_pc/pc_latch:r32_reg_clr_cls/reg_r32_o@1012350-1012400 
+solution 1 i_mips_core/iexec_stage/pc_nxt:r32_reg_clr_cls/reg_r32_o@1012750-1012800 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012750-1012800 
+solution 1 i_mips_core/alu_pass0:r32_reg_clr_cls/reg_r32_o@1012850-1012900 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012850-1012900 
+solution 1 i_mips_core/alu_pass1:r32_reg_clr_cls/reg_r32_o@1012950-1013000 
+solution 1 r32_reg_clr_cls/reg_r32_o@1012950-1013000 
+solution 1 i_mips_core/iRF_stage/reg_bank:reg_array/always_1/if_1/block_1/stmt_1@1013000-1013050 
+solution 1 reg_array/always_1/if_1/block_1/stmt_1@1013000-1013050 
+solution 1 i_mips_core/iRF_stage/reg_bank:reg_array/input_data@1013000-1013050 
+solution 1 reg_array/input_data@1013000-1013050 
+solution 1 i_mips_core/iRF_stage/reg_bank:reg_array/reg_r_data@1013050-1013100 
+solution 1 reg_array/reg_r_data@1013050-1013100 
+solution 1 i_mips_core/iRF_stage/reg_bank:reg_array/wire_qa@1014000-1014050 
+solution 1 reg_array/wire_qa@1014000-1014050 
+solution 2 i_mips_core/iRF_stage:rf_stage/input_id_cmd@1013300-1013350 i_mips_core/iRF_stage:rf_stage/input_id_cmd@1013800-1013850 
+solution 2 rf_stage/input_id_cmd@1013300-1013350 rf_stage/input_id_cmd@1013800-1013850 
+solution 2 i_mips_core/iRF_stage:rf_stage/input_id_cmd@1013400-1013450 i_mips_core/iRF_stage:rf_stage/input_id_cmd@1013800-1013850 
+solution 2 rf_stage/input_id_cmd@1013400-1013450 rf_stage/input_id_cmd@1013800-1013850 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_ins_i@1010900-1010950 
+solution 1 rf_stage/input_ins_i@1010900-1010950 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_ins_i@1012200-1012250 
+solution 1 rf_stage/input_ins_i@1012200-1012250 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011100-1011150 
+solution 1 rf_stage/input_pc_i@1011100-1011150 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011200-1011250 
+solution 1 rf_stage/input_pc_i@1011200-1011250 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011300-1011350 
+solution 1 rf_stage/input_pc_i@1011300-1011350 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011400-1011450 
+solution 1 rf_stage/input_pc_i@1011400-1011450 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011500-1011550 
+solution 1 rf_stage/input_pc_i@1011500-1011550 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1011900-1011950 
+solution 1 rf_stage/input_pc_i@1011900-1011950 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012000-1012050 
+solution 1 rf_stage/input_pc_i@1012000-1012050 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012100-1012150 
+solution 1 rf_stage/input_pc_i@1012100-1012150 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012200-1012250 
+solution 1 rf_stage/input_pc_i@1012200-1012250 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012300-1012350 
+solution 1 rf_stage/input_pc_i@1012300-1012350 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012400-1012450 
+solution 1 rf_stage/input_pc_i@1012400-1012450 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_pc_i@1012500-1012550 
+solution 1 rf_stage/input_pc_i@1012500-1012550 
+solution 1 i_mips_core/iRF_stage:rf_stage/input_wb_din_i@1013000-1013050 
+solution 1 rf_stage/input_wb_din_i@1013000-1013050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_BUS2085@1011000-1011050 
+solution 1 rf_stage/wire_BUS2085@1011000-1011050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_BUS2085@1012400-1012450 
+solution 1 rf_stage/wire_BUS2085@1012400-1012450 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_BUS6061@1014000-1014050 
+solution 1 rf_stage/wire_BUS6061@1014000-1014050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_ext_o@1011000-1011050 
+solution 1 rf_stage/wire_ext_o@1011000-1011050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_ext_o@1012400-1012450 
+solution 1 rf_stage/wire_ext_o@1012400-1012450 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011000-1011050 
+solution 1 rf_stage/wire_pc_next@1011000-1011050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011100-1011150 
+solution 1 rf_stage/wire_pc_next@1011100-1011150 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011200-1011250 
+solution 1 rf_stage/wire_pc_next@1011200-1011250 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011300-1011350 
+solution 1 rf_stage/wire_pc_next@1011300-1011350 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011400-1011450 
+solution 1 rf_stage/wire_pc_next@1011400-1011450 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011500-1011550 
+solution 1 rf_stage/wire_pc_next@1011500-1011550 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011600-1011650 
+solution 1 rf_stage/wire_pc_next@1011600-1011650 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011700-1011750 
+solution 1 rf_stage/wire_pc_next@1011700-1011750 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011800-1011850 
+solution 1 rf_stage/wire_pc_next@1011800-1011850 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1011900-1011950 
+solution 1 rf_stage/wire_pc_next@1011900-1011950 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_pc_next@1014000-1014050 
+solution 1 rf_stage/wire_pc_next@1014000-1014050 
+solution 1 i_mips_core/iRF_stage:rf_stage/wire_rs_o@1014000-1014050 
+solution 1 rf_stage/wire_rs_o@1014000-1014050 
+solution 1 i_mips_core/wb_mux:wb_mux/always_1/if_1/stmt_2@1013000-1013050 
+solution 1 wb_mux/always_1/if_1/stmt_2@1013000-1013050 
+solution 1 i_mips_core/wb_mux:wb_mux/input_alu_i@1013000-1013050 
+solution 1 wb_mux/input_alu_i@1013000-1013050 
+solution 1 i_mips_core/wb_mux:wb_mux/reg_wb_o@1013000-1013050 
+solution 1 wb_mux/reg_wb_o@1013000-1013050 

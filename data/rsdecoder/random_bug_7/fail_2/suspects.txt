@@ -1,0 +1,8 @@
+#   RTL                               TYPE       FILENAME                BEGIN END   
+rtl rsdecoder                         module     ../rtl/RSDecoder.v      36.1  91.10 
+rtl rsdecoder/constraint_corr_recword constraint ../rtl/RSDecoder.v      44.14 44.26 
+rtl rsdecoder/wire_corr_recword       wire       ../rtl/RSDecoder.v      44.14 44.26 
+rtl rsdecoder/inst_adder              inst       ../rtl/RSDecoder.v      89.9  89.54 
+rtl gfadder                           module     ../rtl/common_modules.v 76.1  89.10 
+rtl gfadder/wire_out                  wire       ../rtl/common_modules.v 79.14 79.17 
+rtl gfadder/assign_5_out              assign     ../rtl/common_modules.v 87.8  87.18 

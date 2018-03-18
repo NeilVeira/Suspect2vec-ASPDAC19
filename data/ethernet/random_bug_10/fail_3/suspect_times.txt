@@ -1,0 +1,14 @@
+solution 1 miim1/clkgen:eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@61950-61965 
+solution 1 eth_clockgen/always_2/block_1/if_1/block_1/if_1/stmt_1@61950-61965 
+solution 1 miim1/clkgen:eth_clockgen/reg_Mdc@61965-61980 
+solution 1 eth_clockgen/reg_Mdc@61965-61980 
+solution 1 miim1/clkgen:eth_clockgen/reg_Mdc@61995-62010 
+solution 1 eth_clockgen/reg_Mdc@61995-62010 
+solution 1 miim1:eth_miim/wire_Mdc@61995-62010 
+solution 1 eth_miim/wire_Mdc@61995-62010 
+solution 1 :eth_top/constraint_mdc_pad_o@61005-62051 
+solution 1 eth_top/constraint_mdc_pad_o@61005-62051 
+solution 1 :eth_top/constraint_mdc_pad_o@61995-62010 
+solution 1 eth_top/constraint_mdc_pad_o@61995-62010 
+solution 1 :eth_top/wire_mdc_pad_o@61995-62010 
+solution 1 eth_top/wire_mdc_pad_o@61995-62010 

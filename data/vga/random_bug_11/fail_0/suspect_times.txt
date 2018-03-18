@@ -1,0 +1,54 @@
+solution 1 line_fifo/fifo_dc_mem:generic_dpram/always_1/if_1/stmt_1@3349200-3349500 
+solution 1 generic_dpram/always_1/if_1/stmt_1@3349200-3349500 
+solution 1 line_fifo/fifo_dc_mem:generic_dpram/input_raddr@3349200-3349500 
+solution 1 generic_dpram/input_raddr@3349200-3349500 
+solution 1 line_fifo/fifo_dc_mem:generic_dpram/input_rce@3349200-3349500 
+solution 1 generic_dpram/input_rce@3349200-3349500 
+solution 1 line_fifo/fifo_dc_mem:generic_dpram/reg_ra@3349500-3349800 
+solution 1 generic_dpram/reg_ra@3349500-3349800 
+solution 1 line_fifo/fifo_dc_mem:generic_dpram/wire_do_verilog@3352200-3352500 
+solution 1 generic_dpram/wire_do_verilog@3352200-3352500 
+solution 1 sigMap_i1:sigMap/assert_assertion_r_pad_o@3355500-3355800 
+solution 1 sigMap/assert_assertion_r_pad_o@3355500-3355800 
+solution 2 sigMap_i1:sigMap/assert_assertion_r_pad_o@3356100-3356400 sigMap_i1:sigMap/assert_assertion_r_pad_o@3356700-3356701 
+solution 2 sigMap/assert_assertion_r_pad_o@3356100-3356400 sigMap/assert_assertion_r_pad_o@3356700-3356701 
+solution 1 sigMap_i1:sigMap/input_r_pad_o@3355200-3355500 
+solution 1 sigMap/input_r_pad_o@3355200-3355500 
+solution 1 :vga/wire_line_fifo_q@3352200-3352500 
+solution 1 vga/wire_line_fifo_q@3352200-3352500 
+solution 1 :vga/wire_r_pad_o@3355200-3355500 
+solution 1 vga/wire_r_pad_o@3355200-3355500 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3292500-3292800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3292500-3292800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3295500-3295800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3295500-3295800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3298500-3298800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3298500-3298800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3316500-3316800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3316500-3316800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3319500-3319800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3319500-3319800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3322500-3322800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3322500-3322800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3325500-3325800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3325500-3325800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3328500-3328800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3328500-3328800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3331500-3331800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3331500-3331800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3334500-3334800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3334500-3334800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3340500-3340800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3340500-3340800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 line_fifo:vga_fifo_dc/reg_rptr@3343500-3343800 line_fifo:vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 2 vga_fifo_dc/reg_rptr@3343500-3343800 vga_fifo_dc/reg_rptr@3349500-3349800 
+solution 1 line_fifo:vga_fifo_dc/wire_q@3352200-3352500 
+solution 1 vga_fifo_dc/wire_q@3352200-3352500 
+solution 1 pixel_generator:vga_pgen/always_7/if_1/block_1/stmt_1@3352200-3352500 
+solution 1 vga_pgen/always_7/if_1/block_1/stmt_1@3352200-3352500 
+solution 1 pixel_generator:vga_pgen/input_line_fifo_q@3352200-3352500 
+solution 1 vga_pgen/input_line_fifo_q@3352200-3352500 
+solution 1 pixel_generator:vga_pgen/reg_r_o@3352500-3352800 
+solution 1 vga_pgen/reg_r_o@3352500-3352800 
+solution 1 pixel_generator:vga_pgen/wire_r@3352200-3352500 
+solution 1 vga_pgen/wire_r@3352200-3352500 

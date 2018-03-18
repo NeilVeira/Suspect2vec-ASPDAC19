@@ -1,0 +1,10 @@
+solution 1 :spi/always_2/case_1/stmt_2@3000-3500 
+solution 1 spi/always_2/case_1/stmt_2@3000-3500 
+solution 1 :spi/constraint_dat_o@4000-4500 
+solution 1 spi/constraint_dat_o@4000-4500 
+solution 1 :spi/input_adr_i@3000-3500 
+solution 1 spi/input_adr_i@3000-3500 
+solution 1 :spi/reg_dat_o@3500-4000 
+solution 1 spi/reg_dat_o@3500-4000 
+solution 1 :spi/wire_spsr@3000-3500 
+solution 1 spi/wire_spsr@3000-3500 

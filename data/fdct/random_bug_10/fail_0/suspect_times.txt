@@ -1,0 +1,20 @@
+solution 1 dct_mac/always_2/if_1/if_1/stmt_1@450000-452500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/always_2/if_1/if_1/stmt_1@450000-452500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/always_2/if_1/if_1/stmt_1@450000-452500 
+solution 1 dct_mac/reg_result@452500-455000 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/reg_result@452500-455000 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/reg_result@452500-455000 
+solution 1 dct_mac/wire_ext_mult_res@450000-452500 
+solution 2 dct_mod/dct_block_0/dct_unit_0/macu:dct_mac/wire_ext_mult_res@450000-452500 dct_mod/dct_block_0/dct_unit_1/macu:dct_mac/wire_ext_mult_res@450000-452500 
+solution 1 dctu/wire_dout@455000-457500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/wire_dout@455000-457500 dct_mod/dct_block_0/dct_unit_1:dctu/wire_dout@455000-457500 
+solution 1 dctu/wire_result@455000-457500 
+solution 2 dct_mod/dct_block_0/dct_unit_0:dctu/wire_result@455000-457500 dct_mod/dct_block_0/dct_unit_1:dctu/wire_result@455000-457500 
+solution 2 :fdct/wire_dout@460000-462500 :fdct/wire_dout@465000-467500 
+solution 2 fdct/wire_dout@460000-462500 fdct/wire_dout@465000-467500 
+solution 2 sigMap_i1:sigMap/assert_assertion_dout@462500-465000 sigMap_i1:sigMap/assert_assertion_dout@467500-468501 
+solution 2 sigMap/assert_assertion_dout@462500-465000 sigMap/assert_assertion_dout@467500-468501 
+solution 2 sigMap_i1:sigMap/input_dout@460000-462500 sigMap_i1:sigMap/input_dout@465000-467500 
+solution 2 sigMap/input_dout@460000-462500 sigMap/input_dout@465000-467500 
+solution 1 zigzag_mod:zigzag/reg_sresult@457500-460000 
+solution 1 zigzag/reg_sresult@457500-460000 
+solution 2 zigzag_mod:zigzag/wire_dout@460000-462500 zigzag_mod:zigzag/wire_dout@465000-467500 
+solution 2 zigzag/wire_dout@460000-462500 zigzag/wire_dout@465000-467500 

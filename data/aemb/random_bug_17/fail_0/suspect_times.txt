@@ -1,0 +1,6 @@
+solution 1 :aeMB_core/constraint_iwb_adr_o@0-26 
+solution 1 aeMB_core/constraint_iwb_adr_o@0-26 
+solution 1 :aeMB_core/wire_iwb_adr_o@0-26 
+solution 1 aeMB_core/wire_iwb_adr_o@0-26 
+solution 1 fetch:aeMB_fetch/wire_iwb_adr_o@0-26 
+solution 1 aeMB_fetch/wire_iwb_adr_o@0-26 
