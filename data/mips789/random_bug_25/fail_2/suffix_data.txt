@@ -1,3 +1,4 @@
+Failure time: 620051
 Number of suffix suspects: 33
 Debug runtime: 17.99
 Suffix debug runtime: 1.23

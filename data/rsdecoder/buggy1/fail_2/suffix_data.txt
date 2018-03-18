@@ -1,0 +1,4 @@
+Failure time: 1450
+Number of suffix suspects: 0
+Debug runtime: 0.00
+Suffix debug runtime: 0.00
