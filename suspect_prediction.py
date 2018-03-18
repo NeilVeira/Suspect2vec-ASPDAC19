@@ -126,7 +126,6 @@ class SuspectPrediction(object):
                 ordered_suspectz.append((neg_log_notp[i], i, 1-np.exp(-neg_log_notp[i])))
         ordered_suspectz.sort()
         ordered_suspectz.reverse() 
-        print ordered_suspectz
         
         if k is None:
             # Estimate k using the stopping criterion. 
@@ -166,35 +165,3 @@ class SuspectPrediction(object):
             return ranking, full_ranking 
         else:
             return ranking 
-
-            
-#create data
-train_data = [  [1,4,5], 
-                [2,5],
-                [1,2,3,4,5],
-                [3,5,6],
-                [1,3,4]
-            ]
-test_data = [1,2,4,5]    
-sample = test_data[:2]
-
-suspect_predictor = SuspectPrediction()
-suspect_predictor.fit(train_data)
-ranking,full_ranking = suspect_predictor.predict(sample, k=4, return_full_rank=True)
-
-#compute weights
-#map_weights = precompute_MAP_weights(len(train_data), args.prior_var)
-#print map_weights
-#weights = get_weights(train_data, n, map_weights)
-#print weights
-for i in sample:
-    for j in suspect_predictor.suspect_union:
-        if j not in sample:
-            print "w%i%i = %.6f" %(i,j,suspect_predictor.weights[i-1][j-1])
-            
-#for i in range(len(ranking)):
-#    print "score %i = %.6f" %(ranking[i], scorez[i])
-print "ranking:"
-for i in ranking:
-    print i, 
-print ""
