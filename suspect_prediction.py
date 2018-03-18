@@ -68,12 +68,12 @@ class SuspectPrediction(object):
         
         #count how many times each suspect is seen and how many times each pair 
         #of suspects is seen
-        cnt_suspect = [0]*n
+        self.cnt_suspect = [0]*n
         cnt_pairs = [[0]*n for i in range(n)]
         for suspect_set in data:
             for s1 in suspect_set:
                 i = self.suspect2id[s1]
-                cnt_suspect[i] += 1
+                self.cnt_suspect[i] += 1
                 for s2 in suspect_set:
                     j = self.suspect2id[s2]
                     cnt_pairs[i][j] += 1 
@@ -82,7 +82,7 @@ class SuspectPrediction(object):
         self.weights = np.zeros((n,n))
         for i in range(n):
             for j in range(n):
-                self.weights[i][j] = self.map_weights[cnt_suspect[i]][cnt_pairs[i][j]]
+                self.weights[i][j] = self.map_weights[self.cnt_suspect[i]][cnt_pairs[i][j]]
         
         
     def predict(self, sample, k=None, return_full_rank=False):
@@ -100,8 +100,27 @@ class SuspectPrediction(object):
             as well as the estimated k.         
         '''
         
-        sample = [self.suspect2id[suspect] for suspect in sample]
-        n = len(self.weights)
+        # Convert to ids, handling any new suspects
+        n = len(self.suspect_union)
+        for s in sample:
+            if s not in self.suspect2id:
+                self.suspect2id[s] = len(self.suspect2id)
+                self.suspect_union.append(s)
+        sample = [self.suspect2id[s] for s in sample]
+            
+        if len(self.suspect_union) > n:     
+            # Update weights for new suspects 
+            nn = len(self.suspect_union)
+            new_weights = np.zeros((nn,nn))
+            new_weights[:n,:n] = self.weights 
+            for i in range(n,nn):
+                for j in range(nn):
+                    new_weights[i][j] = self.map_weights[0][0]      
+            for i in range(n):
+                for j in range(n,nn):
+                    new_weights[i][j] = self.map_weights[self.cnt_suspect[i]][0]
+            self.weights = new_weights 
+            n = nn
         
         neg_logw = -1 * np.log(1-self.weights)
         ranking = sample
@@ -126,6 +145,7 @@ class SuspectPrediction(object):
                 ordered_suspectz.append((neg_log_notp[i], i, 1-np.exp(-neg_log_notp[i])))
         ordered_suspectz.sort()
         ordered_suspectz.reverse() 
+        full_ranking = sample + [x[1] for x in ordered_suspectz] 
         
         if k is None:
             # Estimate k using the stopping criterion. 
@@ -134,7 +154,7 @@ class SuspectPrediction(object):
             for i in range(len(sample),n):
                 scores[i] = 0
                 for j in range(i):
-                    scores[i] += neg_logw[ranking[j]][ranking[i]]      
+                    scores[i] += neg_logw[full_ranking[j]][full_ranking[i]]      
             scores[len(sample):] /= np.max(scores[len(sample):])
             
             # Smooth the function
@@ -159,9 +179,9 @@ class SuspectPrediction(object):
             
         # Convert back to suspects 
         ranking = [self.suspect_union[i] for i in ranking]
+        full_ranking = [self.suspect_union[i] for i in full_ranking]
             
         if return_full_rank:
-            full_ranking = sample + [self.suspect_union[x[1]] for x in ordered_suspectz] 
             return ranking, full_ranking 
         else:
             return ranking 
