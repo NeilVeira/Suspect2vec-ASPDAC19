@@ -1,5 +1,7 @@
 import numpy as np 
 import scipy.optimize
+import warnings 
+warnings.filterwarnings('ignore')
 
 class SuspectPrediction(object):
 
@@ -96,7 +98,7 @@ class SuspectPrediction(object):
             Number of suspects to predict, including the length of the sample. If None, the number of 
             suspects is estimated using the stopping criterion. 
         return_full_rank: 
-            If True, return all possible suspects ranked by probability of occuring with the sample 
+            If True, return all possible suspects ranked by probability of occurring with the sample 
             as well as the estimated k.         
         '''
         
@@ -108,8 +110,9 @@ class SuspectPrediction(object):
                 self.suspect_union.append(s)
         sample = [self.suspect2id[s] for s in sample]
             
-        if len(self.suspect_union) > n:     
+        if len(self.suspect_union) > n:  
             # Update weights for new suspects 
+            self.cnt_suspect.extend([0]*(len(self.suspect_union)-n))
             nn = len(self.suspect_union)
             new_weights = np.zeros((nn,nn))
             new_weights[:n,:n] = self.weights 

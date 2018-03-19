@@ -1,4 +1,3 @@
-#TODO: move everything depending on onpoint and ugly verilog parsing out of this file 
 import os 
 import argparse
 import subprocess
@@ -7,14 +6,6 @@ import random
 import math
 import itertools
 import numpy as np
-import scipy.stats
-import warnings 
-warnings.filterwarnings('ignore')
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.pylab
-from matplotlib import gridspec
 
 from suspect_prediction import SuspectPrediction
 
@@ -139,7 +130,7 @@ def do_prediction_optimal(sample, n, k, target, args):
     
     
                 
-def evaluate_prediction(suspect_union, target_ids, ranking, est_size, args):
+def evaluate_prediction(suspect_union, target_ids, ranking, est_size):
     '''
     Compute the metric measuring the precision of the prediction algorithm.
     This metric is the area under the curve of (% correct) vs (number of suspects). 
@@ -183,32 +174,6 @@ def evaluate_prediction(suspect_union, target_ids, ranking, est_size, args):
     mean_jac /= total
     
     size_err = float(abs(est_size-actual_size)) / actual_size
-    
-    if args.verbose >= 2:
-        print "Estimated size:",est_size 
-        print "Actual size:",len(target_ids)
-        print "Inferred suspects:" 
-        for id in ranking:
-            assert suspect_union[id].id == id
-            print suspect_union[id],
-            if id in target_ids:
-                print "correct"
-            else:
-                print "incorrect"                  
-    if args.verbose >= 2:
-        print "Means over all k:"
-        print "    precision = %.3f" %(mean_prec)
-        print "    recall = %.3f" %(mean_rec)
-        print "    jaccard index = %.3f" %(mean_jac)
-        print "At correct prediction size:"
-        print "    precision = %.3f" %(exact_prec)
-        print "    recall = %.3f" %(exact_rec)
-        print "    jaccard index = %.3f" %(exact_jac)
-        print "At estimated prediction size:"
-        print "    jaccard index = %.3f" %(est_jac)
-        print "    estimation error = %.3f" %(size_err)
-        print ""
-        
     return mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err
         
 
@@ -293,7 +258,7 @@ def process_report(fail_dir, suspect_union=set([]), debug_level=INF):
     return failure
 
    
-def experiment_k(design, all_suspectz, suspect_union, args):
+def experiment_k(all_suspectz, suspect_union, args):
     '''
     Evaluate suspect prediction over all values of k
     '''
@@ -310,19 +275,13 @@ def experiment_k(design, all_suspectz, suspect_union, args):
     # Axis 2 of all metrics: result for each data point in leave-one-out evaluation
     all_metrics = np.zeros((8,3,m))
     est_sizes = np.zeros(m)
-    '''mean_precs = np.zeros((3,m))
-    mean_recs = np.zeros((3,m))
-    mean_jacs = np.zeros((3,m))
-    exact_precs = np.zeros((3,m))
-    exact_recs = np.zeros((3,m))
-    exact_jacs = np.zeros((3,m))
-    est_jacs = np.zeros((3,m))
-    size_errs = np.zeros((3,m))'''
     
     predictor = SuspectPrediction(args.prior_var)
     
     # leave-one-out evaluation
     for i in range(m):
+        if args.verbose:
+            print "Running fold %i/%i" %(i+1,m)
         # Generate training & test data
         train_data = all_suspectz[:i] + all_suspectz[i+1:]
         test_data = all_suspectz[i]
@@ -343,37 +302,9 @@ def experiment_k(design, all_suspectz, suspect_union, args):
         rand_rankingz.append(rand)
         
         # Evaluation
-        all_metrics[:,0,i] = evaluate_prediction(suspect_union, test_data, ranking, est_size, args)
-        all_metrics[:,1,i] = evaluate_prediction(suspect_union, test_data, rand, est_size, args)
-        all_metrics[:,2,i] = evaluate_prediction(suspect_union, test_data, opt, len(test_data), args)
-        
-        '''mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, ranking, est_size, args)
-        mean_precs[0][i] = mean_prec 
-        mean_recs[0][i] = mean_rec 
-        mean_jacs[0][i] = mean_jac
-        exact_precs[0][i] = exact_prec 
-        exact_recs[0][i] = exact_rec 
-        exact_jacs[0][i] = exact_jac
-        est_jacs[0][i] = est_jac
-        size_errs[0][i] = size_err 
-        mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, rand, est_size, args)
-        mean_precs[1][i] = mean_prec 
-        mean_recs[1][i] = mean_rec 
-        mean_jacs[1][i] = mean_jac
-        exact_precs[1][i] = exact_prec 
-        exact_recs[1][i] = exact_rec 
-        exact_jacs[1][i] = exact_jac
-        est_jacs[1][i] = est_jac
-        size_errs[1][i] = size_err 
-        mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, opt, len(test_data), args)
-        mean_precs[2][i] = mean_prec 
-        mean_recs[2][i] = mean_rec 
-        mean_jacs[2][i] = mean_jac
-        exact_precs[2][i] = exact_prec 
-        exact_recs[2][i] = exact_rec 
-        exact_jacs[2][i] = exact_jac
-        est_jacs[2][i] = est_jac
-        size_errs[2][i] = size_err '''
+        all_metrics[:,0,i] = evaluate_prediction(suspect_union, test_data, ranking, est_size)
+        all_metrics[:,1,i] = evaluate_prediction(suspect_union, test_data, rand, est_size)
+        all_metrics[:,2,i] = evaluate_prediction(suspect_union, test_data, opt, len(test_data))
         
     print "Overall stats (%i failures)" %(m)
     print "Means over all k:"
@@ -396,290 +327,47 @@ def experiment_k(design, all_suspectz, suspect_union, args):
     print "    jaccard_index = %.3f" %(np.mean(all_metrics[6][0]))
     print "        random = %.3f" %(np.mean(all_metrics[6][1]))
     print "        optimal = %.3f" %(np.mean(all_metrics[6][2]))
-    print "    size estimation error = %.3f" %(np.mean(all_metrics[7][0]))
-      
-    '''print "    precision = %.3f" %(np.mean(mean_precs[0])) 
-    print "        optimal = %.3f" %(np.mean(mean_precs[2]))
-    print "        random = %.3f" %(np.mean(mean_precs[1]))
-    print "    recall = %.3f" %(np.mean(mean_recs[0])) 
-    print "    jaccard index = %.3f" %(np.mean(mean_jacs[0])) 
-    print "        optimal = %.3f" %(np.mean(mean_jacs[2]))
-    print "        random = %.3f" %(np.mean(mean_jacs[1]))
-    print "At exact k:"
-    print "    precision = %.3f" %(np.mean(exact_precs[0])) 
-    print "        optimal = %.3f" %(np.mean(exact_precs[2]))
-    print "        random = %.3f" %(np.mean(exact_precs[1]))
-    print "    recall = %.3f" %(np.mean(exact_recs[0])) 
-    print "    jaccard index = %.3f" %(np.mean(exact_jacs[0])) 
-    print "        optimal = %.3f" %(np.mean(exact_jacs[2]))
-    print "        random = %.3f" %(np.mean(exact_jacs[1]))
-    print "At estimated k:"
-    print "    jaccard_index = %.3f" %(np.mean(est_jacs[0]))
-    print "        optimal = %.3f" %(np.mean(est_jacs[2]))
-    print "        random = %.3f" %(np.mean(est_jacs[1]))
-    print "    size estimation ratio = %.3f" %(np.mean(size_errs[0]))'''
-        
-    '''if args.plots:
-        #make plots
-        n = len(all_rankingz[0]) #assumes prediction was run to full 
-        opt = np.zeros(n)
-        rand = np.zeros(n)
-        pred = np.zeros(n)
-        
-        #compute accuracy *for all* k
-        for fail_id in range(m):
-            correct_cnt = 0 
-            rand_correct_cnt = 0         
-            for i in range(n):
-                opt[i] += float(min(i+1,len(all_suspectz[fail_id]))) / (i+1)
-                if all_rankingz[fail_id][i] in all_suspectz[fail_id]:
-                    correct_cnt += 1
-                pred[i] += float(correct_cnt)/(i+1)
-                if rand_rankingz[fail_id][i] in all_suspectz[fail_id]:
-                    rand_correct_cnt += 1
-                rand[i] += float(rand_correct_cnt)/(i+1)
-        
-        opt = opt/m * 100 
-        pred = pred/m * 100 
-        rand = rand/m * 100
-        
-        print "making plots"
-        ax = plt.subplot(111, xlabel='k', ylabel='Accuracy (%)', title=design)
-        ax.plot(opt, "-g", label="Optimal")
-        ax.plot(pred, "-r", label="Predicted")
-        ax.plot(rand, "-b", label="Random")
-        ax.legend(loc="upper right")
-        ax.set_ylim([0,110])
-        ax.set_xlim([0,len(all_rankingz[0])+1])
-        for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
-                     ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(18)
-        plt.tight_layout()
-        matplotlib.pylab.savefig("plots/acc_vs_k/%s_acc_vs_k.png" %(design))
-        plt.close()
-        
-        #plot set size estimation 
-        zipped = [(len(all_suspectz[i]),est_sizes[i]) for i in range(len(est_sizes))]
-        zipped.sort()
-        exact_sizez = [zipped[i][0] for i in range(len(zipped))]
-        est_sizez = [zipped[i][1] for i in range(len(zipped))]
-        ax = plt.subplot(111, xlabel='Failure #', ylabel='Suspect set size', title=design)
-        for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
-                     ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(18)
-        ax.plot(exact_sizez, '.g', label="Exact", markersize=18)
-        ax.plot(est_sizez, 'xr', label="Estimated", markersize=12)
-        ax.legend(loc="upper left", numpoints=1)
-        plt.tight_layout()
-        matplotlib.pylab.savefig("plots/sizes/%s_sizes.png" %design)
-        plt.close()'''
+    print "    size estimation error = %.3f" %(np.mean(all_metrics[7][0]))  
        
 
-def update_plot(design, xdata, ydata, data_file, plot_file, xlabel, do_sample_stuff=False):
-    #read existing data for other designs
-    all_datax = {}
-    if os.path.exists(data_file):
-        for line in open(data_file):
-            prev_design,prev_data = line.split(",")
-            prev_data = map(float,prev_data.split())
-            all_datax[prev_design] = prev_data 
-    all_datax[design] = ydata
-    
-    #write all data back to file 
-    f = open(data_file,"w")
-    for design in all_datax.keys():
-        f.write(design+",")
-        f.write(" ".join(map(str, all_datax[design])))
-        f.write("\n")
-    f.close()
-         
-    #make plots 
-    if do_sample_stuff:
-        fig, axarr = plt.subplots(2, sharex=False, figsize=(8,12), gridspec_kw={'height_ratios':[3,2]})
-        axarr[0].set_title("(a)")
-        ax1 = axarr[0]
-    else:
-        fig, ax1 = plt.subplots()  
-        
-    numpoints = max([len(all_datax.values()[i]) for i in range(len(all_datax))])
-    mean = np.zeros(numpoints)
-    cnt = np.zeros(numpoints)
-    xdata = np.linspace(xdata[0], xdata[0]+(xdata[1]-xdata[0])*(numpoints-1), numpoints)
-    ax1.set_xlabel(xlabel)  
-    ax1.set_ylabel("Prediction accuracy (%)")
-    ax1.set_xlim((0,xdata[len(xdata)-1]+xdata[0]))
-    ax1.set_ylim((60,100)) 
-    
-    c = 0 
-    colourz = ["y","g","r","c","m","b","k"]
-    markerz = ["o","^","s"]
-    stylez = [":"] 
-    for design in all_datax.keys():
-        y = np.array(all_datax[design])*100  
-        style = stylez[c%len(stylez)]
-        colour = colourz[c%len(colourz)]
-        marker = markerz[c%len(markerz)]
-        ax1.plot(xdata[:len(y)], y, style+colour+marker, linewidth=2.0, label=design, markersize=4) 
-        for i in range(len(y)):
-            cnt[i] += 1
-            mean[i] += y[i]
-        c += 1
-    mean /= cnt
-    ax1.plot(xdata, mean, "-k", label="mean", linewidth=3.0)
-        
-    small_legend_size = 12
-    if do_sample_stuff:
-        ax1.plot(xdata, xdata, "--k")
-        ax1.legend(loc="lower right", prop={'size': small_legend_size}) 
-        
-        #plot runtimes vs sample size
-        datax = load_runtime_data()
-        all_x = []
-        all_y = []
-        for d in datax.keys():
-            all_x.extend(datax[d][0])
-            all_y.extend(datax[d][1])
-        binx = []
-        biny = []
-        for i in range(9):
-            bin_low = 0.05 + 0.1*i
-            bin_high = bin_low+0.1 
-            vals = []
-            for j in range(len(all_x)):
-                if bin_low <= all_x[j] < bin_high:
-                    vals.append(all_y[j])
-            binx.append((bin_low+bin_high)/2 * 100)
-            biny.append(scipy.stats.mstats.gmean(vals))  
-        #ax1.plot(all_x, all_y, "xg")
-        axarr[1].set_title("(b)")
-        axarr[1].set_xlabel(xlabel)
-        axarr[1].set_xlim((0,100))
-        axarr[1].set_ylabel("Suffix debug vs full debug runtime")
-        axarr[1].set_ylim((0,0.5))
-        axarr[1].plot(binx, biny, "-ob", label="runtime") 
-        axarr[1].legend(loc="upper right", numpoints=1) 
-
-        #plot triage data 
-        ax2 = axarr[1].twinx()
-        ax2.set_ylabel("Error in binning NMI")
-        mean = np.zeros(8)
-        num_designs = 0
-        for line in open("nmi_scores.txt"):
-            line = line.split(",")
-            des = line[0]
-            scores = np.array(map(float,line[1:-1]))
-            correct = float(line[-1])
-            err = abs(scores-correct)/correct
-            #plt.plot(x, err, "--k")
-            mean += err 
-            num_designs += 1
-        mean /= num_designs
-        x = np.linspace(10,10*len(mean),len(mean))
-        ax2.set_xlim((0,100))
-        ax2.set_ylim((0,0.5))
-        ax2.plot(x, mean, "-sr", label="mean error in NMI")
-        ax2.legend(loc="upper left", numpoints=1)
-        
-    else:    
-        plt.legend(loc="lower right", prop={'size': small_legend_size}) 
-            
-    matplotlib.pylab.savefig(plot_file)
-    plt.close()
-    
-    
-def load_runtime_data():
-    datax = {}
-    data_cache = open("runtime_data.txt")
-    for line in data_cache:
-        d,x,y  = line.strip().split(";")
-        d = d.strip()
-        datax[d] = (eval(x), eval(y))
-    return datax       
-       
-def plot_runtimes(design, all_failurez):
-    xdata = []
-    ydata = []
-    for f in all_failurez:
-        if f.num_suffix_suspects != 0 and f.num_suffix_suspects < f.num_suspects and f.runtime != 0 and f.suffix_runtime != 0:
-            xdata.append(float(f.num_suffix_suspects)/f.num_suspects)
-            ydata.append(float(f.suffix_runtime)/f.runtime)
-            
-    datax = load_runtime_data()
-    datax[design] = (xdata,ydata)
-    
-    data_cache = open("runtime_data.txt","w")
-    for d in datax.keys():
-        data_cache.write("%s ; %s ; %s\n" %(d,str(datax[d][0]), str(datax[d][1])))
-    data_cache.close()    
-            
-    '''plt.xlabel("Sample size")
-    plt.ylabel("suffix debug vs full debug runtime")
-    plt.xlim((0,1))
-    #plt.ylim((50,100))
-    all_x = []
-    all_y = []
-    for d in datax.keys():
-        all_x.extend(datax[d][0])
-        all_y.extend(datax[d][1])
-    
-    binx = []
-    biny = []
-    for i in range(9):
-        bin_low = 0.05 + 0.1*i
-        bin_high = bin_low+0.1 
-        vals = []
-        for j in range(len(all_x)):
-            if bin_low <= all_x[j] < bin_high:
-                vals.append(all_y[j])
-        binx.append((bin_low+bin_high)/2 * 100)
-        biny.append(scipy.stats.mstats.gmean(vals))
-        
-    f = open("runtime_bins.txt","w")
-    f.write(str(binx)+"\n")
-    f.write(str(biny)+"\n")
-    f.close()
-        
-    plt.plot(all_x, all_y, "xg")
-    plt.plot(binx, biny, "ob")
-    matplotlib.pylab.savefig("plots/runtimes.png")
-    plt.close()'''
-       
-        
-def experiment_sample_size(design, all_suspectz, suspect_union, map_weights, args, all_failurez):
+def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
     '''
+    Evaluate the prediction at multiple sample sizes from 10% to 80% in 10% increments. 
     '''
     m = len(all_suspectz)
     n = len(suspect_union)
     sample_interval = 0.1
     num_points = int(0.8/sample_interval)+1
-    data = np.zeros((m,num_points+1))
+    results = np.zeros((m,num_points+1))
     predicted_suspectz = [[] for _ in range(num_points)] #suspect lists for each failure, for each sample size
     
+    predictor = SuspectPrediction()
+    
     for i in range(m):
+        if args.verbose:
+            print "Running fold %i/%i" %(i+1,m)
         train_data = all_suspectz[:i] + all_suspectz[i+1:]
-        weights = get_weights(train_data, n, map_weights)
         test_data = all_suspectz[i]
-        data[i][-1] = 1.0 #perfect accuracy at full sample
+        predictor.fit(train_data)
         
+        results[i][-1] = 1.0 #perfect accuracy at full sample        
         for j in range(num_points):
             sample_size = 0.1 + j*sample_interval
             sample = test_data[:int(math.ceil(sample_size*len(test_data)))]
-            ranking, est_size = do_prediction_spbp(weights, sample, n, i, args)
-            mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, ranking, n, args)
-            #TODO: don't use exact_prec... maybe est_jac?
-            data[i][j] = exact_prec 
-            predicted_suspectz[j].append(ranking[:est_size])
+            ranking, full_ranking = predictor.predict(sample, return_full_rank=True)
+            est_size = len(ranking)
+            
+            metrics = evaluate_prediction(suspect_union, test_data, full_ranking, n)
+            results[i][j] = metrics[3] 
+            predicted_suspectz[j].append(ranking)
             
     x = np.linspace(10,100,num_points+1)
-    cur_data = np.mean(data,axis=0)
+    results = np.mean(results,axis=0)
     for i in range(num_points):
-        print "At %i%% sample: %.3f" %(int(x[i]), cur_data[i])
-        
-    if args.plots:
-        update_plot(design, x, cur_data, "sample_size_data.txt", "plots/vs_sample_size.png", "Sample size (%)", True)
+        print "At %i%% sample: %.3f" %(int(x[i]), results[i])
         
         
-def experiment_train_size(design, all_suspectz, suspect_union, map_weights, args):
+def experiment_train_size(all_suspectz, suspect_union, map_weights, args):
     m = len(all_suspectz)
     n = len(suspect_union)
     train_sizez = range(5,len(all_suspectz)-1,5)
@@ -694,16 +382,13 @@ def experiment_train_size(design, all_suspectz, suspect_union, map_weights, args
         for j in range(len(train_sizez)):
             weights = get_weights(train_data[:train_sizez[j]], n, map_weights) 
             ranking, scorez = do_prediction_spbp(weights, sample, n, i, args)
-            mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, ranking, n, args)
+            mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, ranking, n)
             data[i][j] = exact_prec
     
     cur_data = np.mean(data, axis=0)
     for i in range(len(cur_data)):
         print "Accuracy at training size %i: %.3f" %(5*(i+1), cur_data[i])
-    
-    if args.plots:
-        update_plot(design, np.linspace(5,80,16), cur_data, "train_size_data.txt", "plots/vs_train_size.png", "Training set size, T")
-
+        
             
 def main(args):
     design_dir = args.design_dir.rstrip("/") 
@@ -712,7 +397,6 @@ def main(args):
         raise ValueError("design %s does not exist" %(design_dir))
         return False     
         
-    design = os.path.basename(design_dir).strip() #TODO: this is too hacky
     suspect_union = set([]) 
     all_suspectz = []
     all_failurez = []
@@ -736,14 +420,7 @@ def main(args):
                         print "Parsed",failure
                     all_suspectz.append(failure.suspectz)
                     all_failurez.append(failure)
-            
-    '''def cmp_by_id(a, b):
-        if a.id == b.id:
-            return 0
-        elif a.id < b.id:
-            return -1 
-        else:
-            return 1'''
+
     suspect_union = list(suspect_union)
     cmp_by_id = lambda a,b: 0 if a.id == b.id else (-1 if a.id < b.id else 1)
     suspect_union.sort(cmp_by_id) 
@@ -764,12 +441,11 @@ def main(args):
         # print ""
     
     if args.experiment == "k":
-        experiment_k(design, all_suspectz, suspect_union, args)
-    # TODO: fix this functionality 
-    # elif args.experiment == "sample_size" or args.experiment == "triage":
-        # experiment_sample_size(design, all_suspectz, suspect_union, map_weights, args, all_failurez)
-    # elif args.experiment == "train_size":
-        # experiment_train_size(design, all_suspectz, suspect_union, map_weights, args)
+        experiment_k(all_suspectz, suspect_union, args)
+    elif args.experiment == "sample_size" or args.experiment == "triage":
+        experiment_sample_size(all_suspectz, suspect_union, args, all_failurez)
+    elif args.experiment == "train_size":
+        experiment_train_size(all_suspectz, suspect_union, map_weights, args)
     # elif args.experiment == "runtime":
         # plot_runtimes(design, all_failurez)    
     else:
@@ -778,14 +454,15 @@ def main(args):
         
 def init(parser):
     parser.add_argument("design_dir",help="Design to run")
-    parser.add_argument("--experiment",default="k",help="Type of evaluation experiment to run on the design")
+    parser.add_argument("--experiment",default="k",help="Type of evaluation experiment to run on the design." \
+        "Must be one of ['k','sample_size','train_size','triage']")
     parser.add_argument("--level",type=int,default=INF,help="Maximum hierarchical level of suspects to consider. Default is all.")
     parser.add_argument("--sample_size",type=float,default=0.5 ,help="Number of suspects in initial subset (sample) of suspect set that" \
                         " is to be ranking.")
     parser.add_argument("--prior_var",type=float,default=0.2,help="Hyperparameter for prior in MAP estimation")
     parser.add_argument("-v","--verbose",action="store_true",default=False,help="Verbose mode")
-    parser.add_argument("--plots",action="store_true",default=False,help="Generate plots")
-    parser.add_argument("--sample_type",default="suffix")
+    parser.add_argument("--sample_type",default="suffix",help="Strategy to choose an observed suspect sample." \
+        "Must be one of ['suffix','random']")
    
 
 if __name__ == "__main__":
