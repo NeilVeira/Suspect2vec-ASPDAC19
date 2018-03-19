@@ -1,15 +1,12 @@
 import os 
 import argparse
-import subprocess
 import re
 import random
 import math
-import itertools
 import numpy as np
 
 from suspect_prediction import SuspectPrediction
 
-EPS = 1e-3
 INF = 1e12
 
 #define hierarchical levels of all rtl types
@@ -358,7 +355,7 @@ def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
             est_size = len(ranking)
             
             metrics = evaluate_prediction(suspect_union, test_data, full_ranking, n)
-            results[i][j] = metrics[3] 
+            results[i][j] = metrics[3] # precision at exact k 
             predicted_suspectz[j].append(ranking)
             
     x = np.linspace(10,100,num_points+1)
@@ -367,27 +364,34 @@ def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
         print "At %i%% sample: %.3f" %(int(x[i]), results[i])
         
         
-def experiment_train_size(all_suspectz, suspect_union, map_weights, args):
+def experiment_train_size(all_suspectz, suspect_union, args):
+    '''
+    Evaluate the prediction at various sizes of the training data set. 
+    '''
     m = len(all_suspectz)
     n = len(suspect_union)
     train_sizez = range(5,len(all_suspectz)-1,5)
-    data = np.zeros((len(all_suspectz), len(train_sizez)))
+    results = np.zeros((len(all_suspectz), len(train_sizez)))
+    predictor = SuspectPrediction()
     
     for i in range(len(all_suspectz)):
-        train_data = all_suspectz[:i] + all_suspectz[i+1:]
-        random.shuffle(train_data)
+        if args.verbose:
+            print "Running fold %i/%i" %(i+1,m)
+        all_train_data = all_suspectz[:i] + all_suspectz[i+1:]
+        random.shuffle(all_train_data)        
         test_data = all_suspectz[i]
         sample = test_data[:int(math.ceil(args.sample_size*len(test_data)))]
         
         for j in range(len(train_sizez)):
-            weights = get_weights(train_data[:train_sizez[j]], n, map_weights) 
-            ranking, scorez = do_prediction_spbp(weights, sample, n, i, args)
-            mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err = evaluate_prediction(suspect_union, test_data, ranking, n)
-            data[i][j] = exact_prec
+            train_data = all_train_data[:train_sizez[j]]
+            predictor.fit(train_data)
+            ranking = predictor.predict(sample, k=len(test_data))
+            metrics = evaluate_prediction(suspect_union, test_data, ranking, len(test_data))
+            results[i][j] = metrics[3] # precision at exact k 
     
-    cur_data = np.mean(data, axis=0)
-    for i in range(len(cur_data)):
-        print "Accuracy at training size %i: %.3f" %(5*(i+1), cur_data[i])
+    results = np.mean(results, axis=0)
+    for i in range(len(results)):
+        print "Accuracy at training size %i: %.3f" %(5*(i+1), results[i])
         
             
 def main(args):
@@ -442,12 +446,10 @@ def main(args):
     
     if args.experiment == "k":
         experiment_k(all_suspectz, suspect_union, args)
-    elif args.experiment == "sample_size" or args.experiment == "triage":
+    elif args.experiment == "sample_size":
         experiment_sample_size(all_suspectz, suspect_union, args, all_failurez)
     elif args.experiment == "train_size":
-        experiment_train_size(all_suspectz, suspect_union, map_weights, args)
-    # elif args.experiment == "runtime":
-        # plot_runtimes(design, all_failurez)    
+        experiment_train_size(all_suspectz, suspect_union, args)  
     else:
         raise ValueError("Invalid experiment option %s" %(args.experiment))
     
@@ -455,7 +457,7 @@ def main(args):
 def init(parser):
     parser.add_argument("design_dir",help="Design to run")
     parser.add_argument("--experiment",default="k",help="Type of evaluation experiment to run on the design." \
-        "Must be one of ['k','sample_size','train_size','triage']")
+        "Must be one of ['k','sample_size','train_size']")
     parser.add_argument("--level",type=int,default=INF,help="Maximum hierarchical level of suspects to consider. Default is all.")
     parser.add_argument("--sample_size",type=float,default=0.5 ,help="Number of suspects in initial subset (sample) of suspect set that" \
                         " is to be ranking.")

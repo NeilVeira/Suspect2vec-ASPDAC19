@@ -177,6 +177,7 @@ class SuspectPrediction(object):
                     k = i 
                     break
         
+        k = min(k,n)
         for i in range(k-len(sample)):
             ranking.append(ordered_suspectz[i][1])
             
