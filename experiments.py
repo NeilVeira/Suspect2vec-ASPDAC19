@@ -6,6 +6,7 @@ import math
 import numpy as np
 
 from suspect_prediction import SuspectPrediction
+from suspect2vec import Suspect2Vec
 
 INF = 1e12
 
@@ -393,6 +394,36 @@ def experiment_train_size(all_suspectz, suspect_union, args):
     for i in range(len(results)):
         print "Accuracy at training size %i: %.3f" %(5*(i+1), results[i])
         
+        
+def experiment_suspect2vec(all_suspectz, suspect_union, args):
+    '''
+    Evaluate suspect prediction over all values of k
+    '''
+    m = len(all_suspectz)
+    n = len(suspect_union)
+    predictor = SuspectPrediction(args.prior_var)
+    
+    # leave-one-out evaluation
+    for i in range(m):
+        if args.verbose:
+            print "Running fold %i/%i" %(i+1,m)
+        # Generate training & test data
+        train_data = all_suspectz[:i] + all_suspectz[i+1:]
+        test_data = all_suspectz[i]
+        if args.sample_type == "random":
+            random.shuffle(test_data)
+        sample = test_data[:int(math.ceil(args.sample_size*len(test_data)))]
+        
+        # Prediction
+        predictor.fit(train_data)
+        pred_old = predictor.predict(sample)           
+        
+        # Suspect2vec prediction 
+        s2v = Suspect2Vec()
+        s2v.fit(train_data)
+        pred_new = s2v.predict(sample)
+        
+        # TODO: convert to yes/no class labels and measure precision, recall, fscore
             
 def main(args):
     design_dir = args.design_dir.rstrip("/") 
@@ -449,7 +480,9 @@ def main(args):
     elif args.experiment == "sample_size":
         experiment_sample_size(all_suspectz, suspect_union, args, all_failurez)
     elif args.experiment == "train_size":
-        experiment_train_size(all_suspectz, suspect_union, args)  
+        experiment_train_size(all_suspectz, suspect_union, args) 
+    elif args.experiment == "suspect2vec":
+        experiment_suspect2vec(all_suspectz, suspect_union, args)
     else:
         raise ValueError("Invalid experiment option %s" %(args.experiment))
     
