@@ -535,7 +535,7 @@ def main(args):
         
 def init(parser):
     parser.add_argument("design_dir",help="Design to run")
-    parser.add_argument("--experiment",default="k",help="Type of evaluation experiment to run on the design." \
+    parser.add_argument("--experiment",default="suspect2vec",help="Type of evaluation experiment to run on the design." \
         "Must be one of ['k','sample_size','train_size','suspect2vec']")
     parser.add_argument("--level",type=int,default=INF,help="Maximum hierarchical level of suspects to consider. Default is all.")
     parser.add_argument("--sample_size",type=float,default=0.5 ,help="Number of suspects in initial subset (sample) of suspect set that" \

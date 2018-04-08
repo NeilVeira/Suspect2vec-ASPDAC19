@@ -1,5 +1,6 @@
+import subprocess 
 import numpy as np 
-import tensorflow as tf
+#import tensorflow as tf
 import warnings 
 warnings.filterwarnings('ignore')
 
@@ -52,8 +53,24 @@ class Suspect2Vec(object):
         self.one_hot_data = np.zeros((m,n), dtype=np.bool_)
         for i in range(m):
             self.one_hot_data[i][self.train_data[i]] = 1
+            
+        with open("in.txt","w") as f:
+            f.write("%i %i\n" %(m,n))
+            for row in self.one_hot_data:
+                f.write(" ".join(map(str,map(int,row)))+"\n")
+        
+        cmd = "./suspect2vec -in in.txt -out out.txt -epochs %i -dim %i -eta %.6f" %(self._epochs,self._dim,self._eta)
+        print(cmd)
+        assert False
+        stdout,stderr = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).communicate()
+        
+        with open("out.txt") as f:
+            self.embeddings = []
+            for line in f:
+                self.embeddings.append(list(map(float,line.strip().split())))
+            self.embeddings = np.array(self.embeddings)            
 
-        # build graph
+        '''# build graph
         train_inputs = tf.placeholder(tf.float32, shape=[n])
         train_labels = tf.placeholder(tf.float32, shape=[n])
         embeddings = tf.Variable(tf.random_uniform([n,self._dim], -1, 1))
@@ -85,8 +102,8 @@ class Suspect2Vec(object):
             print("Step %i loss: %.4f" %(step,loss))
             #print(pred)
 
-        self.embeddings = self.sess.run(embeddings)
-
+        self.embeddings = self.sess.run(embeddings)'''
+        
         
     def predict(self, sample):
         '''       
