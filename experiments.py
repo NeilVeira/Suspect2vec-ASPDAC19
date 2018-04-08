@@ -425,13 +425,13 @@ def experiment_suspect2vec(data, suspect_union, args):
     folds = min(args.folds,m)
     kf = KFold(n_splits=folds, random_state=42, shuffle=False)
     for fold, (train_index,test_index) in enumerate(kf.split(data)):
-        if args.verbose:
-            print("Running fold %i/%i" %(fold+1,folds))
+        #if args.verbose:
+        print("Running fold %i/%i" %(fold+1,folds))
         train_data = [data[i] for i in train_index]
         
         # Train models
         predictor.fit(train_data)
-        s2v = Suspect2Vec(eta=args.eta, epochs=args.epochs, dim=args.dim)
+        s2v = Suspect2Vec(eta=args.eta, epochs=args.epochs, dim=args.dim, lambd=args.lambd)
         s2v.fit(train_data)
 
         # Testing
@@ -445,14 +445,16 @@ def experiment_suspect2vec(data, suspect_union, args):
             metrics_base[i] = eval_pred_v2(n, pred_base, test_data)   
             #print pred_base 
             #print test_data 
-            if args.verbose:
-                print("test %i: %s" %(i,metrics_base[i]))
             #print ""
 
             # Prediction using suspect2vec model 
             pred_new = s2v.predict(sample)
             # TODO: plot suspect embeddings
-            metrics_new[i] = eval_pred_v2(n, pred_new, test_data)        
+            metrics_new[i] = eval_pred_v2(n, pred_new, test_data)  
+            
+            # if args.verbose:
+                # print("test %i base: %s" %(i,metrics_base[i]))
+                # print("test %i new: %s" %(i,metrics_new[i]))
 
     metrics_base = np.mean(metrics_base,axis=0)
     metrics_new = np.mean(metrics_new,axis=0)
@@ -545,10 +547,10 @@ def init(parser):
     parser.add_argument("--sample_type",default="suffix",help="Strategy to choose an observed suspect sample." \
         "Must be one of ['suffix','random']")
     parser.add_argument("--folds",type=int,default=5)
-    parser.add_argument("--epochs",type=int,default=1)
+    parser.add_argument("--epochs",type=int,default=2000)
     parser.add_argument("--eta",type=float,default=0.01,help="Learning rate")
-    parser.add_argument("--dim",type=int,default=2,help="Embedding dimension")
-
+    parser.add_argument("--dim",type=int,default=10,help="Embedding dimension")
+    parser.add_argument("--lambd",type=float,default=0.1,help="Regularization factor")
    
 
 if __name__ == "__main__":

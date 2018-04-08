@@ -12,8 +12,8 @@ int **data, *sample;
 float **embed_in, *sample_vec, **embed_out, *update;
 char infile[MAX_STRING], outfile[MAX_STRING];
 
-int epochs = 2000, dim = 50, negative = 7;
-float eta = 0.01;
+int epochs = 2000, dim = 10;
+float eta = 0.01, lambda = 0.1;
 
 float rand_float() {
 	return (float)rand() / (float)RAND_MAX;
@@ -138,9 +138,6 @@ void train(int m, int n)
             for (k=0; k<dim; k++)
                 sample_vec[k] /= cnt;
             
-            // TODO: add some form of "regularization" to stop embedding vector magnitudes 
-            // from growing without bound 
-            
             for (j=0; j<n; j++) {
                 score = 0;
                 for (k=0; k<dim; k++)
@@ -149,7 +146,7 @@ void train(int m, int n)
                 label = data[i][j];                
                 for (k=0; k<dim; k++) {
                     update[k] += embed_out[j][k] * (label-score);
-                    embed_out[j][k] += eta * sample_vec[k] * (label-score);
+                    embed_out[j][k] += eta * (sample_vec[k] * (label-score) - lambda*embed_out[j][k]);
                 }
                 if (i == m-1) {
                     acc += (score>0.5) == label;
@@ -157,15 +154,12 @@ void train(int m, int n)
                         loss -= log(score);
                     else 
                         loss -= log(1-score);
-                    // if (isnan(loss) || isinf(loss)) {
-                        // printf("j=%d, label=%d, score=%.9f\n",j,label,score);
-                    // }
                 }
             }
             for (j=0; j<n; j++) {
                 if (sample[j]) {
                     for (k=0; k<dim; k++)
-                        embed_in[j][k] += eta * update[k] /cnt;
+                        embed_in[j][k] += eta * (update[k]/cnt - lambda*embed_in[j][k]);
                 }
             }
         }
@@ -180,8 +174,6 @@ void train(int m, int n)
             mean_mag2 /= n;
             printf("Mean squared vector magnitude: %f\n",mean_mag2);
         }
-        //assert(!isnan(loss));
-        //assert(!isinf(loss));
     }
 }
 
@@ -213,8 +205,8 @@ int main(int argc, char **argv) {
 		printf("\t\tEmbedding dimension\n");
 		printf("\t-eta <float>\n");
 		printf("\t\tLearning rate\n");
-		printf("\t-negative <float>\n");
-		printf("\t\tNumber of negative samples for each positive sample\n");
+		printf("\t-lambda <float>\n");
+		printf("\t\tRegularization term\n");
 		return 0;
 	}
 
@@ -223,7 +215,7 @@ int main(int argc, char **argv) {
 	if ((i = ArgPos((char *)"-epochs", argc, argv)) > 0) epochs = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-dim", argc, argv)) > 0) dim = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-eta", argc, argv)) > 0) eta = atof(argv[i + 1]);
-	if ((i = ArgPos((char *)"-negative", argc, argv)) > 0) negative = atof(argv[i + 1]);
+	if ((i = ArgPos((char *)"-lambda", argc, argv)) > 0) lambda = atof(argv[i + 1]);
 
 	srand(0);
 
@@ -259,10 +251,15 @@ int main(int argc, char **argv) {
 	init_embeddings(n);    
     train(m,n);
     
-    // write embeddings to output 
+    // write embeddings to output     
     for (j=0; j<n; j++) {
         for (k=0; k<dim; k++)
             fprintf(fout,"%.6f ",embed_in[j][k]);
+        fprintf(fout,"\n");
+    }
+    for (j=0; j<n; j++) {
+        for (k=0; k<dim; k++)
+            fprintf(fout,"%.6f ",embed_out[j][k]);
         fprintf(fout,"\n");
     }
     return 0;
