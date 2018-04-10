@@ -1,22 +1,20 @@
 import subprocess 
 import numpy as np 
-#import tensorflow as tf
+import sklearn.model_selection
+import sklearn.metrics
+
 import warnings 
 warnings.filterwarnings('ignore')
-
-def sigmoid(x):
-    return 1/(1+np.exp(-x))
     
-
 class Suspect2Vec(object):
 
-    def __init__(self, dim=100, epochs=1000, eta=0.01, lambd=0.1):
+    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None):
         '''
         '''
         self._dim = dim 
         self._epochs = epochs 
         self._eta = eta 
-        self._lambda = lambd 
+        self._lambd = lambd 
         
     @staticmethod 
     def mat_vec_mul(A, b):
@@ -33,7 +31,50 @@ class Suspect2Vec(object):
             sample = self.one_hot_data[i] * include
             yield sample, self.one_hot_data[i]
 
-                
+    def run_C_suspect2vec(self, one_hot_data, **args):
+        m,n = one_hot_data.shape
+        with open("in.txt","w") as f:
+            f.write("%i %i\n" %(m,n))
+            for row in one_hot_data:
+                f.write(" ".join(map(str,map(int,row)))+"\n")
+        
+        params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim}
+        for key in args:
+            params[key] = args[key]
+        cmd = "./suspect2vec -in in.txt -out out.txt"
+        for key in params:
+            cmd += " -%s %s" %(key,params[key])
+        stdout,stderr = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).communicate()
+        
+        with open("out.txt") as f:
+            self.embed_in = []
+            self.embed_out = []
+            for i in range(n):
+                self.embed_in.append(list(map(float,f.readline().strip().split())))
+            for i in range(n):
+                self.embed_out.append(list(map(float,f.readline().strip().split())))
+            self.embed_in = np.array(self.embed_in)            
+            self.embed_out = np.array(self.embed_out)    
+        assert not np.isnan(self.embed_in).any()
+        assert not np.isnan(self.embed_out).any()
+            
+    def validate(self, train_index, valid_index, lambd):
+        self.run_C_suspect2vec(self.one_hot_data[train_index], lambd=lambd, epochs=1000)
+        results = np.zeros(len(valid_index))
+        for i,idx in enumerate(valid_index):
+            sample = self.train_data[idx][:len(self.train_data[idx])/2] #self.train_data[idx] is actually validation data here 
+            # TODO: get rid of all this unnecessary converting between suspects and ids
+            sample = [self.suspect_union[s] for s in sample]
+            pred = self.predict(sample)
+            pred = [self.suspect2id[s] for s in pred]
+            # print(pred)
+            # print(sample)
+            pred_1hot = np.zeros(len(self.one_hot_data[0]), dtype=np.bool_)
+            pred_1hot[pred] = 1 
+            metrics = sklearn.metrics.precision_recall_fscore_support(self.one_hot_data[idx], pred_1hot, labels=[0,1])
+            results[i] = metrics[2][1]
+        return np.mean(results)
+             
     def fit(self, data):
         '''
         Learn the embed_in to predict suspect sets. 
@@ -51,67 +92,22 @@ class Suspect2Vec(object):
 
         self.train_data = []
         for S in data:
-            self.train_data.append(np.array([self.suspect2id[s] for s in S]))
+            self.train_data.append([self.suspect2id[s] for s in S])
         
         self.one_hot_data = np.zeros((m,n), dtype=np.bool_)
         for i in range(m):
             self.one_hot_data[i][self.train_data[i]] = 1
             
-        with open("in.txt","w") as f:
-            f.write("%i %i\n" %(m,n))
-            for row in self.one_hot_data:
-                f.write(" ".join(map(str,map(int,row)))+"\n")
+        if self._lambd is None:
+            # Determine best value using validation data
+            train_index,valid_index = sklearn.model_selection.train_test_split(range(m), test_size=0.25, random_state=1)
+            val1 = self.validate(train_index, valid_index, 0.0)
+            val2 = self.validate(train_index, valid_index, 0.1)
+            print("Validation results: 0.0 -> %.4f, 0.1 -> %.4f" %(val1,val2))
+            self._lambd = 0.0 if val1 > val2 else 0.1 
         
-        cmd = "./suspect2vec -in in.txt -out out.txt -epochs %i -dim %i -eta %.6f -lambda %.6f" \
-                %(self._epochs,self._dim,self._eta,self._lambda)
-        #print(cmd)
-        stdout,stderr = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).communicate()
-        
-        with open("out.txt") as f:
-            self.embed_in = []
-            self.embed_out = []
-            for i in range(n):
-                self.embed_in.append(list(map(float,f.readline().strip().split())))
-            for i in range(n):
-                self.embed_out.append(list(map(float,f.readline().strip().split())))
-            self.embed_in = np.array(self.embed_in)            
-            self.embed_out = np.array(self.embed_out)      
-
+        self.run_C_suspect2vec(self.one_hot_data)    
         return self.embed_in 
-
-        '''# build graph
-        train_inputs = tf.placeholder(tf.float32, shape=[n])
-        train_labels = tf.placeholder(tf.float32, shape=[n])
-        embed_in = tf.Variable(tf.random_uniform([n,self._dim], -1, 1))
-
-        cnt = tf.reduce_sum(train_inputs)
-        embed = Suspect2Vec.mat_vec_mul(tf.transpose(embed_in), train_inputs) / cnt  
-
-        logits = Suspect2Vec.mat_vec_mul(embed_in, embed)
-        self.pred = tf.sigmoid(logits)
-        ce_loss = tf.reduce_sum(tf.nn.sigmoid_cross_entropy_with_logits(labels=train_labels, logits=logits))
-
-        opt = tf.train.GradientDescentOptimizer(self._eta).minimize(ce_loss)
-
-        # Training
-        init = tf.global_variables_initializer()
-        self.sess = tf.Session()
-        self.sess.run(init)
-
-        for step in range(self._epochs):
-            for sample,target in self._generate_batch():
-                _,loss,pred = self.sess.run([opt,ce_loss,self.pred], feed_dict={train_inputs:sample, train_labels:target})
-
-                if np.isnan(loss):
-                    print(pred)
-                    print(pred-target)
-
-                    assert False
-            #if step%100 == 0:
-            print("Step %i loss: %.4f" %(step,loss))
-            #print(pred)
-
-        self.embed_in = self.sess.run(embed_in)'''
         
         
     def predict(self, sample):
@@ -124,9 +120,9 @@ class Suspect2Vec(object):
         ret = list(sample)
         sample = [self.suspect2id[s] for s in sample if s in self.suspect2id]
         sample_vec = np.mean(self.embed_in[sample], axis=0)
-        pred_probs = sigmoid(np.matmul(self.embed_out,sample_vec))
+        pred = np.matmul(self.embed_out,sample_vec)
         
         for i in range(n):
-            if pred_probs[i] > 0.5 and self.suspect_union[i] not in ret:
+            if pred[i] > 0 and self.suspect_union[i] not in ret:
                 ret.append(self.suspect_union[i])
         return ret 

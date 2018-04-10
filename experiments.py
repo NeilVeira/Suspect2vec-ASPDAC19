@@ -35,7 +35,8 @@ HIERARCHY = {"module":1,
             "assume":2,
             "property":2,
             "assert":2,
-            "constraint":2 
+            "constraint":2,
+            "external":4,
             }
             
 class Suspect(object):
@@ -214,7 +215,7 @@ def process_report(fail_dir, suspect_union=set([]), debug_level=INF):
     fail_time = int(m.group(1))
    
     # Parse suspect report 
-    for suspect_parse in re.findall(r"rtl\s+([\w/]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", suspect_report, flags=re.DOTALL):
+    for suspect_parse in re.findall(r"rtl\s+([\w/\.]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", suspect_report, flags=re.DOTALL):
         s = Suspect(suspect_parse[2], suspect_parse[0], suspect_parse[3], \
             suspect_parse[4], suspect_parse[1], len(suspect_union))
         if s.level > debug_level:
@@ -406,7 +407,7 @@ def eval_pred_v2(n, pred, target):
     pred_1hot = np.zeros(n, dtype=np.bool_)
     pred_1hot[pred] = 1 
 
-    precision, recall, fscore, support = sklearn.metrics.precision_recall_fscore_support(pred_1hot, true_1hot, labels=[0,1])
+    precision, recall, fscore, support = sklearn.metrics.precision_recall_fscore_support(true_1hot, pred_1hot, labels=[0,1])
     size_err = abs(len(target)-len(pred)) / float(len(target))
     return precision[1], recall[1], fscore[1], size_err
 
@@ -435,6 +436,7 @@ def experiment_suspect2vec(data, suspect_union, args):
         s2v.fit(train_data)
 
         # Testing
+        res = []
         for i in test_index:
             test_data = data[i]
             if args.sample_type == "random":
@@ -443,19 +445,18 @@ def experiment_suspect2vec(data, suspect_union, args):
 
             pred_base = predictor.predict(sample)  
             metrics_base[i] = eval_pred_v2(n, pred_base, test_data)   
-            #print pred_base 
-            #print test_data 
-            #print ""
 
             # Prediction using suspect2vec model 
             pred_new = s2v.predict(sample)
-            # TODO: plot suspect embeddings
-            metrics_new[i] = eval_pred_v2(n, pred_new, test_data)  
-            
+            metrics_new[i] = eval_pred_v2(n, pred_new, test_data)   
+            res.append(metrics_new[i][2])
+            # TODO: plot suspect embeddings?
+            #print len(test_data),len(pred_new),len(pred_base)           
             # if args.verbose:
                 # print("test %i base: %s" %(i,metrics_base[i]))
                 # print("test %i new: %s" %(i,metrics_new[i]))
-
+        print("f1-score: %.4f" %(np.mean(res)))
+                
     metrics_base = np.mean(metrics_base,axis=0)
     metrics_new = np.mean(metrics_new,axis=0)
     print("Base metrics:")
@@ -546,11 +547,11 @@ def init(parser):
     parser.add_argument("-v","--verbose",action="store_true",default=False,help="Verbose mode")
     parser.add_argument("--sample_type",default="suffix",help="Strategy to choose an observed suspect sample." \
         "Must be one of ['suffix','random']")
-    parser.add_argument("--folds",type=int,default=5)
-    parser.add_argument("--epochs",type=int,default=2000)
+    parser.add_argument("--folds",type=int,default=10)
+    parser.add_argument("--epochs",type=int,default=4000)
     parser.add_argument("--eta",type=float,default=0.01,help="Learning rate")
-    parser.add_argument("--dim",type=int,default=10,help="Embedding dimension")
-    parser.add_argument("--lambd",type=float,default=0.1,help="Regularization factor")
+    parser.add_argument("--dim",type=int,default=20,help="Embedding dimension")
+    parser.add_argument("--lambd",type=float,default=None,help="Regularization factor")
    
 
 if __name__ == "__main__":

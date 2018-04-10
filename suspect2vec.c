@@ -12,8 +12,8 @@ int **data, *sample;
 float **embed_in, *sample_vec, **embed_out, *update;
 char infile[MAX_STRING], outfile[MAX_STRING];
 
-int epochs = 2000, dim = 10;
-float eta = 0.01, lambda = 0.1;
+int epochs = 2000, dim = 20;
+float eta = 0.01, lambd = 0.1;
 
 float rand_float() {
 	return (float)rand() / (float)RAND_MAX;
@@ -146,7 +146,7 @@ void train(int m, int n)
                 label = data[i][j];                
                 for (k=0; k<dim; k++) {
                     update[k] += embed_out[j][k] * (label-score);
-                    embed_out[j][k] += eta * (sample_vec[k] * (label-score) - lambda*embed_out[j][k]);
+                    embed_out[j][k] += eta * (sample_vec[k] * (label-score) - lambd*embed_out[j][k]);
                 }
                 if (i == m-1) {
                     acc += (score>0.5) == label;
@@ -159,7 +159,7 @@ void train(int m, int n)
             for (j=0; j<n; j++) {
                 if (sample[j]) {
                     for (k=0; k<dim; k++)
-                        embed_in[j][k] += eta * (update[k]/cnt - lambda*embed_in[j][k]);
+                        embed_in[j][k] += eta * (update[k]/cnt - lambd*embed_in[j][k]);
                 }
             }
         }
@@ -205,7 +205,7 @@ int main(int argc, char **argv) {
 		printf("\t\tEmbedding dimension\n");
 		printf("\t-eta <float>\n");
 		printf("\t\tLearning rate\n");
-		printf("\t-lambda <float>\n");
+		printf("\t-lambd <float>\n");
 		printf("\t\tRegularization term\n");
 		return 0;
 	}
@@ -215,7 +215,7 @@ int main(int argc, char **argv) {
 	if ((i = ArgPos((char *)"-epochs", argc, argv)) > 0) epochs = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-dim", argc, argv)) > 0) dim = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-eta", argc, argv)) > 0) eta = atof(argv[i + 1]);
-	if ((i = ArgPos((char *)"-lambda", argc, argv)) > 0) lambda = atof(argv[i + 1]);
+	if ((i = ArgPos((char *)"-lambd", argc, argv)) > 0) lambd = atof(argv[i + 1]);
 
 	srand(0);
 
