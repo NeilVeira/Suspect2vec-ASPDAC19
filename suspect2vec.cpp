@@ -3,10 +3,14 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
+#include <vector>
+#include <algorithm>
 
 #define MAX_STRING 100
 #define INIT_RANGE 0.1
 #define sigmoid(x) 1/(1+exp(-(x)))
+
+using namespace std;
 
 int **data, *sample;
 float **embed_in, *sample_vec, **embed_out, *update;
@@ -52,36 +56,43 @@ void train_sg(int m, int n)
     int label;
     float loss, acc;
     int cnt;
+
+    vector<pair<int,int> > trains;
+    for (i=0; i<m; i++) {
+        for (j1=0; j1<n; j1++) if (data[i][j1]) {
+            trains.push_back(make_pair(i,j1));
+        }
+    }
+    random_shuffle(trains.begin(),trains.end());
     
     for (iter=0; iter<epochs; iter++) {
         //printf("Epoch %d ",iter);
         // TODO: go through the (i,j1) pairs in a random order
-        for (i=0; i<m; i++) {
-            loss = 0, acc = 0, cnt = 0;
-            for (j1=0; j1<n; j1++) if (data[i][j1]) {
+        loss = 0, acc = 0, cnt = 0;
+        for (pair<int,int> p : trains) {
+            i = p.first, j1 = p.second;
+            for (k=0; k<dim; k++)
+                update[k] = 0;
+            
+            for (j2=0; j2<n; j2++) {
+                score = 0;
                 for (k=0; k<dim; k++)
-                    update[k] = 0;
-                
-                for (j2=0; j2<n; j2++) {
-                    score = 0;
-                    for (k=0; k<dim; k++)
-                        score += embed_in[j1][k] * embed_out[j2][k];
-                    score = sigmoid(score);
-                    label = data[i][j2];                
-                    for (k=0; k<dim; k++) {
-                        update[k] += embed_out[j2][k] * (label-score);
-                        embed_out[j2][k] += eta * (embed_in[j1][k] * (label-score) - lambd*embed_out[j2][k]);
-                    }
-                    acc += (score>0.5) == label;
-                    if (label)
-                        loss -= log(score);
-                    else 
-                        loss -= log(1-score);
-                    cnt++;
+                    score += embed_in[j1][k] * embed_out[j2][k];
+                score = sigmoid(score);
+                label = data[i][j2];                
+                for (k=0; k<dim; k++) {
+                    update[k] += embed_out[j2][k] * (label-score);
+                    embed_out[j2][k] += eta * (embed_in[j1][k] * (label-score) - lambd*embed_out[j2][k]);
                 }
-                for (k=0; k<dim; k++)
-                    embed_in[j1][k] += update[k] * eta - lambd * embed_in[j1][k];                
+                acc += (score>0.5) == label;
+                if (label)
+                    loss -= log(score);
+                else 
+                    loss -= log(1-score);
+                cnt++;
             }
+            for (k=0; k<dim; k++)
+                embed_in[j1][k] += update[k] * eta - lambd * embed_in[j1][k];    
         }
         if (iter%10 == 0) {
             printf("Epoch %d loss: %.4f\n",iter+1,loss/cnt);
