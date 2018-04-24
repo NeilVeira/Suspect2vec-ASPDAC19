@@ -8,28 +8,15 @@ warnings.filterwarnings('ignore')
     
 class Suspect2Vec(object):
 
-    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None):
+    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None, train=0):
         '''
         '''
         self._dim = dim 
         self._epochs = epochs 
         self._eta = eta 
         self._lambd = lambd 
-        
-    @staticmethod 
-    def mat_vec_mul(A, b):
-        return tf.squeeze(tf.matmul(A,tf.expand_dims(b,1)))        
-
-    def _generate_batch(self):
-        '''
-        Yield random subsetes of the training data sets along with 1-hot encodings of 
-        the full sets. 
-        '''
-        for i in range(len(self.train_data)):
-            # TODO: different include probabilities?
-            include = np.random.randint(0,2,size=len(self.suspect_union))
-            sample = self.one_hot_data[i] * include
-            yield sample, self.one_hot_data[i]
+        self._train = train
+              
 
     def run_C_suspect2vec(self, one_hot_data, **args):
         m,n = one_hot_data.shape
@@ -38,7 +25,7 @@ class Suspect2Vec(object):
             for row in one_hot_data:
                 f.write(" ".join(map(str,map(int,row)))+"\n")
         
-        params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim}
+        params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim, "train":self._train}
         for key in args:
             params[key] = args[key]
         cmd = "./suspect2vec -in in.txt -out out.txt"
@@ -57,6 +44,7 @@ class Suspect2Vec(object):
             self.embed_out = np.array(self.embed_out)    
         assert not np.isnan(self.embed_in).any()
         assert not np.isnan(self.embed_out).any()
+
             
     def validate(self, train_index, valid_index, lambd):
         self.run_C_suspect2vec(self.one_hot_data[train_index], lambd=lambd, epochs=1000)
@@ -74,6 +62,7 @@ class Suspect2Vec(object):
             metrics = sklearn.metrics.precision_recall_fscore_support(self.one_hot_data[idx], pred_1hot, labels=[0,1])
             results[i] = metrics[2][1]
         return np.mean(results)
+
              
     def fit(self, data):
         '''
@@ -110,7 +99,7 @@ class Suspect2Vec(object):
         return self.embed_in 
         
         
-    def predict(self, sample):
+    def predict(self, sample, k=None):
         '''       
         Predict the remaiing suspects in the given suspect subset. 
         sample: iterable of suspects
@@ -120,9 +109,23 @@ class Suspect2Vec(object):
         ret = list(sample)
         sample = [self.suspect2id[s] for s in sample if s in self.suspect2id]
         sample_vec = np.mean(self.embed_in[sample], axis=0)
-        pred = np.matmul(self.embed_out,sample_vec)
+        scores = np.matmul(self.embed_out,sample_vec)
         
-        for i in range(n):
-            if pred[i] > 0 and self.suspect_union[i] not in ret:
-                ret.append(self.suspect_union[i])
-        return ret 
+        if k is None:
+            for i in range(n):
+                if scores[i] > 0 and self.suspect_union[i] not in ret:
+                    ret.append(self.suspect_union[i])
+            return ret 
+        else:
+            # return ranking of all suspects by scores 
+            suspect_scorez = []
+            for i in range(n):
+                suspect_scorez.append((scores[i],self.suspect_union[i]))
+            suspect_scorez.sort()
+            suspect_scorez.reverse()
+            for s in suspect_scorez:
+                if s[1] not in ret:
+                    ret.append(s[1])
+                    if len(ret) >= k:
+                        break
+            return ret 
