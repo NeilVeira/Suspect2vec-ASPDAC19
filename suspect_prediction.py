@@ -43,7 +43,7 @@ class SuspectPrediction(object):
         self.map_weights = np.zeros((M+1,M+1))
         for n in range(M+1):
             for r in range(M+1):
-                likelihood = lambda(x): comb[int(n)][int(r)] + r*np.log(x) + (n-r)*np.log(1-x) 
+                likelihood = lambda x: comb[int(n)][int(r)] + r*np.log(x) + (n-r)*np.log(1-x) 
                 f = lambda x: -1* (prior(x) + likelihood(x))
                 res = scipy.optimize.minimize_scalar(f, bounds=(0,1), method="bounded")
                 self.map_weights[n][r] = res.x

@@ -3,9 +3,13 @@ import argparse
 import re
 import random
 import math
+import sys
 import numpy as np
+import sklearn.metrics
+from sklearn.model_selection import KFold 
 
 from suspect_prediction import SuspectPrediction
+from suspect2vec import Suspect2Vec
 
 INF = 1e12
 
@@ -31,7 +35,8 @@ HIERARCHY = {"module":1,
             "assume":2,
             "property":2,
             "assert":2,
-            "constraint":2 
+            "constraint":2,
+            "external":4,
             }
             
 class Suspect(object):
@@ -42,7 +47,7 @@ class Suspect(object):
         self.filename = filename
         self.name = name
         self.rtl_type = rtl_type 
-        if not HIERARCHY.has_key(rtl_type):
+        if rtl_type not in HIERARCHY.keys():
             raise Exception("Unknown type %s (file %s: %s-%s)" %(rtl_type, filename,l,r))
         self.level = HIERARCHY[rtl_type]
         #self.level = name.count("/")+1
@@ -52,6 +57,9 @@ class Suspect(object):
         
     def __eq__(self, other):
         return self.name == other.name 
+
+    def __hash__(self):
+        return hash(self.name)
         
     def __lt__(self,other):
         return self.id < other.id
@@ -85,7 +93,7 @@ def do_prediction_random(sample, n, k, args):
     Random prediction mechanism, for comparison purposes. 
     '''
     if args.verbose >= 2:
-        print "Doing random prediction with initial sample", sample
+        print("Doing random prediction with initial sample", sample)
     ranking = list(sample)
     
     not_sample = []
@@ -106,7 +114,7 @@ def do_prediction_optimal(sample, n, k, target, args):
     Optimal prediction mechanism, for comparison purposes. 
     '''
     if args.verbose >= 2:
-        print "Doing optimal prediction with initial sample", sample
+        print("Doing optimal prediction with initial sample", sample)
     ranking = list(sample)
     
     #first predict all correct suspects
@@ -124,8 +132,7 @@ def do_prediction_optimal(sample, n, k, target, args):
             ranking.append(i)
         
     return ranking
-    
-    
+        
                 
 def evaluate_prediction(suspect_union, target_ids, ranking, est_size):
     '''
@@ -172,7 +179,20 @@ def evaluate_prediction(suspect_union, target_ids, ranking, est_size):
     
     size_err = float(abs(est_size-actual_size)) / actual_size
     return mean_prec, mean_rec, mean_jac, exact_prec, exact_rec, exact_jac, est_jac, size_err
-        
+ 
+def eval_pred_v2(n, pred, target):
+    true_1hot = np.zeros(n, dtype=np.bool_)
+    true_1hot[target] = 1
+    pred_1hot = np.zeros(n, dtype=np.bool_)
+    pred_1hot[pred] = 1 
+
+    precision, recall, fscore, support = sklearn.metrics.precision_recall_fscore_support(true_1hot, pred_1hot, labels=[0,1])
+    size_err = abs(len(target)-len(pred)) / float(len(target))
+    return precision[1], recall[1], fscore[1], size_err 
+    
+def eval_fscore(n, pred, target):
+    return eval_pred_v2(n,pred,target)[2]
+    
 
 def process_report(fail_dir, suspect_union=set([]), debug_level=INF):
     '''
@@ -201,14 +221,14 @@ def process_report(fail_dir, suspect_union=set([]), debug_level=INF):
     
     #parse all available times from time_report 
     for m in re.findall(r"solution\s+\d+\s+([\w/]+)@(\d+)-\d+",time_report):
-        if not timex.has_key(m[0]) or int(m[1]) > timex[m[0]]: #take maximum time
+        if m[0] not in timex.keys() or int(m[1]) > timex[m[0]]: #take maximum time
             timex[m[0]] = int(m[1])            
             
     m = re.search(r"Failure time: (\d+)", suffix_data)
     fail_time = int(m.group(1))
    
     # Parse suspect report 
-    for suspect_parse in re.findall(r"rtl\s+([\w/]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", suspect_report, flags=re.DOTALL):
+    for suspect_parse in re.findall(r"rtl\s+([\w/\.]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", suspect_report, flags=re.DOTALL):
         s = Suspect(suspect_parse[2], suspect_parse[0], suspect_parse[3], \
             suspect_parse[4], suspect_parse[1], len(suspect_union))
         if s.level > debug_level:
@@ -224,7 +244,7 @@ def process_report(fail_dir, suspect_union=set([]), debug_level=INF):
             suspect_union.add(s)
         
         # Try to determine a time for suspect s 
-        if timex.has_key(s.name):
+        if s.name in timex.keys():
             suspect_timez.append((timex[s.name],s.id,s.name))
         else:                
             # Check if s.name is a prefix of any suspect in timex, and use the maximum
@@ -278,7 +298,7 @@ def experiment_k(all_suspectz, suspect_union, args):
     # leave-one-out evaluation
     for i in range(m):
         if args.verbose:
-            print "Running fold %i/%i" %(i+1,m)
+            print("Running fold %i/%i" %(i+1,m))
         # Generate training & test data
         train_data = all_suspectz[:i] + all_suspectz[i+1:]
         test_data = all_suspectz[i]
@@ -303,28 +323,28 @@ def experiment_k(all_suspectz, suspect_union, args):
         all_metrics[:,1,i] = evaluate_prediction(suspect_union, test_data, rand, est_size)
         all_metrics[:,2,i] = evaluate_prediction(suspect_union, test_data, opt, len(test_data))
         
-    print "Overall stats (%i failures)" %(m)
-    print "Means over all k:"
-    print "    precision = %.3f" %(np.mean(all_metrics[0][0])) 
-    print "        random = %.3f" %(np.mean(all_metrics[0][1]))
-    print "        optimal = %.3f" %(np.mean(all_metrics[0][2]))
-    print "    recall = %.3f" %(np.mean(all_metrics[1][0])) 
-    print "    jaccard index = %.3f" %(np.mean(all_metrics[2][0])) 
-    print "        random = %.3f" %(np.mean(all_metrics[2][1]))
-    print "        optimal = %.3f" %(np.mean(all_metrics[2][2]))
-    print "At exact k:"
-    print "    precision = %.3f" %(np.mean(all_metrics[3][0])) 
-    print "        random = %.3f" %(np.mean(all_metrics[3][1]))
-    print "        optimal = %.3f" %(np.mean(all_metrics[3][2]))
-    print "    recall = %.3f" %(np.mean(all_metrics[4][0])) 
-    print "    jaccard index = %.3f" %(np.mean(all_metrics[5][0])) 
-    print "        random = %.3f" %(np.mean(all_metrics[5][1]))
-    print "        optimal = %.3f" %(np.mean(all_metrics[5][2]))
-    print "At estimated k:"
-    print "    jaccard_index = %.3f" %(np.mean(all_metrics[6][0]))
-    print "        random = %.3f" %(np.mean(all_metrics[6][1]))
-    print "        optimal = %.3f" %(np.mean(all_metrics[6][2]))
-    print "    size estimation error = %.3f" %(np.mean(all_metrics[7][0]))  
+    print("Overall stats (%i failures)" %(m))
+    print("Means over all k:")
+    print("    precision = %.3f" %(np.mean(all_metrics[0][0])))
+    print("        random = %.3f" %(np.mean(all_metrics[0][1])))
+    print("        optimal = %.3f" %(np.mean(all_metrics[0][2])))
+    print("    recall = %.3f" %(np.mean(all_metrics[1][0])) )
+    print("    jaccard index = %.3f" %(np.mean(all_metrics[2][0])))
+    print("        random = %.3f" %(np.mean(all_metrics[2][1])))
+    print("        optimal = %.3f" %(np.mean(all_metrics[2][2])))
+    print("At exact k:")
+    print("    precision = %.3f" %(np.mean(all_metrics[3][0])))
+    print("        random = %.3f" %(np.mean(all_metrics[3][1])))
+    print("        optimal = %.3f" %(np.mean(all_metrics[3][2])))
+    print("    recall = %.3f" %(np.mean(all_metrics[4][0])))
+    print("    jaccard index = %.3f" %(np.mean(all_metrics[5][0])))
+    print("        random = %.3f" %(np.mean(all_metrics[5][1])))
+    print("        optimal = %.3f" %(np.mean(all_metrics[5][2])))
+    print("At estimated k:")
+    print("    jaccard_index = %.3f" %(np.mean(all_metrics[6][0])))
+    print("        random = %.3f" %(np.mean(all_metrics[6][1])))
+    print("        optimal = %.3f" %(np.mean(all_metrics[6][2])))
+    print("    size estimation error = %.3f" %(np.mean(all_metrics[7][0])))
        
 
 def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
@@ -342,7 +362,7 @@ def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
     
     for i in range(m):
         if args.verbose:
-            print "Running fold %i/%i" %(i+1,m)
+            print("Running fold %i/%i" %(i+1,m))
         train_data = all_suspectz[:i] + all_suspectz[i+1:]
         test_data = all_suspectz[i]
         predictor.fit(train_data)
@@ -361,38 +381,114 @@ def experiment_sample_size(all_suspectz, suspect_union, args, all_failurez):
     x = np.linspace(10,100,num_points+1)
     results = np.mean(results,axis=0)
     for i in range(num_points):
-        print "At %i%% sample: %.3f" %(int(x[i]), results[i])
+        print("At %i%% sample: %.3f" %(int(x[i]), results[i]))
         
         
-def experiment_train_size(all_suspectz, suspect_union, args):
+def experiment_train_size(data, suspect_union, args):
     '''
     Evaluate the prediction at various sizes of the training data set. 
     '''
-    m = len(all_suspectz)
+    m = len(data)
     n = len(suspect_union)
-    train_sizez = range(5,len(all_suspectz)-1,5)
-    results = np.zeros((len(all_suspectz), len(train_sizez)))
-    predictor = SuspectPrediction()
+    train_fractions = [0.2,0.4,0.6,0.8,1.0]
+    date = SuspectPrediction() 
+    folds = min(args.folds,m)
     
-    for i in range(len(all_suspectz)):
-        if args.verbose:
-            print "Running fold %i/%i" %(i+1,m)
-        all_train_data = all_suspectz[:i] + all_suspectz[i+1:]
-        random.shuffle(all_train_data)        
-        test_data = all_suspectz[i]
-        sample = test_data[:int(math.ceil(args.sample_size*len(test_data)))]
-        
-        for j in range(len(train_sizez)):
-            train_data = all_train_data[:train_sizez[j]]
-            predictor.fit(train_data)
-            ranking = predictor.predict(sample, k=len(test_data))
-            metrics = evaluate_prediction(suspect_union, test_data, ranking, len(test_data))
-            results[i][j] = metrics[3] # precision at exact k 
+    for t in train_fractions:
+        print("Training size %.1f" %(t))
+        fscore_base = np.zeros(m)
+        fscore_new = np.zeros(m)
     
-    results = np.mean(results, axis=0)
-    for i in range(len(results)):
-        print "Accuracy at training size %i: %.3f" %(5*(i+1), results[i])
+        kf = KFold(n_splits=folds, random_state=42, shuffle=False)
+        for fold, (train_index,test_index) in enumerate(kf.split(data)):
+            if args.verbose:
+                print("Running fold %i/%i" %(fold+1,folds))
+            all_train_data = [data[i] for i in train_index]
+            random.shuffle(all_train_data) 
+            l = int(t*len(all_train_data))
+            train_data = all_train_data[:l]
+            
+            # Train
+            date.fit(train_data)
+            s2v = Suspect2Vec(eta=args.eta, epochs=args.epochs, dim=args.dim, lambd=args.lambd)
+            s2v.fit(train_data)
+            
+            # test & evaluate 
+            for i in test_index:
+                test_data = data[i]
+                if args.sample_type == "random":
+                    random.shuffle(test_data)
+                sample = test_data[:int(math.ceil(args.sample_size*len(test_data)))]
+
+                pred_base = date.predict(sample)  
+                fscore_base[i] = eval_fscore(n, pred_base, test_data)   
+
+                # Prediction using suspect2vec model 
+                pred_new = s2v.predict(sample)
+                fscore_new[i] = eval_fscore(n, pred_new, test_data)   
         
+        print("Base f1-score: %.4f" %(np.mean(fscore_base)))
+        print("New f1-score: %.4f" %(np.mean(fscore_new)))
+        
+       
+def experiment_suspect2vec(data, suspect_union, args):
+    '''
+    Evaluate suspect2vec and compare it to the baseline method
+    '''
+    m = len(data)
+    n = len(suspect_union)
+    date = SuspectPrediction(args.prior_var)
+
+    metrics_base = np.zeros((m,4)) # (precision, recall, fscore, size_error)
+    metrics_new = np.zeros((m,4))
+    
+    folds = min(args.folds,m)
+    kf = KFold(n_splits=folds, random_state=42, shuffle=False)
+    for fold, (train_index,test_index) in enumerate(kf.split(data)):
+        #if args.verbose:
+        print("Running fold %i/%i" %(fold+1,folds))
+        train_data = [data[i] for i in train_index]
+        
+        # Train models
+        date.fit(train_data)
+        s2v = Suspect2Vec(eta=args.eta, epochs=args.epochs, dim=args.dim, lambd=args.lambd, train=args.train)
+        s2v.fit(train_data)
+
+        # Testing
+        res = []
+        for i in test_index:
+            test_data = data[i]
+            if args.sample_type == "random":
+                random.shuffle(test_data)
+            sample = test_data[:int(math.ceil(args.sample_size*len(test_data)))]
+
+            pred_base = date.predict(sample)  
+            metrics_base[i] = eval_pred_v2(n, pred_base, test_data)   
+
+            # Prediction using suspect2vec model 
+            pred_new = s2v.predict(sample)
+            metrics_new[i] = eval_pred_v2(n, pred_new, test_data)   
+            res.append(metrics_new[i][2])
+            # TODO: plot suspect embeddings?
+            # print len(test_data),len(pred_new),len(pred_base)           
+            # if args.verbose:
+                # print("test %i base: %s" %(i,metrics_base[i]))
+                # print("test %i new: %s" %(i,metrics_new[i]))
+        print("f1-score: %.4f" %(np.mean(res)))
+                
+    metrics_base = np.mean(metrics_base,axis=0)
+    metrics_new = np.mean(metrics_new,axis=0)
+    print("Base metrics:")
+    print("    precision = %.3f" %(metrics_base[0]))
+    print("    recall = %.3f" %(metrics_base[1]))
+    print("    f1-score = %.3f" %(metrics_base[2]))
+    print("    size error = %.3f" %(metrics_base[3]))
+    print("New metrics:")
+    print("    precision = %.3f" %(metrics_new[0]))
+    print("    recall = %.3f" %(metrics_new[1]))
+    print("    f1-score = %.3f" %(metrics_new[2]))
+    print("    size error = %.3f" %(metrics_new[3]))
+
             
 def main(args):
     design_dir = args.design_dir.rstrip("/") 
@@ -407,7 +503,7 @@ def main(args):
     num_bugs = 0
     
     # Parse debug reports to extract suspect sets
-    print "Reading suspects..."
+    print("Reading suspects...")
     for bug_dir in sorted(os.listdir(design_dir)):  
         num_bugs += 1     
         # parse bug module 
@@ -421,24 +517,27 @@ def main(args):
                 if failure is not None:
                     failure.module = module
                     if args.verbose:
-                        print "Parsed",failure
+                        print("Parsed",failure)
                     all_suspectz.append(failure.suspectz)
                     all_failurez.append(failure)
 
     suspect_union = list(suspect_union)
-    cmp_by_id = lambda a,b: 0 if a.id == b.id else (-1 if a.id < b.id else 1)
-    suspect_union.sort(cmp_by_id) 
+    if sys.version_info[0] >= 3:
+        suspect_union.sort(key=lambda x: x.id)
+    else:
+        cmp_by_id = lambda a,b: 0 if a.id == b.id else (-1 if a.id < b.id else 1)
+        suspect_union.sort(cmp=cmp_by_id) 
+
     n = len(suspect_union)
-    m = len(all_suspectz)
-    
-    print "Number of bugs:",num_bugs
-    print "Number of failures:",m
-    print "Total number of suspects across all bugs:",n
+    m = len(all_suspectz)    
+    print("Number of bugs: %i" %(num_bugs))
+    print("Number of failures: %i" %(m))
+    print("Total number of suspects across all bugs: %i" %(n))
     if args.verbose:
-        print "Suspect union:"
+        print("Suspect union:")
         for item in suspect_union:
-            print item
-        print ""
+            print(item)
+        print("")
         # print "All suspect sets:"
         # for sset in all_suspectz:
             # print sorted(sset)
@@ -449,15 +548,17 @@ def main(args):
     elif args.experiment == "sample_size":
         experiment_sample_size(all_suspectz, suspect_union, args, all_failurez)
     elif args.experiment == "train_size":
-        experiment_train_size(all_suspectz, suspect_union, args)  
+        experiment_train_size(all_suspectz, suspect_union, args) 
+    elif args.experiment == "suspect2vec":
+        experiment_suspect2vec(all_suspectz, suspect_union, args)
     else:
         raise ValueError("Invalid experiment option %s" %(args.experiment))
     
         
 def init(parser):
     parser.add_argument("design_dir",help="Design to run")
-    parser.add_argument("--experiment",default="k",help="Type of evaluation experiment to run on the design." \
-        "Must be one of ['k','sample_size','train_size']")
+    parser.add_argument("--experiment",default="suspect2vec",help="Type of evaluation experiment to run on the design." \
+        "Must be one of ['k','sample_size','train_size','suspect2vec']")
     parser.add_argument("--level",type=int,default=INF,help="Maximum hierarchical level of suspects to consider. Default is all.")
     parser.add_argument("--sample_size",type=float,default=0.5 ,help="Number of suspects in initial subset (sample) of suspect set that" \
                         " is to be ranking.")
@@ -465,6 +566,12 @@ def init(parser):
     parser.add_argument("-v","--verbose",action="store_true",default=False,help="Verbose mode")
     parser.add_argument("--sample_type",default="suffix",help="Strategy to choose an observed suspect sample." \
         "Must be one of ['suffix','random']")
+    parser.add_argument("--folds",type=int,default=10)
+    parser.add_argument("--epochs",type=int,default=4000)
+    parser.add_argument("--eta",type=float,default=0.01,help="Learning rate")
+    parser.add_argument("--dim",type=int,default=20,help="Embedding dimension")
+    parser.add_argument("--lambd",type=float,default=None,help="Regularization factor")
+    parser.add_argument("--train",type=int,default=0,help="Training scheme")
    
 
 if __name__ == "__main__":
