@@ -61,6 +61,14 @@ def main(base_template, new_template=None, min_suspects=999999, aggressiveness=0
             f.write("%.3f\n" %(aggressiveness))
         os.system("cp %s_embeddings.txt embeddings.txt" %(name))
         os.system("cp %s.template %s.template" %(name,new_name))
+        
+        # Change project name 
+        linez = open(new_name+".template").readlines()
+        for i in range(len(linez)):
+            if linez[i].startswith("PROJECT="):
+                linez[i] = "PROJECT=%s\n" %(new_name)
+        with open(new_name+".template","w") as f:
+            f.write("".join(linez))
         name = new_name
     
     success = run_debug(name)
