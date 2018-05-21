@@ -41,8 +41,9 @@ void generate_sample(int i, int n)
     int cnt;    
     do {
         cnt = 0;
+        //float p = 0.3 + rand_float()*0.4;
         for (j=0; j<n; j++) {
-            // TODO: should we really be generating samples with 50% always?
+            //sample[j] = data[i][j] && rand_float() > p;
             sample[j] = data[i][j] && rand_float() > 0.5;
             cnt += sample[j];
         }
@@ -66,8 +67,6 @@ void train_sg(int m, int n)
     random_shuffle(trains.begin(),trains.end());
     
     for (iter=0; iter<epochs; iter++) {
-        //printf("Epoch %d ",iter);
-        // TODO: go through the (i,j1) pairs in a random order
         loss = 0, acc = 0, cnt = 0;
         for (pair<int,int> p : trains) {
             i = p.first, j1 = p.second;

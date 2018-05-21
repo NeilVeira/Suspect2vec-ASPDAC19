@@ -1,3 +1,4 @@
+import os 
 import subprocess 
 import numpy as np 
 import sklearn.model_selection
@@ -8,17 +9,25 @@ warnings.filterwarnings('ignore')
     
 class Suspect2Vec(object):
 
-    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None, train=0):
+    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None, train=0, verbose=False):
         '''
+        parameters:
+            dim: dimension of embeddings 
+            epochs: Number of training epochs 
+            eta: learning rate 
+            train: Training scheme (0 for suspect subset, 1 for single suspects)
+            lambd: regularization coefficient. If none do parameter search on validation data.             
         '''
         self._dim = dim 
         self._epochs = epochs 
         self._eta = eta 
         self._lambd = lambd 
         self._train = train
-              
-
-    def run_C_suspect2vec(self, one_hot_data, **args):
+        self._dir_path = os.path.dirname(os.path.realpath(__file__))
+        self._verbose = verbose 
+        
+        
+    def _run_C_suspect2vec(self, one_hot_data, **args):
         m,n = one_hot_data.shape
         with open("in.txt","w") as f:
             f.write("%i %i\n" %(m,n))
@@ -28,7 +37,7 @@ class Suspect2Vec(object):
         params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim, "train":self._train}
         for key in args:
             params[key] = args[key]
-        cmd = "./suspect2vec -in in.txt -out out.txt"
+        cmd = "%s -in in.txt -out out.txt" %(os.path.join(self._dir_path,"suspect2vec"))
         for key in params:
             cmd += " -%s %s" %(key,params[key])
         stdout,stderr = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).communicate()
@@ -46,8 +55,8 @@ class Suspect2Vec(object):
         assert not np.isnan(self.embed_out).any()
 
             
-    def validate(self, train_index, valid_index, lambd):
-        self.run_C_suspect2vec(self.one_hot_data[train_index], lambd=lambd, epochs=1000)
+    def _validate(self, train_index, valid_index, lambd):
+        self._run_C_suspect2vec(self.one_hot_data[train_index], lambd=lambd, epochs=1000)
         results = np.zeros(len(valid_index))
         for i,idx in enumerate(valid_index):
             sample = self.train_data[idx][:len(self.train_data[idx])/2] #self.train_data[idx] is actually validation data here 
@@ -90,12 +99,13 @@ class Suspect2Vec(object):
         if self._lambd is None:
             # Determine best value using validation data
             train_index,valid_index = sklearn.model_selection.train_test_split(range(m), test_size=0.25, random_state=1)
-            val1 = self.validate(train_index, valid_index, 0.0)
-            val2 = self.validate(train_index, valid_index, 0.1)
-            print("Validation results: 0.0 -> %.4f, 0.1 -> %.4f" %(val1,val2))
+            val1 = self._validate(train_index, valid_index, 0.0)
+            val2 = self._validate(train_index, valid_index, 0.1)
+            if self._verbose:
+                print("Validation results: 0.0 -> %.4f, 0.1 -> %.4f" %(val1,val2))
             self._lambd = 0.0 if val1 > val2 else 0.1 
         
-        self.run_C_suspect2vec(self.one_hot_data)    
+        self._run_C_suspect2vec(self.one_hot_data)    
         return self.embed_in 
         
         
@@ -129,3 +139,14 @@ class Suspect2Vec(object):
                     if len(ret) >= k:
                         break
             return ret 
+
+            
+    def get_embeddings(self):
+        '''
+        Return dict mapping suspects to embeddings for all known suspects.
+        '''
+        ret = {}
+        for s in self.suspect_union:
+            if s in self.suspect2id:
+                ret[s] = self.embed_in[self.suspect2id[s]]
+        return ret 
