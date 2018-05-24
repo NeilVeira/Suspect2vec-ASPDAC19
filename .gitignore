@@ -1,4 +1,3 @@
 *.pyc
-suspect2vec
-data/scam_core/*
+suspect2vec/data/scam_core/*
 
