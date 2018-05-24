@@ -39,3 +39,16 @@ def parse_suspects(failure):
         suspectz.append(suspect_parse[0])
     return suspectz 
         
+
+def parse_runtime(failure):
+    log_path = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
+    assert os.path.exists(log_path)
+        
+    vdb_log = open(log_path).read()
+    #end_pattern = "******************  VDB Process Ends  *****************".replace("*","\\*")
+    m = re.match(r".*\d+-\w+-\d+ \d+:\d+:\d+ \((\d+):(\d+):(\d+)\.(\d+)\) ## ", vdb_log, flags=re.DOTALL)
+    assert m, "Error parsing runtime"
+    runtime = 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3)) + float("0."+m.group(4))
+    #print runtime 
+    return runtime
+    
