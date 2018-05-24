@@ -1,3 +1,4 @@
 *.pyc
 suspect2vec/data/scam_core/*
+designs/*
 

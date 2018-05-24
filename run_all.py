@@ -22,12 +22,11 @@ def main(args):
     for i in range(start,len(all_failurez)):
         failure = all_failurez[i]
         name = os.path.basename(failure)
-        template_file = failure+".template"
-        print template_file
+        print failure
         if args.new_suffix is None:
-            success = run_debug.main(template_file, verbose=args.verbose)
+            success = run_debug.main(failure, verbose=args.verbose)
         else:
-            success = run_debug.main(template_file, name+args.new_suffix, args.min_suspects, \
+            success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, \
                 args.aggressiveness, verbose=args.verbose)
         
         if not success:
