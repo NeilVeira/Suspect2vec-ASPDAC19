@@ -9,14 +9,16 @@ import analyze
 
 def run_debug(name, verbose=False):
     print "Running debug on %s..." %(name)
-    stdout,stderr = utils.run("onpoint-cmd --template-file=%s.template" %(name))
-    
+    log_file = "onpoint-cmd-%s.log" %(name)
+    if os.path.exists(log_file):
+        os.remove(log_file)
+        
+    stdout,stderr = utils.run("onpoint-cmd --template-file=%s.template" %(name))    
     if stdout == None:
         print "onpoint-cmd exceeded time limit of 48 hours"
         return False 
     
     #check logs for errors
-    log_file = "onpoint-cmd-%s.log" %(name)
     if not os.path.exists(log_file):
         print "Error:"
         print stdout
@@ -48,7 +50,8 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, skip
             with open("args.txt","w") as f:
                 f.write("%i\n" %(min_suspects))
                 f.write("%.3f\n" %(aggressiveness))
-            assert os.system("cp %s_embeddings.txt embeddings.txt" %(base_name)) == 0
+            assert os.system("cp %s_input_embeddings.txt input_embeddings.txt" %(base_name)) == 0
+            assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
             assert os.system("cp %s.template %s.template" %(base_name,new_name)) == 0
             
             # Change project name 
@@ -65,8 +68,14 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, skip
                 return False
                 
         assert os.path.exists(new_name+".vennsawork")
+        num_suspects = utils.parse_suspects(new_name)
+        if len(num_suspects) == 0:
+            return False 
         
-        analyze.basic_analysis(base_name, new_name, verbose=verbose)
+        try:
+            analyze.basic_analysis(base_name, new_name, verbose=verbose, min_runtime=0)
+        except:
+            pass
             
         os.chdir(orig_dir)  
         return True

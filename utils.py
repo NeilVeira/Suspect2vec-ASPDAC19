@@ -37,6 +37,7 @@ def parse_suspects(failure):
     suspectz = []
     for suspect_parse in re.findall(r"rtl\s+([\w/]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", report, flags=re.DOTALL):
         suspectz.append(suspect_parse[0])
+    assert len(suspectz) > 0, "No suspects found for failure %s" %(failure)
     return suspectz 
         
 
@@ -52,3 +53,20 @@ def parse_runtime(failure):
     #print runtime 
     return runtime
     
+    
+def copy_file(source, target, strip_header=False):
+    print source,target
+    parts = target.split("/")
+    for i in range(1,len(parts)):
+        dir = "/".join(parts[:i])
+        if not os.path.exists(dir):
+            os.system("mkdir %s" %(dir))
+    
+    if strip_header:
+        with open(source) as f:
+            data = f.readlines()
+        data = "".join(data[13:])
+        with open(target,"w") as f:
+            f.write(data)
+    else:
+        os.system("cp %s %s" %(source,target))

@@ -81,6 +81,7 @@ class Suspect2Vec(object):
         # preprocessing to convert suspects in data to integers from 0..n-1
         self.suspect_union = set([])
         for suspect_set in data:
+            assert len(suspect_set) > 0
             self.suspect_union = self.suspect_union.union(set(suspect_set))
         self.suspect_union = list(self.suspect_union)
         n = len(self.suspect_union)
@@ -145,8 +146,9 @@ class Suspect2Vec(object):
         '''
         Return dict mapping suspects to embeddings for all known suspects.
         '''
-        ret = {}
+        embed_inx = {}
+        embed_outx = {}
         for s in self.suspect_union:
-            if s in self.suspect2id:
-                ret[s] = self.embed_in[self.suspect2id[s]]
-        return ret 
+            embed_inx[s] = self.embed_in[self.suspect2id[s]]
+            embed_outx[s] = self.embed_out[self.suspect2id[s]]
+        return embed_inx, embed_outx

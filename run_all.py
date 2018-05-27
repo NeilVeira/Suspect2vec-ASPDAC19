@@ -4,22 +4,29 @@ import argparse
 import utils 
 import run_debug
 
+
+def find_failure(failure, all_failurez):
+    for i in range(len(all_failurez)):
+        if all_failurez[i].endswith(failure):
+            return i 
+    else:
+        raise ValueError("No failure %s found" %(failure))
+    
     
 def main(args):
     # TODO: add options for running debug with suspect prediction 
     unsuccessful = []
     all_failurez = utils.find_all_failures(args.design)
     if args.start is not None:
-        for i in range(len(all_failurez)):
-            if all_failurez[i].endswith(args.start):
-                start = i 
-                break 
-        else:
-            raise ValueError("No failure %s found" %(args.start))
+        start = find_failure(args.start, all_failurez)
     else:
         start = 0
+    if args.stop is not None:
+        stop = find_failure(args.stop, all_failurez)
+    else:
+        start = len(all_failurez)-1
         
-    for i in range(start,len(all_failurez)):
+    for i in range(start,stop+1):
         failure = all_failurez[i]
         name = os.path.basename(failure)
         print failure
@@ -42,6 +49,7 @@ def init(parser):
     parser.add_argument("design")
     parser.add_argument("new_suffix", nargs='?', default=None, help="Suffix to append to the name of the new project")
     parser.add_argument("--start",help="Failure to start running at")
+    parser.add_argument("--stop",help="Failure to stop running at")
     parser.add_argument("--min_suspects", type=int, default=999999, help="Minimum number of suspects to "\
         "find before predicting")
     parser.add_argument("--aggressiveness", type=float, default=0.5, help="Threshold below which suspects are blocked")

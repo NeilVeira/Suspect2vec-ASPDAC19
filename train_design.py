@@ -10,6 +10,15 @@ def init(parser):
     parser.add_argument("design")
     
     
+def write_embeddingx(embeddingx, file_name):
+    with open(file_name,"w") as f:
+        for key in embeddingx:
+            f.write(key)
+            for x in embeddingx[key]:
+                f.write(" %.6f" %(x))
+            f.write("\n")
+                
+    
 def main(args):
     all_failurez = utils.find_all_failures(args.design)
     all_suspectz = [utils.parse_suspects(failure) for failure in all_failurez]
@@ -19,17 +28,14 @@ def main(args):
         train_data = all_suspectz[:i] + all_suspectz[i+1:]
         predictor = Suspect2Vec()
         predictor.fit(train_data)
-        embeddingx = predictor.get_embeddings()
-        with open(all_failurez[i]+"_embeddings.txt","w") as f:
-            for key in embeddingx:
-                f.write(key)
-                for x in embeddingx[key]:
-                    f.write(" %.6f" %(x))
-                f.write("\n")
+        embed_inx, embed_outx = predictor.get_embeddings()
+        write_embeddingx(embed_inx, all_failurez[i]+"_input_embeddings.txt")
+        write_embeddingx(embed_outx, all_failurez[i]+"_output_embeddings.txt")
         
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    
     init(parser)
     args = parser.parse_args()
     main(args)
