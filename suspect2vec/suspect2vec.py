@@ -110,7 +110,7 @@ class Suspect2Vec(object):
         return self.embed_in 
         
         
-    def predict(self, sample, k=None):
+    def predict(self, sample, k=None, aggressiveness=0.5):
         '''       
         Predict the remaiing suspects in the given suspect subset. 
         sample: iterable of suspects
@@ -120,11 +120,11 @@ class Suspect2Vec(object):
         ret = list(sample)
         sample = [self.suspect2id[s] for s in sample if s in self.suspect2id]
         sample_vec = np.mean(self.embed_in[sample], axis=0)
-        scores = np.matmul(self.embed_out,sample_vec)
+        scores = 1.0 / (1 + np.exp(-np.matmul(self.embed_out,sample_vec)))
         
         if k is None:
             for i in range(n):
-                if scores[i] > 0 and self.suspect_union[i] not in ret:
+                if scores[i] >= aggressiveness and self.suspect_union[i] not in ret:
                     ret.append(self.suspect_union[i])
             return ret 
         else:

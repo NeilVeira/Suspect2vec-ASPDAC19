@@ -184,11 +184,11 @@ def main(args):
             # new_points.extend(new)
             
     print ""
-    print "Mean recall: %.3f" %(gmean(recalls))
+    print "Mean recall: %.3f" %(np.mean(recalls))
     print "Mean speedup: %.3f" %(gmean(speedups))
     print "Mean memory reduction: %.3f" %(gmean(mem_reductions))
-    print "Recall directly due to blocked suspects: %.3f" %(gmean(block_recalls))
-    print "Block prediction accuracy: %.3f" %(gmean(block_accs))
+    print "Recall directly due to blocked suspects: %.3f" %(np.mean(block_recalls))
+    print "Block prediction accuracy: %.3f" %(np.mean(block_accs))
     
     # plot_recall_vs_time(base_points, "plots/recall_vs_time.png", 'r')
     # plot_recall_vs_time(new_points, "plots/recall_vs_time.png", 'b')
