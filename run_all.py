@@ -24,7 +24,7 @@ def main(args):
     if args.stop is not None:
         stop = find_failure(args.stop, all_failurez)
     else:
-        start = len(all_failurez)-1
+        stop = len(all_failurez)-1
         
     for i in range(start,stop+1):
         failure = all_failurez[i]

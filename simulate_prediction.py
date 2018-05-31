@@ -7,7 +7,7 @@ import sys
 sys.path.append("suspect2vec")
 import utils 
 import suspect2vec
-    
+import suspect_prediction
     
 def load_embeddings(file_name):
     embedx = {}
@@ -52,48 +52,57 @@ def simulate_prediction(failure, args):
     
     # print obs
     ground_truth = ground_truth.intersection(active)
+
+    suspect_union = known_suspects.union(active).union(ground_truth) # not quite but probably close 
+        
+    if args.method == "suspect2vec":
+        if args.verbose:
+            print "Training..."
+        predictor = suspect2vec.Suspect2Vec()
+        predictor.fit(train_data)
+        pred = set(predictor.predict(obs, aggressiveness=args.aggressiveness)) 
+
+    elif args.method == "loaded":
+        embed_inx = loaded_embed_inx 
+        embed_outx = loaded_embed_outx
+        v_obs = np.mean([embed_inx[s] for s in obs if s in embed_inx], axis=0)
     
-    if args.verbose:
-        print "Training..."
-    # predictor = suspect2vec.Suspect2Vec()
-    # predictor.fit(train_data)
-    # embed_inx, embed_outx = predictor.get_embeddings()   
-    # for s in known_suspects:
-        # assert np.linalg.norm(embed_inx[s]-loaded_embed_inx[s]) < 1e-3
-        # assert np.linalg.norm(embed_outx[s]-loaded_embed_outx[s]) < 1e-3
-    embed_inx = loaded_embed_inx 
-    embed_outx = loaded_embed_outx
-    v_obs = np.mean([embed_inx[s] for s in obs if s in embed_inx], axis=0)
+        pred = set(obs)
+        for s in suspect_union:
+            if s in embed_outx:
+                v = embed_outx[s]
+                score = 1.0 / (1 + np.exp(-np.sum(v*v_obs)))
+                if score >= args.aggressiveness:
+                    pred.add(s)
+                
+    elif args.method.upper() == "DATE":
+        if args.verbose:
+            print "Training..."
+        predictor = suspect_prediction.SuspectPrediction()
+        predictor.fit(train_data)
+        pred = set(predictor.predict(obs))  
+        
+    else:
+        raise ValueError("Invalid method %s" %(args.method))
     
-    correct = 0
-    pred = set(obs)
-    # pred = set(predictor.predict(obs, aggressiveness=args.aggressiveness))
-    for s in active.union(ground_truth):
-        if s not in embed_outx:
+    for s in suspect_union:
+        if s not in known_suspects:
             pred.add(s)
             continue
-        v = embed_outx[s]
-        score = 1.0 / (1 + np.exp(-np.sum(v*v_obs)))
-        if score >= args.aggressiveness:
-            pred.add(s)
-        # else:
-            # print "Predicting not suspect",s 
     
     correct = 0
     blocked = set([])
-    for s in active:
+    for s in suspect_union:
         if s not in pred:
             blocked.add(s)
             if s not in ground_truth:
-                correct += 1
-                
+                correct += 1                
                 
     known = len(ground_truth.intersection(known_suspects))
     cnt = len(ground_truth.intersection(pred))
     recall = cnt/float(len(ground_truth))
     acc = float(correct)/len(blocked)
     
-    suspect_union = known_suspects.union(active).union(ground_truth) # not quite but probably close 
     percent_blocked = len(blocked) / float(len(suspect_union))
     
     if args.verbose:
@@ -112,15 +121,19 @@ def main(args):
         simulate_prediction(args.failure, args)
     elif args.design is not None:
         metrics = []
-        for failure in utils.find_all_failures(args.design):
+        num_failures = 0
+        all_failurez = utils.find_all_failures(args.design)
+        for failure in all_failurez:
             runtime = utils.parse_runtime(failure)
             if runtime >= args.min_runtime:
                 results = simulate_prediction(failure, args)
                 if results is not None:
+                    num_failures += 1
                     metrics.append(results)
                 
         metrics = np.mean(np.array(metrics), axis=0)
         print ""
+        print "Number of failures: %i/%i" %(num_failures,len(all_failurez))
         print "Mean block prediction accuracy: %.3f" %(metrics[0])
         print "Mean recall: %.3f" %(metrics[1])
         print "Mean percent blocked: %.3f" %(metrics[2])
@@ -136,6 +149,7 @@ def init(parser):
     parser.add_argument("--min_suspects", type=int, default=40, help="Minimum number of suspects to find before predicting")
     parser.add_argument("--min_runtime", type=int, default=0, help="Exclude failures with runtime less than this.")
     parser.add_argument("-v", "--verbose", action="store_true", default=False)
+    parser.add_argument("--method", default="loaded", help="Prediction method. Must be one of ['loaded','suspect2vec','DATE'].")
     
     
 if __name__ == "__main__":
