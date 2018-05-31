@@ -1,0 +1,1 @@
+../../tb/spi_slave_model.v
