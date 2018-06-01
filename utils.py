@@ -11,16 +11,33 @@ def run(cmd, verbose=False, timeout=5*60*60*24):
         return stdout,stderr
     except subprocess.TimeoutExpired:
         os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
-        return None,None   
+        return None,None  
+
+
+def debug_passed(failure):
+    log_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
+    if not os.path.exists(log_file):
+        return False 
+    
+    log = open(log_file).read()
+    return "error:" not in log 
+        
         
 def find_all_failures(dir):
     results = []
+    failed_cnt = 0
     for item in sorted(os.listdir(dir)):
         if item.startswith("random_bug") or item.startswith("buggy"):             
             for sub_item in sorted(os.listdir(os.path.join(dir,item))):
                 m = re.match(r"fail_\d+\.vennsawork\Z", sub_item)
                 if m:
-                    results.append(os.path.join(dir, item, sub_item[:-len(".vennsawork")]))
+                    failure_name = os.path.join(dir, item, sub_item[:-len(".vennsawork")])
+                    if debug_passed(failure_name):
+                        results.append(failure_name)
+                    else:
+                        failed_cnt += 1 
+    if failed_cnt > 0:
+        print "WARNING: Ignoring %i failures where debug appears to have failed" %(failed_cnt)
     return results 
                 
                 

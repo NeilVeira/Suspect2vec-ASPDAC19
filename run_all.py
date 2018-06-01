@@ -33,8 +33,8 @@ def main(args):
         if args.new_suffix is None:
             success = run_debug.main(failure, verbose=args.verbose)
         else:
-            success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, \
-                args.aggressiveness, verbose=args.verbose)
+            success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, args.aggressiveness, 
+                guidance_method=args.method, verbose=args.verbose)
         
         if not success:
             unsuccessful.append(failure)
@@ -54,6 +54,8 @@ def init(parser):
         "find before predicting")
     parser.add_argument("--aggressiveness", type=float, default=0.5, help="Threshold below which suspects are blocked")
     parser.add_argument("-v","--verbose", action="store_true", default=False, help="Display more info")
+    parser.add_argument("--method", type=str, default=None, help="Solver guidance method. " \
+        "Must be one of [None, 'block', 'assump']")
     
     
 if __name__ == "__main__":

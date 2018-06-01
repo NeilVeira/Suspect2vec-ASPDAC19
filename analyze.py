@@ -169,7 +169,7 @@ def main(args):
         print "Evaluating design", design
         for failure in utils.find_all_failures(design):
             print failure
-            recall, speedup, mem_reduce, block_recall, block_acc = basic_analysis(failure, failure+args.new_suffix, verbose=True, 
+            recall, speedup, mem_reduce, block_recall, block_acc = basic_analysis(failure, failure+args.new_suffix, verbose=args.verbose, 
                 min_runtime = args.min_runtime)
             if recall is not None:
                 recalls.append(recall)
@@ -198,6 +198,7 @@ def init(parser):
     parser.add_argument("design", help="Design to analyze. If None does all designs")
     parser.add_argument("new_suffix", nargs='?', default="", help="Suffix of failure names to compare against the baseline")
     parser.add_argument("--min_runtime", type=int, default=0, help="Exclude designs with runtime less than this.")
+    parser.add_argument("-v", "--verbose", action="store_true", default=False)
     
   
 if __name__ == "__main__":

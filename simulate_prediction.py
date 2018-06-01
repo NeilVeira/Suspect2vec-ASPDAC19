@@ -88,13 +88,13 @@ def simulate_prediction(failure, args):
     for s in suspect_union:
         if s not in known_suspects:
             pred.add(s)
-            continue
     
     correct = 0
     blocked = set([])
     for s in suspect_union:
         if s not in pred:
             blocked.add(s)
+            assert s in known_suspects
             if s not in ground_truth:
                 correct += 1                
                 
@@ -109,7 +109,9 @@ def simulate_prediction(failure, args):
         print "Active suspects:",len(active)
         print "Known active suspects:", len(active.intersection(known_suspects))
         print "Total blocked: %i (%.3f)" %(len(blocked),percent_blocked)
-        print "Number of correct suspects:",len(ground_truth)
+        print "Active blocked: %i" %(len(blocked.intersection(active)))
+        print "Ground truth block: %i" %(len(blocked.intersection(ground_truth)))
+        print "Number of true active suspects:",len(ground_truth)
         print "Blocking accuracy: %.3f" %(acc)    
         print "Recall: %.3f" %(recall)
         print "predicted/true: %i/%i" %(len(pred.intersection(ground_truth)),len(ground_truth))    
