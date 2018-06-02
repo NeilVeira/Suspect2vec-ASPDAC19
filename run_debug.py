@@ -40,17 +40,17 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
     os.chdir(dir)
     base_name = os.path.basename(base_name)
 
-    if new_name is None:
-         success = run_debug(base_name, verbose=verbose)
-         os.chdir(orig_dir)  
-         return success
-    
-    else:   
-        with open("args.txt","w") as f:
-            f.write("%i\n" %(min_suspects))
-            f.write("%.3f\n" %(aggressiveness))
-            f.write("%i\n" %[None,"block","assump"].index(guidance_method))
+    with open("args.txt","w") as f:
+        f.write("%i\n" %(min_suspects))
+        f.write("%.3f\n" %(aggressiveness))
+        f.write("%i\n" %[None,"block","assump"].index(guidance_method))
             
+    if new_name is None:
+        success = run_debug(base_name, verbose=verbose)
+        os.chdir(orig_dir)  
+        return success
+    
+    else:               
         assert os.system("cp %s_input_embeddings.txt input_embeddings.txt" %(base_name)) == 0
         assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
         assert os.system("cp %s.template %s.template" %(base_name,new_name)) == 0
