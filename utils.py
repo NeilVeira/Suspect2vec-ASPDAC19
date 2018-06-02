@@ -23,7 +23,7 @@ def debug_passed(failure):
     return "error:" not in log 
         
         
-def find_all_failures(dir):
+def find_all_failures(dir, include_failed=False):
     results = []
     failed_cnt = 0
     for item in sorted(os.listdir(dir)):
@@ -32,7 +32,7 @@ def find_all_failures(dir):
                 m = re.match(r"fail_\d+\.vennsawork\Z", sub_item)
                 if m:
                     failure_name = os.path.join(dir, item, sub_item[:-len(".vennsawork")])
-                    if debug_passed(failure_name):
+                    if include_failed or debug_passed(failure_name):
                         results.append(failure_name)
                     else:
                         failed_cnt += 1 

@@ -73,10 +73,18 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         if len(num_suspects) == 0:
             return False 
         
+        if guidance_method == "block":
+            analysis_func = analyze.blocking_analysis
+        elif guidance_method == "assump":
+            analysis_func = analyze.assumption_analysis
+        else:
+            assert False 
+            
         try:
-            analyze.basic_analysis(base_name, new_name, verbose=verbose, min_runtime=0)
+            analysis_func(base_name, new_name, verbose=verbose, min_runtime=0)
         except:
-            pass
+            os.chdir(orig_dir)
+            return False 
             
         os.chdir(orig_dir)  
         return True
