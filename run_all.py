@@ -16,7 +16,7 @@ def find_failure(failure, all_failurez):
 def main(args):
     # TODO: add options for running debug with suspect prediction 
     unsuccessful = []
-    all_failurez = utils.find_all_failures(args.design)
+    all_failurez = utils.find_all_failures(args.design, include_failed=True)
     if args.start is not None:
         start = find_failure(args.start, all_failurez)
     else:
@@ -34,7 +34,7 @@ def main(args):
             success = run_debug.main(failure, verbose=args.verbose)
         else:
             success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, args.aggressiveness, 
-                guidance_method=args.method, verbose=args.verbose)
+                guidance_method=args.method, timeout=args.timeout, verbose=args.verbose)
         
         if not success:
             unsuccessful.append(failure)
@@ -53,6 +53,7 @@ def init(parser):
     parser.add_argument("--min_suspects", type=int, default=999999, help="Minimum number of suspects to "\
         "find before predicting")
     parser.add_argument("--aggressiveness", type=float, default=0.5, help="Threshold below which suspects are blocked")
+    parser.add_argument("--timeout", type=int, default=60*60*24, help="Time limit in seconds for a single debugging run.")
     parser.add_argument("-v","--verbose", action="store_true", default=False, help="Display more info")
     parser.add_argument("--method", type=str, default=None, help="Solver guidance method. " \
         "Must be one of [None, 'block', 'assump']")

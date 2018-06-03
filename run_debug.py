@@ -7,15 +7,15 @@ import random
 import utils
 import analyze
 
-def run_debug(name, verbose=False):
+def run_debug(name, timeout=60*60*24, verbose=False):
     print "Running debug on %s..." %(name)
     log_file = "onpoint-cmd-%s.log" %(name)
     if os.path.exists(log_file):
         os.remove(log_file)
         
-    stdout,stderr = utils.run("onpoint-cmd --template-file=%s.template" %(name))    
+    stdout,stderr = utils.run("onpoint-cmd --template-file=%s.template" %(name), timeout=timeout)    
     if stdout == None:
-        print "onpoint-cmd exceeded time limit of 48 hours"
+        print "onpoint-cmd exceeded time limit of %i seconds" %(int(timeout))
         return False 
     
     #check logs for errors
@@ -32,7 +32,8 @@ def run_debug(name, verbose=False):
     return True 
     
     
-def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guidance_method=None, verbose=False):
+def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guidance_method=None, 
+    timeout=60*60*24, verbose=False):
     if not os.path.exists(base_name+".template"):
         raise ValueError("File %s does not exist" %(base_name+".template"))
     dir = os.path.dirname(base_name)    
@@ -46,7 +47,7 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         f.write("%i\n" %[None,"block","assump"].index(guidance_method))
             
     if new_name is None:
-        success = run_debug(base_name, verbose=verbose)
+        success = run_debug(base_name, timeout=timeout, verbose=verbose)
         os.chdir(orig_dir)  
         return success
     
@@ -63,7 +64,7 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         with open(new_name+".template","w") as f:
             f.write("".join(linez))
     
-        success = run_debug(new_name, verbose=verbose)
+        success = run_debug(new_name, timeout=timeout, verbose=verbose)
         if not success:
             os.chdir(orig_dir) 
             return False
@@ -98,6 +99,7 @@ def init(parser):
         help="Minimum number of suspects to find before predicting")
     parser.add_argument("--aggressiveness", type=float, default=0.5, help="Threshold below which suspects are blocked")
     parser.add_argument("-v","--verbose", action="store_true", default=False, help="Display more info")
+    parser.add_argument("--timeout", type=int, default=60*60*24, help="Time limit in seconds for a single debugging run.")
     parser.add_argument("--method", type=str, default=None, help="Solver guidance method. " \
         "Must be one of [None, 'block', 'assump']")
    
@@ -106,4 +108,4 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     init(parser)
     args = parser.parse_args()
-    main(args.base_name, args.new_name, args.min_suspects, args.aggressiveness, args.method, args.verbose)
+    main(args.base_name, args.new_name, args.min_suspects, args.aggressiveness, args.method, args.timeout, args.verbose)

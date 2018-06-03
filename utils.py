@@ -1,6 +1,7 @@
 import os 
 import re 
 import subprocess32 as subprocess
+import signal
 
 def run(cmd, verbose=False, timeout=5*60*60*24):
     if verbose:
