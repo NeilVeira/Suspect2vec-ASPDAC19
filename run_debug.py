@@ -56,13 +56,12 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
         assert os.system("cp %s.template %s.template" %(base_name,new_name)) == 0
         
+        true_suspectz = utils.parse_suspects(base_name)
+        with open("true_suspects.txt","w") as f:
+            f.write("\n".join(true_suspectz))                
+        
         # Change project name 
-        linez = open(new_name+".template").readlines()
-        for i in range(len(linez)):
-            if linez[i].startswith("PROJECT="):
-                linez[i] = "PROJECT=%s\n" %(new_name)
-        with open(new_name+".template","w") as f:
-            f.write("".join(linez))
+        utils.write_template(new_name+".template", "PROJECT=", "PROJECT="+new_name)
     
         success = run_debug(new_name, timeout=timeout, verbose=verbose)
         if not success:
