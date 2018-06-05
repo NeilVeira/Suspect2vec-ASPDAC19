@@ -36,24 +36,28 @@ def simulate_prediction(failure, args):
     log_file = failure+".vennsawork/logs/vdb/vdb.log"
     obs = []
     active = set([])
+    suspect_union = set([]) # all suspects modelled in this failure 
     for line in open(log_file):
-        m = re.search(r"##  ==> solver solution:  { \S+:(\S+) }", line)
-        if m:
-            obs.append(m.group(1))
-            if len(obs) == args.min_suspects:
-                break   
         m = re.search(r"## suspect: (\S+), output\(s\): \d+, literal: \d+", line)
         if m:
-            active.add(m.group(1))
-    else:
+            suspect_union.add(m.group(1))
+            if len(obs) < args.min_suspects:
+                active.add(m.group(1))
+                
+        if len(obs) < args.min_suspects:
+            m = re.search(r"##  ==> solver solution:  { \S+:(\S+) }", line)
+            if m:
+                obs.append(m.group(1))
+    
+    if len(obs) < args.min_suspects:
         if args.verbose:
             print "No prediction"
-        return 1.0, 1.0, 0
+        return 1.0, 1.0, 0        
     
     # print obs
     ground_truth = ground_truth.intersection(active)
 
-    suspect_union = known_suspects.union(active).union(ground_truth) # not quite but probably close 
+    # suspect_union = known_suspects.union(active).union(ground_truth) # not quite but probably close 
         
     if args.method == "suspect2vec":
         if args.verbose:
@@ -96,25 +100,24 @@ def simulate_prediction(failure, args):
             blocked.add(s)
             assert s in known_suspects
             if s not in ground_truth:
-                correct += 1                
+                correct += 1  
                 
     known = len(ground_truth.intersection(known_suspects))
     cnt = len(ground_truth.intersection(pred))
     recall = cnt/float(len(ground_truth))
-    acc = float(correct)/len(blocked)
-    
+    acc =  float(correct)/len(blocked) if len(blocked) > 0 else 1    
     percent_blocked = len(blocked) / float(len(suspect_union))
     
     if args.verbose:
+        print "Suspect union:",len(suspect_union)
         print "Active suspects:",len(active)
         print "Known active suspects:", len(active.intersection(known_suspects))
         print "Total blocked: %i (%.3f)" %(len(blocked),percent_blocked)
         print "Active blocked: %i" %(len(blocked.intersection(active)))
-        print "Ground truth block: %i" %(len(blocked.intersection(ground_truth)))
         print "Number of true active suspects:",len(ground_truth)
         print "Blocking accuracy: %.3f" %(acc)    
         print "Recall: %.3f" %(recall)
-        print "predicted/true: %i/%i" %(len(pred.intersection(ground_truth)),len(ground_truth))    
+        print "predicted/true: %i/%i" %(len(pred),len(ground_truth))    
     return acc, recall, percent_blocked
     
             
