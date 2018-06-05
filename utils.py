@@ -88,3 +88,28 @@ def copy_file(source, target, strip_header=False):
             f.write(data)
     else:
         os.system("cp %s %s" %(source,target))
+        
+        
+def write_template(fname, key, line):
+    linez = open(fname).readlines()
+    for i in range(len(linez)):
+        if linez[i].startswith(key):
+            linez[i] = line 
+            if line[-1] != "\n":
+                linez[i] += "\n"
+    
+    with open(fname,"w") as f:
+        f.write("".join(linez))
+
+        
+def rename_project(old_name, new_name):
+    if os.path.exists(old_name+".template"):
+        os.system("mv %s.template %s.template" %(old_name,new_name))
+        write_template(new_name+".template", "PROJECT=", "PROJECT="+os.path.basename(new_name))
+        
+    if os.path.exists(old_name+".vennsawork"):
+        if os.path.exists(new_name+".vennsawork"):
+            os.system("mv %s.vennsawork %s_garbage.vennsawork" %(new_name,new_name))
+            print "WARNING: project %s.vennsawork already exists" %(new_name)
+        os.system("mv %s.vennsawork %s.vennsawork" %(old_name, new_name))
+    
