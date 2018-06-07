@@ -3,6 +3,8 @@ import re
 import subprocess32 as subprocess
 import signal
 
+TIMESTAMP_PATTERN = "\d+-\w+-\d+ \d+:\d+:\d+ \((\d+):(\d+):(\d+)\.(\d+)\)"
+
 def run(cmd, verbose=False, timeout=5*60*60*24):
     if verbose:
         print cmd
@@ -13,7 +15,6 @@ def run(cmd, verbose=False, timeout=5*60*60*24):
     except subprocess.TimeoutExpired:
         os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
         return None,None  
-
 
 def debug_passed(failure):
     log_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
@@ -58,18 +59,42 @@ def parse_suspects(failure):
     assert len(suspectz) > 0, "No suspects found for failure %s" %(failure)
     return suspectz 
         
-
+        
+def parse_time_of(line, pattern):
+    full_pattern = r".*%s ##\s*%s" %(TIMESTAMP_PATTERN,pattern)
+    m = re.search(full_pattern,line)
+    if m:
+        return 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3)) + float("0."+m.group(4))
+    else:
+        return None 
+        
+        
+def find_time_of(failure, pattern, default=None):
+    log_path = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
+    assert os.path.exists(log_path)        
+    for line in open(log_path):
+        t = parse_time_of(line, pattern)
+        if t:
+            return t
+    return default
+        
+        
 def parse_runtime(failure):
     log_path = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
-    assert os.path.exists(log_path)
-        
-    vdb_log = open(log_path).read()
-    #end_pattern = "******************  VDB Process Ends  *****************".replace("*","\\*")
-    m = re.match(r".*\d+-\w+-\d+ \d+:\d+:\d+ \((\d+):(\d+):(\d+)\.(\d+)\) ## ", vdb_log, flags=re.DOTALL)
-    assert m, "Error parsing runtime"
-    runtime = 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3)) + float("0."+m.group(4))
-    #print runtime 
-    return runtime
+    assert os.path.exists(log_path)        
+    linez = open(log_path).readlines()
+    
+    start = find_time_of(failure, "Oracle::ask\(\)")
+    if not start:
+        start = 0 
+    
+    end = find_time_of(failure, "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  VDB Process Ends  \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*")
+    if end:
+        return end - start 
+    else:
+        # No way to know actual time limit since it's not recorded anywhere...
+        print "WARNING: failure %s did not finish. Assuming a total runtime of 3600 seconds." %(failure)
+        return 3600 - start
     
     
 def copy_file(source, target, strip_header=False):

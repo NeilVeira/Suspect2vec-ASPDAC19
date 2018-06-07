@@ -14,6 +14,7 @@ import utils
 FLOAT_PATTERN = "([\d\.]+)"
 INT_PATTERN = "(\d+)"
 
+
 def parse_peak_memory(failure):
     mem_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.plot")
     peak_mem = 0
@@ -96,26 +97,20 @@ def blocking_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
             
     return recall, speedup, mem_reduce, block_recall, block_acc
     
-
+    
 def recall_vs_time_single(failure):
     log_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
-    start = 0
-    with open(log_file) as f:
-        for line in f:
-            m = re.search(r".*\d+-\w+-\d+ \d+:\d+:\d+ \((\d+):(\d+):(\d+)\.(\d+)\) ## Oracle::ask()", line)
-            if m:
-                start = 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3)) + float("0."+m.group(4))
-                break
+    start = utils.find_time_of(failure, "Oracle::ask\(\)", default=0)            
+    end_time = utils.parse_runtime(failure)
 
     cnt = 0
     points = []
-    with open(log_file) as f:
-        for line in open(log_file):
-            m = re.search(r".*\d+-\w+-\d+ \d+:\d+:\d+ \((\d+):(\d+):(\d+)\.(\d+)\) ##  ==> solver solution:", line)
-            if m:
-                t = 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3)) + float("0."+m.group(4)) - start
-                cnt += 1 
-                points.append([t,cnt])
+    for line in open(log_file):
+        t = utils.parse_time_of(line, "==> solver solution:")
+        if t:
+            cnt += 1 
+            points.append([t-start,cnt])
+    points.append([end_time,cnt])
     return points
     
   
@@ -124,13 +119,18 @@ def recall_vs_time(base_failure, new_failure):
     new_points = recall_vs_time_single(new_failure)
     
     #normalize against base failure
-    max_t = float(base_points[-1][0])
+    end_time = max(base_points[-1][0], new_points[-1][0]) # TODO: max of base & new or just base?
+    base_points.append([end_time,base_points[-1][1]])
+    new_points.append([end_time,new_points[-1][1]])    
     max_n = float(base_points[-1][1])
+    # print base_points 
+    # print new_points
+    
     for i in range(len(base_points)):
-        base_points[i][0] /= max_t
+        base_points[i][0] /= end_time
         base_points[i][1] /= max_n 
     for i in range(len(new_points)):
-        new_points[i][0] /= max_t 
+        new_points[i][0] /= end_time 
         new_points[i][1] /= max_n 
     return base_points, new_points
     
@@ -194,7 +194,9 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
-        return None         
+        return None    
+    new_runtime = utils.parse_runtime(new_failure)
+    speedup = new_runtime / base_runtime 
     
     # analyze peak memory usage
     base_mem = parse_peak_memory(base_failure)
@@ -238,6 +240,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
     if verbose:
         print "Number of true suspects: %i" %(len(base_suspectz))
         print "Number of found suspects: %i (recall %.3f)" %(len(new_suspectz), recall)
+        print "Relative runtime: %.3f" %(speedup)
         print "Prediction accuracy auc: %.3f" %(auc_acc)
         print "Recall auc improvement: %.3f" %(recall_auc_improvement)
         print "Peak memory reduction: %.3f" %(mem_reduce)
@@ -253,14 +256,21 @@ def main(args):
         assert args.failure 
         all_failurez = [args.failure]
     
-    # infer guidance method 
-    f = all_failurez[0]
-    log_file = f + args.new_suffix + ".vennsawork/logs/vdb/vdb.log"
-    log = open(log_file).read()
-    m = re.search(r"Guidance method = (\d+)", log)
-    method = int(m.group(1)) if m else 0 
+   
+    analysis_method = args.method 
+    if analysis_method == -1:        
+        # infer best method 
+        f = all_failurez[0]
+        log_file = f + args.new_suffix + ".vennsawork/logs/vdb/vdb.log"
+        log = open(log_file).read()
+        m = re.search(r"Guidance method = (\d+)", log)
+        guidance_method = int(m.group(1)) if m else 0 
+        if guidance_method in [2,3,4]:
+            analysis_method = 0 
+        elif guidance_method in [1,5]:
+            analysis_method = 1         
     
-    if method in [2,3,4]:
+    if analysis_method == 0:
         base_points = []
         new_points = []
         recall_auc_improvementz = []
@@ -282,7 +292,7 @@ def main(args):
         print "Median recall auc improvement: %.3f" %(np.median(recall_auc_improvementz))
         print "Geometric mean recall auc improvement: %.3f" %(gmean(recall_auc_improvementz))
         
-    elif method == 1:
+    elif analysis_method == 1:
         recalls = []
         speedups = []
         mem_reductions = []
@@ -309,7 +319,7 @@ def main(args):
         print "Block prediction accuracy: %.3f" %(np.mean(block_accs))
 
     else:
-        raise ValueError("Can't analyze debugging; no guidance method used.")
+        raise ValueError("Can't determine analysis method to use.")
     
     
 def init(parser):
@@ -318,6 +328,9 @@ def init(parser):
     parser.add_argument("--design", help="Design to analyze.")
     parser.add_argument("--failure", help="Analyze a single failure (base name).")    
     parser.add_argument("--min_runtime", type=int, default=0, help="Exclude designs with runtime less than this.")
+    parser.add_argument("--method", default=-1, type=int, help="Type of analysis to perform. 0 for area under the " \
+                        "recall-time curve; 1 for separate recall and time. If not specified, tries to infer the " \
+                        "best method from the debug logs. ")
     parser.add_argument("-v", "--verbose", action="store_true", default=False)
     
   
