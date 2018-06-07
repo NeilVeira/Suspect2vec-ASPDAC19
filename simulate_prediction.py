@@ -55,7 +55,8 @@ def simulate_prediction(failure, args):
         return 1.0, 1.0, 0        
     
     # print obs
-    ground_truth = ground_truth.intersection(active)
+    known_true = ground_truth.intersection(known_suspects)
+    true_active = ground_truth.intersection(active)
 
     # suspect_union = known_suspects.union(active).union(ground_truth) # not quite but probably close 
         
@@ -99,25 +100,26 @@ def simulate_prediction(failure, args):
         if s not in pred:
             blocked.add(s)
             assert s in known_suspects
-            if s not in ground_truth:
+            if s not in true_active:
                 correct += 1  
                 
-    known = len(ground_truth.intersection(known_suspects))
-    cnt = len(ground_truth.intersection(pred))
-    recall = cnt/float(len(ground_truth))
+    cnt = len(true_active.intersection(pred))
+    recall = cnt/float(len(true_active))
     acc =  float(correct)/len(blocked) if len(blocked) > 0 else 1    
     percent_blocked = len(blocked) / float(len(suspect_union))
     
     if args.verbose:
         print "Suspect union:",len(suspect_union)
         print "Active suspects:",len(active)
+        print "Ground truth suspects:",len(ground_truth)
+        print "True active suspects:",len(true_active)
         print "Known active suspects:", len(active.intersection(known_suspects))
+        print "Known true suspects: %i (%.1f%%)" %(len(known_true), float(len(known_true))/len(ground_truth)*100)
         print "Total blocked: %i (%.3f)" %(len(blocked),percent_blocked)
         print "Active blocked: %i" %(len(blocked.intersection(active)))
-        print "Number of true active suspects:",len(ground_truth)
         print "Blocking accuracy: %.3f" %(acc)    
         print "Recall: %.3f" %(recall)
-        print "predicted/true: %i/%i" %(len(pred),len(ground_truth))    
+        print "predicted/true: %i/%i" %(len(pred),len(true_active))    
     return acc, recall, percent_blocked
     
             

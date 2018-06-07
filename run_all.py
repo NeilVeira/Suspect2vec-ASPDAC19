@@ -34,7 +34,7 @@ def main(args):
             success = run_debug.main(failure, verbose=args.verbose)
         else:
             success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, args.aggressiveness, 
-                guidance_method=args.method, timeout=args.timeout, verbose=args.verbose)
+                guidance_method=args.method, timeout=args.timeout, pass_timeout=args.pass_timeout, verbose=args.verbose)
         
         if not success:
             unsuccessful.append(failure)
@@ -53,10 +53,11 @@ def init(parser):
     parser.add_argument("--min_suspects", type=int, default=999999, help="Minimum number of suspects to "\
         "find before predicting")
     parser.add_argument("--aggressiveness", type=float, default=0.5, help="Threshold below which suspects are blocked")
-    parser.add_argument("--timeout", type=int, default=60*60*24, help="Time limit in seconds for a single debugging run.")
+    parser.add_argument("--timeout", type=int, default=3600, help="Time limit in seconds for a single debugging run.")
+    parser.add_argument("--pass_timeout", type=int, default=4000, help="Time limit in seconds for a single pass.")
     parser.add_argument("-v","--verbose", action="store_true", default=False, help="Display more info")
     parser.add_argument("--method", type=str, default=None, help="Solver guidance method. " \
-        "Must be one of [None, 'block', 'assump']")
+        "Must be one of %s" %run_debug.METHODS)
     
     
 if __name__ == "__main__":
