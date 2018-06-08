@@ -45,7 +45,7 @@ START_TIME_OFFSET=
 
 # Set the hard limits for memory and time
 MEMORY_LIMIT=16GB
-TIME_LIMIT=10h
+TIME_LIMIT=24h
 
 # List of commands to run. Use "," to separate.
 # setup, clean_up, combo, abr, sdp, vdb, causality, gui_db
@@ -106,5 +106,5 @@ VERBOSITY=debug
 FORCE=1
 
 # Appends to general vdb options
-GENERAL_OPTIONS="--max=1 --rtl-implications=no --oracle-solver-stats=debug --oracle-problem-stats=debug --skip-hard-suspects=no --time-diagnosis=no --diagnose-command=rtl --suspect-types=all"
+GENERAL_OPTIONS="--max=1 --rtl-implications=no --suspect-implications=none --oracle-solver-stats=debug --oracle-problem-stats=debug --skip-hard-suspects=no --time-diagnosis=no --diagnose-command=rtl --suspect-types=all"
 

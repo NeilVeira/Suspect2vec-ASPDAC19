@@ -7,8 +7,8 @@ import random
 import utils
 import analyze
 
-METHODS = [None,"block","assump","opt_assump","rev_assump"]
-
+METHODS = [None,"block","assump","opt_assump","rev_assump","assump_block"]
+VDB_OPTIONS = "--max=1 --rtl-implications=no --suspect-implications=none --oracle-solver-stats=debug --oracle-problem-stats=debug --skip-hard-suspects=no --time-diagnosis=no --diagnose-command=rtl --suspect-types=all"
 
 def run_debug(name, timeout=60*60*24, verbose=False):
     print "Running debug on %s..." %(name)
@@ -65,7 +65,7 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         
         # Modify template file as needed 
         utils.write_template(new_name+".template", "PROJECT=", "PROJECT="+new_name)
-        general_options = "--max=1 --rtl-implications=no --oracle-solver-stats=debug --oracle-problem-stats=debug --skip-hard-suspects=no --time-diagnosis=no --diagnose-command=rtl --suspect-types=all --solver-cpu-limit=%i" %(pass_timeout)
+        general_options = VDB_OPTIONS + " --solver-cpu-limit=%i" %(pass_timeout)
         utils.write_template(new_name+".template", "GENERAL_OPTIONS=", "GENERAL_OPTIONS=\"%s\"" %(general_options))
     
         success = run_debug(new_name, timeout=timeout, verbose=verbose)
