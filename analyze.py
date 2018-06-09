@@ -125,6 +125,8 @@ def recall_vs_time(base_failure, new_failure):
     max_n = float(base_points[-1][1])
     # print base_points 
     # print new_points
+    # for i in range(len(base_points)):
+        # print i,base_points[i][0],new_points[i][0]
     
     for i in range(len(base_points)):
         base_points[i][0] /= end_time
@@ -156,13 +158,13 @@ def auc_recall_time(points):
     return auc 
     
 
-def plot_recall_vs_time(points, outfile, color='r', label=None):
-    x = []
-    y = []
+def plot_recall_vs_time(points, color='r', label=None, outfile=None):
+    x = [0]
+    y = [0]
     points.sort()
     i = 0
     cur_bin = []
-    binx = np.concatenate([np.linspace(0,1,21), np.linspace(1,points[-1][0],5)])
+    binx = np.linspace(0,1,11)
     
     for p in points:
         if p[0] > binx[i]:
@@ -171,15 +173,18 @@ def plot_recall_vs_time(points, outfile, color='r', label=None):
                 y.append(np.mean(cur_bin))
             cur_bin = []
             i += 1
-        cur_bin.append(p[1])
-        
-    plt.scatter(x, y, color=color, label=label)
+        cur_bin.append(p[1])    
+    x.append(1)
+    y.append(1)
+    
+    plt.plot(x, y, color=color, label=label)
     plt.xlabel("Relative runtime")
-    plt.ylabel("Mean recall")
-    plt.xlim((-0.2,1.2))
+    plt.ylabel("Recall")
+    plt.xlim((0,1))
     plt.ylim((0,1))
     plt.legend(loc="upper left")
-    plt.savefig(outfile)
+    if outfile:
+        plt.savefig(outfile)
     
     
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
@@ -194,7 +199,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
-        return None    
+        return None,None,None
     new_runtime = utils.parse_runtime(new_failure)
     speedup = new_runtime / base_runtime 
     
@@ -246,7 +251,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         print "Peak memory reduction: %.3f" %(mem_reduce)
         print ""
         
-    return recall_auc_improvement
+    return recall_auc_improvement, base_points, new_points
   
   
 def main(args):
@@ -265,28 +270,29 @@ def main(args):
         log = open(log_file).read()
         m = re.search(r"Guidance method = (\d+)", log)
         guidance_method = int(m.group(1)) if m else 0 
-        if guidance_method in [2,3,4]:
+        if guidance_method in [2,3,4,5]:
             analysis_method = 0 
-        elif guidance_method in [1,5]:
+        elif guidance_method in [1]:
             analysis_method = 1         
     
     if analysis_method == 0:
-        base_points = []
-        new_points = []
+        all_base_points = []
+        all_new_points = []
         recall_auc_improvementz = []
         
         for failure in all_failurez: 
-            recall_auc_improvement = assumption_analysis(failure+args.base_suffix, failure+args.new_suffix, 
+            recall_auc_improvement, base_points, new_points = assumption_analysis(failure+args.base_suffix, failure+args.new_suffix, 
                 verbose=args.verbose, min_runtime=args.min_runtime)
             
             if recall_auc_improvement is not None:
-                recall_auc_improvementz.append(recall_auc_improvement)
+                recall_auc_improvementz.append(recall_auc_improvement)                
+                all_base_points.extend(base_points)
+                all_new_points.extend(new_points)
                 
-            # base,new = recall_vs_time(failure,failure+args.new_suffix)
-            # base_points.extend(base)
-            # new_points.extend(new)
-        # plot_recall_vs_time(base_points, "plots/recall_vs_time.png", 'r')
-        # plot_recall_vs_time(new_points, "plots/recall_vs_time.png", 'b')  
+        if args.plot:   
+            design = os.path.basename(args.design)
+            plot_recall_vs_time(all_base_points, color='r', label="base")
+            plot_recall_vs_time(all_new_points, color='b', label="new", outfile="plots/%s_recall_vs_time.png" %(design)) 
 
         print "Arithmetic mean recall auc improvement: %.3f" %(np.mean(recall_auc_improvementz))
         print "Median recall auc improvement: %.3f" %(np.median(recall_auc_improvementz))
@@ -331,6 +337,7 @@ def init(parser):
     parser.add_argument("--method", default=-1, type=int, help="Type of analysis to perform. 0 for area under the " \
                         "recall-time curve; 1 for separate recall and time. If not specified, tries to infer the " \
                         "best method from the debug logs. ")
+    parser.add_argument("--plot", action="store_true", default=False)
     parser.add_argument("-v", "--verbose", action="store_true", default=False)
     
   

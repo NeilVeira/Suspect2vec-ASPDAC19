@@ -80,7 +80,8 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         
         if guidance_method == "block":
             analysis_func = analyze.blocking_analysis
-        elif guidance_method == "assump" or guidance_method == "opt_assump" or guidance_method == "rev_assump":
+        elif guidance_method == "assump" or guidance_method == "opt_assump" or guidance_method == "rev_assump" \
+            or guidance_method == "assump_block":
             analysis_func = analyze.assumption_analysis
         else:        
             os.chdir(orig_dir)  
