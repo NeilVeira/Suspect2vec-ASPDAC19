@@ -28,7 +28,7 @@ def main(args):
         with open("suspects.txt","w") as f:
             for s in ordered_suspectz:
                 f.write(s+"\n")
-        utils.copy_file("suspects.txt", failure.replace("designs","data")+"_suspects.txt")
+        utils.copy_file("suspects.txt", failure.replace("designs","suspect_lists")+"_suspects.txt")
        
             
         
@@ -36,7 +36,7 @@ def main(args):
     
 def init(parser):
     parser.add_argument("design")
-    parser.add_argument("suffix", nargs='?', default=None, help="Suffix to append to the name of the project")
+    parser.add_argument("suffix", nargs='?', default="", help="Suffix to append to the name of the project")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

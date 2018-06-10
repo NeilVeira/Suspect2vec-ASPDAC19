@@ -36,7 +36,7 @@ def run_debug(name, timeout=60*60*24, verbose=False):
     
     
 def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guidance_method=None, 
-    timeout=60*60*24, pass_timeout=300, verbose=False):
+    timeout=3600, pass_timeout=4000, verbose=False):
     if not os.path.exists(base_name+".template"):
         raise ValueError("File %s does not exist" %(base_name+".template"))
     dir = os.path.dirname(base_name)    
@@ -55,8 +55,9 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         return success
     
     else:               
-        assert os.system("cp %s_input_embeddings.txt input_embeddings.txt" %(base_name)) == 0
-        assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
+        if guidance_method is not None:
+            assert os.system("cp %s_input_embeddings.txt input_embeddings.txt" %(base_name)) == 0
+            assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
         assert os.system("cp %s.template %s.template" %(base_name,new_name)) == 0
         
         true_suspectz = utils.parse_suspects(base_name)
@@ -80,8 +81,7 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         
         if guidance_method == "block":
             analysis_func = analyze.blocking_analysis
-        elif guidance_method == "assump" or guidance_method == "opt_assump" or guidance_method == "rev_assump" \
-            or guidance_method == "assump_block":
+        elif guidance_method in ["assump", "opt_assump", "rev_assump", "assump_block"]:
             analysis_func = analyze.assumption_analysis
         else:        
             os.chdir(orig_dir)  
