@@ -32,7 +32,7 @@ def main(args):
                     ]
         )
         
-    row_common = {"sample_type":args.sample_type, "sample_size":args.sample_size, "folds":args.folds, "lambd":args.lambd}
+    row_common = {"sample_type":args.sample_type, "sample_size":args.sample_size, "folds":args.folds}
     
     for design in args.designs.split(","):
         design_dir = "data/"+design.strip()
@@ -42,7 +42,7 @@ def main(args):
         
         row_common["design"] = design
         base_row = dict(row_common)
-        base_row["predictor"] = "DATE"
+        base_row.update({"predictor":"DATE", "lambd":args.lambd, "dim":args.dim})
         fill_row(base_row, metrics_base)
         data = data.append(base_row, ignore_index=True)
         
@@ -53,6 +53,7 @@ def main(args):
         
         data.to_csv(data_file)
         
+    data.drop_duplicates(inplace=True)
     data.sort_values(by=["design","sample_size","sample_type","folds","predictor","dim","lambd"], inplace=True)
     data.reset_index(drop=True, inplace=True)
     data.to_csv(data_file)
