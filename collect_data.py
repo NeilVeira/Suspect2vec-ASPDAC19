@@ -28,7 +28,7 @@ def main(args):
         with open("suspects.txt","w") as f:
             for s in ordered_suspectz:
                 f.write(s+"\n")
-        utils.copy_file("suspects.txt", failure.replace("designs","data")+"_suspects.txt")
+        utils.copy_file("suspects.txt", failure.replace("designs","suspect_lists")+"_suspects.txt")
        
             
         

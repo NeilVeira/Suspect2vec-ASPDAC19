@@ -23,7 +23,7 @@ def main(args):
     all_failurez = utils.find_all_failures(args.design)
     all_suspectz = []
     for failure in all_failurez:
-        suspect_list_file = failure.replace("designs","data")+"_suspects.txt"
+        suspect_list_file = failure.replace("designs","suspect_lists")+"_suspects.txt"
         suspectz = open(suspect_list_file).readlines()
         all_suspectz.append([s.strip() for s in suspectz])
     
