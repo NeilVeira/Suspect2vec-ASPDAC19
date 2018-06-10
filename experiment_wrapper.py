@@ -42,18 +42,18 @@ def main(args):
         
         row_common["design"] = design
         base_row = dict(row_common)
-        base_row.update({"predictor":"DATE", "lambd":args.lambd, "dim":args.dim})
+        base_row.update({"predictor":"DATE"})
         fill_row(base_row, metrics_base)
         data = data.append(base_row, ignore_index=True)
         
         new_row = dict(row_common)
-        new_row["predictor"] = "suspect2vec"
+        new_row.update({"predictor":"suspect2vec", "lambd":args.lambd, "dim":args.dim})
         fill_row(new_row, metrics_new)
         data = data.append(new_row, ignore_index=True)
         
         data.to_csv(data_file)
         
-    data.drop_duplicates(inplace=True)
+    data.drop_duplicates(subset=["design","predictor","sample_type","sample_size","folds","dim","lambd"], inplace=True)
     data.sort_values(by=["design","sample_size","sample_type","folds","predictor","dim","lambd"], inplace=True)
     data.reset_index(drop=True, inplace=True)
     data.to_csv(data_file)
