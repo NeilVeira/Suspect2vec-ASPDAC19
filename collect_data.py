@@ -36,7 +36,7 @@ def main(args):
     
 def init(parser):
     parser.add_argument("design")
-    parser.add_argument("suffix", nargs='?', default=None, help="Suffix to append to the name of the project")
+    parser.add_argument("suffix", nargs='?', default="", help="Suffix to append to the name of the project")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

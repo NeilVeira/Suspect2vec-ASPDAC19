@@ -21,7 +21,11 @@ def write_embeddingx(embeddingx, file_name):
     
 def main(args):
     all_failurez = utils.find_all_failures(args.design)
-    all_suspectz = [utils.parse_suspects(failure) for failure in all_failurez]
+    all_suspectz = []
+    for failure in all_failurez:
+        suspect_list_file = failure.replace("designs","data")+"_suspects.txt"
+        suspectz = open(suspect_list_file).readlines()
+        all_suspectz.append([s.strip() for s in suspectz])
     
     for i in range(len(all_failurez)):
         print all_failurez[i]
