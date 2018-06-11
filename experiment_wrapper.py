@@ -54,7 +54,7 @@ def main(args):
         data.to_csv(data_file)
         
     data.drop_duplicates(subset=["design","predictor","sample_type","sample_size","folds","dim","lambd"], inplace=True)
-    data.sort_values(by=["sample_size","sample_type","folds","design","predictor","dim","lambd"], inplace=True)
+    data.sort_values(by=["sample_size","sample_type","folds","design","predictor","lambd","dim"], inplace=True)
     data.reset_index(drop=True, inplace=True)
     data.to_csv(data_file)
         
