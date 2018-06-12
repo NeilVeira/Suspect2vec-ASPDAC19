@@ -119,7 +119,8 @@ def recall_vs_time(base_failure, new_failure):
     new_points = recall_vs_time_single(new_failure)
     
     #normalize against base failure
-    end_time = max(base_points[-1][0], new_points[-1][0]) # TODO: max of base & new or just base?
+    # end_time = max(base_points[-1][0], new_points[-1][0]) 
+    end_time = base_points[-1][0]
     base_points.append([end_time,base_points[-1][1]])
     new_points.append([end_time,new_points[-1][1]])    
     max_n = float(base_points[-1][1])
