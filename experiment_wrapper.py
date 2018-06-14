@@ -35,7 +35,7 @@ def main(args):
     row_common = {"sample_type":args.sample_type, "sample_size":args.sample_size, "folds":args.folds}
     
     for design in args.designs.split(","):
-        design_dir = "data/"+design.strip()
+        design_dir = "suspect_lists/"+design.strip()
         args.design_dir = design_dir
         print design_dir         
         metrics_base, metrics_new = experiment_prediction.main(args)
@@ -54,7 +54,7 @@ def main(args):
         data.to_csv(data_file)
         
     data.drop_duplicates(subset=["design","predictor","sample_type","sample_size","folds","dim","lambd"], inplace=True)
-    data.sort_values(by=["design","sample_size","sample_type","folds","predictor","dim","lambd"], inplace=True)
+    data.sort_values(by=["sample_size","sample_type","folds","design","predictor","lambd","dim"], inplace=True)
     data.reset_index(drop=True, inplace=True)
     data.to_csv(data_file)
         

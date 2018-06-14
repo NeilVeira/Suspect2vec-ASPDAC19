@@ -109,10 +109,11 @@ def main(args):
     for item in os.listdir(design_dir):
         for failure in os.listdir(os.path.join(design_dir,item)):
             failure = os.path.join(design_dir,item,failure)
-            all_failurez.append(failure)
-            suspectz = [line.strip() for line in open(failure)]
-            data.append(suspectz)
-            suspect_union = suspect_union.union(set(suspectz)) 
+            if os.path.isfile(failure):
+                all_failurez.append(failure)
+                suspectz = [line.strip() for line in open(failure)]
+                data.append(suspectz)
+                suspect_union = suspect_union.union(set(suspectz)) 
 
     all_suspectz = list(suspect_union)
     all_suspectz.sort()
