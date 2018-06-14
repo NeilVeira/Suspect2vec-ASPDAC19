@@ -27,6 +27,9 @@ def parse_peak_memory(failure):
     
 
 def blocking_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
+    if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
+        print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
+        return None,None,None,None,None 
     if verbose:
         print "Analyzing",new_failure
         
@@ -37,6 +40,7 @@ def blocking_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
     # analyze runtime speedup
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
+        print "Skipping failure %s due to short runtime" %(new_failure)
         return None,None,None,None,None 
     new_runtime = utils.parse_runtime(new_failure)
     speedup = new_runtime / base_runtime 
@@ -119,7 +123,8 @@ def recall_vs_time(base_failure, new_failure):
     new_points = recall_vs_time_single(new_failure)
     
     #normalize against base failure
-    end_time = max(base_points[-1][0], new_points[-1][0]) # TODO: max of base & new or just base?
+    # end_time = max(base_points[-1][0], new_points[-1][0]) 
+    end_time = base_points[-1][0]
     base_points.append([end_time,base_points[-1][1]])
     new_points.append([end_time,new_points[-1][1]])    
     max_n = float(base_points[-1][1])
@@ -164,18 +169,23 @@ def plot_recall_vs_time(points, color='r', label=None, outfile=None):
     points.sort()
     i = 0
     cur_bin = []
-    binx = np.linspace(0,1,11)
+    n_points = 11
+    binx = np.linspace(0,1,n_points)
+    half_bin_size = 0.5 / (n_points-1)
+
     
     for p in points:
+        if p[0] > 1:
+            break 
         if p[0] > binx[i]:
             if len(cur_bin) > 0:
-                x.append(binx[i])
+                x.append(binx[i]+half_bin_size)
                 y.append(np.mean(cur_bin))
             cur_bin = []
             i += 1
         cur_bin.append(p[1])    
-    x.append(1)
-    y.append(1)
+    # x.append(1)
+    # y.append(1)
     
     plt.plot(x, y, color=color, label=label)
     plt.xlabel("Relative runtime")
@@ -188,7 +198,10 @@ def plot_recall_vs_time(points, color='r', label=None, outfile=None):
     
     
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
-    if verbose:
+    if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
+        print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
+        return None,None,None
+    elif verbose:
         print "Analyzing",new_failure
         
     base_suspectz = utils.parse_suspects(base_failure)
@@ -199,6 +212,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
+        print "Skipping failure %s due to short runtime" %(new_failure)
         return None,None,None
     new_runtime = utils.parse_runtime(new_failure)
     speedup = new_runtime / base_runtime 
@@ -265,15 +279,18 @@ def main(args):
     analysis_method = args.method 
     if analysis_method == -1:        
         # infer best method 
-        f = all_failurez[0]
-        log_file = f + args.new_suffix + ".vennsawork/logs/vdb/vdb.log"
-        log = open(log_file).read()
-        m = re.search(r"Guidance method = (\d+)", log)
-        guidance_method = int(m.group(1)) if m else 0 
-        if guidance_method in [2,3,4,5]:
-            analysis_method = 0 
-        elif guidance_method in [1]:
-            analysis_method = 1         
+        for f in all_failurez:
+            log_file = f + args.new_suffix + ".vennsawork/logs/vdb/vdb.log"
+            if os.path.exists(log_file):
+                log = open(log_file).read()
+                m = re.search(r"Guidance method = (\d+)", log)
+                guidance_method = int(m.group(1)) if m else 0 
+                if guidance_method in [2,3,4,5]:
+                    analysis_method = 0 
+                    break
+                elif guidance_method in [1]:
+                    analysis_method = 1  
+                    break       
     
     if analysis_method == 0:
         all_base_points = []
@@ -288,11 +305,20 @@ def main(args):
                 recall_auc_improvementz.append(recall_auc_improvement)                
                 all_base_points.extend(base_points)
                 all_new_points.extend(new_points)
+
+                if args.plot_individual:
+                    outfile = "plots/%s_recall_vs_time.png" %(failure.replace("/","_"))
+                    plot_recall_vs_time(base_points, color='r', label="base")
+                    plot_recall_vs_time(new_points, color='b', label="new", outfile=outfile)
+                    plt.clf()
                 
         if args.plot:   
-            design = os.path.basename(args.design)
+            if args.design:
+                outfile = "plots/%s_recall_vs_time.png" %(os.path.basename(args.design))
+            else:
+                outfile = "plots/%s_recall_vs_time.png" %(args.failure.rstrip("/").replace("/","_"))
             plot_recall_vs_time(all_base_points, color='r', label="base")
-            plot_recall_vs_time(all_new_points, color='b', label="new", outfile="plots/%s_recall_vs_time.png" %(design)) 
+            plot_recall_vs_time(all_new_points, color='b', label="new", outfile=outfile) 
 
         print "Arithmetic mean recall auc improvement: %.3f" %(np.mean(recall_auc_improvementz))
         print "Median recall auc improvement: %.3f" %(np.median(recall_auc_improvementz))
@@ -337,7 +363,9 @@ def init(parser):
     parser.add_argument("--method", default=-1, type=int, help="Type of analysis to perform. 0 for area under the " \
                         "recall-time curve; 1 for separate recall and time. If not specified, tries to infer the " \
                         "best method from the debug logs. ")
-    parser.add_argument("--plot", action="store_true", default=False)
+    parser.add_argument("-p", "--plot", action="store_true", default=False, help="Generate recall-time plot aggregated over all failures.")
+    parser.add_argument("-pi", "--plot_individual", action="store_true", default=False, 
+                        help="Generate recall-time plot for individual failrues")
     parser.add_argument("-v", "--verbose", action="store_true", default=False)
     
   
