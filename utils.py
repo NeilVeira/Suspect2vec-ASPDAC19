@@ -97,8 +97,9 @@ def parse_runtime(failure):
         return 3600 - start
     
     
-def copy_file(source, target, strip_header=False):
-    print source,target
+def copy_file(source, target, strip_header=False, verbose=True):
+    if verbose:
+        print source,target
     parts = target.split("/")
     for i in range(1,len(parts)):
         dir = "/".join(parts[:i])
