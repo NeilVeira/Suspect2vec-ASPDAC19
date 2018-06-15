@@ -1,1 +1,0 @@
-../../golden/rtl/fifo_register.v

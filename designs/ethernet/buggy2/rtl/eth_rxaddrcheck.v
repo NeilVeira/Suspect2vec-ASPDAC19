@@ -1,1 +1,0 @@
-../../golden/rtl/eth_rxaddrcheck.v

@@ -1,1 +1,0 @@
-../../tb/wb_slave_behavioral.v

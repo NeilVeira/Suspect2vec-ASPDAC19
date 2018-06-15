@@ -1,1 +1,0 @@
-../../../tb/include/eth_defines.v

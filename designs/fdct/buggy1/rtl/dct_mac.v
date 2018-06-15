@@ -1,1 +1,0 @@
-../../golden/rtl/dct_mac.v
