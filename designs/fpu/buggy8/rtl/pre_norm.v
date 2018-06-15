@@ -1,1 +1,0 @@
-../../golden/rtl/pre_norm.v

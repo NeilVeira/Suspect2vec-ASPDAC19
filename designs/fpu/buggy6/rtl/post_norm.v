@@ -1,1 +1,0 @@
-../../golden/rtl/post_norm.v

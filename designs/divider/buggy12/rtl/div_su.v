@@ -1,1 +1,0 @@
-../../golden/rtl/div_su.v

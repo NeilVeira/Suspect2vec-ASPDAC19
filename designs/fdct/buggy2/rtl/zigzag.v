@@ -1,1 +1,0 @@
-../../golden/rtl/zigzag.v
