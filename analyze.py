@@ -195,6 +195,32 @@ def plot_recall_vs_time(points, color='r', label=None, outfile=None):
     plt.legend(loc="upper left")
     if outfile:
         plt.savefig(outfile)
+        
+        
+def plot_improvements(outfile, recall_auc_improvementz):
+    # mean = gmean(recall_auc_improvementz)
+    # x = range(len(recall_auc_improvementz))
+    # y = recall_auc_improvementz 
+    # y.sort()
+    # plt.clf()
+    # plt.scatter(x, y, color='b')
+    # plt.ylim((0,max(y)))
+    # plt.xlabel("Failure #")
+    # plt.ylabel("Improvement in recall-time")
+    # plt.axhline(y=1, color='k')
+    # plt.axhline(y=mean)
+    # plt.text(1, mean+0.1, "geomean =%.2f" %(mean))
+    # plt.savefig(outfile)
+    
+    plt.clf()
+    x = recall_auc_improvementz
+    x.sort()
+    y = np.array(range(1,len(x)+1)) / float(len(x)) * 100 
+    plt.xlabel("Improvement in area under recall-time curve")
+    plt.ylabel("Percentage of failures")
+    plt.plot(x,y)
+    plt.savefig(outfile)
+
     
     
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
@@ -314,11 +340,13 @@ def main(args):
                 
         if args.plot:   
             if args.design:
-                outfile = "plots/%s_recall_vs_time.png" %(os.path.basename(args.design))
+                design = os.path.basename(args.design)
             else:
-                outfile = "plots/%s_recall_vs_time.png" %(args.failure.rstrip("/").replace("/","_"))
+                design = args.failure.rstrip("/").replace("/","_")
+            outfile = "plots/%s_recall_vs_time.png" %(design)
             plot_recall_vs_time(all_base_points, color='r', label="base")
             plot_recall_vs_time(all_new_points, color='b', label="new", outfile=outfile) 
+            plot_improvements("plots/%s_improvements.png" %(design), recall_auc_improvementz)
 
         print "Arithmetic mean recall auc improvement: %.3f" %(np.mean(recall_auc_improvementz))
         print "Median recall auc improvement: %.3f" %(np.median(recall_auc_improvementz))
