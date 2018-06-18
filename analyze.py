@@ -147,45 +147,45 @@ def auc_recall_time(points):
     Compute area under recall vs time curve from t = 0 to 1. 
     '''
     auc = 0
-    #print points
-    for i in range(1,len(points)):
+    dt_tot = 0
+    points = [[0,0]] + list(points)
+    i = 1
+    while i < len(points):
         if points[i][0] > 1:
             break
         recall = points[i-1][1]
         dt = points[i][0] - points[i-1][0]
         assert dt >= 0
-        auc += recall*dt   
+        auc += recall*dt  
+        dt_tot += dt  
+        i += 1
 
     if points[i-1][0] < 1:
         dt = 1-points[i-1][0]
+        dt_tot += dt 
         recall = points[i-1][1]
         auc += recall*dt 
+    assert abs(1-dt_tot) < 1e-6 
     return auc 
     
+        
+def interpolate_value(points, x):
+    if x < points[0][0]:
+        return 0 
+    for i in range(len(points)-1):
+        if points[i+1][0] > x:
+            return points[i][1]
+    return points[-1][1]
 
-def plot_recall_vs_time(points, color='r', label=None, outfile=None):
-    x = [0]
-    y = [0]
-    points.sort()
-    i = 0
-    cur_bin = []
-    n_points = 11
-    binx = np.linspace(0,1,n_points)
-    half_bin_size = 0.5 / (n_points-1)
-
-    
-    for p in points:
-        if p[0] > 1:
-            break 
-        if p[0] > binx[i]:
-            if len(cur_bin) > 0:
-                x.append(binx[i]+half_bin_size)
-                y.append(np.mean(cur_bin))
-            cur_bin = []
-            i += 1
-        cur_bin.append(p[1])    
-    # x.append(1)
-    # y.append(1)
+def plot_recall_vs_time(all_points, color='r', label=None, outfile=None):
+    n_points = 101
+    x = np.linspace(0,1,n_points)
+    y = []
+    for i in range(len(x)):
+        ys = []
+        for points in all_points:
+            ys.append(interpolate_value(points,x[i]))
+        y.append(np.mean(ys))
     
     plt.plot(x, y, color=color, label=label)
     plt.xlabel("Relative runtime")
@@ -195,23 +195,9 @@ def plot_recall_vs_time(points, color='r', label=None, outfile=None):
     plt.legend(loc="upper left")
     if outfile:
         plt.savefig(outfile)
+
         
-        
-def plot_improvements(outfile, recall_auc_improvementz):
-    # mean = gmean(recall_auc_improvementz)
-    # x = range(len(recall_auc_improvementz))
-    # y = recall_auc_improvementz 
-    # y.sort()
-    # plt.clf()
-    # plt.scatter(x, y, color='b')
-    # plt.ylim((0,max(y)))
-    # plt.xlabel("Failure #")
-    # plt.ylabel("Improvement in recall-time")
-    # plt.axhline(y=1, color='k')
-    # plt.axhline(y=mean)
-    # plt.text(1, mean+0.1, "geomean =%.2f" %(mean))
-    # plt.savefig(outfile)
-    
+def plot_improvements(outfile, recall_auc_improvementz):    
     plt.clf()
     x = recall_auc_improvementz
     x.sort()
@@ -221,8 +207,7 @@ def plot_improvements(outfile, recall_auc_improvementz):
     plt.plot(x,y)
     plt.savefig(outfile)
 
-    
-    
+     
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
     if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
         print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
@@ -329,13 +314,13 @@ def main(args):
             
             if recall_auc_improvement is not None:
                 recall_auc_improvementz.append(recall_auc_improvement)                
-                all_base_points.extend(base_points)
-                all_new_points.extend(new_points)
+                all_base_points.append(base_points)
+                all_new_points.append(new_points)
 
                 if args.plot_individual:
                     outfile = "plots/%s_recall_vs_time.png" %(failure.replace("/","_"))
-                    plot_recall_vs_time(base_points, color='r', label="base")
-                    plot_recall_vs_time(new_points, color='b', label="new", outfile=outfile)
+                    plot_recall_vs_time([base_points], color='r', label="base")
+                    plot_recall_vs_time([new_points], color='b', label="new", outfile=outfile)
                     plt.clf()
                 
         if args.plot:   
