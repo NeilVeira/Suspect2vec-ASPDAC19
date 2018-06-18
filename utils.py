@@ -89,9 +89,11 @@ def find_time_of(failure, pattern, default=None):
         
 def parse_runtime(failure):
     log_path = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
-    assert os.path.exists(log_path)        
+    if not os.path.exists(log_path):
+        print "WARNING: could not parse runtime of failure %s due to missing vdb.log file."
+        return 0
+
     linez = open(log_path).readlines()
-    
     start = find_time_of(failure, "Oracle::ask\(\)")
     if not start:
         start = 0 
