@@ -17,6 +17,14 @@ def run(cmd, verbose=False, timeout=5*60*60*24):
         return None,None  
 
 def debug_passed(failure):
+    stdb_file = os.path.join(failure+".vennsawork","vennsa.stdb.gz")
+    if not os.path.exists(stdb_file):
+        return False 
+    else:
+        suspectz = parse_suspects(failure)
+        if len(suspectz) == 0:
+            return False 
+    
     log_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
     if not os.path.exists(log_file):
         return False 
@@ -56,7 +64,7 @@ def parse_suspects(failure):
     suspectz = []
     for suspect_parse in re.findall(r"rtl\s+([\w/]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", report, flags=re.DOTALL):
         suspectz.append(suspect_parse[0])
-    assert len(suspectz) > 0, "No suspects found for failure %s" %(failure)
+    # assert len(suspectz) > 0, "No suspects found for failure %s" %(failure)
     return suspectz 
         
         
@@ -81,9 +89,11 @@ def find_time_of(failure, pattern, default=None):
         
 def parse_runtime(failure):
     log_path = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
-    assert os.path.exists(log_path)        
+    if not os.path.exists(log_path):
+        print "WARNING: could not parse runtime of failure %s due to missing vdb.log file."
+        return 0
+
     linez = open(log_path).readlines()
-    
     start = find_time_of(failure, "Oracle::ask\(\)")
     if not start:
         start = 0 
@@ -97,8 +107,9 @@ def parse_runtime(failure):
         return 3600 - start
     
     
-def copy_file(source, target, strip_header=False):
-    print source,target
+def copy_file(source, target, strip_header=False, verbose=True):
+    if verbose:
+        print source,target
     parts = target.split("/")
     for i in range(1,len(parts)):
         dir = "/".join(parts[:i])

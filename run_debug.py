@@ -35,6 +35,18 @@ def run_debug(name, timeout=60*60*24, verbose=False):
     return True 
     
     
+def parse_pre_runtime(name):
+    log_file = "onpoint-cmd-%s.log" %(name)
+    if not os.path.exists(log_file):
+        return 0 
+    log = open(log_file).read()
+    m = re.search(r".*\((\d+):(\d+):(\d+)\) ## Running VDB\.\.\.", log, flags=re.DOTALL)
+    if m:
+        return 3600*int(m.group(1)) + 60*int(m.group(2)) + int(m.group(3))
+    else:
+        return 0 
+    
+    
 def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guidance_method=None, 
     timeout=3600, pass_timeout=4000, verbose=False):
     if not os.path.exists(base_name+".template"):
@@ -54,7 +66,8 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         os.chdir(orig_dir)  
         return success
     
-    else:               
+    else:         
+        print base_name, new_name
         if guidance_method is not None:
             assert os.system("cp %s_input_embeddings.txt input_embeddings.txt" %(base_name)) == 0
             assert os.system("cp %s_output_embeddings.txt output_embeddings.txt" %(base_name)) == 0
@@ -69,7 +82,11 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
         general_options = VDB_OPTIONS + " --solver-cpu-limit=%i" %(pass_timeout)
         utils.write_template(new_name+".template", "GENERAL_OPTIONS=", "GENERAL_OPTIONS=\"%s\"" %(general_options))
     
-        success = run_debug(new_name, timeout=timeout, verbose=verbose)
+        pre_runtime = parse_pre_runtime(base_name)
+        if verbose:
+            print "Adding %i seconds for pre-vdb operations" %(pre_runtime)
+        
+        success = run_debug(new_name, timeout=timeout+pre_runtime, verbose=verbose)
         if not success:
             os.chdir(orig_dir) 
             return False

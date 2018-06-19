@@ -16,7 +16,7 @@ def find_failure(failure, all_failurez):
 def main(args):
     # TODO: add options for running debug with suspect prediction 
     unsuccessful = []
-    all_failurez = utils.find_all_failures(args.design, include_failed=True)
+    all_failurez = utils.find_all_failures(args.design, include_failed=False)
     if args.start is not None:
         start = find_failure(args.start, all_failurez)
     else:
@@ -33,10 +33,11 @@ def main(args):
         if args.new_suffix is None:
             success = run_debug.main(failure, verbose=args.verbose)
         else:
-            runtime = utils.parse_runtime(failure)
-            if runtime < args.min_runtime:
-                print "Ignoring failure %s, runtime is too short" %(failure)
-                continue
+            if args.min_runtime > 0:
+                runtime = utils.parse_runtime(failure)
+                if runtime < args.min_runtime:
+                    print "Ignoring failure %s, runtime is too short" %(failure)
+                    continue
             success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, args.aggressiveness, 
                 guidance_method=args.method, timeout=args.timeout, pass_timeout=args.pass_timeout, verbose=args.verbose)
         
