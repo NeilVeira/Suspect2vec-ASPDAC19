@@ -217,7 +217,10 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         
     base_suspectz = utils.parse_suspects(base_failure)
     new_suspectz = utils.parse_suspects(new_failure)
-    recall = len(new_suspectz)/float(len(base_suspectz))
+    if len(base_suspectz) > 0:
+        recall = len(new_suspectz)/float(len(base_suspectz))
+    else:
+        recall = np.nan
     # assert len(base_suspectz) <= len(new_suspectz), \
         # "Base failure found %i suspects while new found %i" %(len(base_suspectz), len(new_suspectz))        
         

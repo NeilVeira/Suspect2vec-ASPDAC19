@@ -54,12 +54,14 @@ def find_all_failures(dir, include_failed=False):
 def parse_suspects(failure):
     cache_path = os.path.join(failure+".vennsawork", "suspect_cache.txt")
     stdb_path = os.path.join(failure+".vennsawork","vennsa.stdb.gz")
-    if os.path.exists(cache_path) and os.path.getmtime(cache_path) > os.path.getmtime(stdb_path):
+    if os.path.exists(cache_path) and os.path.exists(stdb_path) and  os.path.getmtime(cache_path) > os.path.getmtime(stdb_path):
         report = open(cache_path).read()
-    else:
+    elif os.path.exists(stdb_path):
         report, _ = run("stdb %s report" %(stdb_path))
         with open(cache_path,"w") as f:
             f.write(report)
+    else:
+        return []
     
     suspectz = []
     for suspect_parse in re.findall(r"rtl\s+([\w/]+)\s+(\w+)\s+([\w\./]+)\s+([\d\.]+)\s+([\d\.]+)", report, flags=re.DOTALL):
