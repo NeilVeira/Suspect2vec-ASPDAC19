@@ -191,7 +191,7 @@ def plot_recall_vs_time(all_points, color='r', label=None, outfile=None):
     plt.xlabel("Relative runtime")
     plt.ylabel("Recall")
     plt.xlim((0,1))
-    plt.ylim((0,1))
+    plt.ylim((-0.05,1.05))
     plt.legend(loc="upper left")
     if outfile:
         plt.savefig(outfile)
@@ -211,7 +211,7 @@ def plot_improvements(outfile, recall_auc_improvementz):
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
     if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
         print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
-        return None,None,None
+        return None,None,None,None
     elif verbose:
         print "Analyzing",new_failure
         
@@ -227,7 +227,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
         print "Skipping failure %s due to short runtime" %(new_failure)
-        return None,None,None
+        return None,None,None,None
     new_runtime = utils.parse_runtime(new_failure)
     speedup = new_runtime / base_runtime 
     
@@ -279,7 +279,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         print "Peak memory reduction: %.3f" %(mem_reduce)
         print ""
         
-    return recall_auc_improvement, base_points, new_points
+    return recall_auc_improvement, speedup, base_points, new_points
   
   
 def main(args):
@@ -310,13 +310,15 @@ def main(args):
         all_base_points = []
         all_new_points = []
         recall_auc_improvementz = []
+        speedupz = []
         
         for failure in all_failurez: 
-            recall_auc_improvement, base_points, new_points = assumption_analysis(failure+args.base_suffix, failure+args.new_suffix, 
+            recall_auc_improvement, speedup, base_points, new_points = assumption_analysis(failure+args.base_suffix, failure+args.new_suffix, 
                 verbose=args.verbose, min_runtime=args.min_runtime)
             
             if recall_auc_improvement is not None:
-                recall_auc_improvementz.append(recall_auc_improvement)                
+                recall_auc_improvementz.append(recall_auc_improvement)
+                speedupz.append(speedup)
                 all_base_points.append(base_points)
                 all_new_points.append(new_points)
 
@@ -336,9 +338,8 @@ def main(args):
             plot_recall_vs_time(all_new_points, color='b', label="new", outfile=outfile) 
             plot_improvements("plots/%s_improvements.png" %(design), recall_auc_improvementz)
 
-        print "Arithmetic mean recall auc improvement: %.3f" %(np.mean(recall_auc_improvementz))
-        print "Median recall auc improvement: %.3f" %(np.median(recall_auc_improvementz))
-        print "Geometric mean recall auc improvement: %.3f" %(gmean(recall_auc_improvementz))
+        print "Geometric mean recall auc improvement (%i failures): %.3f" %(len(recall_auc_improvementz),gmean(recall_auc_improvementz))
+        print "Geometric mean relative runtime: %.3f" %(gmean(speedupz))
         
     elif analysis_method == 1:
         recalls = []

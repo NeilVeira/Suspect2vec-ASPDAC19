@@ -28,7 +28,6 @@ def main(args):
         
     for i in range(start,stop+1):
         failure = all_failurez[i]
-        name = os.path.basename(failure)
         print failure
         if args.new_suffix is None:
             success = run_debug.main(failure, verbose=args.verbose)
@@ -38,7 +37,7 @@ def main(args):
                 if runtime < args.min_runtime:
                     print "Ignoring failure %s, runtime is too short" %(failure)
                     continue
-            success = run_debug.main(failure, name+args.new_suffix, args.min_suspects, args.aggressiveness, 
+            success = run_debug.main(failure, failure+args.new_suffix, args.min_suspects, args.aggressiveness, 
                 guidance_method=args.method, timeout=args.timeout, pass_timeout=args.pass_timeout, verbose=args.verbose)
         
         if not success:

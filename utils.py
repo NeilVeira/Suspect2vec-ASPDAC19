@@ -98,7 +98,9 @@ def parse_runtime(failure):
     linez = open(log_path).readlines()
     start = find_time_of(failure, "Oracle::ask\(\)")
     if not start:
-        start = 0 
+        start = find_time_of(failure, "OracleSolver::solveAll\(\)")
+        if not start:
+            start = 0 
     
     end = find_time_of(failure, "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  VDB Process Ends  \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*")
     if end:

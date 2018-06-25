@@ -55,6 +55,7 @@ def main(base_name, new_name=None, min_suspects=999999, aggressiveness=0.5, guid
     orig_dir = os.getcwd()
     os.chdir(dir)
     base_name = os.path.basename(base_name)
+    new_name = os.path.basename(new_name)
 
     with open("args.txt","w") as f:
         f.write("%i\n" %(min_suspects))
