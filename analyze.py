@@ -8,6 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.pylab
 from matplotlib import gridspec
+from matplotlib.font_manager import FontProperties
 
 import utils 
 
@@ -177,19 +178,37 @@ def interpolate_value(points, x):
             return points[i][1]
     return points[-1][1]
 
-def plot_recall_vs_time(all_points, color='r', label=None, outfile=None):
+def plot_recall_vs_time(base_points, new_points, outfile=None):
     n_points = 101
     x = np.linspace(0,1,n_points)
-    y = []
+    y_base = []
+    y_new = []
     for i in range(len(x)):
         ys = []
-        for points in all_points:
+        for points in base_points:
             ys.append(interpolate_value(points,x[i]))
-        y.append(np.mean(ys))
+        y_base.append(np.mean(ys))
+        ys = []
+        for points in new_points:
+            ys.append(interpolate_value(points,x[i]))
+        y_new.append(np.mean(ys))
     
-    plt.plot(x, y, color=color, label=label)
-    plt.xlabel("Relative runtime")
-    plt.ylabel("Recall")
+    plt.clf()
+    plt.plot(x, y_base, color='r', label="baseline debug", linestyle="--", linewidth=3)
+    plt.plot(x, y_new, color='b', label="directed debug", linewidth=2)
+    plt.fill_between(x, np.zeros(len(x)), y_base, color="r", alpha=0.5)
+    plt.fill_between(x, y_base, y_new, color="b", alpha=0.25)
+
+    if len(base_points) == 1:
+        R_base = auc_recall_time(base_points[0])
+        R_new = auc_recall_time(new_points[0])
+        font = FontProperties()
+        font.set_weight("heavy")
+        plt.text(0.7, 0.3, "$R_{base}=%.3f$" %(R_base), fontsize=18, weight="heavy")
+        plt.text(0.56, 0.6, "$R'=%.3f$" %(R_new), fontsize=18, weight="heavy")
+
+    plt.xlabel("Relative runtime", fontsize=14)
+    plt.ylabel("Suspect recall", fontsize=14)
     plt.xlim((0,1))
     plt.ylim((-0.05,1.05))
     plt.legend(loc="upper left")
@@ -324,8 +343,7 @@ def main(args):
 
                 if args.plot_individual:
                     outfile = "plots/%s_recall_vs_time.png" %(failure.replace("/","_"))
-                    plot_recall_vs_time([base_points], color='r', label="base")
-                    plot_recall_vs_time([new_points], color='b', label="new", outfile=outfile)
+                    plot_recall_vs_time([base_points], [new_points], outfile=outfile)
                     plt.clf()
                 
         if args.plot:   
@@ -334,8 +352,7 @@ def main(args):
             else:
                 design = args.failure.rstrip("/").replace("/","_")
             outfile = "plots/%s_recall_vs_time.png" %(design)
-            plot_recall_vs_time(all_base_points, color='r', label="base")
-            plot_recall_vs_time(all_new_points, color='b', label="new", outfile=outfile) 
+            plot_recall_vs_time(all_base_points, all_new_points, outfile=outfile)
             plot_improvements("plots/%s_improvements.png" %(design), recall_auc_improvementz)
 
         print "Geometric mean recall auc improvement (%i failures): %.3f" %(len(recall_auc_improvementz),gmean(recall_auc_improvementz))
