@@ -9,20 +9,18 @@ warnings.filterwarnings('ignore')
     
 class Suspect2Vec(object):
 
-    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None, train=0, verbose=False):
+    def __init__(self, dim=20, epochs=4000, eta=0.01, lambd=None, verbose=False):
         '''
         parameters:
             dim: dimension of embeddings 
             epochs: Number of training epochs 
             eta: learning rate 
-            train: Training scheme (0 for suspect subset, 1 for single suspects)
             lambd: regularization coefficient. If none do parameter search on validation data.             
         '''
         self._dim = dim 
         self._epochs = epochs 
         self._eta = eta 
         self._lambd = lambd 
-        self._train = train
         self._dir_path = os.path.dirname(os.path.realpath(__file__))
         self._verbose = verbose 
         
@@ -34,7 +32,7 @@ class Suspect2Vec(object):
             for row in one_hot_data:
                 f.write(" ".join(map(str,map(int,row)))+"\n")
         
-        params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim, "train":self._train}
+        params = {"epochs":self._epochs, "eta":self._eta, "lambd":self._lambd, "dim":self._dim}
         for key in args:
             params[key] = args[key]
         cmd = "%s -in in.txt -out out.txt" %(os.path.join(self._dir_path,"suspect2vec"))
@@ -64,8 +62,6 @@ class Suspect2Vec(object):
             sample = [self.suspect_union[s] for s in sample]
             pred = self.predict(sample)
             pred = [self.suspect2id[s] for s in pred]
-            # print(pred)
-            # print(sample)
             pred_1hot = np.zeros(len(self.one_hot_data[0]), dtype=np.bool_)
             pred_1hot[pred] = 1 
             metrics = sklearn.metrics.precision_recall_fscore_support(self.one_hot_data[idx], pred_1hot, labels=[0,1])

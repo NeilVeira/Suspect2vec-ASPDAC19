@@ -18,7 +18,6 @@ char infile[MAX_STRING], outfile[MAX_STRING];
 
 int epochs = 2000, dim = 20;
 float eta = 0.01, lambd = 0.1;
-int train_alg = 0;
 
 float rand_float() {
 	return (float)rand() / (float)RAND_MAX;
@@ -48,65 +47,6 @@ void generate_sample(int i, int n)
             cnt += sample[j];
         }
     } while (cnt == 0);
-}
-
-void train_sg(int m, int n)
-{
-    int iter,i,j1,j2,k;   
-    float score;
-    int label;
-    float loss, acc;
-    int cnt;
-
-    vector<pair<int,int> > trains;
-    for (i=0; i<m; i++) {
-        for (j1=0; j1<n; j1++) if (data[i][j1]) {
-            trains.push_back(make_pair(i,j1));
-        }
-    }
-    random_shuffle(trains.begin(),trains.end());
-    
-    for (iter=0; iter<epochs; iter++) {
-        loss = 0, acc = 0, cnt = 0;
-        for (pair<int,int> p : trains) {
-            i = p.first, j1 = p.second;
-            for (k=0; k<dim; k++)
-                update[k] = 0;
-            
-            for (j2=0; j2<n; j2++) {
-                score = 0;
-                for (k=0; k<dim; k++)
-                    score += embed_in[j1][k] * embed_out[j2][k];
-                score = sigmoid(score);
-                label = data[i][j2];                
-                for (k=0; k<dim; k++) {
-                    update[k] += embed_out[j2][k] * (label-score);
-                    embed_out[j2][k] += eta * (embed_in[j1][k] * (label-score) - lambd*embed_out[j2][k]);
-                }
-                acc += (score>0.5) == label;
-                if (label)
-                    loss -= log(score);
-                else 
-                    loss -= log(1-score);
-                cnt++;
-            }
-            for (k=0; k<dim; k++)
-                embed_in[j1][k] += update[k] * eta - lambd * embed_in[j1][k];    
-        }
-        if (iter%10 == 0) {
-            printf("Epoch %d loss: %.4f\n",iter+1,loss/cnt);
-            printf("accuracy: %.4f\n",acc/cnt);
-            float mean_mag2 = 0;
-            for (j1=0; j1<n; j1++) {
-                for (k=0; k<dim; k++)
-                    mean_mag2 += embed_in[j1][k]*embed_in[j1][k];                
-            }
-            mean_mag2 /= n;
-            printf("Mean squared vector magnitude: %f\n",mean_mag2);
-        }
-        //assert(!isnan(loss));
-        //assert(!isinf(loss));
-    }
 }
 
 void train(int m, int n)
@@ -204,8 +144,6 @@ int main(int argc, char **argv) {
 		printf("\t\tLearning rate\n");
 		printf("\t-lambd <float>\n");
 		printf("\t\tRegularization term\n");
-        printf("\t-train <int>\n");
-        printf("\t\tTraining scheme (0 for suspect subset, 1 for single suspects)\n");
 		return 0;
 	}
 
@@ -215,7 +153,6 @@ int main(int argc, char **argv) {
 	if ((i = ArgPos((char *)"-dim", argc, argv)) > 0) dim = atoi(argv[i + 1]);
 	if ((i = ArgPos((char *)"-eta", argc, argv)) > 0) eta = atof(argv[i + 1]);
 	if ((i = ArgPos((char *)"-lambd", argc, argv)) > 0) lambd = atof(argv[i + 1]);
-    if ((i = ArgPos((char *)"-train", argc, argv)) > 0) train_alg = atoi(argv[i + 1]);
 
 	srand(0);
 
@@ -248,11 +185,8 @@ int main(int argc, char **argv) {
 		}
 	}
 
-	init_embeddings(n);    
-    if (train_alg == 0)
-        train(m,n);
-    else
-        train_sg(m,n);
+	init_embeddings(n);  
+    train(m,n);
     
     // write embeddings to output     
     for (j=0; j<n; j++) {

@@ -6,7 +6,12 @@ import pandas as pd
 import collections
 
 def process_arg(arg):
-    return map(eval,arg.split(","))
+    args = arg.split(",")
+    try:
+        return map(eval,args)
+    except:
+        # keep as str 
+        return args 
     
 def find_result(data, metric, sample_size, sample_type, fold, dim, lambd):
     # print sample_size,sample_type,fold,dim,lambd
@@ -24,19 +29,19 @@ def find_result(data, metric, sample_size, sample_type, fold, dim, lambd):
             
             
 def print_result(resultx, sample_size, sample_type, fold, dim, lambd):
-    print "Sample size:    ",sample_size 
-    print "Sample type:    ",sample_type 
-    print "Folds:          ",fold 
-    print "Dimension:      ",dim 
-    print "Regularization: ",lambd 
-    print "design        DATE       suspect2vec"
+    print "Sample size:     ",sample_size 
+    print "Sample type:     ",sample_type 
+    print "Folds:           ",fold 
+    print "Dimension:       ",dim 
+    print "Regularization:  ",lambd 
+    print "design            DATE       suspect2vec"
     datez = []
     suspect2vecz = []
-    for design in resultx:
-        print "%s%.3f      %.3f" %(design.ljust(14),resultx[design]["DATE"], resultx[design]["suspect2vec"])
+    for design in sorted(resultx):
+        print "%s%.3f      %.3f" %(design.ljust(18),resultx[design]["DATE"], resultx[design]["suspect2vec"])
         datez.append(resultx[design]["DATE"])
         suspect2vecz.append(resultx[design]["suspect2vec"])
-    print "Mean          %.3f      %.3f" %(np.mean(datez),np.mean(suspect2vecz))
+    print "Mean              %.3f      %.3f" %(np.mean(datez),np.mean(suspect2vecz))
     print ""
 
 def main(args):   
