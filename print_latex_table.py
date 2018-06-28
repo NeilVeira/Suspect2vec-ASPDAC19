@@ -63,6 +63,6 @@ for i in range(len(table)):
 		strs.append("%.3f" %(table[i][j]))
 	if i == len(rows)-1:
 		print "\\hline"
-	row = " & ".join(strs).replace("_","\"") + "\\\\"
+	row = " & ".join(strs).replace("_","\_") + "\\\\"
 	print(row)
 
