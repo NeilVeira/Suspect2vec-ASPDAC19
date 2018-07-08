@@ -194,8 +194,8 @@ def plot_recall_vs_time(base_points, new_points, outfile=None):
         y_new.append(np.mean(ys))
     
     plt.clf()
-    plt.plot(x, y_base, color='r', label="baseline debug", linestyle="--", linewidth=3)
-    plt.plot(x, y_new, color='b', label="directed debug", linewidth=2)
+    plt.plot(x, y_base, color='r', label="Baseline debug", linestyle="--", linewidth=3)
+    plt.plot(x, y_new, color='b', label="Directed debug", linewidth=2)
     plt.fill_between(x, np.zeros(len(x)), y_base, color="r", alpha=0.5)
     plt.fill_between(x, y_base, y_new, color="b", alpha=0.25)
 
@@ -205,7 +205,7 @@ def plot_recall_vs_time(base_points, new_points, outfile=None):
         font = FontProperties()
         font.set_weight("heavy")
         plt.text(0.7, 0.3, "$R_{base}=%.3f$" %(R_base), fontsize=18, weight="heavy")
-        plt.text(0.56, 0.6, "$R'=%.3f$" %(R_new), fontsize=18, weight="heavy")
+        plt.text(0.57, 0.68, "$R_{new}=%.3f$" %(R_new), fontsize=18, weight="heavy")
 
     plt.xlabel("Relative runtime", fontsize=14)
     plt.ylabel("Suspect recall", fontsize=14)

@@ -7,16 +7,16 @@ import collections
 
 data = pd.read_csv("raw_results.csv",index_col=0).replace(np.nan,"")   
 
-str_table = '''aemb  & 20266 & 29 & 592 & 
-divider  & 10201 & 71 & 153 & 
-ethernet  & 45120 & 66 & 533 & 
-fdct  & 546765 & 27 & 617 & 
-fpu  & 82888 & 27 & 367 & 
+str_table = '''aemb  & 20603 & 29 & 592 & 
+divider  & 10334 & 71 & 153 & 
+ethernet  & 82803 & 66 & 533 & 
+fdct  & 546878 & 27 & 617 & 
+fpu  & 82938 & 27 & 367 & 
 mips789  & 55248 & 68 & 1143 & 
-rsdecoder  & 14842 & 72 & 1415 & 
+rsdecoder  & 14890 & 72 & 1415 & 
 scam_core & 1315446 & 66 & 444  & 
-spi  & 2528 & 60 & 242 & 
-vga  & 60533 & 38 & 933 & 
+spi  & 2536 & 60 & 242 & 
+vga  & 44579 & 38 & 933 & 
 mean  &   &   &   & '''
 
 table = [[0]*16 for i in range(11)]
