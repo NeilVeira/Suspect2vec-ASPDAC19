@@ -1,1 +1,0 @@
-../../tb/sync_check.v

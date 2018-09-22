@@ -1,1 +1,0 @@
-../../../sva/include/func.sv

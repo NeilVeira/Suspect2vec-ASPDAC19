@@ -1,1 +1,0 @@
-../../tb/bench_top.v

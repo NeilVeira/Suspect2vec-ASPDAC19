@@ -1,1 +1,0 @@
-../../sva/spi_top.sv

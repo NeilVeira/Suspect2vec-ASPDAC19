@@ -1,1 +1,0 @@
-../../tb/tb_ethernet.v

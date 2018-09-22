@@ -1,1 +1,0 @@
-../../tb/wb_slv_model.v

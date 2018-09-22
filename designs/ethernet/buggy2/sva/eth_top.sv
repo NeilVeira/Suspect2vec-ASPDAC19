@@ -1,1 +1,0 @@
-../../sva/eth_top.sv

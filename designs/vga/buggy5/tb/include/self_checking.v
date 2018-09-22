@@ -1,1 +1,0 @@
-../../../tb/include/self_checking.v
