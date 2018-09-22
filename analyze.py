@@ -25,83 +25,7 @@ def parse_peak_memory(failure):
             mem = int(m.group(3))
             peak_mem = max(peak_mem,mem)
     return peak_mem
-    
 
-def blocking_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
-    if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
-        print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
-        return None,None,None,None,None 
-    if verbose:
-        print "Analyzing",new_failure
-        
-    base_suspectz = utils.parse_suspects(base_failure)
-    new_suspectz = utils.parse_suspects(new_failure)
-    recall = len(new_suspectz)/float(len(base_suspectz))
-    
-    # analyze runtime speedup
-    base_runtime = utils.parse_runtime(base_failure)
-    if base_runtime < min_runtime:
-        print "Skipping failure %s due to short runtime" %(new_failure)
-        return None,None,None,None,None 
-    new_runtime = utils.parse_runtime(new_failure)
-    speedup = new_runtime / base_runtime 
-            
-    # Parse logs to find which suspects were blocked. 
-    log_file = os.path.join(new_failure+".vennsawork","logs","vdb","vdb.log")
-    log = open(log_file).readlines()
-    blocked = []
-    total_suspects = 0
-    suspect_union = set([])
-    for line in log:
-        m = re.search(r"Predicting not suspect (\S+)\s", line)
-        if m:
-            blocked.append(m.group(1))
-        m = re.search(r"## suspect: (\S+), output\(s\): \d+, literal: \d+", line)
-        if m:
-            suspect_union.add(m.group(1))
-    
-    # analyze peak memory usage
-    base_mem = parse_peak_memory(base_failure)
-    new_mem = parse_peak_memory(new_failure)
-    mem_reduce = new_mem / float(base_mem)
-    
-    # Sanity checking
-    # Make sure that adding constraints didn't somehow result in new suspects. 
-    # This condition means 100% prediction precision.
-    # for s in new_suspectz:
-        # assert s in base_suspectz, "new suspect %s found with blocking" %(s)
-        
-    # Make sure that all blocked suspects were missed
-    blocked_true = 0
-    for s in blocked:
-        if s in base_suspectz:
-            blocked_true += 1
-        #assert s not in new_suspectz, "solver found suspect %s which was supposed to be blocked" %(s)
-    block_recall = (len(base_suspectz)-blocked_true)/float(len(base_suspectz))
-    
-    if len(blocked) == 0:
-        # assert len(base_suspectz) < 20
-        block_acc = None 
-    else:
-        block_acc = 1 - blocked_true/float(len(blocked))
-    
-    # Make sure that all missing suspects were in fact blocked - no other suspects were missed 
-    # for s in base_suspectz:
-        # if s not in new_suspectz:
-            # assert s in blocked, "solver did not find suspect %s which was not supposed to be blocked" %(s)
-    
-    if verbose:
-        print "Number of true suspects: %i" %(len(base_suspectz))
-        print "Number of found suspects: %i (recall %.3f)" %(len(new_suspectz), recall)
-        print "Number of blocked suspects: %i out of %i" %(len(blocked),len(suspect_union))
-        print "Relative runtime: %.3f" %(speedup)
-        print "Peak memory reduction: %.3f" %(mem_reduce)    
-        print "Recall directly due to blocked suspects: %.3f" %(block_recall)
-        print "Block prediction accuracy: %s" %(block_acc)
-        print ""
-            
-    return recall, speedup, mem_reduce, block_recall, block_acc
-    
     
 def recall_vs_time_single(failure):
     log_file = os.path.join(failure+".vennsawork","logs","vdb","vdb.log")
@@ -193,11 +117,15 @@ def plot_recall_vs_time(base_points, new_points, outfile=None):
             ys.append(interpolate_value(points,x[i]))
         y_new.append(np.mean(ys))
     
+    c1 = [_/255.0 for _ in (31, 119, 180)]
+    c2 = [_/255.0 for _ in (255, 127, 14)]
+    # c1 = "r" 
+    # c2 = "b"
     plt.clf()
-    plt.plot(x, y_base, color='r', label="Baseline debug", linestyle="--", linewidth=3)
-    plt.plot(x, y_new, color='b', label="Directed debug", linewidth=2)
-    plt.fill_between(x, np.zeros(len(x)), y_base, color="r", alpha=0.5)
-    plt.fill_between(x, y_base, y_new, color="b", alpha=0.25)
+    plt.plot(x, y_base, color=c1, label="baseline debug", linestyle="--", linewidth=3)
+    plt.plot(x, y_new, color=c2, label="directed debug", linewidth=2)
+    plt.fill_between(x, np.zeros(len(x)), y_base, color=c1, alpha=0.5)
+    plt.fill_between(x, y_base, y_new, color=c2, alpha=0.25)
 
     if len(base_points) == 1:
         R_base = auc_recall_time(base_points[0])
@@ -205,7 +133,7 @@ def plot_recall_vs_time(base_points, new_points, outfile=None):
         font = FontProperties()
         font.set_weight("heavy")
         plt.text(0.7, 0.3, "$R_{base}=%.3f$" %(R_base), fontsize=18, weight="heavy")
-        plt.text(0.57, 0.68, "$R_{new}=%.3f$" %(R_new), fontsize=18, weight="heavy")
+        plt.text(0.56, 0.6, "$R'=%.3f$" %(R_new), fontsize=18, weight="heavy")
 
     plt.xlabel("Relative runtime", fontsize=14)
     plt.ylabel("Suspect recall", fontsize=14)
@@ -230,7 +158,7 @@ def plot_improvements(outfile, recall_auc_improvementz):
 def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0):
     if not os.path.exists(new_failure+".vennsawork/logs/vdb/vdb.log"):
         print "Skipping failure %s as it appears to have failed or not been run." %(new_failure)
-        return None,None,None,None
+        return None,None,None,None,None
     elif verbose:
         print "Analyzing",new_failure
         
@@ -246,7 +174,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
     base_runtime = utils.parse_runtime(base_failure)
     if base_runtime < min_runtime:
         print "Skipping failure %s due to short runtime" %(new_failure)
-        return None,None,None,None
+        return None,None,None,None,None
     new_runtime = utils.parse_runtime(new_failure)
     speedup = new_runtime / base_runtime 
     
@@ -289,6 +217,8 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
     new_recall_auc = auc_recall_time(new_points)
     recall_auc_improvement = new_recall_auc / base_recall_auc
     
+    runs_finished = np.array([utils.parse_run_finished(base_failure), utils.parse_run_finished(new_failure)], dtype=np.int32)
+    
     if verbose:
         print "Number of true suspects: %i" %(len(base_suspectz))
         print "Number of found suspects: %i (recall %.3f)" %(len(new_suspectz), recall)
@@ -298,7 +228,7 @@ def assumption_analysis(base_failure, new_failure, verbose=False, min_runtime=0)
         print "Peak memory reduction: %.3f" %(mem_reduce)
         print ""
         
-    return recall_auc_improvement, speedup, base_points, new_points
+    return recall_auc_improvement, speedup, base_points, new_points, runs_finished
   
   
 def main(args):
@@ -306,86 +236,44 @@ def main(args):
         all_failurez = utils.find_all_failures(args.design)
     else:
         assert args.failure 
-        all_failurez = [args.failure]
+        all_failurez = [args.failure]    
     
-   
-    analysis_method = args.method 
-    if analysis_method == -1:        
-        # infer best method 
-        for f in all_failurez:
-            log_file = f + args.new_suffix + ".vennsawork/logs/vdb/vdb.log"
-            if os.path.exists(log_file):
-                log = open(log_file).read()
-                m = re.search(r"Guidance method = (\d+)", log)
-                guidance_method = int(m.group(1)) if m else 0 
-                if guidance_method in [2,3,4,5]:
-                    analysis_method = 0 
-                    break
-                elif guidance_method in [1]:
-                    analysis_method = 1  
-                    break       
+    all_base_points = []
+    all_new_points = []
+    recall_auc_improvementz = []
+    speedupz = []
+    tot_runs_finished = np.zeros(2, dtype=np.int32)
     
-    if analysis_method == 0:
-        all_base_points = []
-        all_new_points = []
-        recall_auc_improvementz = []
-        speedupz = []
+    for failure in all_failurez: 
+        recall_auc_improvement, speedup, base_points, new_points, runs_finished = assumption_analysis(failure+args.base_suffix, 
+            failure+args.new_suffix, verbose=args.verbose, min_runtime=args.min_runtime)
         
-        for failure in all_failurez: 
-            recall_auc_improvement, speedup, base_points, new_points = assumption_analysis(failure+args.base_suffix, failure+args.new_suffix, 
-                verbose=args.verbose, min_runtime=args.min_runtime)
-            
-            if recall_auc_improvement is not None:
-                recall_auc_improvementz.append(recall_auc_improvement)
+        if recall_auc_improvement is not None:
+            tot_runs_finished += runs_finished 
+            recall_auc_improvementz.append(recall_auc_improvement)
+            if runs_finished[0] and runs_finished[1]:
                 speedupz.append(speedup)
-                all_base_points.append(base_points)
-                all_new_points.append(new_points)
+            all_base_points.append(base_points)
+            all_new_points.append(new_points)
 
-                if args.plot_individual:
-                    outfile = "plots/%s_recall_vs_time.png" %(failure.replace("/","_"))
-                    plot_recall_vs_time([base_points], [new_points], outfile=outfile)
-                    plt.clf()
-                
-        if args.plot:   
-            if args.design:
-                design = os.path.basename(args.design)
-            else:
-                design = args.failure.rstrip("/").replace("/","_")
-            outfile = "plots/%s_recall_vs_time.png" %(design)
-            plot_recall_vs_time(all_base_points, all_new_points, outfile=outfile)
-            plot_improvements("plots/%s_improvements.png" %(design), recall_auc_improvementz)
+            if args.plot_individual:
+                outfile = "plots/%s_recall_vs_time.png" %(failure.replace("/","_"))
+                plot_recall_vs_time([base_points], [new_points], outfile=outfile)
+                plt.clf()
+            
+    if args.plot:   
+        if args.design:
+            design = os.path.basename(args.design)
+        else:
+            design = args.failure.rstrip("/").replace("/","_")
+        outfile = "plots/%s_recall_vs_time.png" %(design)
+        plot_recall_vs_time(all_base_points, all_new_points, outfile=outfile)
+        plot_improvements("plots/%s_improvements.png" %(design), recall_auc_improvementz)
 
-        print "Geometric mean recall auc improvement (%i failures): %.3f" %(len(recall_auc_improvementz),gmean(recall_auc_improvementz))
-        print "Geometric mean relative runtime: %.3f" %(gmean(speedupz))
-        
-    elif analysis_method == 1:
-        recalls = []
-        speedups = []
-        mem_reductions = []
-        block_recalls = []
-        block_accs = []
-        
-        for failure in all_failurez: 
-            recall, speedup, mem_reduce, block_recall, block_acc = blocking_analysis(failure+args.base_suffix, failure+args.new_suffix, 
-                verbose=args.verbose, min_runtime = args.min_runtime)
-                
-            if recall is not None:
-                recalls.append(recall)
-                speedups.append(speedup)
-                mem_reductions.append(mem_reduce)
-                block_recalls.append(block_recall)
-                if block_acc is not None:
-                    block_accs.append(block_acc)    
-                
-        print ""
-        print "Mean recall: %.3f" %(np.mean(recalls))
-        print "Mean speedup: %.3f" %(gmean(speedups))
-        print "Mean memory reduction: %.3f" %(gmean(mem_reductions))
-        print "Recall directly due to blocked suspects: %.3f" %(np.mean(block_recalls))
-        print "Block prediction accuracy: %.3f" %(np.mean(block_accs))
-
-    else:
-        raise ValueError("Can't determine analysis method to use.")
+    print "Geometric mean recall auc improvement (%i failures): %.3f" %(len(recall_auc_improvementz),gmean(recall_auc_improvementz))
+    print "Geometric mean relative runtime: %.3f" %(gmean(speedupz))
+    print "Number of failures solved (base): %i/%i" %(tot_runs_finished[0],len(recall_auc_improvementz))
+    print "Number of failures solved (new): %i/%i" %(tot_runs_finished[1],len(recall_auc_improvementz))
     
     
 def init(parser):
@@ -394,9 +282,6 @@ def init(parser):
     parser.add_argument("--design", help="Design to analyze.")
     parser.add_argument("--failure", help="Analyze a single failure (base name).")    
     parser.add_argument("--min_runtime", type=int, default=0, help="Exclude designs with runtime less than this.")
-    parser.add_argument("--method", default=-1, type=int, help="Type of analysis to perform. 0 for area under the " \
-                        "recall-time curve; 1 for separate recall and time. If not specified, tries to infer the " \
-                        "best method from the debug logs. ")
     parser.add_argument("-p", "--plot", action="store_true", default=False, help="Generate recall-time plot aggregated over all failures.")
     parser.add_argument("-pi", "--plot_individual", action="store_true", default=False, 
                         help="Generate recall-time plot for individual failrues")
