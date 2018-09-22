@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////////
 ////                                                             ////
-////  WISHBONE rev.B2 compliant enhanced VGA/LCD Core            ////
-////  Defines file                                               ////
+////  WISHBONE rev.B2 compliant VGA/LCD Core; Timing Generator   ////
+////  Horizontal and Vertical Timing Generator                   ////
 ////                                                             ////
 ////  Author: Richard Herveille                                  ////
 ////          richard@asics.ws                                   ////
@@ -11,8 +11,8 @@
 ////                                                             ////
 /////////////////////////////////////////////////////////////////////
 ////                                                             ////
-//// Copyright (C) 2001, 2002 Richard Herveille                  ////
-////                          richard@asics.ws                   ////
+//// Copyright (C) 2001 Richard Herveille                        ////
+////                    richard@asics.ws                         ////
 ////                                                             ////
 //// This source file may be used and distributed without        ////
 //// restriction provided that this copyright statement is not   ////
@@ -37,66 +37,108 @@
 
 //  CVS Log
 //
-//  $Id: vga_defines.v,v 1.6 2003/08/01 11:46:38 rherveille Exp $
+//  $Id: vga_tgen.v,v 1.5 2003/05/07 09:48:54 rherveille Exp $
 //
-//  $Date: 2003/08/01 11:46:38 $
-//  $Revision: 1.6 $
+//  $Date: 2003/05/07 09:48:54 $
+//  $Revision: 1.5 $
 //  $Author: rherveille $
 //  $Locker:  $
 //  $State: Exp $
 //
 // Change History:
-//               $Log: vga_defines.v,v $
-//               Revision 1.6  2003/08/01 11:46:38  rherveille
-//               1) Rewrote vga_fifo_dc. It now uses gray codes and a more elaborate anti-metastability scheme.
-//               2) Changed top level and pixel generator to reflect changes in the fifo.
-//               3) Changed a bug in vga_fifo.
-//               4) Changed pixel generator and wishbone master to reflect changes.
-//
+//               $Log: vga_tgen.v,v $
 //               Revision 1.5  2003/05/07 09:48:54  rherveille
 //               Fixed some Wishbone RevB.3 related bugs.
 //               Changed layout of the core. Blocks are located more logically now.
 //               Started work on a dual clocked/double edge 12bit output. Commonly used by external devices like DVI transmitters.
 //
-//               Revision 1.4  2002/02/07 05:42:10  rherveille
-//               Fixed some bugs discovered by modified testbench
-//               Removed / Changed some strange logic constructions
-//               Started work on hardware cursor support (not finished yet)
-//               Changed top-level name to vga_enh_top.v
+//               Revision 1.4  2002/01/28 03:47:16  rherveille
+//               Changed counter-library.
+//               Changed vga-core.
+//               Added 32bpp mode.
 //
 
+//synopsys translate_off
+`include "timescale.v"
+//synopsys translate_on
 
-////////////////////////
-//
-// Global settings
-//
+module vga_tgen_golden(
+	clk, clk_ena, rst,
+	Thsync, Thgdel, Thgate, Thlen, Tvsync, Tvgdel, Tvgate, Tvlen,
+	eol, eof, gate, hsync, vsync, csync, blank
+	);
 
-//
-// define memory vendor
-// for FPGA implementations use `define VENDOR_FPGA
+	// inputs & outputs
+	input clk;
+	input clk_ena;
+	input rst;
 
-`define VENDOR_FPGA
+	// horizontal timing settings inputs
+	input [ 7:0] Thsync; // horizontal sync pule width (in pixels)
+	input [ 7:0] Thgdel; // horizontal gate delay
+	input [15:0] Thgate; // horizontal gate (number of visible pixels per line)
+	input [15:0] Thlen;  // horizontal length (number of pixels per line)
 
-//
-// enable / disable 12bit DVI output
-// (for use with external DVI transmitters)
-//`define VGA_12BIT_DVI
+	// vertical timing settings inputs
+	input [ 7:0] Tvsync; // vertical sync pule width (in pixels)
+	input [ 7:0] Tvgdel; // vertical gate delay
+	input [15:0] Tvgate; // vertical gate (number of visible pixels per line)
+	input [15:0] Tvlen;  // vertical length (number of pixels per line)
+
+	// outputs
+	output eol;  // end of line
+	output eof;  // end of frame
+	output gate; // vertical AND horizontal gate (logical AND function)
+
+	output hsync; // horizontal sync pulse
+	output vsync; // vertical sync pulse
+	output csync; // composite sync
+	output blank; // blank signal
+
+	//
+	// variable declarations
+	//
+	wire Hgate, Vgate;
+	wire Hdone;
+
+	//
+	// module body
+	//
+
+	// hookup horizontal timing generator
+	vga_vtim_golden hor_gen(
+		.clk(clk),
+		.ena(clk_ena),
+		.rst(rst),
+		.Tsync(Thsync),
+		.Tgdel(Thgdel),
+		.Tgate(Thgate),
+		.Tlen(Thlen),
+		.Sync(hsync),
+		.Gate(Hgate),
+		.Done(Hdone)
+	);
 
 
-////////////////////////
-//
-// Hardware Cursors
-//
+	// hookup vertical timing generator
+	wire vclk_ena = Hdone & clk_ena;
 
-//
-// enable / disable hardware cursors
-//
-//`define VGA_HWC0
-//`define VGA_HWC1
+	vga_vtim_golden ver_gen(
+		.clk(clk),
+		.ena(vclk_ena),
+		.rst(rst),
+		.Tsync(Tvsync),
+		.Tgdel(Tvgdel),
+		.Tgate(Tvgate),
+		.Tlen(Tvlen),
+		.Sync(vsync),
+		.Gate(Vgate),
+		.Done(eof)
+	);
 
-
-//
-// enable / disabled 3D support for hardware cursors
-//
-//`define VGA_HWC_3D
-
+	// assign outputs
+	assign eol  = Hdone;
+	assign gate = Hgate & Vgate;
+	assign csync = hsync | vsync;
+	assign blank = ~gate;
+endmodule
