@@ -1,0 +1,1 @@
+../../sva/wb_slave.sv
