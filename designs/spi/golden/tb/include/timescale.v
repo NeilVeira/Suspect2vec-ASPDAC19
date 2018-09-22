@@ -1,1 +1,1 @@
-../../../tb/include/timescale.v
+../../golden/rtl/include/timescale.v

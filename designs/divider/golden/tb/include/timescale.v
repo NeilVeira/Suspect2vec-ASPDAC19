@@ -1,1 +1,2 @@
-../../../tb/include/timescale.v
+`timescale 1ns / 10ps
+
